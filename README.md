@@ -1,3 +1,9 @@
-# My Awesome Book
+# Application Development Guides
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+A collection of guides and cheatsheets for Application Development.
+
+* [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
+* [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
+
+
+
