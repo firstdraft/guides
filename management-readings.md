@@ -4,13 +4,13 @@
 
 ### A very powerful Git flow
 
-This is behind a paywall (but there's a trial period). It's very low-level and tactical, so probably hard to understand right now; but you should refer developers that you work with to it, and they should either have a flow similar to this one, or good reasons for using something different:
+This is behind a paywall (but there's a trial period). It's very low-level and tactical, so it might be hard to understand right now; but you should refer developers that you work with to it, and they should either have a flow similar to this one, or *very* good reasons for using something different:
 
-https://thoughtbot.com/upcase/videos/git-thoughtbot-git-flow
+[thoughtbot's Git Flow](https://thoughtbot.com/upcase/videos/git-thoughtbot-git-flow)
 
 ###  Kanban/Trello Workflow
 
-[An overview of a process using Trello for product management.](https://robots.thoughtbot.com/how-we-use-trello-for-product-development)
+[An overview of a Kanban-like process for product management.](https://robots.thoughtbot.com/how-we-use-trello-for-product-development)
 
 [More details about using Trello for product management.](https://gist.github.com/raghubetina/7b5303df29c63b1a0e68156eece54ac2)
 
@@ -20,7 +20,7 @@ One of the most common questions I hear is, "How do I keep my team happy / how d
 
 One of the most important components of staying happy for developers is feeling like we're always continuing to learn.
 
-One of the best ways to promote that on a team is a strong Code Review Culture.
+One of the best ways to promote learning on a team is a strong Code Review Culture.
 
  - It feels great to get alternative ideas on how to attack a problem right when you are setting out. Often, someone else on the team can alert you to a different approach that you hadn't considered or heard about.
  - You would be surprised at how often a junior developer can teach a senior developer a new trick.
