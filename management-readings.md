@@ -16,9 +16,19 @@ https://thoughtbot.com/upcase/videos/git-thoughtbot-git-flow
 
 ### Code Review
 
+One of the most common questions I hear is, "How do I keep my team happy / how do I retain good developers?"
+
+One of the most important components of staying happy for developers is feeling like we're always continuing to learn.
+
+One of the best ways to promote that on a team is a strong Code Review Culture -- you would be surprised at how often a junior developer can teach a senior developer a new trick.
+
+And, obviously, Code Review is an incredibly good way to train junior developers, *and* demolish knowledge silos.
+
+Oh, and it helps catch bugs sometimes, too.
+
 [A low-level walkthrough of how to perform productive code reviews.](https://thoughtbot.com/upcase/videos/tips-for-code-review)
 
-[A high-level perspective on how and why to implement a strong Code Review culture. ](https://www.youtube.com/watch?v=PJjmw9TRB7s) (One of the best answers I've come across to the question, "How do I retain good developers and keep them happy?".)
+[A high-level perspective on how and why to implement a strong Code Review culture. ](https://www.youtube.com/watch?v=PJjmw9TRB7s)
 
 ### Playbook
 
