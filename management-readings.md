@@ -20,11 +20,13 @@ One of the most common questions I hear is, "How do I keep my team happy / how d
 
 One of the most important components of staying happy for developers is feeling like we're always continuing to learn.
 
-One of the best ways to promote that on a team is a strong Code Review Culture -- you would be surprised at how often a junior developer can teach a senior developer a new trick.
+One of the best ways to promote that on a team is a strong Code Review Culture.
 
-And, obviously, Code Review is an incredibly good way to train junior developers, *and* demolish knowledge silos.
-
-Oh, and it helps catch bugs sometimes, too.
+ - It feels great to get alternative ideas on how to attack a problem right when you are setting out. Often, someone else on the team can alert you to a different approach that you hadn't considered or heard about.
+ - You would be surprised at how often a junior developer can teach a senior developer a new trick.
+ - And, obviously, Code Review is an incredibly good way to train junior developers.
+ - Code Reviews demolish knowledge silos, reducing your risk.
+ - Oh, and they helps catch bugs sometimes, too.
 
 [A low-level walkthrough of how to perform productive code reviews.](https://thoughtbot.com/upcase/videos/tips-for-code-review)
 
