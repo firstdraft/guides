@@ -95,7 +95,6 @@ then follow these steps:
  1. Leave the "Replace in project" field blank and then click "Replace All":
  
      ![](/assets/second_find_confirm.png)
-     
 
  1. Confirm the replacement, and then quit Atom.
  1. Restart the Command Prompt with Ruby and Rails.
