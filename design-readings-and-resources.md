@@ -4,7 +4,7 @@ As you go about designing and coding your application's screens, here are a few 
 
 ## Readings
 
-I've placed them in rough order of value/length ratio, in my opinion.
+I've placed them in rough order of my opinion of their value/length ratio.
 
  - [Butterick's Typography In Ten Minutes](http://practicaltypography.com/typography-in-ten-minutes.html)
  - [Web Design in 4 minutes](http://jgthms.com/web-design-in-4-minutes/)
