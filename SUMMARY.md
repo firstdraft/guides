@@ -6,4 +6,5 @@
 * [Management Readings](management-readings.md)
 * [Design Readings and Resources](design-readings-and-resources.md)
 * [Loops in Ruby](loops-in-ruby.md)
+* [Ruby Hashes](ruby-hashes.md)
 
