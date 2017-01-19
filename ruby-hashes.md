@@ -60,9 +60,12 @@ person2 = { :first_name => "Arthur", :last_name => "Benson", :role => "Student" 
 To access a piece of data, we use the name (we call these "keys") of the cell rather than the position:
 
 ```ruby
-"Howdy, #{person2[:first_name]} #{person2[:last_name]}. You are enrolled as #{person2[:role]}"
+person1[:last_name] # => "Betina"
 ```
-The keys can be any data type -- String, Fixnum, whatever -- but we almost always use Symbols as keys in our Hashes.
+
+No more having to remember which position number maps to which attribute!
+
+The keys can be any class -- String, Fixnum, whatever -- but we almost always use Symbols as keys to our Hashes. (I like using symbols as the keys simply because syntax highlighting makes them stand out from the values.)
 
 Adding a new key/value pair to a Hash is similar to assigning a value to a variable:
 
@@ -73,6 +76,8 @@ person2[:attendance] = 0.95
 
 Note, these hashes now have different keys!
 
-So, Arrays are very useful for storing a list of things that are all basically the same, and so it's nice for Ruby to automatically number them for you.
+## The Bottomline
+
+Arrays are very useful for storing a list of things that are all basically the same, and so it's nice for Ruby to automatically number them for you.
 
 But when you are storing a list of things that are categorically different, and you'd rather label them yourself, then Hashes are a better choice. That's about it!
