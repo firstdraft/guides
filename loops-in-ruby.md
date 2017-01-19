@@ -78,7 +78,7 @@ Here's how `.each` works:
 So, while `while` is neat to know about, the most important thing is that you understand `.each`. The `|num|` part takes a bit to get your head around, but you need to do it as quickly as possible, because it really is something we do a million times. Soon, you'll be putting both HTML and Ruby together to create beautiful pages with code that looks something like this:
 
 ```erb
-<% @timeline_photos.each do |photo| %>
+<% timeline_photos.each do |photo| %>
   <div class="photo">
     <img src="<%= photo.image_source %>">
     
