@@ -70,14 +70,14 @@ Here's how `.each` works:
 
  - We call it on an array that we want to loop across.
  - We put the `do` keyword next to it.
- - The `do` keyword has a matching `end` keyword, and the code to be repeated goes between them.
- - After the `do` keyword, we put vertical bars known as "pipes" -- `| |`. Within those, we choose a name that **we want to refer to each element in the list as we are looping through it**. In this case, I chose "`num`".
+ - The `do` keyword has a matching `end` keyword, and the code to be repeated goes between them. (The whole thing from `do` through `end` is known as a "block".)
+ - After the `do` keyword, we put vertical bars known as "pipes" -- `| |`. Within those, we choose a name that **we want to refer to each element in the list as we are looping through it**. In this case, I chose "`num`". (This is known as a "block variable".)
  - Inside the `do`/`end`, I used the variable `num` to write the code I want executed for each element in the list.
  - Voilà! Now we don't have to worry counting the length of the list, keeping a counter to keep track of where we are, indexing in to the list, etc; `.each` takes care of all of that.
  
 So, while `while` is neat to know about, the most important looping method that you need to understand right now is `.each`.
 
-The `|num|` part takes a bit to get your head around -- it's just a name we make up for use within the `do`/`end` to talk about each element in the array as the loop is being executed. I could have called it `zebra` if I wanted to.
+The block variable `|num|` part takes a bit to get your head around -- it's just a name we make up for use within the `do`/`end` to talk about each element in the array as the loop is being executed. I could have called it `zebra` if I wanted to.
 
 Soon, you'll be putting both HTML and Ruby together to create beautiful pages with code that looks something like this:
 
