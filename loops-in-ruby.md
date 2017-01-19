@@ -13,7 +13,7 @@ end
 len = a.length
 ```
 
-We start off with an empty array, `a`. If it's length is less than `3` (this is true, since length is currently `0`), we push a new random number into it.
+We start off with an empty array, `a`. If its length is less than `3` (this is true, since length is currently `0`), we push a new random number into it.
 
 Once Ruby reaches the `end` statement paired with an `if`, it proceeds forward and continues to execute the rest of the code (whether the `if` condition was true or not). So `len` is now `1`. 
 
