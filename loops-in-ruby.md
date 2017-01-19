@@ -75,7 +75,9 @@ Here's how `.each` works:
  - Inside the `do`/`end`, I used the variable `num` to write the code I want executed for each element in the list.
  - Voilà! Now we don't have to worry counting the length of the list, keeping a counter to keep track of where we are, indexing in to the list, etc; `.each` takes care of all of that.
  
-So, while `while` is neat to know about, the most important thing is that you understand `.each`. The `|num|` part takes a bit to get your head around -- it's just a name we make up for use within the `do`/`end` to talk about each element in the array as the loop is being executed. I could have called it `zebra` if I wanted to.
+So, while `while` is neat to know about, the most important looping method that you need to understand right now is `.each`.
+
+The `|num|` part takes a bit to get your head around -- it's just a name we make up for use within the `do`/`end` to talk about each element in the array as the loop is being executed. I could have called it `zebra` if I wanted to.
 
 Soon, you'll be putting both HTML and Ruby together to create beautiful pages with code that looks something like this:
 
