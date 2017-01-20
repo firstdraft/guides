@@ -57,11 +57,17 @@ person1 = { :first_name => "Raghu", :last_name => "Betina", :role => "Instructor
 person2 = { :first_name => "Arthur", :last_name => "Benson", :role => "Student" }
 ```
 
+ - We create a Hash with curly braces, `{ }`, rather than square brackets.
+ - We still separate elements in the list with commas.
+ - Unlike with Arrays, **we must supply a label for every element**. The label precedes the element, and is separated from it by a `=>`, which we call a "hash rocket".
+
 To access a piece of data, we use the name (we call these "keys") of the cell rather than the position:
 
 ```ruby
 person1[:last_name] # => "Betina"
 ```
+
+(Note that even though we use curly braces to create hashes, we still use square brackets to access elements in them.)
 
 No more having to remember which position number maps to which attribute!
 
