@@ -59,7 +59,7 @@ person2 = { :first_name => "Arthur", :last_name => "Benson", :role => "Student" 
 
  - We create a Hash with curly braces, `{ }`, rather than square brackets.
  - We still separate elements in the list with commas.
- - Unlike with Arrays, **we must supply a label for every element**. The label precedes the element, and is separated from it by a `=>`, which we call a "hash rocket". When I read it out loud, I read it as "goes to".
+ - Unlike with Arrays, **we must supply a label for every element**. The label precedes the element, and is separated from it by an arrow looking thingy, `=>`, which we call a "hash rocket". When I read it out loud, I read it as "goes to".
 
 To access a piece of data, we use the name (we call these "keys") of the cell rather than the position:
 
