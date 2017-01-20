@@ -51,18 +51,16 @@ In fact, when you started up the `rails server`, you basically started a program
 
 But most importantly for us, as web developers: we spend 99% of our time **managing lists of things**. Lists of photos, likes, messages, events, reviews, users, tweets, whatever. These objects usually come to us in `Array`s, and we usually need to loop across (or iterate over) the array and do some work with each element in the array (like draw some nice HTML around it). **So we need to get *really* good at looping over arrays.**
 
-We could do this using the `while` statement, but let me just show you a purpose-built `Array` method that we're going to use 1000 times a day instead: `.each`:
+We could do this using the `while` statement, but let me instead just show you a purpose-built `Array` method that we're going to use 1000 times a day: `.each`:
 
 ```ruby
  numbers = [4, 10, 6]            # Create an array of numbers
  squared_numbers = []            # Create an empty array
  
- numbers.each do |num|           # For each element in numbers,
-                                 #   (referring to it as "num")   
-   squared_numbers.push(num**2)  # Square it and push into
-                                 #   squared_numbers
+ numbers.each do |num|           # For each element in numbers, (refer to it as "num")
+   squared_numbers.push(num**2)  # Square "num" and push into squared_numbers
  end
- 
+  
  squared_numbers.sum             # Sum the squares
 ```
 
