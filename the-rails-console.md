@@ -14,6 +14,6 @@ To launch a Console session,
   - Sometimes you might get into a weird state with your commands (if, for example, you forget your closing `"` on a string or `]` on an array). To reset and get out of the weird state, press <kbd>Ctrl</kbd>+<kbd>C</kbd>.
  1. When you are done testing out Ruby one-liners, type `exit` and press <kbd>return</kbd> to shut down that program and return to the regular old command prompt.
  
-That's it! After you've played around in this handy sandbox and discovered the Ruby you need to solve your problem, you are ready to head over to Atom and write it down permanently in a `.rb` file.
+That's it! After you've played around in this handy sandbox and discovered the Ruby you need to solve your problem, you are ready to head over to Atom and write it down permanently in a `.rb` file. Have fun!
 
 
