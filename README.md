@@ -11,7 +11,8 @@ A collection of guides and cheatsheets for Application Development.
 * [The Rails Console](the-rails-console.md)
 * [RCAV Flowchart](rcav-flowchart.md)
 * [CRUD with Ruby](crud-with-ruby.md)
-* [Tools to add to your application](tools-to-add-to-your-application.md)
+* [Things I Do When Setting Up A New App](things-i-do-when-setting-up-a-new-app.md)
+
 
 
 
