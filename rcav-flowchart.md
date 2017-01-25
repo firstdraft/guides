@@ -12,7 +12,7 @@ In order to support a URL in your app such as `http://localhost:3000/signin`, th
 
 ![](/assets/rcav_flowchart.jpg)
 
- 1. First we need a **route** for the **URL** we want to support (**green**).
+ 1. First we add a **route** for the **URL** we want to support (**green**).
  2. The route will specify the Ruby *class* and the *method* that will be responsible for rendering a response. We call the *class* a **controller** and the *method* an **action**.
  3. Whatever name you choose in the route for the **controller** determines the things in **red**:
     - the filename in the `app/controllers` folder (must be snake_case)
