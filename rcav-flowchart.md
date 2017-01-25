@@ -10,7 +10,7 @@ So remember: everything always starts with a **route** between a *URL* we want t
 
 In order to support a URL in your app such as `http://localhost:3000/signin`, there are a lot of dots to connect!
 
-<img src="https://dl.dropboxusercontent.com/s/fnlc1jn1hbt146e/rcav_flowchart.jpg" width="616" height="500"> 
+![](/assets/rcav_flowchart.jpg)
 
  1. First we need a **route** for the **URL** we want to support (**green**).
  2. The route will specify the Ruby *class* and the *method* that will be responsible for rendering a response. We call the *class* a **controller** and the *method* an **action**.
