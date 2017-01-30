@@ -106,7 +106,7 @@ If you see that, then you're all set!
 
 ## SSL Certificate
 
-In order to write apps that interact with other apps (like Google Directions or Twilio) securely, we need to download an SSL certificate.
+In order to write apps that interact with other apps (like Google Maps (for getting directions) or Twilio (for sending text messages) securely, we need to download a bundle of CA Root Certificates.
 
  1. Right-click on [this link](http://curl.haxx.se/ca/cacert.pem) and chose "Save link as...". Save the file, called `cacert.pem`, into `C:\RailsInstaller`:
 
