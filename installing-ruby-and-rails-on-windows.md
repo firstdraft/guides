@@ -140,7 +140,7 @@ In order to write apps that interact with other apps like Google Maps (for getti
  
      ![](/assets/confirm_environment_variable.png)
      
-That's it! Restart your Command Prompt with Ruby on Rails, if you have one open.
+Quit and restart your Command Prompt with Ruby on Rails, if you have one open. That's it! 
  
 ## Node.js
 
