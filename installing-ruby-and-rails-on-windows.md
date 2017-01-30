@@ -104,6 +104,44 @@ then follow these steps:
 
 If you see that, then you're all set!
 
+## SSL Certificate
+
+In order to write apps that interact with other apps (like Google Directions or Twilio) securely, we need to download an SSL certificate.
+
+ 1. Download [this file called cacert.pem](http://curl.haxx.se/ca/cacert.pem) and save it into `C:\RailsInstaller` (press <kbd>Ctrl</kbd>+<kbd>S</kbd> to bring up the "Save" dialog, if necessary):
+
+    ![](/assets/download_cacert.png)
+
+ 1. Search for "system" in the Start menu. You should see a result from the Control Panel -- launch it:
+ 
+    ![](/assets/search_for_system.png)
+ 
+ 1. Find "Advanced System Settings" and click it:
+ 
+    ![](/assets/advanced_system_settings.png)
+
+ 1. Find "Environment Variables" and click it:
+ 
+    ![](/assets/environment_variables.png)
+ 
+ 1. Under "System Variables" (*not* "User Variables for..."), click "New":
+ 
+    ![](/assets/new_system_variable.png)
+    
+ 1. For the variable name, enter `SSL_CERT_FILE` and then click "Browse File":
+ 
+    ![](/assets/ssl_cert_browse_file.png)
+    
+ 1. Locate the `C:\RailsInstaller\cacert.pem` file that you downloaded earlier and click "Open":
+ 
+    ![](/assets/locate_cacert.png)
+    
+ 1. To confirm that it worked, make sure that you see the new environment variable on the list:
+ 
+     ![](/assets/confirm_environment_variable.png)
+     
+That's it! Restart your Command Prompt with Ruby on Rails, if you have one open.
+ 
 ## Node.js
 
 Finally, we need to install Node.js to act as the JavaScript runtime for Rails 5. That should mean absolutely nothing to you right now :)
