@@ -265,6 +265,6 @@ when someone visits "/rock". That's why we have to be so careful when we're [con
 
 `GamesController` inherits from `ApplicationController`, which is a pre-written class we get from Rails.
 
-It has lots of powerful methods that deal with web requests, like `render()`, which knows how to take an embedded Ruby view template and process it into pure HTML suitable for a browser.
+It has lots of powerful methods that deal with web requests, like `render()`, which knows how to take a `.html.erb` embedded Ruby view template and process it into pure HTML suitable for a browser to display.
 
-We inherit all that functionality for free from Rails, instead of having to write it ourselves, thankfully! We can focus on modeling the problem that we want to solve with our app, rather than worrying about all that plumbing.
+Thankfully, we inherit all that functionality for free from Rails, instead of having to write it ourselves! We can instead focus on modeling the problem that we want to solve with our app, rather than worrying about all that plumbing.
