@@ -263,4 +263,8 @@ g.play_rock
 
 when someone visits "/rock". That's why we have to be so careful when we're [connecting the RCAV dots](rcav-flowchart.md); otherwise, Rails can't locate the method to run.
 
-`GamesController` inherits from `ApplicationController`, which is a pre-written class we get from Rails that has lots of powerful methods that deal with the web, like `render()`, which knows how to take an embedded Ruby view template and process it into pure HTML suitable for a browser. We inherit all that functionality for free, instead of having to write it ourselves, thankfully!
+`GamesController` inherits from `ApplicationController`, which is a pre-written class we get from Rails.
+
+It has lots of powerful methods that deal with web requests, like `render()`, which knows how to take an embedded Ruby view template and process it into pure HTML suitable for a browser.
+
+We inherit all that functionality for free from Rails, instead of having to write it ourselves, thankfully! We can focus on modeling the problem that we want to solve with our app, rather than worrying about all that plumbing.
