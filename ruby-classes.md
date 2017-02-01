@@ -246,10 +246,11 @@ get("/rock", { :controller => "games", :action => "play_rock" })
 # app/controllers/games_controller.rb
 
 class GamesController < ApplicationController
-def play_rock
-@computer_move = ["rock", "paper", "scissors"].sample
-render("games/play_rock.html.erb")
-end
+  def play_rock
+    @computer_move = ["rock", "paper", "scissors"].sample
+
+    render("games/play_rock.html.erb")
+  end
 end
 ```
 
