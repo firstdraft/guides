@@ -73,14 +73,14 @@ class Person
 end
 ```
 
-Now, in addition to being able to store data (first and last names), I can ask a `Person` to compute its full name:
+Now, in addition to being able to store data (first and last names), I can ask any `Person` to compute its full name:
 
 ```ruby
 hs = Person.new
 hs.first_name = "Homer"
 hs.last_name = "Simpson"
 
-hs.full_name # => "Homer Simpson"
+"Hello, #{hs.full_name}!" # => "Hello, Homer Simpson!"
 ```
 
 Two new keywords to note:
@@ -132,7 +132,7 @@ end
 
 Instructors and Students can do everything People can, and a little bit more.
 
-Creating first individual instance of the Instructor class
+Creating first individual **instance** of the Instructor class
 
 ```ruby
 person1 = Instructor.new
@@ -180,4 +180,29 @@ person4.grade # => "Incomplete"
 ```
 
 What would happen if I tried doing `person4.role`? How about `person1.grade`? Why? What would the error message be?
+
+## Where have we seen this before?
+
+It might now make a bit more sense what we were doing when we created our controllers while learning RCAV:
+
+```ruby
+# config/routes.rb
+
+get("/rock", { :controller => "games", :action => "play_rock" })
+
+# app/controllers/games_controller.rb
+
+class GamesController < ApplicationController
+  def play_rock
+    @computer_move = ["rock", "paper", "scissors"].sample
+    
+    render("games/play_rock.html.erb")
+  end
+end
+```
+
+In `routes.rb`, we tell Rails to listen for requests for "/rock", and when it hears one, run the `play_rock` method on an instance of `GamesController`.
+
+
+`GamesController` inherits from `ApplicationController`, which is a pre-written class we get from Rails that has lots of powerful methods that deal with the web, like `render()`, which knows how to take an embedded Ruby view template and process it into pure HTML suitable for a browser. We inherit all that power for free!
 
