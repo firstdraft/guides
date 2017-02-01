@@ -233,4 +233,26 @@ end
 
 You can now use the `Person` class from anywhere in the app: any controller, any view template, `rails console` -- or even from within another model.
 
-Ruby is called an Objected Oriented (OO) language because we always strive to organize our code into descriptive classes and methods, rather than just using Hashes and Arrays for everything. We think in terms of the primary syntax, `object.method`, as often as possible.
+Ruby is called an Objected Oriented (OO) language because we always strive to organize our code into descriptive classes and methods, rather than just using Hashes and Arrays for everything.
+
+For example, Rubyists much prefer to define the `Person` class above and then
+
+```ruby
+hs = Person.new
+hs.first_name = "Homer"
+hs.last_name = "Simpson"
+
+"Hello, #{hs.full_name}!" # => "Hello, Homer Simpson!"
+```
+
+Rather than
+
+```ruby
+h = { :first_name => "Homer", :last_name => "Simpson" }
+
+"Hello, #{hs.first_name} #{hs.last_name}!" # => "Hello, Homer Simpson!"
+```
+
+even though the two are functionally equivalent. By encapsulating the logic of how to compute `full_name` in the class definition, I make it much easier to re-use elsewhere and share.
+
+It also allows us to think in terms of the primary Ruby syntax, `object.method`, as often as possible.
