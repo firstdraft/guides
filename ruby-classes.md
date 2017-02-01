@@ -181,32 +181,7 @@ person4.grade # => "Incomplete"
 
 What would happen if I tried doing `person4.role`? How about `person1.grade`? Why? What would the error message be?
 
-## Where have we seen this before?
-
-It might now make a bit more sense what we were doing when we created our controllers while learning RCAV:
-
-```ruby
-# config/routes.rb
-
-get("/rock", { :controller => "games", :action => "play_rock" })
-
-# app/controllers/games_controller.rb
-
-class GamesController < ApplicationController
-  def play_rock
-    @computer_move = ["rock", "paper", "scissors"].sample
-    
-    render("games/play_rock.html.erb")
-  end
-end
-```
-
-In `routes.rb`, we tell Rails to listen for requests for "/rock", and when it hears one, run the `play_rock` method on an instance of `GamesController`.
-
-
-`GamesController` inherits from `ApplicationController`, which is a pre-written class we get from Rails that has lots of powerful methods that deal with the web, like `render()`, which knows how to take an embedded Ruby view template and process it into pure HTML suitable for a browser. We inherit all that functionality for free, instead of having to write it ourselves, thankfully!
-
-## Our own classes
+## Using our own classes
 
 We store our own classes in the `app/models` folder. For example, if you create a file in that folder called `person.rb` with the following:
 
@@ -231,7 +206,7 @@ class Person
 end
 ```
 
-You can now use the `Person` class from anywhere in the app: any controller, any view template, `rails console` -- or even from within another model.
+You can now use the `Person` class from anywhere in the app. You can do `p = Person.new`, etc, from any controller, any view template, `rails console` -- or even from within another model.
 
 Ruby is called an Objected Oriented (OO) language because we always strive to organize our code into descriptive classes and methods, rather than just using Hashes and Arrays for everything.
 
@@ -253,6 +228,36 @@ h = { :first_name => "Homer", :last_name => "Simpson" }
 "Hello, #{hs.first_name} #{hs.last_name}!" # => "Hello, Homer Simpson!"
 ```
 
-even though the two are functionally equivalent. By encapsulating the logic of how to compute `full_name` in the class definition, I make it much easier to re-use elsewhere and share.
+even though the two are functionally equivalent, and the second is even a bit more concise.
 
-It also allows us to think in terms of the primary Ruby syntax, `object.method`, as often as possible.
+By encapsulating the logic of how to compute `full_name` in the class definition, I make it much easier to re-use elsewhere and share.
+
+## Where have we seen this before?
+
+It might now make a bit more sense what we were doing when we created our controllers while learning RCAV:
+
+```ruby
+# config/routes.rb
+
+get("/rock", { :controller => "games", :action => "play_rock" })
+
+# app/controllers/games_controller.rb
+
+class GamesController < ApplicationController
+def play_rock
+@computer_move = ["rock", "paper", "scissors"].sample
+render("games/play_rock.html.erb")
+end
+end
+```
+
+In `routes.rb`, we tell Rails to listen for requests for "/rock", and when it hears one, run the `play_rock` method on an instance of `GamesController`. Behind the scenes, Rails would do something like
+
+```ruby
+g = GamesController.new
+g.play_rock
+```
+
+when someone visits "/rock". That's why we have to be so careful when we're [connecting the RCAV dots](rcav-flowchart.md); otherwise, Rails can't locate the method to run.
+
+`GamesController` inherits from `ApplicationController`, which is a pre-written class we get from Rails that has lots of powerful methods that deal with the web, like `render()`, which knows how to take an embedded Ruby view template and process it into pure HTML suitable for a browser. We inherit all that functionality for free, instead of having to write it ourselves, thankfully!
