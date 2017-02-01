@@ -23,10 +23,10 @@ Commonly used datatypes for columns:
     :text
     :time
 
-If you execute this command, you'll see that Rails has written two files for you. In class, we wrote most of these files by hand, but this shortcut does a lot of work on our behalf:
+If you execute this command, you'll see that Rails has written two files for you. We could write these files by hand, but since they are pretty formulaic, the shortcut can do the work for us:
 
- - It created a Ruby class for us in `app/models` named `Instructor`, and made it inherit database-related superpowers from `ActiveRecord::Base`.
- - It created a migration for us in `db/migrate`, and added instructions to it to create a table called `instructors`, with the columns/datatypes that we specified after the model's name.
+ - It creates a Ruby class for us in `app/models` named `Instructor`, and made it inherit database-related superpowers from `ActiveRecord::Base`.
+ - It creates a migration for us in `db/migrate`, and added instructions to it to create a table called `instructors`, with the columns/datatypes that we specified after the model's name.
 
 Go open up the migration file in Atom and make sure it looks good. You have this one chance to correct any errors or omissions; once you execute it, this file will never be run again.
 
@@ -34,7 +34,7 @@ If it looks good, use the
 
     rake db:migrate
 
-command to actually run the migration and create your table. Now you are ready to start creating rows in the table.
+command to actually execute the code in the migration file and create your table. Now you are ready to start creating rows in the table.
 
 > ### Aside: Making Changes To Your Database
 
