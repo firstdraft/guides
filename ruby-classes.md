@@ -130,9 +130,9 @@ class Student < Person
 end
 ```
 
-Instructors and Students can do everything People can, and a little bit more.
+`Instructor`s and `Student`s can do everything people can, and a little bit more.
 
-Creating first individual **instance** of the Instructor class
+Creating the first individual **instance** of the `Instructor` class:
 
 ```ruby
 person1 = Instructor.new
@@ -141,7 +141,7 @@ person1.last_name = "Betina"
 person1.role = "Lecturer"
 ```
 
-Creating second individual instance of the Instructor class
+Creating the second individual instance of the `Instructor` class:
 
 ```ruby
 person2 = Instructor.new
@@ -150,7 +150,7 @@ person2.last_name = "Venkataswamy"
 person2.role = "Faculty Coach"
 ```
 
-Creating first individual instance of the Student class
+Creating the first individual instance of the `Student` class:
 
 ```ruby
 person3 = Student.new
@@ -159,7 +159,7 @@ person3.last_name = "Arthur"
 person3.grade = "A"
 ```
 
-Creating second individual instance of the Student class
+Creating the second individual instance of the `Student` class:
 
 ```ruby
 person4 = Student.new
@@ -167,6 +167,8 @@ person4.first_name = "Tom"
 person4.last_name = "Besio"
 person4.grade = "Incomplete"
 ```
+
+Now we can use them:
 
 ```ruby
 person1.full_name # => "Raghu Betina"
