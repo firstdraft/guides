@@ -185,7 +185,7 @@ What would happen if I tried doing `person4.role`? How about `person1.grade`? Wh
 
 ## Using our own classes
 
-We store our own classes in the `app/models` folder. For example, if you create a file in that folder called `person.rb` with the following:
+We usually store classes that we write in the `app/models` folder. For example, if you create a file in that folder called `person.rb` with the following:
 
 ```ruby
 class Person
