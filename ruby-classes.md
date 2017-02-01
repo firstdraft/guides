@@ -204,4 +204,33 @@ end
 In `routes.rb`, we tell Rails to listen for requests for "/rock", and when it hears one, run the `play_rock` method on an instance of `GamesController`.
 
 
-`GamesController` inherits from `ApplicationController`, which is a pre-written class we get from Rails that has lots of powerful methods that deal with the web, like `render()`, which knows how to take an embedded Ruby view template and process it into pure HTML suitable for a browser. We inherit all that power for free!
+`GamesController` inherits from `ApplicationController`, which is a pre-written class we get from Rails that has lots of powerful methods that deal with the web, like `render()`, which knows how to take an embedded Ruby view template and process it into pure HTML suitable for a browser. We inherit all that functionality for free, instead of having to write it ourselves, thankfully!
+
+## Our own classes
+
+We store our own classes in the `app/models` folder. For example, if you create a file in that folder called `person.rb` with the following:
+
+```ruby
+class Person
+  attr_accessor :first_name
+  attr_accessor :last_name
+  attr_accessor :birthdate
+
+  def full_name
+    return self.first_name + " " + self.last_name
+  end
+
+  def age
+    dob = Date.parse(self.birthdate)
+    now = Date.today
+    age_in_days = now - dob # Returns a Rational number
+    age_in_years = age_in_days / 365
+
+    return age_in_years.to_i
+  end
+end
+```
+
+You can now use the `Person` class from anywhere in the app: any controller, any view template, `rails console` -- or even from within another model.
+
+Ruby is called an Objected Oriented (OO) language because we always strive to organize our code into descriptive classes and methods, rather than just using Hashes and Arrays for everything. We think in terms of the primary syntax, `object.method`, as often as possible.
