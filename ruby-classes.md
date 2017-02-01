@@ -208,7 +208,7 @@ class Person
 end
 ```
 
-You can now use the `Person` class from anywhere in the app. You can do `p = Person.new`, etc, from any controller, any view template, `rails console` -- or even from within another model.
+You can now use the `Person` class from anywhere in the app: from within any controller, any view template, in the `rails console` -- or even from within another model.
 
 Ruby is called an Objected Oriented (OO) language because we always strive to organize our code into descriptive classes and methods, rather than just using Hashes and Arrays for everything.
 
