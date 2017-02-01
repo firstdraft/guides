@@ -205,4 +205,3 @@ In `routes.rb`, we tell Rails to listen for requests for "/rock", and when it he
 
 
 `GamesController` inherits from `ApplicationController`, which is a pre-written class we get from Rails that has lots of powerful methods that deal with the web, like `render()`, which knows how to take an embedded Ruby view template and process it into pure HTML suitable for a browser. We inherit all that power for free!
-
