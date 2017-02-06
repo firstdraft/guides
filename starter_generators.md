@@ -1,11 +1,11 @@
 # `starter_generators`
 
-Include this in `Gemfile`, which is a file located in the root folder of your app:
+Include this line in your `Gemfile`, which you'll find in the root folder of your app:
 
 ```ruby
 # Gemfile
 
-gem "starter_generators", :git => "https://github.com/raghubetina/starter_generators.git"
+gem "starter_generators", :github => "raghubetina/starter_generators"
 ```
 
 Then, 
@@ -32,9 +32,11 @@ rails generate starter:resource photo source:string caption:text
  - Separate column names and datatypes with colons (NO SPACES).
  - Separate name:type pairs with spaces (NO COMMAS).
 
-Note: `rails g` is short for `rails generate`, like `s` for `server` and `c` for `console`.
+In other words, the format of the command is exactly the same as when you were [generating only a model and table](crud-with-ruby.md#adding-tables-to-the-database), but `model` is replaced with `starter:resource`.
 
-`rails db:migrate` to run the migration that the generator wrote for us to create the new table.
+> Note: `rails g` is short for `rails generate`, like `s` for `server` and `c` for `console`.
+
+Run the command `rails db:migrate` to execute the instructions that the generator wrote for us to create the new table.
 
 > #### If you generated something mistaken:
 
@@ -55,10 +57,15 @@ To generate an application layout file that includes links to Bootstrap, Font Aw
 
     rails g starter:style <THEME>
 
-`<THEME>` can either be `default`, or the name of any [Bootswatch][1] (downcase), e.g., `cerulean`.
+`<THEME>` can either be `default`, or the name of any [Bootswatch](http://bootswatch.com) (downcase), e.g., `cerulean`.
 
 It will warn you that it is going to overwrite your existing `application.html.erb` -- say yes if you are sure that's okay. Copy out any important stuff if necessary, to be re-pasted back in.
 
-Boom, your app is now pretty! You'll still have to modify e.g. the navbar, but it gives you a solid starting point.
+## Making Changes
 
-  [1]: http://bootswatch.com
+That's it! You now have a solid starting point to work from.
+
+If you decide, however, to add a new column, then you'll have to go in and edit all of the relevant files by hand.
+
+There's no magic to this generator; all it did was automate the tedium of building The Golden Seven boilerplate by hand. From here on out, it's up to you.
+
