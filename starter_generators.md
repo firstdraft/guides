@@ -59,4 +59,6 @@ To generate an application layout file that includes links to Bootstrap, Font Aw
 
 It will warn you that it is going to overwrite your existing `application.html.erb` -- say yes if you are sure that's okay. Copy out any important stuff if necessary, to be re-pasted back in.
 
+Boom, your app is now pretty! You'll still have to modify e.g. the navbar, but it gives you a solid starting point.
+
   [1]: http://bootswatch.com
