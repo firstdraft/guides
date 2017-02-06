@@ -12,4 +12,5 @@
 * [Ruby Classes](ruby-classes.md)
 * [CRUD with Ruby](crud-with-ruby.md)
 * [Things I Do When Setting Up A New App](things-i-do-when-setting-up-a-new-app.md)
+* [starter\_generators](starter_generators.md)
 
