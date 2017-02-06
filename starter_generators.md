@@ -38,11 +38,10 @@ Note: `rails g` is short for `rails generate`, like `s` for `server` and `c` for
 
 > #### If you generated something mistaken:
 
->  - and you already  `rake db:migrate`d, first
+>  - **If you already  `rails db:migrate`d, then first**
 
->         rake db:rollback
-
->     to undo just the most recent migration. If you didn't `rake db:migrate` after you generated the resource, then no need to do this step.
+>         rails db:rollback
+>     to undo just the most recent migration. If you didn't `rails db:migrate` after you generated the resource, then no need to do this step.
 
 >  - **Next**,
 
@@ -59,48 +58,5 @@ To generate an application layout file that includes links to Bootstrap, Font Aw
 `<THEME>` can either be `default`, or the name of any [Bootswatch][1] (downcase), e.g., `cerulean`.
 
 It will warn you that it is going to overwrite your existing `application.html.erb` -- say yes if you are sure that's okay. Copy out any important stuff if necessary, to be re-pasted back in.
-
-### FAQ
-
-#### I am getting an error relating to SSL when I `bundle`
-
-If your `bundle install` fails with a message like this:
-
-```bash
-Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify
-```
-
-then open the file called `Gemfile` in the root folder of the application with Sublime and change
-
-    source 'https://rubygems.org'
-
-to
-
-    source 'http://rubygems.org'
-    
-(remove the "s"). Save and then `bundle install` again.
-
-This is only a temporary fix. Long term, you should find [a permanent solution](https://gist.github.com/luislavena/f064211759ee0f806c88) or switch to a different development environment (Linux, OS X, or a cloud environment like [Nitrous.io](https://pro.nitrous.io/) or [Cloud9](https://c9.io/)).
-
-#### I am getting an error relating to ExecJS
-
-Go in to the `app/assets/javascripts/application.js` file and delete the line
-
-    //= require_tree .
-
-Refresh the page in Chrome; it should now be okay.
-
-If you are still experiencing an error, try the following also:
-
- 1. In `Gemfile`, delete the line 
-
-        gem 'turbolinks'
- 
- 1. In `app/assets/javascripts/application.js`, delete the line
-
-        //= require turbolinks
-
- 1. `bundle install` and restart your server.
-
 
   [1]: http://bootswatch.com
