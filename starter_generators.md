@@ -16,7 +16,7 @@ bundle install
 
 ## Resources
 
-To generate a complete, database-backed web resource:
+To generate a complete, database-backed Golden Seven web resource:
 
 ```bash
 rails generate starter:resource <MODEL_NAME_SINGULAR> <COLUMN_1_NAME>:<COLUMN_1_DATATYPE> <COLUMN_2_NAME>:<COLUMN_2_DATATYPE> # etc
