@@ -15,5 +15,6 @@
 * [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
 * [Idea Mapping](idea-mapping.md)
 * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
+* [Management Readings](management-readings.md)
 * [Things I Do When Setting Up A New App](things-i-do-when-setting-up-a-new-app.md)
 
