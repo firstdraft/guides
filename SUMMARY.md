@@ -12,7 +12,8 @@
 * [Ruby Classes](ruby-classes.md)
 * [CRUD with Ruby](crud-with-ruby.md)
 * [starter\_generators](starter_generators.md)
-* [Things I Do When Setting Up A New App](things-i-do-when-setting-up-a-new-app.md)
-* [Updating a First Draft Idea](updating-a-first-draft-idea.md)
 * [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
+* [Idea Mapping](idea-mapping.md)
+* [Updating a First Draft Idea](updating-a-first-draft-idea.md)
+* [Things I Do When Setting Up A New App](things-i-do-when-setting-up-a-new-app.md)
 
