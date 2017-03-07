@@ -5,7 +5,9 @@
  1. Performance monitoring: Skylight, New Relic (both have free tiers, try them both out).
  1. Email delivery: Mailgun has a free tier.
  1. Support desk: something like Intercom (I don't have a clear #1 choice as of this writing).
- 
+ 1. Hound, CodeClimate
+ 1. CircleCI 
+ 1. Heroku Review Apps
  
 
 
