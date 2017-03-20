@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Atom Configuration](atom-configuration.md)
 * [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
 * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
 * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
@@ -16,6 +17,5 @@
 * [Idea Mapping](idea-mapping.md)
 * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
 * [Management Readings](management-readings.md)
-* [Things I Do When Setting Up A New App](things-i-do-when-setting-up-a-new-app.md)
 * [Atom Configuration](atom-configuration.md)
 

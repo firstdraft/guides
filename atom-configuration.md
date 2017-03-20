@@ -1,3 +1,3 @@
-# Atom Configuration
+# Atom Installation
 
 blah
