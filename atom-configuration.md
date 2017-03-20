@@ -1,3 +1,0 @@
-# Atom Installation
-
-blah
