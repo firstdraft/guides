@@ -17,4 +17,5 @@
 * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
 * [Management Readings](management-readings.md)
 * [Things I Do When Setting Up A New App](things-i-do-when-setting-up-a-new-app.md)
+* [Atom Configuration](atom-configuration.md)
 
