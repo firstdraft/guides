@@ -1,4 +1,4 @@
-# Atom Configuration
+# Installing Atom
 
 We're going to be using the plain text editor Atom for all of our code-writing in this course. In this guide, I'll show you the tweaks that I use to make it as helpful as possible.
 
