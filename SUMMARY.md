@@ -6,6 +6,11 @@
 * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
 * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
 * [Design Readings and Resources](design-readings-and-resources.md)
+* [Introduction to Ruby](introduction-to-ruby.md)
+* [Primary Syntax](primary-syntax.md)
+* [Fundamental Classes](fundamental-classes.md)
+* [Permanent Programs](permanent-programs.md)
+* [Conditionals](conditionals.md)
 * [Loops in Ruby](loops-in-ruby.md)
 * [Ruby Hashes](ruby-hashes.md)
 * [The Rails Console](the-rails-console.md)
@@ -15,5 +20,4 @@
 * [starter\_generators](starter_generators.md)
 * [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
 * [Idea Mapping](idea-mapping.md)
-* [Updating a First Draft Idea](updating-a-first-draft-idea.md)
 
