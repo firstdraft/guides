@@ -10,7 +10,6 @@ I've placed them in rough order of my opinion of their value/length ratio.
  - [Web Design in 4 minutes](http://jgthms.com/web-design-in-4-minutes/)
  - [7 Rules for Creating Gorgeous UI](https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-1-559d4e805cda) - and [part 2](https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-2-430de537ba96)
  - [Google's Material design guidelines](https://material.io/guidelines/material-design/introduction.html)
- - [Design Tip: Never Use Black](https://ianstormtaylor.com/design-tip-never-use-black)
  
 ## Resources
 
