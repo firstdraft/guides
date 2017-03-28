@@ -2,11 +2,20 @@
 
 A collection of guides and cheatsheets for Application Development.
 
-* [Installing Atom](installing-atom.md)
-* [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
-* [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
-* [Updating a First Draft Idea](updating-a-first-draft-idea.md)
-* [Design Readings and Resources](design-readings-and-resources.md)
+**Please note:** This collection is a work in progress. Some guides are incomplete; and they are not meant to be read in sequence, one after the other, unless they directly link to one another.
+
+* [Setting Up Your Computer](setting-up-your-computer.md)
+  * [Installing Atom](installing-atom.md)
+  * [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
+  * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
+  * [Getting Started With GitHub](getting-started-with-github.md)
+* [Introduction to HTML](introduction-to-html.md)
+   * [Friendbook Exercise Guide](friendbook-exercise-guide.md)
+   * [Design Readings and Resources](design-readings-and-resources.md)
+* [Building Your Own App](building-your-own-app.md)
+  * [Planning Your Idea](planning-your-idea.md)
+  * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
+  * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
 * [Introduction to Ruby](introduction-to-ruby.md)
   * [Primary Syntax](primary-syntax.md)
   * [Fundamental Classes](fundamental-classes.md)
@@ -19,20 +28,6 @@ A collection of guides and cheatsheets for Application Development.
 * [RCAV Flowchart](rcav-flowchart.md)
 * [CRUD with Ruby](crud-with-ruby.md)
 * [starter\_generators](starter_generators.md)
-* [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
-* [Idea Mapping](idea-mapping.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [Friendbook Exercise Guide](friendbook-exercise-guide.md)
 
 
