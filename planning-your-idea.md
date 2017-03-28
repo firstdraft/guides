@@ -2,7 +2,7 @@
 
 The aim of this exercise is to plan out an idea to build so that we can start to domain model, i.e., plan out our tables and columns.
 
-If you think you're ready to do that, then you can skip to the next article, [Creating a First Draft Idea](creating-a-first-draft-idea.md). Otherwise, read on.
+If you think you're already ready to do that, then you can skip to the next article, [Creating a First Draft Idea](creating-a-first-draft-idea.md). Otherwise, read on.
 
 ## Coming up with an idea
 
