@@ -6,6 +6,7 @@
   * [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
   * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
   * [Getting Started With GitHub](getting-started-with-github.md)
+* [Introduction to HTML](introduction-to-html.md)
 * [Design Readings and Resources](design-readings-and-resources.md)
 * [Building Your Own App](building-your-own-app.md)
   * [Planning Your Idea](planning-your-idea.md)
@@ -23,5 +24,5 @@
 * [RCAV Flowchart](rcav-flowchart.md)
 * [CRUD with Ruby](crud-with-ruby.md)
 * [starter\_generators](starter_generators.md)
-* [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
+* Introduction to HTML
 
