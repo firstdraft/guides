@@ -7,7 +7,7 @@
   * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
   * [Getting Started With GitHub](getting-started-with-github.md)
 * [Introduction to HTML](introduction-to-html.md)
-* [Friendbook Exercise Guide](friendbook-exercise-guide.md)
+   * [Friendbook Exercise Guide](friendbook-exercise-guide.md)
 * [Design Readings and Resources](design-readings-and-resources.md)
 * [Building Your Own App](building-your-own-app.md)
   * [Planning Your Idea](planning-your-idea.md)
