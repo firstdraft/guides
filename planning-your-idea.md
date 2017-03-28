@@ -9,6 +9,7 @@ If you think you're already ready to do that, then you can skip to the next arti
 If you have some ideas already, you can skip to the next section, [Sketches](#sketches). Otherwise, read on.
 
 ### Pain Points
+
 You should think of a couple of pain points in your life that you would like to solve with a simple CRUD app. Remember,
 
 > The verb you want to be using with respect to startup ideas is not "think up" but "notice."
@@ -16,9 +17,9 @@ You should think of a couple of pain points in your life that you would like to 
 
 Don't try to think up billion dollar startup ideas; our goal here is to discover a good first learning project, not to change the world just yet. Try to notice a real annoyance at work or at home or with friends that we can solve, even if for just one user — you.
 
-For example, [here is a project that a student made last quarter][2] — a simple app that lets you keep track of whether or not it's time to dry clean pieces of clothing. Another student made a nice app that suggests which of your credit cards to use in order to maximize rewards based on what kind of purchase you are about to make.
+For example, [here is a project that a student made last quarter](https://www.youtube.com/watch?v=U5fdaaZWwaY&feature=youtu.be) — a simple app that lets you keep track of whether or not it's time to dry clean pieces of clothing. Another student made a nice app that suggests which of your credit cards to use in order to maximize rewards based on what kind of purchase you are about to make.
 
-If you want to get fancier than a simple CRUD app and incorporate some APIs to pull in external data, you are more than welcome to, but try to [do some research][3] and make sure that an API exists for what you want (e.g., live sports scores).
+If you want to get fancier than a simple CRUD app and incorporate some APIs to pull in external data, you are more than welcome to, but try to do some research[^1] and make sure that an API exists for what you want (e.g., live sports scores).
 
 **The bottomline: keep it simple.** It's best to think up more than one idea if you can, so that we have options to choose from.
 
@@ -60,3 +61,5 @@ Move **only the essential stories** to the First Draft column.
 
 Now that we've planned out what we want to build, it's time to [diagram an Idea in First Draft](creating-a-first-draft-idea.md).
 
+
+[^1]: http://www.programmableweb.com/apis/directory
