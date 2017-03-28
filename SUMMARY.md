@@ -23,5 +23,5 @@
 * [starter\_generators](starter_generators.md)
 * [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
 * [Idea Mapping](idea-mapping.md)
-* Planning Your Idea
+* [Planning Your Idea](planning-your-idea.md)
 
