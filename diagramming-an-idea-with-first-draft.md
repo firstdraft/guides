@@ -1,6 +1,6 @@
 # Diagramming an Idea with First Draft
 
-[ideas.firstdraft.com](https://ideas.firstdraft.com) is a tool designed to help you plan out your app idea from an information-storage perspective.
+
 
 First, of course, you have to have some idea of what you want to build. My personal process is:
 
