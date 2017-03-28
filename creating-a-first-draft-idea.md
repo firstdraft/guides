@@ -32,7 +32,7 @@ For all one-to-manies, decide which table should get the foreign key column, and
 
 For all many-to-manies, decide on a name for the join model.
 
-Add your associations, and any required join models and foreign keys, to your [diagram in First Draft](https://ideas.firstdraft.com/).
+Add your associations, and any required join models and foreign keys, to your [diagram in First Draft](https://ideas.firstdraft.com/), as we demonstrated in class. Review the Day 1 recording if necessary.
 
 **You should now have a complete listing of all your tables and columns, including those needed to support your associations.**
 
