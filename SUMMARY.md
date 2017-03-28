@@ -1,15 +1,16 @@
 # Summary
 
 * [Introduction](README.md)
+* [Setting Up Your Computer](setting-up-your-computer.md)
 * [Installing Atom](installing-atom.md)
 * [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
 * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
+* [Design Readings and Resources](design-readings-and-resources.md)
 * [Building Your Own App](building-your-own-app.md)
   * [Planning Your Idea](planning-your-idea.md)
   * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
   * [Diagramming an Idea with First Draft](diagramming-an-idea-with-first-draft.md)
   * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
-* [Design Readings and Resources](design-readings-and-resources.md)
 * [Introduction to Ruby](introduction-to-ruby.md)
   * [Primary Syntax](primary-syntax.md)
   * [Fundamental Classes](fundamental-classes.md)
@@ -23,5 +24,5 @@
 * [CRUD with Ruby](crud-with-ruby.md)
 * [starter\_generators](starter_generators.md)
 * [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
-* Creating a First Draft Idea
+* Setting Up Your Computer
 
