@@ -27,5 +27,4 @@ In rough order of how often I use them.
  - [Firefox Tilt3D Extension](https://addons.mozilla.org/en-US/firefox/addon/tilt/) - A tool to help you visualize what's going wrong with your layout.
  - [CSS3 Generator](http://css3gen.com/box-shadow/) - Generate CSS box shadows, text shadows, and gradients. 
  - [Subtle Patterns](http://subtlepatterns.com) - A library of free, tileable, subtle background images.
- - [Adobe Color](http://color.adobe.com) - Generate complementary colors.
- 
+ - [Adobe Color](http://color.adobe.com) - Generate complementary colors. 
