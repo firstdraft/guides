@@ -2,6 +2,8 @@
 
 A collection of guides and cheatsheets for Application Development.
 
+**Please note:** This collection is a work in progress. Some guides are incomplete; and they are not meant to be read in sequence, one after the other, unless they directly link to one another.
+
 * [Installing Atom](installing-atom.md)
 * [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
 * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
