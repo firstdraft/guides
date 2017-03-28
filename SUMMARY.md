@@ -8,7 +8,7 @@
   * [Getting Started With GitHub](getting-started-with-github.md)
 * [Introduction to HTML](introduction-to-html.md)
    * [Friendbook Exercise Guide](friendbook-exercise-guide.md)
-* [Design Readings and Resources](design-readings-and-resources.md)
+   * [Design Readings and Resources](design-readings-and-resources.md)
 * [Building Your Own App](building-your-own-app.md)
   * [Planning Your Idea](planning-your-idea.md)
   * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
