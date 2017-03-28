@@ -11,7 +11,7 @@ You should think of a couple of pain points in your life that you would like to 
 > The verb you want to be using with respect to startup ideas is not "think up" but "notice."
 > — [Paul Graham, "How to Get Startup Ideas"](http://paulgraham.com/startupideas.html)
 
-Don't try to think up billion dollar startup ideas; our goal here is to discover a good first learning project, not to change the world just yet. Try to notice a real annoyance at work or at home or with friends that we can solve, even if for just one user -- you.
+Don't try to think up billion dollar startup ideas; our goal here is to discover a good first learning project, not to change the world just yet. Try to notice a real annoyance at work or at home or with friends that we can solve, even if for just one user — you.
 
 For example, [here is a project that a student made last quarter][2] -- a simple app that lets you keep track of whether or not it's time to dry clean pieces of clothing. Another student made a nice app that suggests which of your credit cards to use in order to maximize rewards based on what kind of purchase you are about to make.
 
