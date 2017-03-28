@@ -51,13 +51,13 @@ First, brain-dump all the features you can possibly imagine as user stories.
 
 **Then, re-order them by priority.** In Trello, you can drag-and-drop the cards to re-order them.
 
-Then, crucially, ask yourself: **what is the absolute minimum featureset I can get away with in the prototype?** The prototype's purpose is just to validate whether or not the idea is feasible and whether the core value is actually valuable. **Be ruthless in eliminating all non-essential user stories for this first draft.**
+Then, crucially, ask yourself: **what is the absolute minimum featureset I can get away with in this first experimental prototype?** The prototype's purpose is just to validate whether or not the idea is feasible and whether the core value is actually valuable. **Be ruthless in eliminating all non-essential user stories for this first draft.**
 
 Move **only the essential stories** to the First Draft column.
 
 ## Domain Modeling
 
-Now that we've identified the features we want to include in our prototype, from a user's perspective, it's finally time to start thinking about how we're actually going to code it up.
+Now that we've identified the features we want to include in our experiment, it's finally time to start thinking about how we're actually going to code it up.
 
 The primary thing we need to do is **identify the tables and columns** we need in our database to keep track of all the information required to support the user stories. This is known as **domain modeling**. If we can get this part right, the rest of the code practically writes itself (trust me, you'll see).
 
