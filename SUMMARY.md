@@ -25,4 +25,5 @@
 * [CRUD with Ruby](crud-with-ruby.md)
 * [starter\_generators](starter_generators.md)
 * Introduction to HTML
+* [Friendbook Exercise Guide](friendbook-exercise-guide.md)
 
