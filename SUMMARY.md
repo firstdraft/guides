@@ -2,10 +2,10 @@
 
 * [Introduction](README.md)
 * [Setting Up Your Computer](setting-up-your-computer.md)
-* [Installing Atom](installing-atom.md)
-* [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
-* [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
-* [Getting Started With GitHub](getting-started-with-github.md)
+   * [Installing Atom](installing-atom.md)
+   * [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
+   * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
+   * [Getting Started With GitHub](getting-started-with-github.md)
 * [Design Readings and Resources](design-readings-and-resources.md)
 * [Building Your Own App](building-your-own-app.md)
   * [Planning Your Idea](planning-your-idea.md)
@@ -25,5 +25,4 @@
 * [CRUD with Ruby](crud-with-ruby.md)
 * [starter\_generators](starter_generators.md)
 * [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
-* Getting Started With GitHub
 
