@@ -62,4 +62,4 @@ Move **only the essential stories** to the First Draft column.
 Now that we've planned out what we want to build, it's time to [diagram an Idea in First Draft](creating-a-first-draft-idea.md).
 
 
-[1]: http://www.programmableweb.com/apis/directory
+[^1]: http://www.programmableweb.com/apis/directory
