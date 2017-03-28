@@ -21,5 +21,4 @@
 * [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
 * [Idea Mapping](idea-mapping.md)
 * [Management Readings](management-readings.md)
-* [Photogram Guide](photogram-guide.md)
 
