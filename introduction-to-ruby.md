@@ -1,9 +1,12 @@
 # Welcome
 
-Welcome! This introduction is meant to be a companion to [this Rails application](https://github.com/firstdraft/ruby_intro). Please go download it and launch it by following the instructions in the README. If it's your first time launching a **Ruby on Rails** application — congratulations!
+This is a minimal introduction to the Ruby programming language, intended to get you far enough to begin using the Ruby on Rails web application framework.
 
-<iframe src="https://player.vimeo.com/video/210515900" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+You should work along with this intro by downloading [this Rails application](https://github.com/firstdraft/ruby_intro) and launching it. If it's your first time launching a Rails app — congratulations!
 
+#### Getting Started Video
+
+## The shortcomings of HTML
 
 What is Ruby on Rails? To answer that, first consider what we can and can't do with plain old HTML:
 
