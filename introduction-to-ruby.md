@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome! You just launched a **Ruby on Rails** application. Congratulations!
+Welcome! This introduction is meant to be a companion to this Rails application. Please go download it and launch it by following the instructions in the README. If it's your first time launching a **Ruby on Rails** application — congratulations!
 
 What is Ruby on Rails? To answer that, first consider what we can and can't do with plain old HTML:
 
