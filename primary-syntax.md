@@ -236,6 +236,7 @@ So, in addition to `object.method`, **the syntax you need to know like the back 
 
 ```ruby
 storage_box = the_final_value.resulting_from_this(expression).will_be_stored
+# This code won't actually work
 ```
 
 *First*, the expression on the right will be evaluated until there are no instructions left and there's just a piece of data remaining.
@@ -264,7 +265,7 @@ Rubyists strive to choose descriptive variable names, no matter how long they ar
 That's it for the primary syntax of Ruby!
 
 ```
-storage_box = object.method(argument1, argument2, ...)
+storage_box = object.method(argument1, argument2, #etc)
 ```
 
 Now, we need to spend some time *expanding our vocabulary*. Let's start with [the most fundamental built-in classes that Ruby gives us](fundamental-classes.md).
