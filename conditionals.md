@@ -17,26 +17,24 @@ This becomes useful in conjunction with the `if` statement, which allows us to d
 Let's see how this works. Locate the file called `app/controllers/programs_controller.rb` and let's write some code where it says:
 
 ```ruby
-def conditionals
+def home
   # Your code goes here
 
   @your_output = "Replace this string with your output"
 
-  render("programs/conditionals.html.erb")
+  render("programs/home.html.erb")
 end
 ```
 
 First, try this:
 
 ```ruby
-def conditionals
+def home
   if 1 < 2
-    message = "duh"
+    @your_output = "duh"
   end
 
-  @your_output = message
-
-  render("programs/conditionals.html.erb")
+  render("programs/home.html.erb")
 end
 ```
 
@@ -51,14 +49,18 @@ Ok, here's the deal with `if`:
 You can also have _multi-branch_ `if` statements:
 
 ```ruby
-the_number = rand(100)
+def home
+  the_number = rand(100)
 
-if the_number < 10
-  message = "It's going to be your lucky day today"
-elsif the_number > 90
-  message = "Don't leave home today"
-else
-  message = "It'll be an okay day today"
+  if the_number < 25
+    @your_output = "It's going to be your lucky day today"
+  elsif the_number > 75
+    @your_output = "Don't leave home today"
+  else
+    @your_output = "It'll be an okay day today"
+  end
+
+  render("programs/home.html.erb")
 end
 ```
 
@@ -82,3 +84,5 @@ Finally, another handy thing to have in your toolbelt are the **logical operator
 Basically, `&&` is stricter than `||`; both comparisons have to be true in order for the whole statement to be true when combined with `&&`; either one being true is sufficient for `||`.
 
 With that, you have all the tools you need to start building some interesting, dynamic applications!
+
+Challenge: Can you write a program that randomly chooses between "rock", "paper", and "scissors", and displays it on the page on each refresh?
