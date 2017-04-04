@@ -34,7 +34,7 @@ So, we need to learn a *general purpose language* in addition to HTML, so that w
 
 There are many general purpose programming languages, but the one that we're going to learn is called Ruby. It can do all three of the above things, and much more.
 
-Let's give it a try right now -- in the dark box on the right side of this window, type the following after the `>>` prompt and press <kbd>return</kbd> after each line.
+Let's give it a try right now. In your `rails console` type the following after the prompt and press <kbd>return</kbd> after each line.
 
 ### Simple math
 
@@ -45,29 +45,35 @@ Let's give it a try right now -- in the dark box on the right side of this windo
 ### Random numbers
 
 ```ruby
-rand(3)
+rand(6)
 ```
 
 Try it again  (you can just press the up arrow to get back your last command):
 
 ```ruby
-rand(3)
+rand(6)
 ```
 
-Try it again if you have to until you get a different number 🎲
+Try it again if you have to until you get a different number 🎲🎲
+
+### Getting un-messed up
+
+This might be a good time to point out that if you make a mistake while entering an expression into `rails console` — let's say for example that you forgot a closing parenthesis — it's possible to get into a *weird state* where you press <kbd>return</kbd> and nothing happens. It's still waiting for that closing parenthesis, and then you start typing more commands, and it gets confused, and then you get confused.
+
+If something like this happens, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to break out of the weird state and reset back to a clean state. You can then use the up arrow to scroll back through your history and try to fix the malformed command.
 
 ### Comparison statements
 
 (Only type the stuff before the `#`; the stuff after are known as *code comments*, and are just there as notes to ourselves. They have no effect on the program.)
 
 ```ruby
-1 < 2          # "1 is less than 2"
-2 < 1          # "2 is less than 1"
-24*365 > 10000 # There are more than 10,000 hours in a year
-1 == 1         # "1 is equivalent to 1"
-1 == 2         # "1 is equivalent to 2"
-1 != 1         # "1 is NOT equivalent to 1"
-1 != 2         # "1 is NOT equivalent to 2"
+1 < 2           # "1 is less than 2"
+2 < 1           # "2 is less than 1"
+24*365 > 10000  # There are more than 10,000 hours in a year
+1 == 1          # "1 is equivalent to 1"
+1 == 2          # "1 is equivalent to 2"
+1 != 1          # "1 is NOT equivalent to 1"
+1 != 2          # "1 is NOT equivalent to 2"
 ```
 
 ### Strings
