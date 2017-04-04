@@ -154,11 +154,7 @@ Aha! `NoMethodError: undefined method 'downcase' for 9:Fixnum`. It looks scary, 
 
 In this case, it is saying: "Hey, dummy -- you can't downcase 9, which is a number." Fair enough. (`Fixnum` means "integer", as opposed to `Float` which means "decimal number". Almost all programming languages use two distinct data types for those two things.)
 
-You might have noticed by now that when you start typing methods in the dark window on the right, it tries to autocomplete them for you. So when you type `"Hello".down`, it suggests `"Hello".downcase`. You can accept the suggestion by pressing <kbd>tab</kbd>.
-
-Why, then, when you typed `9.down` didn't it suggest `9.downcase`? In fact, even when you type almost all of it, `9.downcas`, it still doesn't? Simply because it looks on the left side of the dot, it sees that the object is a member of the `Fixnum` class, and it knows that there isn't an instruction by that name that is valid for that class.
-
-And that is precisely what you need to be thinking at all times as you are writing Ruby. **What class of object do I have?** **What methods can I call on this kind of object?**
+At all times as you are writing Ruby, you should be thinking: **What class of object do I have?** **What methods can I call on this kind of object?**
 
 Alright, so the **primary syntax** in Ruby is very simple -- `object.method`. However, here's one small wrinkle: some methods require additional inputs. For example, there is a method called `gsub` which we can call on `String`s, which will substitute characters with other characters. Try it:
 
