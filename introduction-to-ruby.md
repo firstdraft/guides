@@ -34,13 +34,24 @@ So, we need to learn a *general purpose language* in addition to HTML, so that w
 
 There are many general purpose programming languages, but the one that we're going to learn is called Ruby. It can do all three of the above things, and much more.
 
-Let's give it a try right now. In your `rails console` type the following after the prompt and press <kbd>return</kbd> after each line.
+Let's spend a few minutes just getting our hands dirty with Ruby before we describe the theory behind it.
+
+Try out the commands below in your `rails console`. Type each one after the prompt that says `pry(main)>` and press <kbd>return</kbd> after each line, and you will see how Ruby interprets each expression on the next line after the `=>`.
 
 ### Simple math
 
 ```ruby
 24 * 365
 ```
+
+If everything went well, you should see something like this:
+
+```bash
+[1] pry(main)> 24*365
+=> 8760
+```
+
+Now try all the below:
 
 ### Random numbers
 
@@ -90,7 +101,7 @@ That wasn't very interesting, but note that if you left out the quotation marks,
 hello
 ```
 
-Your very first error message! You are going to see a *lot* of these -- 99% of developing software is trying to figure out error messages. They might look scary at first, but later on they will become helpful old friends!
+Your very first error message! You are going to see a *lot* of these — 99% of developing software is trying to figure out error messages. They might look scary at first, but later on they will become helpful old friends!
 
 Anyway, let's do something more interesting with strings:
 
@@ -144,11 +155,11 @@ b
 c
 ```
 
-(Note that here we are using a single-equals sign, `=`, the **variable assignment operator**. Above, while doing comparisons, we used the *completely and totally different* double-equals sign, `==`, the **logical equivalence operator**.)
+(Note that here we are using a single-equals sign, `=`, the **variable assignment operator**. Above, while doing comparisons, we used the *completely and totally different* double-equals sign, `==`, the **logical equivalence operator**. Mixing up these two operators is a very easy mistake to make, and even experienced devs make it all the time — watch out.)
 
 ### Putting it together
 
-Believe it or not, from these simple building blocks, we can build up much of what happens on the web today. For example, something like
+Believe it or not, from these simple building blocks, we can build up much of what happens on the web today. For example, when Twitter tries to make sure that no one can sign up using the same username as [David Heinemeier Hansson](https://twitter.com/dhh), the creator of Ruby on Rails, even if they try to be sneaky and use mixed-case, they would do something like
 
 ```ruby
 user_input = "DhH"
@@ -157,19 +168,17 @@ user_input == existing_username # double-equals, not single!
 user_input.downcase == existing_username
 ```
 
-is part of the process that Twitter goes through to make sure that no one can sign up using the same username as [David Heinemeier Hansson](https://twitter.com/dhh), the creator of Ruby on Rails, even if they tried to be sneaky and use mixed-case.
-
-Remember our Photogram Database exercise? Figuring out which photos were on a user's timeline -- a seemingly complicated task -- ended up being a long sequence of small and simple steps, like the ones above. Most applications are. It was tedious for us to do it by hand, though, so now we just need to learn enough Ruby vocabulary to teach the computer to do it for us. We'll spend the next several lessons learning just that.
+Remember our Photogram Database exercise? Figuring out which photos were on a user's timeline — a seemingly complicated task — ended up being a long sequence of small and simple steps, like the ones above. Most applications are. It was tedious for us to do it by hand, though, so now we just need to learn enough Ruby vocabulary to teach the computer to do it for us. We'll spend the next several lessons learning just that.
 
 ## Rails
 
 Before we dig in to Ruby, let's talk a little bit more about Ruby ***on Rails***.
 
-Ruby, as a general purpose language, can be used for just about anything -- producing music[^1], flying drones[^2] -- you name it. What *we* want to do with it, though, is produce useful HTML pages and send them to our users.
+Ruby, as a general purpose language, can be used for just about anything — producing music[^1], flying drones[^2] — you name it. What *we* want to do with it, though, is produce useful HTML pages and send them to our users.
 
-“Ruby on Rails” is just a name for a bunch of pre-written Ruby code -- like what you downloaded when you began this project. It already includes, out of the box, all of the plumbing involved with delivering the output of Ruby programs to users through browsers.
+“Ruby on Rails” is just a name for a bunch of pre-written Ruby code — like what you downloaded when you began this project. It already includes, out of the box, all of the plumbing involved with delivering the output of Ruby programs to users through browsers.
 
-That way, instead of re-inventing the wheel for all that first, we can just get right down to the fun stuff -- bringing our ideas to life!
+That way, instead of re-inventing the wheel for all that first, we can just get right down to the fun stuff — bringing our ideas to life!
 
 Next, let's learn the [Primary Syntax of Ruby](primary-syntax.md).
 
