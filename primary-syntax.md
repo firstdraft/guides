@@ -257,7 +257,7 @@ When you are choosing your variable names, there are some rules:
  - names can only contain **lowercase** letters, numbers, and underscores
  - names cannot begin with a number
 
-Rubyists strive to choose descriptive variable names, no matter how long they are, so that the code reads almost like English -- avoid naming your variables `x`, `y`, and `z`. Use underscores to separate words in multiple word variable names.
+Rubyists strive to choose descriptive variable names, no matter how long they are, so that the code reads almost like English — avoid naming your variables `x`, `y`, and `z`. Use underscores to separate words in multiple word variable names.
 
 ## Conclusion
 
