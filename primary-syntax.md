@@ -265,7 +265,7 @@ Rubyists strive to choose descriptive variable names, no matter how long they ar
 That's it for the primary syntax of Ruby!
 
 ```
-storage_box = object.method(argument1, argument2, ...) # etc
+storage_box = object.method(argument1, argument2, ...)
 ```
 
 Now, we need to spend some time *expanding our vocabulary*. Let's start with [the most fundamental built-in classes that Ruby gives us](fundamental-classes.md).
