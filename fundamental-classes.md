@@ -1,6 +1,6 @@
 # Ruby Fundamental Classes
 
-Let's get acquainted with some of the basic Ruby classes.
+Let's get acquainted with some of the basic Ruby classes. Try the following in `rails console`.
 
 ## Fixnum
 
@@ -159,4 +159,4 @@ Then, you should, in order:
 
 ## Next Up
 
-Alright! It's been fun playing around with Ruby in the console on the right, but how would we actually builds some real, [permanent programs](permanent-programs.md) that we can share with our friends? That's what we'll see next.
+Alright! It's been fun playing around with Ruby in the `rails console`, but how would we actually builds some real, [permanent programs](permanent-programs.md) that we can share with our friends? That's what we'll see next.
