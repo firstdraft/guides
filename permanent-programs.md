@@ -2,7 +2,7 @@
 
 Now that you're comfortable writing some Ruby, let's learn how to write some real programs!
 
-It's not very much fun typing commands over and over into the window on the right, only to have them forever lost if you close the tab. So let's write them down permanently into a source code file, just like you did with your HTML.
+It's not very much fun typing commands over and over into `rails console`, only to have them forever lost if you close Terminal. So let's write them down permanently into a source code file, just like you did with your HTML.
 
 Open the folder of code that you downloaded at the beginning of this project in Atom. In the drawer on the left, locate the file `app/controllers/programs_controller.rb`.
 
@@ -10,12 +10,12 @@ In that file, you should see some code that looks like this:
 
 ```ruby
 class ProgramsController < ApplicationController
-  def permanent_programs
+  def home
     # Your code goes here.
 
     @your_output = "Replace this string with your output"
 
-    render("programs/permanent_programs.html.erb")
+    render("programs/home.html.erb")
   end
 end
 ```
