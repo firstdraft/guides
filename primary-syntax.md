@@ -128,9 +128,9 @@ Each class of data has its own set of **instructions** that it can perform:
 
 Ruby is known as a "batteries included" language because it includes so many instructions out-of-the-box, saving the programmer the trouble of having to re-invent the wheel.
 
-Finally, *we can even make up our own nouns and verbs* and add them to the language. For example, we can add a data type `Restaurant`, teach it to calculate its average rating, and add that to its instruction set. Ruby programmers very often share these new classes with one another, making the language ever more powerful -- Rails itself is largely just a collection of these new nouns and verbs related to web applications!
+Finally, *we can even make up our own nouns and verbs* and add them to the language. For example, we can add a data type `Restaurant`, teach it to calculate its average rating, and add that to its instruction set. Ruby programmers very often share these new classes with one another, making the language ever more powerful — Rails itself is largely just a collection of these new nouns and verbs related to web applications!
 
-#### `object.method`
+#### Ruby's Primary Syntax: `object.method`
 
 So, in terms of **data** and **instructions**, Ruby comes with a powerful set out-of-the-box *and* is infinitely extensible! That's good news. Here's even more good news: to access all of this power, the **primary syntax** is simple:
 
@@ -144,13 +144,13 @@ On the right side of the dot we have our instruction, or, formally, a **method**
 
 In this case, we asked `"Hello"`, which is a `String`, to `downcase` itself, which it happily does.
 
-What if we try asking the number `9` to downcase itself? Try it right now in the dark box on the right side of this screen after the `>>` prompt and press <kbd>return</kbd>.
+What if we try asking the number `9` to downcase itself? Try it right now in `rails console`.
 
 ```ruby
 9.downcase
 ```
 
-Aha! `NoMethodError: undefined method 'downcase' for 9:Fixnum`. It looks scary, but one of your main objectives during this course is to **not panic** when you see an error message. Slow down, read it carefully, and see if you can make any sense of it at all. Over time, you will find that they are very helpful -- and you will miss them when they're gone.
+Aha! `NoMethodError: undefined method 'downcase' for 9:Fixnum`. It looks scary, but one of your main objectives during this course is to **not panic** when you see an error message. Slow down, read it carefully, and see if you can make any sense of it at all. Over time, you will find that they are very helpful — and you will miss them when something is going wrong *silenty*.
 
 In this case, it is saying: "Hey, dummy -- you can't downcase 9, which is a number." Fair enough. (`Fixnum` means "integer", as opposed to `Float` which means "decimal number". Almost all programming languages use two distinct data types for those two things.)
 
