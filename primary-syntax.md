@@ -152,11 +152,11 @@ What if we try asking the number `9` to downcase itself? Try it right now in `ra
 
 Aha! `NoMethodError: undefined method 'downcase' for 9:Fixnum`. It looks scary, but one of your main objectives during this course is to **not panic** when you see an error message. Slow down, read it carefully, and see if you can make any sense of it at all. Over time, you will find that they are very helpful — and you will miss them when something is going wrong *silenty*.
 
-In this case, it is saying: "Hey, dummy -- you can't downcase 9, which is a number." Fair enough. (`Fixnum` means "integer", as opposed to `Float` which means "decimal number". Almost all programming languages use two distinct data types for those two things.)
+In this case, it is saying: "Hey, dummy — you can't downcase 9, which is a number." Fair enough. (`Fixnum` means "integer", as opposed to `Float` which means "decimal number". Almost all programming languages use two distinct data types for those two things.)
 
 At all times as you are writing Ruby, you should be thinking: **What class of object do I have?** **What methods can I call on this kind of object?**
 
-Alright, so the **primary syntax** in Ruby is very simple -- `object.method`. However, here's one small wrinkle: some methods require additional inputs. For example, there is a method called `gsub` which we can call on `String`s, which will substitute characters with other characters. Try it:
+Alright, so the **primary syntax** in Ruby is very simple — `object.method`. However, here's one small wrinkle: some methods require additional inputs. For example, there is a method called `gsub` which we can call on `String`s, which will substitute characters with other characters. Try it:
 
 ```ruby
 "Hello".gsub("l", "z")
@@ -188,7 +188,9 @@ One last thing: you can **chain** methods, like so:
 "D+h+H".gsub("+", "").downcase
 ```
 
-Ruby evaluates the expression from left to right, replacing each `object.method` with the `object` that it returns and then evaluating the next `object.method`. So you have to be careful and make sure that the `object` that the first `object.method` returns matches up with the second `method.` **What class of object do I have?** **What methods can I call on this kind of object?**
+Ruby evaluates the expression from left to right, replacing each `object.method` expression with the `object` that it returns and then evaluating the next `object.method`.
+
+So you have to be careful and make sure that the `object` that the first `object.method` returns matches up with the second `method.` **What class of object do I have?** **What methods can I call on this kind of object?**
 
 #### Variables
 
