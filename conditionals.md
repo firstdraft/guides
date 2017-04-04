@@ -83,6 +83,8 @@ Finally, another handy thing to have in your toolbelt are the **logical operator
 
 Basically, `&&` is stricter than `||`; both comparisons have to be true in order for the whole statement to be true when combined with `&&`; either one being true is sufficient for `||`.
 
-With that, you have all the tools you need to start building some interesting, dynamic applications!
-
 Challenge: Can you write a program that randomly chooses between "rock", "paper", and "scissors", and displays it on the page on each refresh?
+
+## Next Up
+
+As you might be starting to notice, computers just do very simple things, but they do them really fast. And one of the most useful things to do have computers do quickly for us is process big lists of things. For that, we need to learn about [Loops in Ruby](loops-in-ruby.md).
