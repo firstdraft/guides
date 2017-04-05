@@ -65,7 +65,7 @@ We could do all of our looping using the `while` statement, but Ruby gives us an
 
 Since most of our looping as web developers is to do interesting things with elements in `Array`s, let me instead just show you a purpose-built `Array` method that we're going to use 1000 times a day: `.each`.
 
-Let's suppose that I have an array of numbers. For some reason, let's suppose that I want to square each number in the array and then add up all the squares. I could do that work with the following code (which you should try out in `app/controllers/permanent_programs.rb` and view the output at [http://localhost:3000/second](http://localhost:3000/second)):
+Let's suppose that I have an array of numbers. For some reason, let's suppose that I want to square each number in the array and then add up all the squares. I could do that work with the following code (which you should try out in `app/controllers/programs_controller.rb` and view the output at [http://localhost:3000/second](http://localhost:3000/second)):
 
 ```ruby
 def second_program
@@ -113,4 +113,12 @@ Soon, you'll be embedding Ruby loops in your view templates to create beautiful 
 ```
 
 So it's important to clear up fuzziness now about the pure Ruby parts of it.
+
+Challenge: If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Can you find the sum of all the multiples of 3 or 5 below 1000?
+
+Try writing a program in `app/controllers/programs_controller.rb`
+
+
 
