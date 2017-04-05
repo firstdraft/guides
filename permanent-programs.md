@@ -16,7 +16,7 @@ In that file, you should see some code that looks like this at the top:
 ```ruby
 class ProgramsController < ApplicationController
   def home
-    # Your code goes here.
+    # Your code goes below.
 
     @your_output = "Replace this string with your output"
 
@@ -37,7 +37,7 @@ Even better, you can type a whole succession of expressions on the lines above t
 
 ```ruby
 def home
-  # Your code goes here.
+  # Your code goes below.
     
   my_birthday = Time.parse("July 1st, 2000")
   today = Time.now
@@ -79,7 +79,7 @@ You could also create multiple instance variables back in `programs_controller.r
 
 ```ruby
 def home
-  # Your code goes here.
+  # Your code goes below.
     
   my_birthday = Time.parse("July 1st, 2000")
   today = Time.now

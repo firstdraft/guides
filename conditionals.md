@@ -18,7 +18,7 @@ Let's see how this works. Locate the file called `app/controllers/programs_contr
 
 ```ruby
 def first_program
-  # Your code goes here.
+  # Your code goes below.
 
   @your_output = "Replace this string with your output"
 
@@ -32,7 +32,7 @@ Next, let's try this:
 
 ```ruby
 def first_program
-  # Your code goes here.
+  # Your code goes below.
   
   if 1 < 2
     @your_output = "duh"
@@ -54,7 +54,7 @@ You can also have _multi-branch_ `if` statements:
 
 ```ruby
 def first_program
-  # Your code goes here.
+  # Your code goes below.
 
   the_number = rand(100)
 
