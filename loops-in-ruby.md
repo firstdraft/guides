@@ -58,8 +58,8 @@ We could do this using the `while` statement, but let me instead just show you a
  squared_numbers = []            # Create an empty array
  
  numbers.each do |num|           # For each element in numbers, (refer to it as "num")
-   square = num * num
-   squared_numbers.push(square)  # Square "num" and push into squared_numbers
+   square = num * num            # Square the number
+   squared_numbers.push(square)  # Push it into the squared_numbers array
  end
   
  squared_numbers.sum             # Sum the squares
