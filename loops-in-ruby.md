@@ -102,7 +102,7 @@ Soon, you'll be embedding Ruby loops in your view templates to create beautiful 
 
 ```erb
 <% timeline_photos.each do |the_photo| %>
-  <div class="card">
+  <div class="photo-card">
     <img src="<%= the_photo.image_source %>">
     
     <p><%= the_photo.caption %></p>
