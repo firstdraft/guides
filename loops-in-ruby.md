@@ -5,9 +5,9 @@
 Consider the following program, which utilizes an `if` statement:
 
 ```ruby
-a = []
+a = []                    # Starting off an empty array
 
-if a.length < 3  # This is true, since a is empty
+if a.length < 3           # This is true, since a is empty
   new_element = rand(100)
   a.push(new_element)
 end
