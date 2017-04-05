@@ -113,9 +113,9 @@ Now you can embed it in your view template inside the special **embedded Ruby (E
           a.k.a. <%= @last_then_first %>
         </h2>
         
-        <h3>
+        <p>
           aged exactly <%= @your_output %> seconds
-        </h3>
+        </p>
       </div>
 
     </div>
