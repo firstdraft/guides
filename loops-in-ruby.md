@@ -97,7 +97,7 @@ Soon, you'll be putting both HTML and Ruby together to create beautiful pages wi
   <div class="photo">
     <img src="<%= photo.image_source %>">
     
-    <p class="caption"><%= photo.caption %></p>
+    <p><%= photo.caption %></p>
   </div>
 <% end %>
 ```
