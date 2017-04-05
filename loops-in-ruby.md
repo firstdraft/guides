@@ -1,6 +1,8 @@
 # Loops in Ruby
 
-Consider the `if` statement:
+## Conditionally doing something once
+
+Consider the following program, which utilizes an `if` statement:
 
 ```ruby
 a = []
@@ -16,6 +18,8 @@ len = a.length
 We start off with an empty array, `a`. If its length is less than `3` (this is true, since length is currently `0`), we push a new random number into it.
 
 Once Ruby reaches the `end` statement paired with an `if`, it proceeds forward and continues to execute the rest of the code (whether the `if` condition was true or not). So `len` is now `1`. 
+
+## Conditionally doing something multiple times
 
 Now, consider almost identical code, but with the `if` keyword swapped for another keyword -- `while`:
 
@@ -44,6 +48,8 @@ So in this case,
  - and `len` ends up being `3`.
 
 What we've seen here is our very first **loop**; code that is executed multiple times. It could be an arbitrary number of times, perhaps even an infinite number of times if we aren't careful.
+
+## The importants of loops
 
 Loops are absolutely essential to doing anything interesting with computing. If you want anything interactive, where the computer does something and then the user does something and then the computer reacts and then the user responds, etc, then you need a loop.
 
