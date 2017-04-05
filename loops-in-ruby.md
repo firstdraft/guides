@@ -118,7 +118,22 @@ Challenge: If we list all the natural numbers below 10 that are multiples of 3 o
 
 Can you find the sum of all the multiples of 3 or 5 below 1000?
 
-Try writing a program in `app/controllers/programs_controller.rb`
+Try writing a program in `app/controllers/programs_controller.rb` within:
 
+```ruby
+def third_program
+  numbers = 1..999.to_a
+
+  # Your code goes here.
+
+  @your_output = "Replace this string with your output"
+
+  render("programs/third_program.html.erb")
+end
+```
+
+I've provided a variable for you, `numbers`, which has an array in it containing the first 999 natural numbers in it.
+
+(Credit for this challenge goes to [Project Euler ](https://projecteuler.net). There are lots more puzzles there for you to practice your Ruby on!)
 
 
