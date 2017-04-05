@@ -6,6 +6,8 @@ It's not very much fun typing commands over and over into `rails console`, only 
 
 First, navigate to [http://localhost:3000](http://localhost:3000) in Chrome. If you don't see anything there, then you need to start up your `rails server` in a new tab of Terminal. Refer to the Getting Started video. You should see "Replace this string with your output" if all goes well.
 
+## Writing some source code
+
 Next, open the folder of code that you downloaded in Atom. In the drawer on the left, locate the file `app/controllers/programs_controller.rb`.
 
 In that file, you should see some code that looks like this:
@@ -44,4 +46,29 @@ class ProgramsController < ApplicationController
 end
 ```
 
-or any other program that you'd like! Just assign the final value that you'd like to appear on this page to the special variable `@your_output`. Now that we know how to write permanent, multiline programs, there's one more thing we need to see before we can write some fun projects: [conditionals](conditionals.md).
+or any other program that you'd like! Just assign the final value that you'd like to appear on this page to the special variable `@your_output`.
+
+## Customizing the output
+
+If you want to, you can start to customize the output, too. Locate the file `app/views/programs/home.html.erb`, which should currently look something like this:
+
+```erb
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="jumbotron">
+        <h1>
+          <%= @your_output %>
+        </h1>
+      </div>
+
+    </div>
+  </div>
+</div>
+```
+
+
+
+
+Now that we know how to write permanent, multiline programs, there's one more thing we need to see before we can write some fun projects: [conditionals](conditionals.md).
