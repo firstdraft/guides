@@ -46,7 +46,7 @@ class ProgramsController < ApplicationController
 end
 ```
 
-or any other program that you'd like! Just keep all of your code between `# Your code goes here` and `render("programs/home.html.erb")`, and assign the final value that you'd like to appear on the page to the special variable `@your_output`. (Variables whose names begin with the letter `@` are called **instance variables**, and are the ones we intend to display to our users.)
+or any other program that you'd like! Just keep all of your code between `# Your code goes here` and `render("programs/home.html.erb")`, and assign the final value that you'd like to appear on the page to the special variable `@your_output`. (Variables whose names begin with the letter `@` are called **instance variables**, and are the ones we intend to display to our users. You can create and use them just like any other variables.)
 
 ## Customizing the output
 
