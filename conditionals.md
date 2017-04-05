@@ -89,7 +89,7 @@ Finally, another handy thing to have in your toolbelt are the **logical operator
 
 Basically, `&&` is stricter than `||`; both comparisons have to be true in order for the whole statement to be true when combined with `&&`; either one being true is sufficient for `||`.
 
-Challenge: Can you write a program that randomly chooses between "rock", "paper", and "scissors", and displays it on the page on each refresh?
+Challenge: Can you write a program that randomly chooses between "rock", "paper", and "scissors", and displays it on the page on each refresh? After that, can you display whether the random choice wins, loses, or ties a choice of "rock"?
 
 ## Next Up
 
