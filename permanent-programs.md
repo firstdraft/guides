@@ -10,7 +10,7 @@ First, navigate to [http://localhost:3000](http://localhost:3000) in Chrome. If 
 
 Next, open the folder of code that you downloaded in Atom. In the drawer on the left, locate the file `app/controllers/programs_controller.rb`.
 
-In that file, you should see some code that looks like this:
+In that file, you should see some code that looks like this at the top:
 
 ```ruby
 class ProgramsController < ApplicationController
