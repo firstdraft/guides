@@ -49,7 +49,7 @@ So in this case,
 
 What we've seen here is our very first **loop**; code that is executed multiple times. It could be an arbitrary number of times, perhaps even an infinite number of times if we aren't careful.
 
-## The importants of loops
+## The importance of loops
 
 Loops are absolutely essential to doing anything interesting with computing. If you want anything interactive, where the computer does something and then the user does something and then the computer reacts and then the user responds, etc, then you need a loop.
 
