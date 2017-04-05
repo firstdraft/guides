@@ -59,7 +59,9 @@ But most importantly for us, as web developers: we spend 99% of our time **manag
 
 ## Easier loops in Ruby with `.each`
 
-We could do this using the `while` statement, but let me instead just show you a purpose-built `Array` method that we're going to use 1000 times a day: `.each`:
+We could do all of our looping using the `while` statement, but Ruby gives us an easier way.
+
+Since most of our looping as web developers is to do interesting things with elements in `Array`s, let me instead just show you a purpose-built `Array` method that we're going to use 1000 times a day: `.each`:
 
 ```ruby
  our_numbers = [4, 10, 6]        # Create an array of numbers
