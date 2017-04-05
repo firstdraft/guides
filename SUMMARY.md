@@ -26,5 +26,5 @@
 * [RCAV Flowchart](rcav-flowchart.md)
 * [CRUD with Ruby](crud-with-ruby.md)
 * [starter\_generators](starter_generators.md)
-* [Friendbook Exercise Guide](friendbook-exercise-guide.md)
+* [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
 
