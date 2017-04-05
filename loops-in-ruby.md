@@ -65,18 +65,24 @@ We could do all of our looping using the `while` statement, but Ruby gives us an
 
 Since most of our looping as web developers is to do interesting things with elements in `Array`s, let me instead just show you a purpose-built `Array` method that we're going to use 1000 times a day: `.each`.
 
-Let's suppose that I have an array of numbers. For some reason, let's suppose that I want to square each number in the array and then add up all the squares. I could do that work with the following code (which you should try out in `app/controllers/permanent_programs.rb`):
+Let's suppose that I have an array of numbers. For some reason, let's suppose that I want to square each number in the array and then add up all the squares. I could do that work with the following code (which you should try out in `app/controllers/permanent_programs.rb` and view the output at [http://localhost:3000/second](http://localhost:3000/second)):
 
 ```ruby
- our_numbers = [4, 10, 6]        # Create an array of numbers
- squared_numbers = []            # Create an empty array
+def second_program
+  # Your code goes here.
  
- our_numbers.each do |num|       # For each element in numbers, (refer to it as "num")
-   square = num * num            # Square the number
-   squared_numbers.push(square)  # Push it into the squared_numbers array
- end
+  our_numbers = [4, 10, 6]        # Create an array of numbers
+  squared_numbers = []            # Create an empty array
+ 
+  our_numbers.each do |num|       # For each element in numbers, (refer to it as "num")
+    square = num * num            # Square the number
+    squared_numbers.push(square)  # Push it into the squared_numbers array
+  end
   
- @your_output = squared_numbers.sum  # Sum the squares
+  @your_output = squared_numbers.sum  # Sum the squares
+   
+  render("programs/second_program.html.erb")
+end
 ```
 
 Here's how `.each` works:
