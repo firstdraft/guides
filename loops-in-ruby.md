@@ -96,7 +96,7 @@ Here's how `.each` works:
  
 So, while `while` is neat to know about, the most important looping method that you need to understand right now is `.each`.
 
-The block variable `|num|` part takes a bit to get your head around — it's just a name we make up for use within the `do` and `end` block to refer to each element in the array as the loop is being executed. I could have called it `zebra` if I wanted to.
+The hardest part, I think, is getting your head around the block variable `|num|`. It takes some practice. Try to remember that it's just a name that we make up for use within the `do` and `end` block to refer to each element in the array as the loop is being executed. I could have called it `zebra` if I wanted to.
 
 Soon, you'll be embedding Ruby loops in your view templates to create beautiful pages with code that looks something like this:
 
