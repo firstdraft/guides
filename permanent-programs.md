@@ -21,6 +21,8 @@ class ProgramsController < ApplicationController
 
     render("programs/home.html.erb")
   end
+  
+  # There's some other stuff below this; ignore for now
 end
 ```
 
