@@ -74,7 +74,7 @@ Let's suppose that I have an array of numbers. For some reason, let's suppose th
    squared_numbers.push(square)  # Push it into the squared_numbers array
  end
   
- @your_output = squared_numbers.sum             # Sum the squares
+ @your_output = squared_numbers.sum  # Sum the squares
 ```
 
 Here's how `.each` works:
