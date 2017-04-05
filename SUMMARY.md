@@ -13,6 +13,7 @@
   * [Planning Your Idea](planning-your-idea.md)
   * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
   * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
+* [Command Line Basics](command-line-basics.md)
 * [Introduction to Ruby](introduction-to-ruby.md)
   * [Primary Syntax](primary-syntax.md)
   * [Fundamental Classes](fundamental-classes.md)
@@ -26,5 +27,4 @@
 * [starter\_generators](starter_generators.md)
 * [Friendbook Exercise Guide](friendbook-exercise-guide.md)
 * [The Rails Console](the-rails-console.md)
-* [Command Line Basics](command-line-basics.md)
 
