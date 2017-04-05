@@ -69,7 +69,7 @@ Let's suppose that I have an array of numbers. For some reason, let's suppose th
 
 ```ruby
 def second_program
-  # Your code goes here.
+  # Your code goes below.
  
   our_numbers = [4, 10, 6]        # Create an array of numbers
   squared_numbers = []            # Create an empty array
