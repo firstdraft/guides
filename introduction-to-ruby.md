@@ -2,9 +2,15 @@
 
 This is a minimal introduction to the Ruby programming language, intended to get you far enough to begin using the Ruby on Rails web application framework.
 
-You should work along with this intro by downloading [this Rails application](https://github.com/firstdraft/ruby_intro) and launching it. If it's your first time launching a Rails app — congratulations!
+You should work along with this intro by downloading [this Rails application](https://github.com/firstdraft/ruby_intro) and launching it.
 
-#### Getting Started Video
+## Mac Getting Started Video
+
+<iframe src="https://player.vimeo.com/video/211587732" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+## Windows Getting Started Video
+
+<iframe src="https://player.vimeo.com/video/211593688" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## The shortcomings of HTML
 
