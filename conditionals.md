@@ -93,8 +93,7 @@ Basically, `&&` is stricter than `||`; both comparisons have to be true in order
 
 Can you write a program that randomly chooses between "rock", "paper", and "scissors", and displays it on the page on each refresh?
 
-After that, can you display whether the random choice wins, loses, or ties a choice of "rock"?
-
+After that, can you display whether the random choice would have won, lost, or tied against "rock"?
 ## Next Up
 
 As you might be starting to notice, computers just do very simple things, but they do them really fast. And one of the most useful things to do have computers do quickly for us is process big lists of things. For that, we need to learn about [Loops in Ruby](loops-in-ruby.md).
