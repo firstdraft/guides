@@ -57,7 +57,7 @@ Loops are absolutely essential to doing anything interesting with computing. If 
 
 In fact, when you started up the `rails server`, you basically started a program that went into an infinite loop of listening for web requests so that it could send back responses (and that's why you have to force it to shut down with <kbd>Ctrl</kbd>+<kbd>C</kbd>).
 
-But most importantly for us, as web developers: we spend 99% of our time **managing lists of things**. Lists of photos, likes, messages, events, reviews, users, tweets, whatever. These objects usually come to us in `Array`s, and we usually need to loop across (or "iterate over") the array and do some work with each element in the array (like draw some nice HTML around it). **So we need to get *really* good at looping over arrays.**
+But most importantly for us, as web developers: we spend 99% of our time **managing lists of things**. Lists of photos, likes, messages, events, reviews, users, tweets, whatever. These objects usually come to us in `Array`s, and we usually need to loop across (or "iterate over") the array and do some work with each element in the array (like draw some nice HTML around it). **So we need to get *really* good at iterating over arrays.**
 
 ## Easier loops in Ruby with `.each`
 
