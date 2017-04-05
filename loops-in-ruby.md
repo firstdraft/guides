@@ -114,7 +114,9 @@ Soon, you'll be embedding Ruby loops in your view templates to create beautiful 
 
 So it's important to clear up fuzziness now about the pure Ruby parts of it.
 
-Challenge: If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+## Challenge
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
 Can you find the sum of all the multiples of 3 or 5 below 1000?
 
