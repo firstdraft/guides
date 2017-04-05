@@ -107,11 +107,11 @@ Now you can embed it in your view template inside the special **embedded Ruby (E
       <div class="jumbotron">
         <h1>
           <%= @first_then_last %>
+          
+          <small>
+            a.k.a. <%= @last_then_first %>
+          <small>
         </h1>
-        
-        <h2>
-          a.k.a. <%= @last_then_first %>
-        </h2>
         
         <p>
           aged exactly <%= @your_output %> seconds
