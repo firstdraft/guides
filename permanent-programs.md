@@ -37,7 +37,7 @@ Even better, you can type a whole succession of expressions on the lines above t
 
 ```ruby
 def home
-# Your code goes here.
+  # Your code goes here.
     
   my_birthday = Time.parse("July 1st, 2000")
   today = Time.now
