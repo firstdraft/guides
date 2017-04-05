@@ -90,7 +90,7 @@ Here's how `.each` works:
  - When we have an array and we need to do some work with every element in it, we use `.each`.
  - We put the `do` keyword next to it.
  - The `do` keyword has a matching `end` keyword, and the code to be repeated goes between them. (The whole thing from `do` through `end` is known as a "block".) I just type the matching `end` as soon as I type the `do` so that I don't forget it, just the same as when I type an opening tag in HTML.
- - After the `do` keyword, we put vertical bars known as "pipes" — `| |`. Within those, we choose a name that **we want to refer to each element in the list as we are looping through it**. In this case, I chose "`num`". (This is known as a "block variable".)
+ - After the `do` keyword, we put vertical bars known as "pipes" — `| |`. Within the pipes, **we choose a name that we want to use to refer to each element in the list as we are looping through it**. In this case, I chose "`num`". (This is known as a "block variable".)
  - Inside the `do`/`end`, I used the variable `num` while writing the code I want executed for each element in the list.
  - Voilà! Now we don't have to worry counting the length of the list, keeping a counter to keep track of where we are, indexing in to the list, etc; `.each` takes care of all of that.
  
