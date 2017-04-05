@@ -124,7 +124,7 @@ Try writing a program in `app/controllers/programs_controller.rb` within:
 
 ```ruby
 def third_program
-  numbers = 1..999.to_a
+  numbers = (1..999).to_a
 
   # Your code goes here.
 
