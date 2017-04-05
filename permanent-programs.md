@@ -97,7 +97,7 @@ class ProgramsController < ApplicationController
 end
 ```
 
-Now you can embed it in your view template inside the special **embedded Ruby (ERB)** tag, `<%=  %>`:
+Now you can embed them in your view template inside the special **embedded Ruby (ERB)** tag, `<%=  %>`:
 
 ```erb
 <div class="container">
@@ -110,7 +110,7 @@ Now you can embed it in your view template inside the special **embedded Ruby (E
           
           <small>
             a.k.a. <%= @last_then_first %>
-          <small>
+          </small>
         </h1>
         
         <p>
@@ -122,5 +122,7 @@ Now you can embed it in your view template inside the special **embedded Ruby (E
   </div>
 </div>
 ```
+
+## Next up
 
 Now that we know how to write permanent, multiline programs, there's one more thing we need to see before we can write some fun projects: [conditionals](conditionals.md).
