@@ -10,7 +10,7 @@ To launch a Console session,
 
  1. `cd` into the root folder of a Rails app. (I usually open a second command line tab to do this, while leaving my `rails server` running in the first one.)
  1. Run the command `rails console`, or `rails c` for short. This will launch a new (text-only) app.
- 1. You can then type any Ruby command you want at the slightly different looking prompt that appears (it will look something like `2.x.x :001 >`).
+ 1. You can then type any Ruby command you want at the slightly different looking prompt that appears (it will look something like `2.x.x :001 >` or `pry(main)>`).
   - Sometimes you might get into a weird state with your commands (if, for example, you forget your closing `"` on a string or `]` on an array). To reset and get out of the weird state, press <kbd>Ctrl</kbd>+<kbd>C</kbd>. Then press the Up arrow to recover your last command, and fix the mistake.
  1. When you are done testing out Ruby one-liners, type `exit` and press <kbd>return</kbd> to shut down that program and return to the regular old command prompt. Or just close that command line tab.
  
