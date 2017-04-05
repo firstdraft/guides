@@ -101,11 +101,11 @@ The block variable `|num|` part takes a bit to get your head around — it's jus
 Soon, you'll be embedding Ruby loops in your view templates to create beautiful pages with code that looks something like this:
 
 ```erb
-<% timeline_photos.each do |photo| %>
-  <div class="photo">
-    <img src="<%= photo.image_source %>">
+<% timeline_photos.each do |the_photo| %>
+  <div class="card">
+    <img src="<%= the_photo.image_source %>">
     
-    <p><%= photo.caption %></p>
+    <p><%= the_photo.caption %></p>
   </div>
 <% end %>
 ```
