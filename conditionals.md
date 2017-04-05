@@ -14,16 +14,22 @@ Previously, we mentioned that Ruby allows us to compare values, and returns `tru
 
 This becomes useful in conjunction with the `if` statement, which allows us to do things _conditionally_ in our programs, rather than doing them on every run.
 
-Let's see how this works. Locate the file called `app/controllers/programs_controller.rb` and let's write some code where it says:
+Let's see how this works. Locate the file called `app/controllers/programs_controller.rb` and let's write some code more code. You can either work where it says
 
 ```ruby
 def home
   # Your code goes here
 
-  @your_output = "Replace this string with your output"
+  ...
 
   render("programs/home.html.erb")
 end
+```
+
+or, if you don't want to mess with the code that you wrote in the previous chapter, then you can start a new program where it says
+
+```ruby
+
 ```
 
 First, try this:
