@@ -132,7 +132,7 @@ def third_program
 end
 ```
 
-I've provided a variable for you, `numbers`, which has an array in it containing the first 999 natural numbers in it.
+and view your output at [http://localhost:3000/third](http://localhost:3000/third) I've provided a variable for you, `numbers`, which has an array in it containing the first 999 natural numbers in it.
 
 (Credit for this challenge goes to [Project Euler ](https://projecteuler.net). There are lots more puzzles there for you to practice your Ruby on!)
 
