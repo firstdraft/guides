@@ -21,7 +21,7 @@ Once Ruby reaches the `end` statement paired with an `if`, it proceeds forward a
 
 ## Conditionally doing something multiple times
 
-Now, consider almost identical code, but with the `if` keyword swapped for another keyword -- `while`:
+Now, consider almost identical code, but with the `if` keyword swapped for another keyword — `while`:
 
 ```ruby
 a = []
@@ -34,14 +34,14 @@ end
 len = a.length
 ```
 
-`while` works exactly like `if` -- it evaluates the expression next to it, and if it is true, it executes the code up until the `end`; if not, it ignores the code up until the `end`.
+`while` works exactly like `if` — it evaluates the expression next to it, and if it is true, it executes the code up until the `end`; if not, it ignores the code up until the `end`.
 
 There is one key difference: if the condition is true, after we reach the `end`, the execution **jumps back up to the `while` statement**. Then the condition is evaluated *again*. **If it is *still* true, then the code is executed again.** Etc.
 
 So in this case,
 
  - the first time we reach the `end`, we jump back up to the `while`
- - evaluate `a.length < 3` again -- still true, since `1 < 3`
+ - evaluate `a.length < 3` again — still true, since `1 < 3`
  - so we push in another random number, and jump back up
  - `2 < 3`? Yep, so we do it again.
  - `3 < 3`? Nope, so now we skip down to the end and continue
@@ -78,13 +78,13 @@ Here's how `.each` works:
  - We call it on an array that we want to loop across.
  - We put the `do` keyword next to it.
  - The `do` keyword has a matching `end` keyword, and the code to be repeated goes between them. (The whole thing from `do` through `end` is known as a "block".)
- - After the `do` keyword, we put vertical bars known as "pipes" -- `| |`. Within those, we choose a name that **we want to refer to each element in the list as we are looping through it**. In this case, I chose "`num`". (This is known as a "block variable".)
+ - After the `do` keyword, we put vertical bars known as "pipes" — `| |`. Within those, we choose a name that **we want to refer to each element in the list as we are looping through it**. In this case, I chose "`num`". (This is known as a "block variable".)
  - Inside the `do`/`end`, I used the variable `num` to write the code I want executed for each element in the list.
  - Voilà! Now we don't have to worry counting the length of the list, keeping a counter to keep track of where we are, indexing in to the list, etc; `.each` takes care of all of that.
  
 So, while `while` is neat to know about, the most important looping method that you need to understand right now is `.each`.
 
-The block variable `|num|` part takes a bit to get your head around -- it's just a name we make up for use within the `do`/`end` to talk about each element in the array as the loop is being executed. I could have called it `zebra` if I wanted to.
+The block variable `|num|` part takes a bit to get your head around — it's just a name we make up for use within the `do`/`end` to talk about each element in the array as the loop is being executed. I could have called it `zebra` if I wanted to.
 
 Soon, you'll be putting both HTML and Ruby together to create beautiful pages with code that looks something like this:
 
