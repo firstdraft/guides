@@ -33,18 +33,16 @@ Voilà! You've just written your first dynamically generated webpage! In Chrome,
 Even better, you can type a whole succession of expressions on the lines above to build up more complicated programs. Try something like:
 
 ```ruby
-class ProgramsController < ApplicationController
-  def home
-    # Your code goes here.
+def home
+# Your code goes here.
     
-    my_birthday = Time.parse("July 1st, 2000")
-    today = Time.now
-    seconds_since_i_was_born = today - my_birthday
+  my_birthday = Time.parse("July 1st, 2000")
+  today = Time.now
+  seconds_since_i_was_born = today - my_birthday
+  
+  @your_output = seconds_since_i_was_born
     
-    @your_output = seconds_since_i_was_born
-    
-    render("programs/home.html.erb")
-  end
+  render("programs/home.html.erb")
 end
 ```
 
@@ -77,25 +75,23 @@ You should leave the special tag `<%= @your_output %>` alone, though; just move 
 You could also create multiple instance variables back in `programs_controller.rb` and use them in your view template, too:
 
 ```ruby
-class ProgramsController < ApplicationController
-  def home
-    # Your code goes here.
+def home
+  # Your code goes here.
     
-    my_birthday = Time.parse("July 1st, 2000")
-    today = Time.now
-    seconds_since_i_was_born = today - my_birthday
+  my_birthday = Time.parse("July 1st, 2000")
+  today = Time.now
+  seconds_since_i_was_born = today - my_birthday
     
-    @your_output = seconds_since_i_was_born
+  @your_output = seconds_since_i_was_born
 
-    first = "Raghu"
-    last = "Betina"
+  first = "Raghu"
+  last = "Betina"
     
-    @first_then_last = first + " " + last
+  @first_then_last = first + " " + last
     
-    @last_then_first = last + ", " + first
+  @last_then_first = last + ", " + first
     
-    render("programs/home.html.erb")
-  end
+  render("programs/home.html.erb")
 end
 ```
 
