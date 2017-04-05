@@ -48,7 +48,7 @@ Ok, here's the deal with `if`:
 
  - It **must** have a matching `end`, so just type it before you type anything else and forget it.
  - Code that comes between the `if` and `end` will only be executed if the expression next to the `if` evaluates to `true`.
- - If the expression is `false`, then the code will simply be ignored.
+ - If the expression is `false`, then the code inside the `if` statement will simply be ignored.
 
 You can also have _multi-branch_ `if` statements:
 
