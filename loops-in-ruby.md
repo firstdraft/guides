@@ -8,8 +8,8 @@ Consider the following program, which utilizes an `if` statement:
 a = []                    # Starting off an empty array
 
 if a.length < 3           # This is true, since a is empty
-  new_element = rand(100)
-  a.push(new_element)
+  new_element = rand(100) # Generate a random number
+  a.push(new_element)     # Push the new number into a
 end
 
 len = a.length
