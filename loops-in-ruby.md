@@ -62,7 +62,7 @@ We could do this using the `while` statement, but let me instead just show you a
    squared_numbers.push(square)  # Push it into the squared_numbers array
  end
   
- squared_numbers.sum             # Sum the squares
+ @your_output = squared_numbers.sum             # Sum the squares
 ```
 
 Here's how `.each` works:
