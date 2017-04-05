@@ -68,7 +68,7 @@ If you want to, you can start to customize the output, too. Locate the file `app
 </div>
 ```
 
-This is known as your **view template**. We'll learn a lot more about these when we get to Rails, but for now, just know that you can write any HTML and CSS in here that you want.
+This is known as your **view template**. We'll learn a lot more about these when we dig deeper in to Rails, but for now, just know that you can write any HTML and CSS in here that you want.
 
 You should leave the special tag `<%= @your_output %>` alone, though; just move it around or wrap it within new HTML if you want to.
 
