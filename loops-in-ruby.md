@@ -36,7 +36,7 @@ end
 len = a.length
 ```
 
-`while` works exactly like `if` — it evaluates the expression next to it, and if it is true, it executes the code up until the `end`; if not, it ignores the code up until the `end`.
+`while` works almost exactly like `if` — it evaluates the expression next to it, and if it is true, it executes the code up until the `end`; if not, it ignores the code up until the `end`.
 
 There is one key difference: if the condition is true, after we reach the `end`, the execution **jumps back up to the `while` statement**. Then the condition is evaluated *again*. **If it is *still* true, then the code is executed again.** Etc.
 
