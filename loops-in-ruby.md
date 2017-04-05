@@ -105,7 +105,9 @@ Soon, you'll be embedding Ruby loops in your view templates to create beautiful 
   <div class="card">
     <img src="<%= the_photo.image_source %>">
     
-    <p><%= the_photo.caption %></p>
+    <p>
+      <%= the_photo.caption %>
+    </p>
   </div>
 <% end %>
 ```
