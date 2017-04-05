@@ -72,19 +72,19 @@ end
 
  - Note that there's no space in `elsif`.
  - The conditions are checked in top-down priority, so even if more than one is true, whichever one is first has its branch executed; the rest are ignored.
- -  If none are true, the final `else` fallback branch is executed; but you don't have to have one if you don't want one.
+ - If none are true, the final `else` fallback branch is executed; but you don't have to have one if you don't want one.
 
 Inside a branch of an `if` statement, you can have as many lines of code as you want -- and you can even have whole other multi-branch if statements, if that's what you need.
 
-Finally, another handy thing to have in your toolbelt are the **logical operators** `&&` and `||`. These allow you to combine comparisons; try these:
+Finally, another handy thing to have in your toolbelt are the **logical operators** `&&` and `||`. These allow you to combine comparisons; try these out in `rails console`:
 
 ```
-1 < 2 && 2 < 3 # Is 1 less than 2 AND 2 less than 3? Duh
-1 < 2 && 3 < 2 # Is 1 less than 2 AND 3 less than 2? I guess not
-2 < 1 && 3 < 2 # Is 2 less than 1 AND 3 less than 2? Duh
-1 < 2 || 2 < 3 # Is 1 less than 2 OR 2 less than 3? Yep
-1 < 2 || 3 < 2 # Is 1 less than 2 OR 3 less than 2? I guess so
-2 < 1 || 3 < 2 # Is 2 less than 1 OR 3 less than 2? Duh
+1 < 2 && 2 < 3   # Is 1 less than 2 AND 2 less than 3? Duh
+1 < 2 && 3 < 2   # Is 1 less than 2 AND 3 less than 2? I guess not
+2 < 1 && 3 < 2   # Is 2 less than 1 AND 3 less than 2? Duh
+1 < 2 || 2 < 3   # Is 1 less than 2 OR 2 less than 3? Yep
+1 < 2 || 3 < 2   # Is 1 less than 2 OR 3 less than 2? I guess so
+2 < 1 || 3 < 2   # Is 2 less than 1 OR 3 less than 2? Duh
 ```
 
 Basically, `&&` is stricter than `||`; both comparisons have to be true in order for the whole statement to be true when combined with `&&`; either one being true is sufficient for `||`.
