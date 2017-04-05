@@ -136,6 +136,6 @@ end
 
 and view your output at [http://localhost:3000/third](http://localhost:3000/third). I've provided a variable for you, `numbers`, which has an array in it containing the first 999 natural numbers.
 
-(Credit for this challenge goes to [Project Euler](https://projecteuler.net), which is a series of puzzles — this is the first one. You can check your answer by signing up for an account there. And there are lots more puzzles there for you to practice your Ruby on!)
+(Credit for this challenge goes to [Project Euler](https://projecteuler.net). This is the first in a series of puzzles that they provide. You can check your answer by signing up for an account there and submitting it, and find lots more puzzles to practice your Ruby on!)
 
 
