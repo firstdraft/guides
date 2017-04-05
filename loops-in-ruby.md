@@ -65,7 +65,7 @@ We could do all of our looping using the `while` statement, but Ruby gives us an
 
 Since most of our looping as web developers is to do interesting things with elements in `Array`s, let me instead just show you a purpose-built `Array` method that we're going to use 1000 times a day: `.each`.
 
-Let's suppose that I have an array of numbers. For some reason, let's suppose that I want to square each number in the array and then add up all the squares. I could do that work with the following code:
+Let's suppose that I have an array of numbers. For some reason, let's suppose that I want to square each number in the array and then add up all the squares. I could do that work with the following code (which you should try out in `app/controllers/permanent_programs.rb`):
 
 ```ruby
  our_numbers = [4, 10, 6]        # Create an array of numbers
