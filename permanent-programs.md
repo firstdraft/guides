@@ -46,7 +46,7 @@ class ProgramsController < ApplicationController
 end
 ```
 
-or any other program that you'd like! Just assign the final value that you'd like to appear on this page to the special variable `@your_output`.
+or any other program that you'd like! Just assign the final value that you'd like to appear on this page to the special variable `@your_output`. (Variables whose names begin with the letter `@` are called **instance variables**, and are the ones we intend to display to our users.)
 
 ## Customizing the output
 
@@ -68,7 +68,59 @@ If you want to, you can start to customize the output, too. Locate the file `app
 </div>
 ```
 
+This is known as your **view template**. We'll learn a lot more about these when we get to Rails, but for now, just know that you can write any HTML and CSS in here that you want.
 
+You should leave the special tag `<%= @your_output %>` alone, though; just move it around or wrap it within new HTML if you want to.
 
+You could also create multiple instance variables back in `programs_controller.rb` and use them in your view template, too:
+
+```ruby
+class ProgramsController < ApplicationController
+  def home
+    # Your code goes here.
+    
+    my_birthday = Time.parse("July 1st, 2000")
+    today = Time.now
+    seconds_since_i_was_born = today - my_birthday
+    
+    @your_output = seconds_since_i_was_born
+
+    first = "Raghu"
+    last = "Betina"
+    
+    @first_then_last = first + " " + last
+    
+    @last_then_first = last + ", " + first
+    
+    render("programs/home.html.erb")
+  end
+end
+```
+
+Now you can embed it in your view template inside the special **embedded Ruby (ERB)** tag, `<%=  %>`:
+
+```erb
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="jumbotron">
+        <h1>
+          <%= @first_then_last %>
+        </h1>
+        
+        <h2>
+          a.k.a. <%= @last_then_first %>
+        </h2>
+        
+        <h3>
+          aged exactly <%= @your_output %> seconds
+        </h3>
+      </div>
+
+    </div>
+  </div>
+</div>
+```
 
 Now that we know how to write permanent, multiline programs, there's one more thing we need to see before we can write some fun projects: [conditionals](conditionals.md).
