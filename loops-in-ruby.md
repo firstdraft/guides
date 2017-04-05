@@ -126,7 +126,7 @@ Try writing a program in `app/controllers/programs_controller.rb` within:
 def third_program
   numbers = (1..999).to_a
 
-  # Your code goes here.
+  # Your code goes below.
 
   @your_output = "Replace this string with your output"
 
