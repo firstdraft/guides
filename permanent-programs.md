@@ -75,7 +75,7 @@ This is known as your **view template**. We'll learn a lot more about these when
 
 You should leave the special tag `<%= @your_output %>` alone, though; just move it around or wrap it within new HTML if you want to.
 
-You could also create multiple instance variables back in `programs_controller.rb` and use them in your view template, too:
+You could also create your own instance variables back in `programs_controller.rb` and use them in your view template, if you like:
 
 ```ruby
 def home
