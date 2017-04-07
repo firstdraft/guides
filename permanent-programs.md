@@ -4,8 +4,8 @@ Now that you're comfortable writing some Ruby, let's learn how to write some rea
 
 It's not very much fun typing commands over and over into `rails console`, only to have them forever lost if you close Terminal. So let's write them down permanently into a source code file, just like you did with your HTML.
 
-First, navigate to [http://localhost:3000](http://localhost:3000) in Chrome. If you don't see anything there, then you need to start up your `rails server` in a new tab of Terminal. Refer to the Getting Started video in the [Introduction](introduction-to-ruby.md#mac-getting-started-video)
-. You should see "Replace this string with your output" if all goes well.
+First, navigate to [http://localhost:3000](http://localhost:3000) in Chrome. If you don't see anything there, then you need to start up your `rails server` in a new tab of Terminal or a new window of Command Prompt with Ruby and Rails. Refer to the Getting Started video in the [Introduction](introduction-to-ruby.md#mac-getting-started-video)
+ to see how I like to set things up. You should see "Replace this string with your output" if all goes well.
 
 ## Writing some source code
 
