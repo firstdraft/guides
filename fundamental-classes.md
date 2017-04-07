@@ -30,7 +30,7 @@ There are also the usual things, like:
 7 * 6
 21 + 21
 45 - 3
-3**2       # Heads up; you might have been expecting 3^2 for this one
+3**2       # Heads up; you might have been expecting the syntax for "three raised to the power of 2" to be 3^2
 10 / 3
 ```
 
