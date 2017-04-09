@@ -9,6 +9,3 @@
  1. CircleCI 
  1. Heroku Review Apps
  1. Heroku SSL
- 
-
-
