@@ -38,28 +38,28 @@ csv_text = File.read(Rails.root.join("lib", "csvs", "real_estate_transactions.cs
 puts csv_text
 ```
 
-The first line requires the Ruby CSV library we need to properly parse the CSV data. The next line reads in the CSV file into a variable. The last line prints the contents of the variable. When you run `rake db:seed` you should see a wall of text representing your CSV data. It's a first step, but we've still got a lot of work to do.
+The first line requires the Ruby CSV library we need to properly parse the CSV data. The next line reads in the CSV file into a variable. The last line prints the contents of the variable. When you run `rails slurp:transactions` you should see a wall of text representing your CSV data. It's a first step, but we've still got a lot of work to do.
 
-We'll keep building off this code until we've created a working seeds file. You should be able to run `rake db:seed` at the end of each step
+We'll keep building off this code until we've created a working seeds file. You should be able to run `rails slurp:transactions` at the end of each step
 
 ## 3. Parse the CSV
 
 ```ruby
 require "csv"
 
-csv_text = File.read(Rails.root.join("lib", "seeds", "real_estate_transactions.csv"))
+csv_text = File.read(Rails.root.join("lib", "csvs", "real_estate_transactions.csv"))
 csv = CSV.parse(csv_text, :headers => true, :encoding => "ISO-8859-1")
 puts csv
 ```
 
-The new line converts the CSV file into a structure that Ruby can read. The `:headers => true` option tells the parser to ignore the first line of the CSV file.
+The new line converts the CSV file into a structure that Ruby can read. The `:headers => true` option tells the parser that the first line in the file has column headings in it, not a row of data.
 
 ## 4. Looping through the parsed data
 
 ```ruby
 require "csv"
 
-csv_text = File.read(Rails.root.join("lib", "seeds", "real_estate_transactions.csv"))
+csv_text = File.read(Rails.root.join("lib", "csvs", "real_estate_transactions.csv"))
 csv = CSV.parse(csv_text, :headers => true, :encoding => "ISO-8859-1")
 csv.each do |row|
   puts row.to_hash
@@ -73,7 +73,7 @@ This new addition loops through the entire CSV file and converts each row of the
 ```ruby
 require "csv"
 
-csv_text = File.read(Rails.root.join("lib", "seeds", "real_estate_transactions.csv"))
+csv_text = File.read(Rails.root.join("lib", "csvs", "real_estate_transactions.csv"))
 csv = CSV.parse(csv_text, :headers => true, :encoding => "ISO-8859-1")
 csv.each do |row|
   t = Transaction.new
