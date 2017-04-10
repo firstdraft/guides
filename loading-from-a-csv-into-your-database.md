@@ -1,4 +1,4 @@
-# Loading from a CSV file into your database
+# Loading data from a CSV file into your database
 
 ## 1. Setup
 
