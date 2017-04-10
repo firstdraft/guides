@@ -2,20 +2,39 @@
 
 ## 1. Setup
 
-First, Create a folder inside of `lib` called `seeds`
+First, Create a folder inside of `lib` called `csvs`
 
-Put your CSV file `example.csv` into the `lib/seeds` folder. In the example below, the file is called `real_estate_transactions.csv`
+Put your CSV file `example.csv` into the `lib/csvs` folder. In the example below, the file is called `real_estate_transactions.csv`
 
 Make sure you've created a resource with the appropriate columns to match your seed data. The names don't have to match up.
 
 ## 2. Read in a CSV file
 
-Add the following lines to your `seeds.rb` file:
+Let's suppose we ultimately want to run a command named `rails slurp:transactions` which will slurp the data from `real_estate_transactions.csv` and put it in our database.
+
+First, let's create a custom rake task with this name:
+
+```bash
+rails generate task slurp transactions
+```
+
+This will create a file called `lib/tasks/slurp.rake` that looks like this:
+
+```ruby
+namespace :slurp do
+  desc "TODO"
+  task transactions: :environment do
+  end
+
+end
+```
+
+Add the following lines between `task transactions: :environment do` and the first `end`:
 
 ```ruby
 require "csv"
 
-csv_text = File.read(Rails.root.join("lib", "seeds", "real_estate_transactions.csv"))
+csv_text = File.read(Rails.root.join("lib", "csvs", "real_estate_transactions.csv"))
 puts csv_text
 ```
 
