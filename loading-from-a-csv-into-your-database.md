@@ -1,4 +1,4 @@
-# Seeding your database from a CSV file
+# Loading from a CSV file into your database
 
 ## 1. Setup
 
