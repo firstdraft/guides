@@ -27,4 +27,5 @@
 * [CRUD with Ruby](crud-with-ruby.md)
 * [starter\_generators](starter_generators.md)
 * [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
+* [Seeding your database from a CSV file](seeding-your-database-from-a-csv-file.md)
 
