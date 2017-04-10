@@ -25,7 +25,7 @@
   * [More on Ruby Classes](more-on-ruby-classes.md)
 * [RCAV Flowchart](rcav-flowchart.md)
 * [CRUD with Ruby](crud-with-ruby.md)
-* [Seeding your database from a CSV file](seeding-your-database-from-a-csv-file.md)
+* [Seeding your database from a CSV file](loading-data-from-a-csv-file-into-your-database.md)
 * [starter\_generators](starter_generators.md)
 * [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
 
