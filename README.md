@@ -28,6 +28,9 @@ A collection of guides and cheatsheets for Application Development.
   * [More on Ruby Classes](more-on-ruby-classes.md)
 * [RCAV Flowchart](rcav-flowchart.md)
 * [CRUD with Ruby](crud-with-ruby.md)
+* [Seeding your database from a CSV file](seeding-your-database-from-a-csv-file.md)
 * [starter\_generators](starter_generators.md)
-* [Friendbook Exercise Guide](friendbook-exercise-guide.md)
+* [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
+
+
 
