@@ -2,13 +2,11 @@
 
 ## 1. Setup
 
-First, Create a folder inside of `lib` called `csvs`
+First, create a folder inside of `lib` called `csvs`
 
-Put your CSV file `example.csv` into the `lib/csvs` folder. In the example below, the file is called `real_estate_transactions.csv`
+Put your CSV file into the `lib/csvs` folder. In the example below, the file is called `real_estate_transactions.csv`
 
-Make sure you've created a resource with the appropriate columns to match your seed data. The names don't have to match up.
-
-## 2. Read in a CSV file
+You should already have an ActiveRecord model ready to go to store the data from the CSV; in our example below, we have one called `Transaction`. The column names in your model don't have to match up exactly with the headings in the CSV.
 
 Let's suppose we ultimately want to run a command named `rails slurp:transactions` which will slurp the data from `real_estate_transactions.csv` and put it in our database.
 
@@ -29,7 +27,9 @@ namespace :slurp do
 end
 ```
 
-Add the following lines between `task transactions: :environment do` and the first `end`:
+You can now add the code described in the rest of this guide between the lines `task transactions: :environment do` and the first `end`:
+
+## 2. Read in a CSV file
 
 ```ruby
 require "csv"
@@ -77,20 +77,19 @@ csv_text = File.read(Rails.root.join("lib", "csvs", "real_estate_transactions.cs
 csv = CSV.parse(csv_text, :headers => true, :encoding => "ISO-8859-1")
 csv.each do |row|
   t = Transaction.new
-  t.street = row["street"]
+  t.street_address = row["street"]
   t.city = row["city"]
   t.zip = row["zip"]
-  t.zip = row["zip"]
   t.state = row["state"]
-  t.beds = row["beds"]
-  t.sq_feet = row["sq_feet"]
+  t.bedrooms = row["beds"]
+  t.square_feet = row["sq_feet"]
   t.category = row["type"]
-  t.sale_date = row["sale_date"]
+  t.sold_on = row["sale_date"]
   t.price = row["price"]
   t.lat = row["latitude"]
   t.lng = row["longitude"]
   t.save
-  puts "#{t.street}, #{t.city} saved"
+  puts "#{t.street_address}, #{t.zip} saved"
 end
 
 puts "There are now #{Transaction.count} rows in the transactions table"
