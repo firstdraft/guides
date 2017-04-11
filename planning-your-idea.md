@@ -33,7 +33,7 @@ I like to start with some [Crazy Eights](https://library.gv.com/the-product-desi
  
 I will usually do two or three rounds. One round, I'll use the 8 panels to progress through the different screens of a flow. Another round, I'll use the 8 panels to explore 8 different takes on the most important screen in the app.
    
-Remember, these are suppwosed to be less than 40 seconds per panel! Actually set a timer and stick to it. Try [using a sharpie rather than a pen](https://signalvnoise.com/posts/1788-oldie-but-goodie-sketching-with-a-sharpie) to prevent yourself from getting into too much detail in this phase.
+Remember, you are only supposed to spend around 40 seconds per panel! Actually set a timer and stick to it. Try [using a sharpie rather than a pen](https://signalvnoise.com/posts/1788-oldie-but-goodie-sketching-with-a-sharpie) to prevent yourself from getting into too much detail in this phase.
 
 ### Wireframe
 
