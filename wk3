@@ -1,0 +1,8 @@
+# Week 3
+
+## Omnicalc
+
+### Setup
+
+- Make sure students are running `rails s` in their app folder, not the app's parent folder
+- Make sure students test output variables after hitting submit, since the forms wont show any work from the controller
