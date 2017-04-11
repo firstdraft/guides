@@ -37,7 +37,7 @@ Remember, you are only supposed to spend around 40 seconds per panel! Actually s
 
 ### Wireframe
 
-Then, I select one flow that I like, and I  draw out each screen in a bit more detail. I like [Prototyping On Paper](https://marvelapp.com/pop/) to connect the sketches of each screen together, and eventually I try to "crawl" from every link and button in each screen to every other screen until I've drawn out the entire app (excluding obvious things like edit profile forms).
+Then, I select one flow that I like, and I  draw out each screen in a bit more detail. I like the [Prototyping On Paper](https://marvelapp.com/pop/) app to connect the sketches of each screen together, and eventually I try to "crawl" from every link and button in each screen to every other screen until I've drawn out the entire app (excluding obvious things like edit profile forms).
 
 ## User Stories
 
