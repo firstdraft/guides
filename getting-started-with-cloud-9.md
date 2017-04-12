@@ -12,4 +12,6 @@
 
 ![](/assets/change_code.gif)
 
+![](/assets/other_urls.gif)
+
 ![](/assets/autosave.png)
