@@ -38,4 +38,4 @@ One last step: turn on Autosave.
 
 Cloud 9 actually has a lot of cool features that we don't get when we work on our own computers like real-time collaboration, so you should explore! Have fun!
 
-![](/assets/workflow.png)
+![](/assets/cloud_9_workflow.png)
