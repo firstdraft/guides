@@ -1,8 +1,12 @@
 # Getting Started with Cloud 9
 
+## Signing up
+
 You should contact me for an invitation to join Cloud 9 without requiring you to enter a credit card.
 
 After signing up, you need to connect your GitHub account to it.
+
+## Creating a workspace
 
 Then, to start on a project,
 
@@ -16,6 +20,8 @@ Then, to start on a project,
 
 You'll end up in your IDE (integrated development environment), which is like having Atom, Terminal, and GitHub all within a single Chrome tab.
 
+## Setting up the project
+
 Run `bundle install` as shown below:
 
 ![](/assets/terminal.png)
@@ -23,6 +29,8 @@ Run `bundle install` as shown below:
 To start up your `rails server`, click the green "Run" button at the top-right of the window, and you'll have a live application running on the internet. You'll see the URL of your application in the server log in a new Terminal tab at the bottom, and you can open it up in a new Chrome tab:
 
 ![](/assets/rails_server.gif)
+
+## Editing code
 
 Change some code just as you would in Atom, save, and refresh your app:
 
