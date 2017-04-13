@@ -18,9 +18,9 @@ Then, to start on a project,
 
 ![](/assets/creating_workspace.png)
 
-You'll end up in your IDE (integrated development environment), which is like having Atom, Terminal, and GitHub all within a single Chrome tab.
-
 ## Setting up the project
+
+You'll end up in your IDE (integrated development environment), which is like having Atom, Terminal, and GitHub all within a single Chrome tab.
 
 Run `bundle install` as shown below:
 
@@ -43,6 +43,10 @@ Whenever I say "localhost:3000", in your mind, replace that with the real live U
 One last step: turn on Autosave.
 
 ![](/assets/autosave.png)
+
+Then go to the Cloud9 menu and **Restart Workspace**, and refresh your browser to apply the change.
+
+There are other settings you can customize here too, if you like, but **always remember to turn on autosave for every project**.
 
 Cloud 9 actually has a lot of cool features that we don't get when we work on our own computers like real-time collaboration, so you should explore! Have fun!
 
