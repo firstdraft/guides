@@ -8,7 +8,7 @@ An input to a [method](#method):
 "well, hello!".gsub("ll", "z") # => "wez, hezo!"
 ```
 
-What this does 
+In the example above, the strings `"ll"` and `"z"` are arguments to the method `gsub`. Arguments are supplied to methods within parentheses immediately following method names, and if there are multiple arguments, then they are separated by commas.
 
 #### Array
 
