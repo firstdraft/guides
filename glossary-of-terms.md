@@ -4,7 +4,7 @@
 
 An input to a [method](#method):
 
-```
+```ruby
 "well, hello!".gsub("ll", "z") # => "wez, hezo!"
 ```
 
