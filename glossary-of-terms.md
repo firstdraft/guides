@@ -2,6 +2,14 @@
 
 #### Argument
 
+An input to a [method](#method):
+
+```
+"well, hello!".gsub("ll", "z") # => "wez, hezo!"
+```
+
+What this does 
+
 #### Array
 
 #### Block
