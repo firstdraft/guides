@@ -10,6 +10,11 @@ An input to a [method](#method):
 
 In the example above, the strings `"ll"` and `"z"` are arguments to the method `gsub`. Arguments are supplied to methods within parentheses immediately following method names, and if there are multiple arguments, then they are separated by commas.
 
+```ruby
+a = Array.new
+a.push(4)
+```
+
 #### Array
 
 #### Block
