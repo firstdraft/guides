@@ -227,7 +227,7 @@ Rather than
 ```ruby
 h = { :first_name => "Homer", :last_name => "Simpson" }
 
-"Hello, #{hs.first_name} #{hs.last_name}!" # => "Hello, Homer Simpson!"
+"Hello, #{h[:first_name]} #{h[:last_name]}!" # => "Hello, Homer Simpson!"
 ```
 
 even though the two are functionally equivalent, and the second is even a bit more concise.
