@@ -175,6 +175,8 @@ a.sort # => [-2, 4, 9, 100]
 
 These object-specific instructions are formally known as **methods**.
 
+[Read more about classes here. ](more-on-ruby-classes.md)
+
 #### Def
 
 #### Div
