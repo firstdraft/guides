@@ -131,7 +131,7 @@ I am not a big fan of such "concise" code. I prefer easily understood lines of c
 
 #### Box
 
-When you hear me use the term "box", I mean "variable"; but this is not a technical term, and real developers (unlike me) won't know what you mean if you use it. You should use "variable" instead.
+When you hear me use the term "box", I mean "[variable](#variable)"; but this is not a technical term, and real developers (unlike me) won't know what you mean if you use it. You should use "variable" instead.
 
 But as we know, variables are just boxes that we use to temporarily store values. We write a name on each box and use that name to refer to the value inside.
 
