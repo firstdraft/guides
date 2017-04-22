@@ -41,14 +41,6 @@ Ruby represents an array of objects within square brackets, with each element se
 
 Each element of an `Array` can be any Ruby object — even another `Array`.
 
-A single `Array` can contain elements that are members of different classes, e.g.:
-
-```ruby
-[3, "hi", :there, 42.42]
-```
-
-although that is somewhat rare.
-
 A blank instance of `Array` can be created like any Ruby object, by calling `.new` on the class:
 
 ```ruby
