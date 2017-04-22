@@ -91,7 +91,7 @@ There is also a square bracket shorthand for accessing elements:
 a[1] # => "alice"
 ```
 
-[Read more about arrays here.](https://guides.firstdraft.com/fundamental-classes.html#arrays)
+[Read more about arrays here.](fundamental-classes.md#arrays)
 
 #### Block
 
@@ -235,7 +235,7 @@ There is also a square bracket shorthand for accessing elements:
 h[:role] # => "Instructor"
 ```
 
-[Read more about hashes here.](https://guides.firstdraft.com/ruby-hashes.html)
+[Read more about hashes here.](ruby-hashes.md)
 
 #### Instance Variable
 
@@ -270,3 +270,7 @@ One of the built-in Ruby [classes](#class).
 #### Value
 
 #### Variable
+
+[Read about variables here.](primary-syntax.md#variables)
+
+Also see [box](#box).
