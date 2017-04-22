@@ -173,7 +173,7 @@ You can also pre-populate the hash _in one fell swoop_ when you create it:
 h = { :first_name => "Raghu", :last_name => "Betina", :role => "Instructor" }
 ```
 
-You can then access elements in the hash by key number with the `.fetch()` method:
+You can then access elements in the hash by key with the `.fetch()` method:
 
 ```ruby
 h.fetch(:role) # => "Instructor"
