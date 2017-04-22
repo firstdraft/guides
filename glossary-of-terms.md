@@ -211,7 +211,9 @@ We use the word "element" to refer to each thing in an [array](#array).
 
 #### Expression
 
-We use the word "expression" to refer to one complete Ruby "sentence": a combination of objects and methods in valid syntax which the Ruby interpreter is able to reduce to one final object. The object is then typically either stored in a variable for subsequent expressions to use, or output to the screen or some permanent storage.
+We use the word "expression" to refer to one complete Ruby "sentence": a combination of objects and methods in valid syntax which the Ruby interpreter is able to reduce to one final object.
+
+The final object is then typically either stored in a variable for subsequent expressions to use, or output to the screen or some permanent storage.
 
 #### Fixnum
 
