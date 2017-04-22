@@ -230,7 +230,7 @@ h = { :first_name => "Homer", :last_name => "Simpson" }
 "Hello, #{h[:first_name]} #{h[:last_name]}!" # => "Hello, Homer Simpson!"
 ```
 
-even though the two are functionally equivalent, and the second is even a bit more concise.
+even though the two are functionally equivalent, and the second _could_ be considered more concise (in terms of number of lines of code).
 
 By encapsulating the logic of how to compute `full_name` in the class definition, I make it much easier to re-use elsewhere and share.
 
