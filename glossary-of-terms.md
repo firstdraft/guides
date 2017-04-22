@@ -231,7 +231,7 @@ One of the built-in Ruby [classes](#class). They represent decimal numbers.
 
 In every programming language, programmers share solutions to commonly-faced problems. No one re-invents the wheel for everything.
 
-These shared packages of code are called "libraries", generally, but in Ruby they are called **gems**. Rails itself is a gem; really, it is a `bundle` of lots of other gems.
+These shared packages of code are called "libraries", generally, but in Ruby they are called **gems**. Rails itself is a gem (actually, it is a `bundle` of lots of other gems).
 
 #### Hash
 
