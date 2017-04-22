@@ -129,6 +129,14 @@ our_numbers.each { |num| squared_numbers.push(num * num) }
 
 I am not a big fan of such "concise" code. I prefer easily understood lines of code, even if there are more of them.
 
+#### Box
+
+When you hear me use the term "box", I mean "variable"; but this is not a technical term, and real developers (unlike me) won't know what you mean if you use it. You should use "variable" instead.
+
+But as we know, variables are just boxes that we use to temporarily store values. We write a name on each box and use that name to refer to the value inside.
+
+Sometimes we replace what is inside the box and throw away the old value. We use the assignment operator (`=`) both to put things in our boxes initially and to replace them later (_never_ to be confused with the similar looking but _completely_ different equivalence comparison (`==`)).
+
 #### Chain
 
 "Chaining" is usually used to refer to calling multiple methods in succession in the same expression, like so:
