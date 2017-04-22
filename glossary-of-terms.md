@@ -53,6 +53,15 @@ or by using the square bracket shorthand:
 a = []
 ```
 
+You can add elements to an array with the `.push()` method:
+
+```ruby
+a.push("doug")
+a.push("alice")
+a.push("carol")
+a.push("bob")
+```
+
 You can also pre-populate the array when you create it:
 
 ```ruby
