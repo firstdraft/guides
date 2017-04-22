@@ -299,9 +299,55 @@ h[:role] # => "Instructor"
 
 #### Instance Variable
 
+An instance variable is a variable that lasts longer than a local variable; for our purposes, it is one that lasts long enough for us to use it a view template, unlike the local variables that we define in our actions.
+
+To create an instance variable, we simply use an `@` as the first letter in its name, rather than a lowercase letter like we're used to for local variables.
+
 #### Key
 
+A key is how how an element in a [hash](#hash) is accessed. It is the name of a position in the list.
+
+When storing an element in a hash, we **must** provide a key; unlike in an array, which automatically numbers its elements.
+
+Similarly, when accessing an element in a hash, we must provide a key; trying to access an element in a hash by position number will result in an error.
+
 #### Label
+
+A `<label>` is an HTML element that is paired with an `<input>` in a `<form>`. It is best practice to always pair every `<input>` with a `<label>`, even if you hide it with CSS, for accessibility and SEO reasons.
+
+Each `<label>`/`<input>` pair should have matching `for=""`/`id=""` attributes, like so:
+
+```html
+<form action="/payment/results">
+  <div>
+    <label for="apr_input">
+      APR
+    </label>
+
+    <input id="apr_input" text="text" name="user_apr" placeholder="E.g. 5.42">
+  </div>
+
+  <div>
+    <label for="years_input">
+      Number of years
+    </label>
+
+    <input id="years_input" text="text" name="user_years" placeholder="How many years to repay?">
+  </div>
+
+  <div>
+    <label for="principal_input">
+      Principal
+    </label>
+
+    <input id="principal_input" text="text" name="user_pv" placeholder="How much principal?">
+  </div>
+
+  <button>
+    Calculate monthly payment
+  </button>
+</form>
+```
 
 #### Loop
 
