@@ -185,7 +185,7 @@ There is also a square bracket shorthand for accessing elements:
 h[:role] # => "Instructor"
 ```
 
-[Read more about arrays here.](https://guides.firstdraft.com/fundamental-classes.html#arrays)
+[Read more about hashes here.](https://guides.firstdraft.com/ruby-hashes.html)
 
 #### Instance Variable
 
