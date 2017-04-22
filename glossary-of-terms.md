@@ -351,9 +351,21 @@ Each `<label>`/`<input>` pair should have matching `for=""`/`id=""` attributes, 
 
 #### Loop
 
+To "loop" is to execute a piece of code repeated.ly; potentially infinitely.
+
+[Read more about loops here.](loops-in-ruby.md)
+
 #### Method
 
+A method is an instruction that you can call on an object.
+
+[See class for more.](#class)
+
 #### Object
+
+The term "object" is usually used interchangeably with the more formal term **instance**, which itself means an individual member of a **class**.
+
+[See class for more.](#class)
 
 #### Operator
 
