@@ -377,7 +377,7 @@ There are the standard "operators" that you would expect, and a few others: the 
 
 Let me just take this opportunity, though, to once more remind you to **NOT CONFUSE THE ASSIGNMENT OPERATOR `=` FOR THE EQUIVALENCE COMPARISON `==`**.
 
-In other words when you type `if`, **CHECK YOURSELF** and **DO NOT TYPE A SINGLE `=` AFTER IT**.
+In other words when you type `if`, **CHECK YOURSELF** and **DO NOT TYPE A SINGLE `=` IN THE LOGICAL TEST AFTER IT**.
 
 #### Render
 
