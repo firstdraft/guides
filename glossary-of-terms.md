@@ -151,6 +151,28 @@ Prefer creating well-named intermediate variables over excessive method-chaining
 
 #### Class
 
+If we think about programming as working with _data_ and _instructions_, and recognize that Ruby can work with more kinds of data than, say HTML (only text) or calculators (only integers and decimals), then you've already grasped what **classes** are: they are _kinds of data_.
+
+Integers are a class (in Ruby they are called `Fixnum`s). Decimals are a class (in Ruby they are called `Float`s). `String`, `Array`, `Hash`, `Date`, `Time`, `Symbol`, and many more are all classes in Ruby.
+
+For each class, we can create **instances** of the class — individual members — and then instruct them to do the things that that kind of thing knows how to do. For example, I can create an instance of the [`Array`](#array) class:
+
+```ruby
+a = Array.new
+```
+
+and then I can instruct it to do `Array`-like things; populate itself, sort itself:
+
+```ruby
+a.push(100)
+a.push(9)
+a.push(-2)
+a.push(4)
+a.sort # => [-2, 4, 9, 100]
+```
+
+These object-specific instructions are formally known as **methods**.
+
 #### Def
 
 #### Div
