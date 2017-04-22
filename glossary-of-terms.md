@@ -369,23 +369,55 @@ The term "object" is usually used interchangeably with the more formal term **in
 
 #### Operator
 
+We usually use this term to refer to things that break from the usual [primary syntax of Ruby](primary-syntax.md#rubys-primary-syntax-objectmethod), `object.method`.
+
+These are the "syntactic sugar" that [Matz](https://twitter.com/yukihiro_matz) added, like `6 * 7` so that we wouldn't all go crazy typing `6.*(7)` all the time.
+
+There are the standard "operators" that you would expect, and a few others: the "shovel" (`<<`), exponentiation (`**`), etc.
+
+Let me just take this opportunity, though, to once more remind you to **NOT CONFUSE THE ASSIGNMENT OPERATOR `=` FOR THE EQUIVALENCE COMPARISON `==`**.
+
+In other words when you type `if`, **CHECK YOURSELF** and **DO NOT TYPE A SINGLE `=` AFTER IT**.
+
 #### Render
+
+The `render()` method is what we use at the end of a controller action to choose which `.html.erb` view template to send back to the user.
 
 #### Scrape
 
+"Scraping" refers to programmatically reading information off of websites, as opposed to reading it through APIs.
+
 #### Source
+
+"Source" usually refers to the source code of a program.
 
 #### String
 
 One of the built-in Ruby [classes](#class).
 
+They represent words or other sequences of letters.
+
+[Read more about strings here.](fundamental-classes.md#string)
+
 #### Symbol
 
 One of the built-in Ruby [classes](#class).
 
+They represent words or other sequences of letters, but are usually used only by us developers for labelling things internally within our code; usually as keys in hashes.
+
+[Read more about symbols here.](ruby-hashes.md#a-brief-interlude-symbols)
+
 #### Table
 
+A table is the primary way we store information in our applications.
+
+For each table, we decide what to name it, what columns to add to it, and what datatype each column can hold.
+
+Our users can then add rows to each table and populate each cell with information.
+
 #### Value
+
+We usually use the word "value" to refer to the current contents of a [variable](#variable).
 
 #### Variable
 
