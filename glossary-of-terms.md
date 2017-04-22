@@ -62,7 +62,16 @@ a.push("carol")
 a.push("bob")
 ```
 
-You can also pre-populate the array when you create it:
+There is also a shorthand for adding elements to an array with the `<<` ("**shovel**") operator:
+
+```ruby
+a << "doug"
+a << "alice"
+a << "carol"
+a << "bob"
+```
+
+You can also pre-populate the array _in one fell swoop_ when you create it:
 
 ```ruby
 a = ["doug", "alice", "carol", "bob"]
@@ -150,7 +159,7 @@ h.store(:last_name, "Betina")
 h.store(:role, "Instructor")
 ```
 
-There is also a square bracket shorthand for storing elements:
+There is also a square bracket shorthand for storing elements in a hash:
 
 ```ruby
 h[:first_name] = "Raghu"
@@ -158,7 +167,7 @@ h[:last_name] = "Betina"
 h[:role] = "Instructor"
 ```
 
-You can also pre-populate the hash in one fell swoop when you create it:
+You can also pre-populate the hash _in one fell swoop_ when you create it:
 
 ```ruby
 h = { :first_name => "Raghu", :last_name => "Betina", :role => "Instructor" }
