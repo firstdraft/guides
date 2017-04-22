@@ -155,6 +155,8 @@ If we think about programming as working with _data_ and _instructions_, and rec
 
 Integers are a class (in Ruby they are called `Fixnum`s). Decimals are a class (in Ruby they are called `Float`s). `String`, `Array`, `Hash`, `Date`, `Time`, `Symbol`, and many more are all classes in Ruby.
 
+Even better, using the `class` keyword, we can _define our own classes in Ruby and add them to the language_, which gives us tremendous expressiveness to describe our problem domain.
+
 For each class, we can create **instances** of the class — individual members — and then instruct them to do the things that that kind of thing knows how to do. For example, I can create an instance of the [`Array`](#array) class:
 
 ```ruby
