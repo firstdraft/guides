@@ -8,7 +8,7 @@ A **argument** is an input to a [method](#method):
 "well, hello!".gsub("ll", "✌️") # => "we✌️, he✌️o!"
 ```
 
-In the example above, the strings `"ll"` and `"✌️"` are both **arguments** to the method `gsub`.
+In the example above, the strings `"ll"` and `"✌️"` are both **arguments** to the method `.gsub`.
 
 The syntax for giving a method its arguments is to put them within parentheses immediately following the method's name; and if there are multiple arguments, then they are separated by commas.
 
