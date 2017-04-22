@@ -137,7 +137,7 @@ I am not a big fan of such "concise" code. I prefer easily understood lines of c
 geocoding_parsed_data.fetch("results").at(0).fetch("geometry").fetch("location").fetch("lng")
 ```
 
-If it looks sort of like a train, that's because it can often lead to a train wreck: when one step fails, perhaps by returning a `nil`, it can be hard to debug.
+If the above reminds you of train, that's because it can often lead to a train wreck: when one step fails, perhaps by returning a `nil`, it can be hard to debug.
 
 Prefer creating well-named intermediate variables over excessive method-chaining.
 
