@@ -135,7 +135,7 @@ Ruby represents the list within curly brackets, with each element separated by a
 
 Each element in a `Hash` consists of a **key/value pair**. The key comes first and is separated from the value by a `=>`, which is called a **hash rocket**.
 
-Technically, the key can be any Ruby object, but we almost always use [`Symbol`s](#symbol).
+Technically, the key can be any Ruby object, but we almost always use [`Symbol`s](#symbol), if we have a choice in the matter.
 
 The value can can be any Ruby object — even another `Hash`, or an [`Array`](#array).
 
