@@ -2,13 +2,13 @@
 
 #### Argument
 
-An input to a [method](#method):
+A **argument* is an input to a [method](#method):
 
 ```ruby
 "well, hello!".gsub("ll", "✌️") # => "we✌️, he✌️o!"
 ```
 
-In the example above, the strings `"ll"` and `"✌️"` are both arguments to the method `gsub`.
+In the example above, the strings `"ll"` and `"✌️"` are both **arguments** to the method `gsub`.
 
 The syntax for giving a method its arguments is to put them within parentheses immediately following the method's name; and if there are multiple arguments, then they are separated by commas.
 
@@ -31,7 +31,7 @@ Personally, I prefer using the parentheses around arguments to keep it clear wha
 
 #### Array
 
-One of the built-in Ruby [classes](#class). It is one of the two primary classes we use to represent **lists of things**. (The other one is [`Hash`](#hash).)
+**`Array`** is one of the built-in Ruby [classes](#class). It is one of the two primary classes we use to represent **lists of things**. (The other one is [`Hash`](#hash).)
 
 Ruby represents the list within square brackets, with each element separated by a comma:
 
@@ -95,7 +95,7 @@ a[1] # => "alice"
 
 #### Block
 
-Some methods, like `gsub()`, require additional _data_ to do their job:
+Some methods, like `.gsub()`, require additional _data_ to do their job:
 
 ```ruby
 "well, hello!".gsub("ll", "✌️") # => "we✌️, he✌️o!"
@@ -103,7 +103,7 @@ Some methods, like `gsub()`, require additional _data_ to do their job:
  
 [Arguments](#argument) are pieces of data that a method needs as input in order to do its job. In the above example, `gsub()` needs to know which substring to replace and what to replace it with.
 
-Other methods, like `.each`, require additional **instructions** to do their job:
+Other methods, like `.each`, require additional _instructions_ to do their job:
 
 ```ruby
 our_numbers = [4, 10, 6]        # Create an array of numbers
@@ -117,7 +117,7 @@ end
 
 In this example, the `.each` method needs to know what code to execute once per element in the array that it was invoked upon.
 
-In order to give a method **code as input** (as opposed to _data as input_, for which we would use _arguments_), we use a **block**.
+In order to give a method _code as input_ (as opposed to _data as input_, for which we would use _arguments_), we use a **block**.
 
 The syntax for giving a method a block is to put the `do` keyword after its name, and then put a matching `end` keyword on a line somewhere after that. Between the `do` and the `end`, we can write as many lines of code as necessary, and those lines of code will be passed to the method as input.
 
