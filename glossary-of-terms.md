@@ -33,6 +33,24 @@ I, personally, prefer using the parentheses around arguments to keep it clear wh
 
 One of the built-in Ruby [classes](#class). It is one of the two primary classes we use to represent **lists of things** (the other one is [`Hash`](#hash)).
 
+An `Array` can be created like any Ruby object, with `.new`:
+
+```ruby
+a = Array.new
+```
+
+or by using the shorthand of square brackets:
+
+```ruby
+a = []
+```
+
+You can also pre-populate the array when you create it:
+
+```ruby
+a = [3, 9, 2, 19]
+```
+
 #### Block
 
 #### Box
