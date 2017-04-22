@@ -26,7 +26,7 @@ It's just a matter of taste which style you use, but definitely don't use both p
 "well, hello!".gsub ("ll", "✌️") # wrong!
 ```
 
-I, personally, prefer using the parentheses around arguments to keep it clear what goes with what, especially when you start to use more than one method on the same line.
+Personally, I prefer using the parentheses around arguments to keep it clear what goes with what. Otherwise I get confused, especially when there's more than one method on the same line.
 
 
 #### Array
