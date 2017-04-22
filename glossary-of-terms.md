@@ -95,6 +95,40 @@ a[1] # => "alice"
 
 #### Block
 
+Some methods, like `gsub()`, _require additional data to do their job_:
+
+```ruby
+"well, hello!".gsub("ll", "✌️") # => "we✌️, he✌️o!"
+```
+ 
+[Arguments](#argument) are pieces of data that a method needs as input in order to do its job. In the above example, `gsub()` needs to know which substring to replace and what to replace it with.
+
+Other methods, like `.each`, _require additional instructions to do their job_:
+
+```ruby
+our_numbers = [4, 10, 6]        # Create an array of numbers
+squared_numbers = []            # Create an empty array
+
+our_numbers.each do |num|       # For each element in numbers, (refer to it as "num")
+  square = num * num            # Square the number
+  squared_numbers.push(square)  # Push it into the squared_numbers array
+end
+```
+
+In this example, the `.each` method needs to know what code to execute once per element in the array that it was invoked upon.
+
+In order to give a method some _code_ as an input (as opposed to a piece of data, for which we would use an _argument_), we use a **block**.
+
+The syntax for giving a method a block is to put the `do` keyword after its name, and then put a matching `end` keyword on a line somewhere after that. Between the `do` and the `end`, we can write as many lines of code as necessary, and those lines of code will be passed to the method as input.
+
+There is an optional syntax for blocks that contain only one line of code: rather than using `do` and `end`, you can just use `{` and `}`. So you might come across some Ruby that looks like this:
+
+```ruby
+our_numbers.each { |num| squared_numbers.push(num * num) }
+```
+
+I am not a big fan of such "concise" code. I prefer easily understood lines of code, even if there are more of them.
+
 #### Box
 
 #### Chain
