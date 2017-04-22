@@ -101,7 +101,7 @@ Some methods, like `.gsub()`, require additional _data_ to do their job:
 "well, hello!".gsub("ll", "✌️") # => "we✌️, he✌️o!"
 ```
  
-[Arguments](#argument) are pieces of data that a method needs as input in order to do its job. In the above example, `gsub()` needs to know which substring to replace and what to replace it with.
+[Arguments](#argument) are pieces of data that a method needs as input in order to do its job. In the above example, `.gsub()` needs to know which substring to replace and what to replace it with.
 
 Other methods, like `.each`, require additional _instructions_ to do their job:
 
@@ -351,7 +351,7 @@ Each `<label>`/`<input>` pair should have matching `for=""`/`id=""` attributes, 
 
 #### Loop
 
-To "loop" is to execute a piece of code repeated.ly; potentially infinitely.
+To "loop" is to execute a piece of code repeatedly; maybe even infinitely.
 
 [Read more about loops here.](loops-in-ruby.md)
 
