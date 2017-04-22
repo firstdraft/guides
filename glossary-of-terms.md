@@ -417,7 +417,7 @@ Our users can then add rows to each table and populate each cell with informatio
 
 #### Value
 
-We usually use the word "value" to refer to the current contents of a [variable](#variable).
+We usually use the word "value" to refer to either the current contents of a [variable](#variable), or to the return value of a [method](#method).
 
 #### Variable
 
