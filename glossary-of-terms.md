@@ -31,7 +31,7 @@ I, personally, prefer using the parentheses around arguments to keep it clear wh
 
 #### Array
 
-One of the core Ruby [classes](#class).
+One of the built-in Ruby [classes](#class). It is one of the two primary classes we use to represent **lists of things** (the other one is [`Hash`](#hash)).
 
 #### Block
 
@@ -55,17 +55,17 @@ One of the core Ruby [classes](#class).
 
 #### Fixnum
 
-One of the core Ruby [classes](#class).
+One of the built-in Ruby [classes](#class).
 
 #### Float
 
-One of the core Ruby [classes](#class).
+One of the built-in Ruby [classes](#class).
 
 #### Gem
 
 #### Hash
 
-One of the core Ruby [classes](#class).
+One of the built-in Ruby [classes](#class).
 
 #### Instance Variable
 
@@ -89,11 +89,11 @@ One of the core Ruby [classes](#class).
 
 #### String
 
-One of the core Ruby [classes](#class).
+One of the built-in Ruby [classes](#class).
 
 #### Symbol
 
-One of the core Ruby [classes](#class).
+One of the built-in Ruby [classes](#class).
 
 #### Table
 
