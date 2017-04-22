@@ -33,5 +33,4 @@ A collection of guides and cheatsheets for Application Development.
 * [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
 * [Getting Started with Cloud 9](getting-started-with-cloud-9.md)
 * [Glossary of Terms](glossary-of-terms.md)
-* [Labels for Inputs](labels-for-inputs.md)
 
