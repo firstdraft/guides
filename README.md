@@ -5,6 +5,7 @@ A collection of guides and cheatsheets for Application Development.
 **Please note:** This collection is a work in progress. Some guides are incomplete; and they are not meant to be read in sequence, one after the other, unless they directly link to one another.
 
 * [Setting Up Your Computer](setting-up-your-computer.md)
+  * [Getting Started with Cloud 9](getting-started-with-cloud-9.md)
   * [Installing Atom](installing-atom.md)
   * [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
   * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
@@ -26,11 +27,8 @@ A collection of guides and cheatsheets for Application Development.
   * [Loops in Ruby](loops-in-ruby.md)
   * [Ruby Hashes](ruby-hashes.md)
   * [More on Ruby Classes](more-on-ruby-classes.md)
+  * [Glossary of Terms](glossary-of-terms.md)
 * [RCAV Flowchart](rcav-flowchart.md)
 * [CRUD with Ruby](crud-with-ruby.md)
 * [Loading data from a CSV file into your database](loading-data-from-a-csv-file-into-your-database.md)
 * [starter\_generators](starter_generators.md)
-* [Authentication and Authorization with Devise](authentication-and-authorization-with-devise.md)
-* [Getting Started with Cloud 9](getting-started-with-cloud-9.md)
-* [Glossary of Terms](glossary-of-terms.md)
-

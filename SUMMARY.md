@@ -29,5 +29,4 @@
 * [CRUD with Ruby](crud-with-ruby.md)
 * [Loading data from a CSV file into your database](loading-data-from-a-csv-file-into-your-database.md)
 * [starter\_generators](starter_generators.md)
-* [Getting Started with Cloud 9](getting-started-with-cloud-9.md)
 
