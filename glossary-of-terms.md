@@ -53,7 +53,7 @@ or by using the square bracket shorthand:
 a = []
 ```
 
-You can add elements to an array with the `.push()` method, which takes one argument; the object you want to add to the end of array:
+You can add elements to an array with the `.push()` method, which takes one argument; the object you want to add to the end of the array:
 
 ```ruby
 a.push("doug")
