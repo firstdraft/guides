@@ -75,6 +75,12 @@ a.at(1) # => "alice"
 
 Notice that position numbers begin at `0`, not `1` as you might expect.
 
+There is also a square bracket shorthand for accessing elements:
+
+```ruby
+a[1] # => "alice"
+```
+
 [Read more about arrays here.](https://guides.firstdraft.com/fundamental-classes.html#arrays)
 
 #### Block
