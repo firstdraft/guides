@@ -33,7 +33,7 @@ I, personally, prefer using the parentheses around arguments to keep it clear wh
 
 One of the built-in Ruby [classes](#class). It is one of the two primary classes we use to represent **lists of things**. (The other one is [`Hash`](#hash).)
 
-Ruby represents an array of objects within square brackets, with each element separated by a comma:
+Ruby represents the list within square brackets, with each element separated by a comma:
 
 ```ruby
 ["doug", "alice", "carol", "bob"]
@@ -116,7 +116,62 @@ One of the built-in Ruby [classes](#class).
 
 #### Hash
 
-One of the built-in Ruby [classes](#class).
+One of the built-in Ruby [classes](#class). It is one of the two primary classes we use to represent **lists of things**. (The other one is [`Array`](#array).)
+
+Ruby represents the list within curly brackets, with each element separated by a comma:
+
+```ruby
+{ :first_name => "Raghu", :last_name => "Betina", :role => "Instructor" }
+```
+
+Each element in a `Hash` consists of a **key/value pair**. The key comes first and is separated from the value by a `=>`, which is called a **hash rocket**.
+
+Technically, the key can be any Ruby object, but we almost always use [`Symbol`s](#symbol).
+
+The value can can be any Ruby object — even another `Hash`, or an [`Array`](#array).
+
+A blank instance of `Hash` can be created like any Ruby object, by calling `.new` on the class:
+
+```ruby
+h = Hash.new
+```
+
+or by using the curly bracket shorthand:
+
+```ruby
+h = {}
+```
+
+You can add elements to a hash with the `.store()` method:
+
+```ruby
+h.store(:first_name, "Raghu")
+h.store(:last_name, "Betina")
+h.store(:role, "Instructor")
+
+```
+
+You can also pre-populate the array when you create it:
+
+```ruby
+a = ["doug", "alice", "carol", "bob"]
+```
+
+You can then access elements in the array by position number with the `.at()` method:
+
+```ruby
+a.at(1) # => "alice"
+```
+
+Notice that position numbers begin at `0`, not `1` as you might expect.
+
+There is also a square bracket shorthand for accessing elements:
+
+```ruby
+a[1] # => "alice"
+```
+
+[Read more about arrays here.](https://guides.firstdraft.com/fundamental-classes.html#arrays)
 
 #### Instance Variable
 
