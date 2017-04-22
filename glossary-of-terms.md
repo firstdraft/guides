@@ -357,7 +357,7 @@ To "loop" is to execute a piece of code repeatedly; maybe even infinitely.
 
 #### Method
 
-A method is an instruction that you can call on an object.
+A method is an instruction that you can ask an object to perform.
 
 [See class for more.](#class)
 
