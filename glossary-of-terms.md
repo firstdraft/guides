@@ -1,5 +1,7 @@
 # Glossary of Terms
 
+## Contents
+
  - [Argument](#argument)
  - [Array](#array)
  - [Block](#block)
@@ -32,7 +34,7 @@
  - [Value](#value)
  - [Variable](#variable)
 
-#### Argument
+### Argument
 
 A **argument** is an input to a [method](#method):
 
@@ -61,7 +63,9 @@ It's just a matter of taste which style you use, but definitely don't use both p
 Personally, I prefer using the parentheses around arguments to keep it clear what goes with what. Otherwise I get confused, especially when there's more than one method on the same line.
 
 
-#### Array
+[Top ↩](#contents)
+
+### Array
 
 **`Array`** is one of the built-in Ruby [classes](#class). It is one of the two primary classes we use to represent **lists of things**. (The other one is [`Hash`](#hash).)
 
@@ -125,14 +129,16 @@ a[1] # => "alice"
 
 [Read more about arrays here.](fundamental-classes.md#arrays)
 
-#### Block
+[Top ↩](#contents)
+
+### Block
 
 Some methods, like `.gsub()`, require additional _data_ to do their job:
 
 ```ruby
 "well, hello!".gsub("ll", "✌️") # => "we✌️, he✌️o!"
 ```
- 
+
 [Arguments](#argument) are pieces of data that a method needs as input in order to do its job. In the above example, `.gsub()` needs to know which substring to replace and what to replace it with.
 
 Other methods, like `.each`, require additional _instructions_ to do their job:
@@ -161,7 +167,9 @@ our_numbers.each { |num| squared_numbers.push(num * num) }
 
 I am not a big fan of such "concise" code. I prefer easily understood lines of code, even if there are more of them.
 
-#### Box
+[Top ↩](#contents)
+
+### Box
 
 When you hear me use the term "box", I mean "[variable](#variable)"; but this is not a technical term, and real developers (unlike me) won't know what you mean if you use it. You should use "variable" instead.
 
@@ -169,7 +177,9 @@ But as we know, variables are just boxes that we use to temporarily store values
 
 Sometimes we replace what is inside the box and throw away the old value. We use the assignment operator (`=`) both to put things in our boxes initially and to replace them later (_never_ to be confused with the similar looking but _completely_ different equivalence comparison (`==`)).
 
-#### Chain
+[Top ↩](#contents)
+
+### Chain
 
 "Chaining" is usually used to refer to calling multiple methods in succession in the same expression, like so:
 
@@ -181,7 +191,9 @@ If the above reminds you of train, that's because it can often lead to a train w
 
 Prefer creating well-named intermediate variables over excessive method-chaining.
 
-#### Class
+[Top ↩](#contents)
+
+### Class
 
 If we think about programming as working with _data_ and _instructions_, and recognize that Ruby can work with more kinds of data than, say HTML (only text) or calculators (only integers and decimals), then you've already grasped what **classes** are: they are _kinds of data_.
 
@@ -209,7 +221,9 @@ These object-specific instructions are formally known as **methods**.
 
 [Read more about classes here. ](more-on-ruby-classes.md)
 
-#### Def
+[Top ↩](#contents)
+
+### Def
 
 `def` is a keyword in Ruby that we use to define [methods](#method).
 
@@ -217,7 +231,9 @@ The `def` is followed by the name of the method you want to define, and comes wi
 
 It is always paired with an `end`, so just type the `end` before you type anything else and forget it.
 
-#### Div
+[Top ↩](#contents)
+
+### Div
 
 When we're writing HTML, our job is to give our content structure using HTML tags.
 
@@ -229,43 +245,59 @@ Well, `<recipe></recipe>` is not an element in the HTML language. So, instead, H
 
 (`<span>` is the analogous generic inline element.)
 
-#### Do
+[Top ↩](#contents)
+
+### Do
 
 `do` is the Ruby keyword we use to encapsulate [blocks](#block), along with a matching `end`.
 
-#### Each
+[Top ↩](#contents)
+
+### Each
 
 `.each` is our bread-and-butter method for [looping](#loop) over [arrays](#array).
 
-#### Element
+[Top ↩](#contents)
+
+### Element
 
 We use the word "element" to refer to each thing in an [array](#array).
 
-#### Expression
+[Top ↩](#contents)
+
+### Expression
 
 We use the word "expression" to refer to one complete Ruby "sentence": a combination of objects and methods in valid syntax which the Ruby interpreter is able to reduce to one final object.
 
 The final object is then typically either stored in a variable for subsequent expressions to use, or output to the screen or some permanent storage.
 
-#### Fixnum
+[Top ↩](#contents)
+
+### Fixnum
 
 One of the built-in Ruby [classes](#class). They represent integers.
 
 [Read more about Fixnums here.](fundamental-classes.md#fixnum)
 
-#### Float
+[Top ↩](#contents)
+
+### Float
 
 One of the built-in Ruby [classes](#class). They represent decimal numbers.
 
 [Read more about Floats here.](fundamental-classes.md#float)
 
-#### Gem
+[Top ↩](#contents)
+
+### Gem
 
 In every programming language, programmers share solutions to commonly-faced problems. No one re-invents the wheel for everything.
 
 These shared packages of code are called "libraries", generally, but in Ruby they are called **gems**. Rails itself is a gem (actually, it is a `bundle` of lots of other gems).
 
-#### Hash
+[Top ↩](#contents)
+
+### Hash
 
 One of the built-in Ruby [classes](#class). It is one of the two primary classes we use to represent **lists of things**. (The other one is [`Array`](#array).)
 
@@ -329,13 +361,17 @@ h[:role] # => "Instructor"
 
 [Read more about hashes here.](ruby-hashes.md)
 
-#### Instance Variable
+[Top ↩](#contents)
+
+### Instance Variable
 
 An instance variable is a variable that lasts longer than a local variable; for our purposes, it is one that lasts long enough for us to use it a view template, unlike the local variables that we define in our actions.
 
 To create an instance variable, we simply use an `@` as the first letter in its name, rather than a lowercase letter like we're used to for local variables.
 
-#### Key
+[Top ↩](#contents)
+
+### Key
 
 A key is how how an element in a [hash](#hash) is accessed. It is the name of a position in the list.
 
@@ -343,7 +379,9 @@ When storing an element in a hash, we **must** provide a key; unlike in an array
 
 Similarly, when accessing an element in a hash, we must provide a key; trying to access an element in a hash by position number will result in an error.
 
-#### Label
+[Top ↩](#contents)
+
+### Label
 
 A `<label>` is an HTML element that is paired with an `<input>` in a `<form>`. It is best practice to always pair every `<input>` with a `<label>`, even if you hide it with CSS, for accessibility and SEO reasons.
 
@@ -381,25 +419,33 @@ Each `<label>`/`<input>` pair should have matching `for=""`/`id=""` attributes, 
 </form>
 ```
 
-#### Loop
+[Top ↩](#contents)
+
+### Loop
 
 To "loop" is to execute a piece of code repeatedly; maybe even infinitely.
 
 [Read more about loops here.](loops-in-ruby.md)
 
-#### Method
+[Top ↩](#contents)
+
+### Method
 
 A method is an instruction that you can ask an object to perform.
 
 [See class for more.](#class)
 
-#### Object
+[Top ↩](#contents)
+
+### Object
 
 The term "object" is usually used interchangeably with the more formal term **instance**, which itself means an individual member of a **class**.
 
 [See class for more.](#class)
 
-#### Operator
+[Top ↩](#contents)
+
+### Operator
 
 We usually use this term to refer to things that break from the usual [primary syntax of Ruby](primary-syntax.md#rubys-primary-syntax-objectmethod), `object.method`.
 
@@ -411,19 +457,27 @@ Let me just take this opportunity, though, to once more remind you to **NOT CONF
 
 In other words when you type `if`, **CHECK YOURSELF** and **DO NOT TYPE A SINGLE `=` IN THE LOGICAL TEST AFTER IT**.
 
-#### Render
+[Top ↩](#contents)
+
+### Render
 
 The `render()` method is what we use at the end of a controller action to choose which `.html.erb` view template to send back to the user.
 
-#### Scrape
+[Top ↩](#contents)
+
+### Scrape
 
 "Scraping" refers to programmatically reading information off of websites, as opposed to reading it through APIs.
 
-#### Source
+[Top ↩](#contents)
+
+### Source
 
 "Source" usually refers to the source code of a program.
 
-#### String
+[Top ↩](#contents)
+
+### String
 
 One of the built-in Ruby [classes](#class).
 
@@ -431,7 +485,9 @@ They represent words or other sequences of letters.
 
 [Read more about strings here.](fundamental-classes.md#string)
 
-#### Symbol
+[Top ↩](#contents)
+
+### Symbol
 
 One of the built-in Ruby [classes](#class).
 
@@ -439,7 +495,9 @@ They represent words or other sequences of letters, but are usually used only by
 
 [Read more about symbols here.](ruby-hashes.md#a-brief-interlude-symbols)
 
-#### Table
+[Top ↩](#contents)
+
+### Table
 
 A table is the primary way we store information in our applications.
 
@@ -447,11 +505,15 @@ For each table, we decide what to name it, what columns to add to it, and what d
 
 Our users can then add rows to each table and populate each cell with information.
 
-#### Value
+[Top ↩](#contents)
+
+### Value
 
 We usually use the word "value" to refer to either the current contents of a [variable](#variable), or to the return value of a [method](#method).
 
-#### Variable
+[Top ↩](#contents)
+
+### Variable
 
 [Read about variables here.](primary-syntax.md#variables)
 
