@@ -148,27 +148,24 @@ You can add elements to a hash with the `.store()` method:
 h.store(:first_name, "Raghu")
 h.store(:last_name, "Betina")
 h.store(:role, "Instructor")
-
 ```
 
-You can also pre-populate the array when you create it:
+You can also pre-populate the hash when you create it:
 
 ```ruby
-a = ["doug", "alice", "carol", "bob"]
+h = { :first_name => "Raghu", :last_name => "Betina", :role => "Instructor" }
 ```
 
-You can then access elements in the array by position number with the `.at()` method:
+You can then access elements in the hash by key number with the `.fetch()` method:
 
 ```ruby
-a.at(1) # => "alice"
+h.fetch(:role) # => "Instructor"
 ```
-
-Notice that position numbers begin at `0`, not `1` as you might expect.
 
 There is also a square bracket shorthand for accessing elements:
 
 ```ruby
-a[1] # => "alice"
+h[:role] # => "Instructor"
 ```
 
 [Read more about arrays here.](https://guides.firstdraft.com/fundamental-classes.html#arrays)
