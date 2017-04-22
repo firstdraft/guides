@@ -31,15 +31,31 @@ I, personally, prefer using the parentheses around arguments to keep it clear wh
 
 #### Array
 
-One of the built-in Ruby [classes](#class). It is one of the two primary classes we use to represent **lists of things** (the other one is [`Hash`](#hash)).
+One of the built-in Ruby [classes](#class). It is one of the two primary classes we use to represent **lists of things**. (The other one is [`Hash`](#hash).)
 
-An `Array` can be created like any Ruby object, with `.new`:
+Ruby represents an array of objects within square brackets, with each element separated by a comma:
+
+```ruby
+["doug", "alice", "carol", "bob"]
+```
+
+Each element of an `Array` can be any Ruby object — even another `Array`.
+
+A single `Array` can contain elements that are members of different classes, e.g.:
+
+```ruby
+[3, "hi", :there, 42.42]
+```
+
+although that is somewhat rare.
+
+A blank instance of `Array` can be created like any Ruby object, by calling `.new` on the class:
 
 ```ruby
 a = Array.new
 ```
 
-or by using the shorthand of square brackets:
+or by using the square bracket shorthand:
 
 ```ruby
 a = []
@@ -48,8 +64,18 @@ a = []
 You can also pre-populate the array when you create it:
 
 ```ruby
-a = [3, 9, 2, 19]
+a = ["doug", "alice", "carol", "bob"]
 ```
+
+You can then access elements in the array by position number with the `.at()` method:
+
+```ruby
+a.at(1) # => "alice"
+```
+
+Notice that position numbers begin at `0`, not `1` as you might expect.
+
+[Read more about arrays here.](https://guides.firstdraft.com/fundamental-classes.html#arrays)
 
 #### Block
 
