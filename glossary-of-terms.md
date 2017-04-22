@@ -151,7 +151,7 @@ or by using the curly bracket shorthand:
 h = {}
 ```
 
-You can add elements to a hash with the `.store()` method:
+You can add elements to a hash with the `.store()` method, which takes two arguments; the first is the key you want to store an object under, and the second is the object you want to store:
 
 ```ruby
 h.store(:first_name, "Raghu")
