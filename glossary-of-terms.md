@@ -150,7 +150,15 @@ h.store(:last_name, "Betina")
 h.store(:role, "Instructor")
 ```
 
-You can also pre-populate the hash when you create it:
+There is also a square bracket shorthand for storing elements:
+
+```ruby
+h[:first_name] = "Raghu"
+h[:last_name] = "Betina"
+h[:role] = "Instructor"
+```
+
+You can also pre-populate the hash in one fell swoop when you create it:
 
 ```ruby
 h = { :first_name => "Raghu", :last_name => "Betina", :role => "Instructor" }
