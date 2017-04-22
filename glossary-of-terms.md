@@ -518,3 +518,5 @@ We usually use the word "value" to refer to either the current contents of a [va
 [Read about variables here.](primary-syntax.md#variables)
 
 Also see [box](#box).
+
+[Top ↩](#contents)
