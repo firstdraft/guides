@@ -179,23 +179,51 @@ These object-specific instructions are formally known as **methods**.
 
 #### Def
 
+`def` is a keyword in Ruby that we use to define [methods](#method).
+
+The `def` is followed by the name of the method you want to define, and comes within the `class` that you are adding a behavior to.
+
+It is always paired with an `end`, so just type the `end` before you type anything else and forget it.
+
 #### Div
+
+When we're writing HTML, our job is to give our content structure using HTML tags.
+
+Whenever possible, we should choose the most appropriate HTML element that describes our content. If the piece of content is a third-level heading, for example, then choose an `<h3>`, not an `<h6>` — regardless of what font size you want it to have. Styling is secondary, and we will always override 100% of the crappy default browser styling anyway. What is _not_ secondary is search engine rankings and accessibility, for which choosing the correct semantic elements is very important.
+
+_However_, since HTML was invented for describing research papers and we are using it to create apps, there very often _just isn't an element in the language to describe the thing we need_. Most commonly, we need to group together a set of elements into a component — for example, a _recipe_ — and then perhaps style it appropriately.
+
+Well, `<recipe></recipe>` is not an element in the HTML language. So, instead, HTML offers us `<div></div>`. `<div>` is the generic block-level element that we use when no other element makes sense. And then we usually add a `class="recipe"` to it to distinguish it from all the other `<div>`s.
+
+(`<span>` is the analogous generic inline element.)
 
 #### Do
 
+`do` is the Ruby keyword we use to encapsulate [blocks](#block), along with a matching `end`.
+
 #### Each
+
+`.each` is our bread-and-butter method for [looping](#loop) over [arrays](#array).
 
 #### Element
 
+We use the word "element" to refer to each thing in an [array](#array).
+
 #### Expression
+
+We use the word "expression" to refer to one complete Ruby "sentence": a combination of objects and methods in valid syntax which the Ruby interpreter is able to reduce to one final object. The object is then typically either stored in a variable for subsequent expressions to use, or output to the screen or some permanent storage.
 
 #### Fixnum
 
-One of the built-in Ruby [classes](#class).
+One of the built-in Ruby [classes](#class). They represent integers.
+
+[Read more about Fixnums here.](fundamental-classes.md#fixnum)
 
 #### Float
 
-One of the built-in Ruby [classes](#class).
+One of the built-in Ruby [classes](#class). They represent decimal numbers.
+
+[Read more about Floats here.](fundamental-classes.md#float)
 
 #### Gem
 
