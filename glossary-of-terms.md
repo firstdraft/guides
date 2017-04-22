@@ -2,7 +2,7 @@
 
 #### Argument
 
-A **argument* is an input to a [method](#method):
+A **argument** is an input to a [method](#method):
 
 ```ruby
 "well, hello!".gsub("ll", "✌️") # => "we✌️, he✌️o!"
