@@ -26,7 +26,19 @@ Run `bundle install` as shown below:
 
 ![](/assets/terminal.png)
 
-To start up your `rails server`, click the green "Run" button at the top-right of the window, and you'll have a live application running on the internet. You'll see the URL of your application in the server log in a new Terminal tab at the bottom, and you can open it up in a new Chrome tab:
+## Starting the server
+
+On Cloud9, you can't just run `rails server` or `rails s`, so don't try.
+
+The full command you need to start the server is
+
+```
+rails s -b $IP -p $PORT
+```
+
+However, that's annoying to type, so Cloud9 provides us with the green "Run Project" button near the top-right of the window.
+
+Click it and you'll have a live application running on the internet. You'll see the URL of your application in the server log in a new Terminal tab at the bottom, and you can open it up in a new Chrome tab:
 
 ![](/assets/rails_server.gif)
 
