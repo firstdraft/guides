@@ -28,7 +28,7 @@ Run `bundle install` as shown below:
 
 ## Starting the server
 
-On Cloud9, you can't just run `rails server` or `rails s`, so don't try.
+On Cloud9, you can't just run `rails server`, so don't try.
 
 The full command you need to start the server is
 
