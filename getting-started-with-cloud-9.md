@@ -33,7 +33,7 @@ On Cloud9, you can't just run `rails server` or `rails s`, so don't try.
 The full command you need to start the server is
 
 ```
-rails s -b $IP -p $PORT
+rails server -b $IP -p $PORT
 ```
 
 However, that's annoying to type, so Cloud9 provides us with the green "Run Project" button near the top-right of the window.
