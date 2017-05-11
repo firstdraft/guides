@@ -5,7 +5,7 @@ Include this line in your `Gemfile`, which you'll find in the root folder of you
 ```ruby
 # Gemfile
 
-gem "starter_generators", :github => "raghubetina/starter_generators"
+gem "starter_generators", :git => "https://github.com/raghubetina/starter_generators"
 ```
 
 Then, 
