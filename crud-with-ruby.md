@@ -10,18 +10,18 @@ Rails includes an easy generator to help us get set up with both of these things
 
     rails generate model instructor first_name:string last_name:string
 
-Notes: `g` is short for `generate` , the same way `s` is short for `server` and `c` is short for `console`. Also, be sure that the name of your model (the thing that goes after `rails g model`) is **singular**.
+Notes: `g` is short for `generate` , the same way `s` is short for `server` and `c` is short for `console`.
 
 Commonly used datatypes for columns:
 
-    :boolean
-    :date
-    :datetime
+    :boolean    # true or false
+    :date       # Jan 27th 
+    :datetime   # 7:23pm on Jan 27th
     :decimal
     :integer
-    :string
-    :text
-    :time
+    :string     # Up to 255 characters
+    :text       # As many characters as you want
+    :time       # 7:23pm
 
 If you execute this command, you'll see that Rails has written two files for you. We could write these files by hand, but since they are pretty formulaic, the shortcut can do the work for us:
 
