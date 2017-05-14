@@ -8,7 +8,7 @@ First, we need a Ruby class to represent the real-world thing we're trying to mo
 
 Rails includes an easy generator to help us get set up with both of these things quickly. Supposed I wanted to create a table to store instructors, with two string columns `first_name` and `last_name`. I could use this shortcut from the Command Line:
 
-    rails g model instructor first_name:string last_name:string
+    rails generate model instructor first_name:string last_name:string
 
 Notes: `g` is short for `generate` , the same way `s` is short for `server` and `c` is short for `console`. Also, be sure that the name of your model (the thing that goes after `rails g model`) is **singular**.
 
