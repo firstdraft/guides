@@ -17,8 +17,8 @@ Commonly used datatypes for columns:
     :boolean    # true or false
     :date       # Jan 27th 
     :datetime   # 7:23pm on Jan 27th
-    :decimal
-    :integer
+    :decimal    # 42.42
+    :integer    # 42
     :string     # Up to 255 characters
     :text       # As many characters as you want
     :time       # 7:23pm
