@@ -31,6 +31,5 @@
 * [starter\_generators](starter_generators.md)
 * [Authentication with Devise](authentication-and-authorization-with-devise.md)
 * [Management Readings](management-readings.md)
-
-
+* [Using the Twitter gem](using-the-twitter-gem.md)
 
