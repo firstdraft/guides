@@ -2,6 +2,8 @@
 
 ## The Twitter gem
 
+![](/assets/Screen Shot 2017-05-14 at 2.37.31 PM.png)
+
 ![](/assets/Screen Shot 2017-05-14 at 2.39.22 PM.png)
 
 ![](/assets/Screen Shot 2017-05-14 at 2.41.29 PM.png)
@@ -15,7 +17,6 @@
 ![](/assets/Screen Shot 2017-05-14 at 2.31.08 PM.png)
 
 ![](/assets/Screen Shot 2017-05-14 at 2.36.34 PM.png)
-
 ![](/assets/Screen Shot 2017-05-14 at 2.37.06 PM.png)
 
 ![](/assets/Screen Shot 2017-05-14 at 2.37.12 PM.png)
@@ -34,31 +35,6 @@ Commit this change. Then create the file `.env` and add credentials to it:
 
 ![](/assets/Screen Shot 2017-05-14 at 2.46.03 PM.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ![](/assets/Screen Shot 2017-05-14 at 2.37.31 PM.png)
-
-
-
-
-
-
-
-![](/assets/Screen Shot 2017-05-14 at 2.36.34 PM.png)
 
 
