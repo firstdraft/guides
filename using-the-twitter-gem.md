@@ -35,6 +35,10 @@ Commit this change. Then create the file `.env` and add credentials to it:
 
 ![](/assets/Screen Shot 2017-05-14 at 2.46.03 PM.png)
 
-![](/assets/Screen Shot 2017-05-14 at 2.37.31 PM.png)
+## Using the gem
 
+![](/assets/Screen Shot 2017-05-14 at 3.47.16 PM.png)
 
+![](/assets/Screen Shot 2017-05-14 at 3.47.28 PM.png)
+
+![](/assets/Screen Shot 2017-05-14 at 3.48.31 PM.png)
