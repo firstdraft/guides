@@ -25,11 +25,12 @@
   * [Ruby Hashes](ruby-hashes.md)
   * [More on Ruby Classes](more-on-ruby-classes.md)
   * [Glossary of Terms](glossary-of-terms.md)
+* [Rails New and other basics](rails-new-and-other-basics.md)
 * [RCAV Flowchart](rcav-flowchart.md)
 * [CRUD with Ruby](crud-with-ruby.md)
 * [Loading data from a CSV file into your database](loading-data-from-a-csv-file-into-your-database.md)
 * [starter\_generators](starter_generators.md)
 * [Authentication with Devise](authentication-and-authorization-with-devise.md)
 * [Management Readings](management-readings.md)
-* [Using the Twitter gem](using-the-twitter-gem.md)
+* Rails New and other basics
 
