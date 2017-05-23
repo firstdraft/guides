@@ -32,5 +32,4 @@
 * [starter\_generators](starter_generators.md)
 * [Authentication with Devise](authentication-and-authorization-with-devise.md)
 * [Management Readings](management-readings.md)
-* Rails New and other basics
 
