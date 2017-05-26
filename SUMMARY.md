@@ -31,5 +31,6 @@
 * [Loading data from a CSV file into your database](loading-data-from-a-csv-file-into-your-database.md)
 * [starter\_generators](starter_generators.md)
 * [Authentication with Devise](authentication-and-authorization-with-devise.md)
+* [Using the Twitter gem](using-the-twitter-gem.md)
 * [Management Readings](management-readings.md)
 
