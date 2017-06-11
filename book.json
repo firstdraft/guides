@@ -1,5 +1,7 @@
 {
-    "plugins": [
-        "anchors"
-    ]
+  "plugins": [
+    "page-toc"
+  ],
+  "pluginsConfig": {
+  }
 }
