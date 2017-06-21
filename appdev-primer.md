@@ -16,21 +16,14 @@
  
  - Your next goal:
  
-    Explore this app: [Very Best Target](http://very-best-demo-pr-3.herokuapp.com/). It's very simple; it allows you to keep track of which restaurant in the city serves your favorite version of a particular dish; e.g. your favorite Tuna Niçoise Salad is served by the Midway Club.
+    Explore this app: [Very Best Target](http://very-best-demo-pr-3.herokuapp.com/). It's goal is simple; it allows you to keep track of which restaurant in the city serves your favorite version of a particular dish. The reigning champ for deep dish pizza, for example, could be Pequod's; but you're always on the lookout for a better one.
  
-    You can sign in to Very Best with usernames:
-    
-  - alice@example.com
-  - bob@example.com
-  - carol@example.com
-  - eve@example.com
-
- All of the passwords are "password". Click around and familiarize yourself with the features.
+    You can sign in to Very Best with usernames alice@example.com, bob@example.com, carol@example.com, or eve@example.com. All of the passwords are "password". Click around and familiarize yourself with the features of the application.
  
- You can also read the features of the app here:
- 
-  - [Very Best User Stories](https://gist.github.com/raghubetina/f0e2d7d73dd996c014904b5fb24e4e61)
+    [You can also read the features of the app here, phrased in a particular format known as **user stories**.](https://gist.github.com/raghubetina/f0e2d7d73dd996c014904b5fb24e4e61)
   
- Once you have a sense of it, your task: design what you think the database would have to look like in order to support the app. Draw an ERD in firstdraft.
+    Once you have a sense of it, your task:
+ 
+    **Design what you think the database would have to look like in order to support the app. Draw an ERD in firstdraft.**
  
  - Finally: Draw an ERD for [Photogram First Draft Target](https://appdev-primer-photogram.herokuapp.com/users/sign_up).
