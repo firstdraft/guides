@@ -20,7 +20,7 @@
  
     You can sign in to Very Best with usernames `alice@example.com`, `bob@example.com`, `carol@example.com`, or `eve@example.com`. All of the passwords are "`password`". Click around and familiarize yourself with the features of the application.
  
-    [You can also read the features of the app here, phrased in a particular format known as **user stories**.](https://gist.github.com/raghubetina/f0e2d7d73dd996c014904b5fb24e4e61)
+    You can also read the features of the app [here, phrased in a particular format known as **user stories**.](https://gist.github.com/raghubetina/f0e2d7d73dd996c014904b5fb24e4e61)
   
     Once you have a sense of it, your task:
  
