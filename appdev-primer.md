@@ -16,7 +16,7 @@
  
  - Your next goal:
  
-    Explore this app: [Very Best Target](http://very-best-demo-pr-3.herokuapp.com/). It's goal is simple; it allows you to keep track of which restaurant in the city serves your favorite version of a particular dish. Your reigning champ for deep dish pizza, for example, could be Pequod's; but you're always on the lookout for a better one.
+    Explore this app: [Very Best Target](http://very-best-demo-pr-3.herokuapp.com/). It's goal is simple; it allows you to keep track of which restaurant in the city serves your favorite version of a particular dish. Your reigning champ for deep dish pizza, for example, could be [Pequod's](http://pequodspizza.com/); but you're always on the lookout for a better one.
  
     You can sign in to Very Best with usernames alice@example.com, bob@example.com, carol@example.com, or eve@example.com. All of the passwords are "password". Click around and familiarize yourself with the features of the application.
  
