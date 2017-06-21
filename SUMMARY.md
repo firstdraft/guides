@@ -1,6 +1,11 @@
 # Summary
 
 * [Introduction](README.md)
+* [Building Your Own App](building-your-own-app.md)
+  * [AppDev Primer](appdev-primer.md)
+  * [Planning Your Idea](planning-your-idea.md)
+  * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
+  * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
 * [Setting Up Your Computer](setting-up-your-computer.md)
   * [Getting Started with Cloud 9](getting-started-with-cloud-9.md)
   * [Installing Atom](installing-atom.md)
@@ -10,10 +15,6 @@
 * [Introduction to HTML](introduction-to-html.md)
   * [Friendbook Exercise Guide](friendbook-exercise-guide.md)
   * [Design Readings and Resources](design-readings-and-resources.md)
-* [Building Your Own App](building-your-own-app.md)
-  * [Planning Your Idea](planning-your-idea.md)
-  * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
-  * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
 * [Command Line Basics](command-line-basics.md)
 * [The Rails Console](the-rails-console.md)
 * [Introduction to Ruby](introduction-to-ruby.md)
@@ -32,5 +33,5 @@
 * [starter\_generators](starter_generators.md)
 * [Authentication with Devise](authentication-and-authorization-with-devise.md)
 * [Using the Twitter gem](using-the-twitter-gem.md)
-* [Management Readings](management-readings.md)
+* AppDev Primer
 
