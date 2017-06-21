@@ -6,6 +6,8 @@
  
  - [Sign up for a free Heroku account](https://signup.heroku.com/) (if it asks for your preferred programming language, say Ruby)
  
+ - Don't forget to verify your email address for both.
+ 
  - Use those two accounts to sign up at [https://ideas.firstdraft.com/](https://ideas.firstdraft.com/)
  
 ### IMDb ERD
