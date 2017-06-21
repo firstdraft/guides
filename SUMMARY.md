@@ -33,5 +33,4 @@
 * [starter\_generators](starter_generators.md)
 * [Authentication with Devise](authentication-and-authorization-with-devise.md)
 * [Using the Twitter gem](using-the-twitter-gem.md)
-* AppDev Primer
 
