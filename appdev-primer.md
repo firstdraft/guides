@@ -1,6 +1,6 @@
 # AppDev Primer
 
- - Pretend you're the _application logic_ for a Twitter-like (public, asymmetrical) social network by answering these questions: [Photogram Database Exercise](https://docs.google.com/spreadsheets/d/104IDD206ubqloGZbjtSUAYwfOsFpiC6bQ3C11Re57M4/edit#gid=0)
+ - Given an existing database and data, pretend you're the _application logic_ for a Twitter-like (public, asymmetrical) social network by answering these questions: [Photogram Database Exercise](https://docs.google.com/spreadsheets/d/104IDD206ubqloGZbjtSUAYwfOsFpiC6bQ3C11Re57M4/edit#gid=0)
  
     As you're answering them, think about: what's your process? If you had to explain the process for answering each question [to a five year old](https://vimeo.com/27060669), how would you do it?
  
