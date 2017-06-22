@@ -79,4 +79,6 @@ Design what you think the database would have to look like in order to support t
 
 Finally: Draw an ERD for [Photogram First Draft Target](https://appdev-primer-photogram.herokuapp.com/users/sign_up).
 
-A social network is just about the trickiest database design you're going to ever have (self-referential many-to-manies, oh  my!), but you've already [navigated it no sweat above](#photogram-database). Now we just have to draw the ERD of that same database.
+A social network is just about the trickiest database design you're going to ever have (self-referential many-to-manies, oh  my!), but you've already [navigated it no sweat in the clipboard exercise](#photogram-database).
+
+Now we just have to draw the ERD of that same database. Include in your domain model the ability for users to leave comments on photos, as described in the last two questions.
