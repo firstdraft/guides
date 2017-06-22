@@ -82,3 +82,7 @@ Finally: Draw an ERD for [Photogram First Draft Target](https://appdev-primer-ph
 A social network is just about the trickiest database design you're going to ever have (self-referential many-to-manies, oh  my!), but you've already [navigated it no sweat in the clipboard exercise](#photogram-database).
 
 Now we just have to draw the ERD of that same database. Include in your domain model the ability for users to leave comments on photos, as described in the last two questions.
+
+Think you got it? Click Publish and wait a few minutes and refresh. When "Launch" button appears, click it and play around with the prototype. Can sign up/in/out as different users? Can you add photos? Can you follow other users? Can the application tell you just the photos that were posted by the people that you follow?
+
+The interface is horrible, but — you just built a social network! Not bad! Now we'll learn some front-end and learn how to make the interface better, and we'll learn some Ruby so you can build whatever functionality you can imagine. But you've already got a solid foundation.
