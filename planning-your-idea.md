@@ -43,7 +43,7 @@ Then, I select one flow that I like, and I  draw out each screen in a bit more d
 
 Next, I create a [Trello board](https://trello.com/) to list out all of the features that I've identified in my wireframe.
  
-For the time being, I create two columns in the board: "Ideas" and "First Draft".
+For the time being, I create two columns in the board: "Ideas" and "1st draft".
  
 In the Ideas column, add a card for every feature that you can see in your wireframe. When I'm writing down a feature, I usually phrase it as a [User Story][7]. User stories are just features, phrased in a particular manner:
 
