@@ -29,7 +29,7 @@ Once I have an idea in mind, I immediately reach for pen and paper and start ske
 
 ### Crazy Eights
 
-I like to start with some [Crazy Eights](https://library.gv.com/the-product-design-sprint-diverge-day-2-c7a5df8e7cd0) to force myself to just get some thoughts down on paper.
+I like to start with some [Crazy Eights](https://library.gv.com/the-product-design-sprint-diverge-day-2-c7a5df8e7cd0#43d8) to force myself to just get some thoughts down on paper.
  
 I will usually do two or three rounds. One round, I'll use the 8 panels to progress through the different screens of a flow. Another round, I'll use the 8 panels to explore 8 different takes on the most important screen in the app.
    
