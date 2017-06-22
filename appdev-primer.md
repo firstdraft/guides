@@ -77,12 +77,10 @@ Design what you think the database would have to look like in order to support t
  
 ### Photogram ERD
 
-Finally: Draw an ERD for [Photogram First Draft Target](https://appdev-primer-photogram.herokuapp.com/users/sign_up).
+Finally: Draw an ERD for [Photogram First Draft Target](https://appdev-primer-photogram.herokuapp.com/users/sign_up). This is an ugly, but functionally identically, version of [the social network](http://photogram-final-target.herokuapp.com/) that we'll be ultimately building during this course. Try signing up and playing around with it a bit. Can you post photos? Can you like photos? Can the app show you which photos you've liked? Can you follow other users? **Can the application show you the photos that were posted by the people that you follow?**
 
-A social network is just about the trickiest database design you're going to ever have (self-referential many-to-manies, oh  my!), but you've already [navigated it no sweat in the clipboard exercise](#photogram-database).
+The interface is horrible and clunky, but it technically does allow you to do all of those things, I think. A social network is just about the trickiest database design you're going to ever have (self-referential many-to-manies, oh  my!), but you've already [navigated it no sweat in the clipboard exercise](#photogram-database).
 
-Now we just have to draw the ERD of that same database. Include in your domain model the ability for users to leave comments on photos, as described in the last two questions.
-
-Think you got it? Click Publish and wait a few minutes and refresh. When "Launch" button appears, click it and play around with the prototype. Can you sign up/in/out as different users? Can you post photos? Can you like photos? Can the app show you which photos you've liked? Can you follow other users? **Can the application show you the photos that were posted by the people that you follow?** (This one is tricky to achieve just using firstdraft, but possible!)
+Now we just have to draw the ERD of that same database. Give it a try in firstdraft. Think you got it? Click Publish and wait a few minutes and refresh. When "Launch" button appears, click it and play around with the prototype. If you missed something, edit the ERD and try again.
 
 The interface is horrible, but — you just built a social network! Not bad! Now we'll learn some front-end and you'll be able to improve the interface, and we'll learn some Ruby so you can build whatever functionality you can imagine. But you've already got a solid foundation.
