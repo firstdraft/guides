@@ -2,7 +2,7 @@
 
 The aim of this exercise is to plan out an idea to build so that we can start to domain model, i.e., plan out our tables and columns.
 
-If you think you're already ready to do that, then you can skip to the next article, [Creating a First Draft Idea](creating-a-first-draft-idea.md). Otherwise, read on.
+If you think you're already ready to do that, then you can skip to the next article, [Creating a firstdraft Idea](creating-a-first-draft-idea.md). Otherwise, read on.
 
 ## Coming up with an idea
 
@@ -45,7 +45,7 @@ Next, I create a [Trello board](https://trello.com/) to list out all of the feat
  
 For the time being, I create two columns in the board: "Ideas" and "1st draft".
  
-In the Ideas column, add a card for every feature that you can see in your wireframe. When I'm writing down a feature, I usually phrase it as a [User Story][7]. User stories are just features, phrased in a particular manner:
+In the Ideas column, add a card for every feature that you can see in your wireframe. When I'm writing down a feature, I usually phrase it as a [User Story](http://www.romanpichler.com/blog/10-tips-writing-good-user-stories/). User stories are just features, phrased in a particular manner:
 
 "As a **[role]**, I want to be able to **[capability]**," (and, optionally), "so that **[benefit]**."
 
@@ -55,11 +55,11 @@ First, brain-dump all the features you can possibly imagine as user stories.
 
 **Then, re-order them by priority.** In Trello, you can drag-and-drop the cards to re-order them.
 
-Then, crucially, ask yourself: **what is the absolute minimum featureset I can get away with in this first experimental prototype?** The prototype's purpose is just to validate whether or not the idea is feasible and whether the core value is actually valuable. **Be ruthless in eliminating all non-essential user stories for this first draft.**
+Then, crucially, ask yourself: **what is the absolute minimum featureset I can get away with in this first experimental prototype?** The prototype's purpose is just to validate whether or not the idea is feasible and whether the core value is actually valuable. **Be ruthless in eliminating all non-essential user stories for this 1st draft.**
 
-Move **only the essential stories** to the First Draft column.
+Move **only the essential stories** to the 1st draft column.
 
-Now that we've planned out what we want to build, it's time to [diagram an Idea in First Draft](creating-a-first-draft-idea.md).
+Now that we've planned out what we want to build, it's time to [diagram an Idea in firstdraft](creating-a-first-draft-idea.md).
 
 
 [^1]: http://www.programmableweb.com/apis/directory
