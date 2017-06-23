@@ -50,6 +50,8 @@ A counterpoint: [*Why I wouldn’t use Rails for a new company*](https://blog.ja
 
 However, I don't believe that there is a clear successor to Rails -- yet. The author mentions Node.js, but I believe that it has already stabilized in mindshare. [Elm](http://elm-lang.org/) and [Phoenix](http://www.phoenixframework.org/) are both showing promise, but they still aren't even close to having a rich ecosystem of "gems" and Stack Overflow answers like Rails has, so you will be spending some of your "innovation tokens" re-inventing things that the Rails community has already solved.
 
+Here's DHH himself on the topic: [What makes Rails a framework worth learning in 2017?](https://www.quora.com/What-makes-Rails-a-framework-worth-learning-in-2017/answer/David-Heinemeier-Hansson)
+
 ## Estimations
 
 [A guide to producing software estimates.](https://www.atlassian.com/agile/estimation)
