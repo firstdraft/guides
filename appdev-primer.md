@@ -68,7 +68,7 @@ See if you agree that these are the features of Very Best (phrased in a particul
 
 ##### Notes
 
- - Initially, users can't add dishes; we, the site admins, will set up the bucket list of dishes.
+ - Initially, dishes aren't specific to a user; we, the site admins, will set up same the bucket list of dishes that all users will fill out.
  - Initially, users will all use the same big list of venues. If and when the dropdown gets too big and unwieldy, we'll figure something else out.
   
 #### Once you have a sense of it, your task:
