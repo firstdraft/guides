@@ -2,6 +2,8 @@
 
 This is a minimal introduction to the Ruby programming language, intended to get you far enough to begin using the Ruby on Rails web application framework.
 
+To get started, [create a workspace as usual](getting-started-with-cloud-9.md) for the ruby_intro project.
+
 You should work along with this intro by downloading [this Rails application](https://github.com/firstdraft/ruby_intro) and launching it. Here's a video where I demonstrate the process, but remember to fork and clone from your own account rather than mine:
 
 ## Mac Getting Started Video

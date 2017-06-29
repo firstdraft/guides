@@ -22,9 +22,7 @@ Then, to start on a project,
 
 You'll end up in your IDE (integrated development environment), which is like having Atom, Terminal, and GitHub all within a single Chrome tab.
 
-Run `bundle install` as shown below:
-
-![](/assets/terminal.png)
+Then, run the command `bin/setup` in the Terminal at the bottom of the window to get the project ready to go.
 
 ## Starting the server
 
@@ -56,7 +54,7 @@ One last step: turn on Autosave.
 
 ![](/assets/autosave.png)
 
-Then go to the Cloud9 menu and **Restart Workspace**, and refresh your browser to apply the change.
+Then refresh your browser to apply the change.
 
 There are other settings you can customize here too, if you like, but **always remember to turn on autosave for every project**.
 
