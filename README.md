@@ -16,7 +16,6 @@ A collection of guides and cheatsheets for Application Development.
   * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
   * [Getting Started With GitHub](getting-started-with-github.md)
 * [Introduction to HTML](introduction-to-html.md)
-  * [Friendbook Exercise Guide](friendbook-exercise-guide.md)
   * [Design Readings and Resources](design-readings-and-resources.md)
 * [Command Line Basics](command-line-basics.md)
 * [The Rails Console](the-rails-console.md)
