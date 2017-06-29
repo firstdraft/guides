@@ -2,17 +2,9 @@
 
 This is a minimal introduction to the Ruby programming language, intended to get you far enough to begin using the Ruby on Rails web application framework.
 
-To get started, [create a workspace as usual](getting-started-with-cloud-9.md) for the ruby_intro project.
+To get started, [create a workspace as usual](getting-started-with-cloud-9.md) for the [ruby_intro](https://github.com/appdevsummer17/ruby_intro) project — remember to click "Fork" first.
 
-You should work along with this intro by downloading [this Rails application](https://github.com/firstdraft/ruby_intro) and launching it. Here's a video where I demonstrate the process, but remember to fork and clone from your own account rather than mine:
-
-## Mac Getting Started Video
-
-<iframe src="https://player.vimeo.com/video/211587732" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-## Windows Getting Started Video
-
-<iframe src="https://player.vimeo.com/video/211593688" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+After creating the workspace and running the `bin/setup` command, run the `rails console` command. That launches an app, [the Rails Console](the-rails-console.md), that is an interactive playground that will allow you to try out the Ruby language as you read about it below.
 
 ## The shortcomings of HTML
 
