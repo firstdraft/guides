@@ -65,7 +65,7 @@ We could do all of our looping using the `while` statement, but Ruby gives us an
 
 Since most of our looping as web developers is to do interesting things with elements in `Array`s, let me instead just show you a purpose-built `Array` method that we're going to use 1000 times a day: `.each`.
 
-Let's suppose that I have an array of numbers. For some reason, let's suppose that I want to square each number in the array and then add up all the squares. I could do that work with the following code (which you should try out in `app/controllers/programs_controller.rb` and view the output at [http://localhost:3000/second](http://localhost:3000/second)):
+Let's suppose that I have an array of numbers. For some reason, let's suppose that I want to square each number in the array and then add up all the squares. I could do that work with the following code (which you should try out in `app/controllers/programs_controller.rb` and view the output at `https://ruby-intro-[YOUR CLOUD 9 USERNAME].c9users.io/second`:
 
 ```ruby
 def second_program
@@ -134,7 +134,7 @@ def third_program
 end
 ```
 
-and view your output at [http://localhost:3000/third](http://localhost:3000/third). I've provided a variable for you, `numbers`, which has an array in it containing the first 999 natural numbers.
+and view your output at `https://ruby-intro-[YOUR CLOUD 9 USERNAME].c9users.io/third`. I've provided a variable for you, `numbers`, which has an array in it containing the first 999 natural numbers.
 
 (Credit for this challenge goes to [Project Euler](https://projecteuler.net). This is the first in a series of puzzles that they provide. You can check your answer by signing up for an account there and submitting it, and find lots more puzzles to practice your Ruby on!)
 

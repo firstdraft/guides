@@ -4,8 +4,9 @@ Now that you're comfortable writing some Ruby, let's learn how to write some rea
 
 It's not very much fun typing commands over and over into `rails console`, only to have them forever lost if you close Terminal. So let's write them down permanently into a source code file, just like you did with your HTML.
 
-First, navigate to [http://localhost:3000](http://localhost:3000) in Chrome. If you don't see anything there, then you need to start up your `rails server` in a new tab of Terminal or a new window of Command Prompt with Ruby and Rails. Refer to the Getting Started video in the [Introduction](introduction-to-ruby.md#mac-getting-started-video)
- to see how I like to set things up. You should see "Replace this string with your output" if all goes well.
+First, make sure that your server is running — press then "Run Project" button at the top of the window if you see it (it should say "Stop" if it's already running). Then navigate to your app in Chrome (the URL will be something like `https://ruby-intro-[YOUR CLOUD 9 USERNAME].c9users.io`.
+
+You should see "Replace this string with your output" if all goes well.
 
 ## Writing some source code
 
@@ -29,7 +30,7 @@ end
 
 For now, ignore most of it; we'll dig into what every character in there means, eventually. But right now, just change the string `"Replace this string with your output"` to any Ruby expression that you want.
 
-It could be math like `6 * 7` or any other Ruby expression that you just learned in the previous chapters, but to make it very clear that it's dynamic, try something random — `rand(100)` or `["heads", "tails"].sample` — and then refresh [http://localhost:3000](http://localhost:3000). Refresh again a couple of times. You should see dynamic content!
+It could be math like `6 * 7` or any other Ruby expression that you just learned in the previous chapters, but to make it very clear that it's dynamic, try something random — `rand(100)` or `["heads", "tails"].sample` — and then refresh your app in Chrome. Refresh again a couple of times. You should see dynamic content!
 
 Voilà! You've just written your first dynamically generated webpage! In Chrome, View Source on the page and you'll see that it had no idea that you wrote the page using Ruby rather than typing it out by hand. It just drew the source code as usual. Congratulations!
 

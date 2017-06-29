@@ -26,7 +26,7 @@ def first_program
 end
 ```
 
-First, in Chrome, navigate to [http://localhost:3000/first](http://localhost:3000/first). That is where the output of this other program is being displayed. Modify `@your_output` to confirm this.
+First, in Chrome, navigate to `https://ruby-intro-[YOUR CLOUD 9 USERNAME].c9users.io/first`. That is where the output of this other program is being displayed. Modify `@your_output` to confirm this.
 
 Next, let's try this:
 
@@ -94,6 +94,7 @@ Basically, `&&` is stricter than `||`; both comparisons have to be true in order
 Can you write a program that randomly chooses between "rock", "paper", and "scissors", and displays it on the page on each refresh?
 
 After that, can you display whether the random choice would have won, lost, or tied against "rock"?
+
 ## Next Up
 
 As you might be starting to notice, computers just do very simple things, but they do them really fast. And one of the most useful things to do have computers do quickly for us is process big lists of things. For that, we need to learn about [Loops in Ruby](loops-in-ruby.md).
