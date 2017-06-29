@@ -20,7 +20,7 @@ Then, to start on a project,
 
 ## Setting up the project
 
-You'll end up in your IDE (integrated development environment), which is like having Atom, Terminal, and GitHub all within a single Chrome tab.
+You'll end up in your IDE (integrated development environment), which is like having a text editor and a command line interface to a computer with Ruby and Rails pre-installed all within a single Chrome tab.
 
 Then, run the command `bin/setup` in the Terminal at the bottom of the window to get the project ready to go.
 
@@ -42,11 +42,9 @@ Click it and you'll have a live application running on the internet. You'll see 
 
 ## Editing code
 
-Change some code just as you would in Atom, save, and refresh your app:
+Change some code, save, and refresh your app:
 
 ![](/assets/change_code.gif)
-
-Whenever I say "localhost:3000", in your mind, replace that with the real live URL that you've been assigned by Cloud 9. If I say "localhost:3000/first", you instead tack "/first" on to the end of your own URL:
 
 ![](/assets/other_urls.gif)
 
