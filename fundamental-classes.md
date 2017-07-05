@@ -19,7 +19,7 @@ Try:
            #   just another letter in the method name
 7.days.ago
 rand(10)   # Produces a random integer between 0 and 9
-7.to_s     # Convert yourself to a string, probably for output
+7.to_s     # Convert yourself to a string, probably for adding to other strings before being output
 ```
 
 Why wouldn't `"7".even?` work? Take a guess before you try it, and see if your guess matches up with what the error message says.
