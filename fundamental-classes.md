@@ -69,17 +69,26 @@ a.downcase
 a.swapcase
 a.reverse
 a.length
-a.gsub("ll", "✌️")
+a.gsub("ll", "✌️") 
+             # What is .gsub() doing?
+             #   Experiment with other strings and arguments.
 ```
 
 Some more realistic examples:
 
 ```ruby
-u = "  a messy input string    \n" # The '\n' at the end represents a newline
-u.chomp
-u.chomp.strip
+u = "  a messy input string    \n"
+              # The '\n' at the end represents a newline
+
+u.chomp       # The .chomp method will remove a newline at the end
+              #   of the string if there is one, or leave it
+              #   untouched if there isn't one
+
+u.strip       # .strip removes all leading and trailing whitespace
+
 u.capitalize  # Oops. Why?
-u = u.chomp.strip
+
+u = u.strip
 u.capitalize
 u.titlecase
 u.split       # This produces an Array, which we discuss below.
