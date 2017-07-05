@@ -15,6 +15,7 @@ A collection of guides and cheatsheets for Application Development.
   * [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
   * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
   * [Getting Started With GitHub](getting-started-with-github.md)
+* [Continuous Integration](continuous-integration.md)
 * [Introduction to HTML](introduction-to-html.md)
   * [Design Readings and Resources](design-readings-and-resources.md)
 * [Command Line Basics](command-line-basics.md)
