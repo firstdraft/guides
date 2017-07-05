@@ -12,6 +12,7 @@
   * [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
   * [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
   * [Getting Started With GitHub](getting-started-with-github.md)
+* [Continuous Integration](continuous-integration.md)
 * [Introduction to HTML](introduction-to-html.md)
   * [Design Readings and Resources](design-readings-and-resources.md)
 * [Command Line Basics](command-line-basics.md)
@@ -32,5 +33,5 @@
 * [starter\_generators](starter_generators.md)
 * [Authentication with Devise](authentication-and-authorization-with-devise.md)
 * [Using the Twitter gem](using-the-twitter-gem.md)
-* [Management Readings](management-readings.md)
+* Continuous Integration
 
