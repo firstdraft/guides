@@ -50,6 +50,7 @@ Ruby calls decimal numbers `Float`s. Try
 rand       # Produces a random number between 0
            #   and 1; useful for probabilities
 ```
+
 I won't say too much more about `Float`s for now, since they are mostly the same as `Fixnum`s. Use them as needed, but I try to default to integers.
 
 ## String
@@ -74,10 +75,11 @@ a.gsub("ll", "✌️")
 Some more realistic examples:
 
 ```ruby
-u = "  a messy input string    "
-u.strip
-u.capitalize  # Oops.
-u = u.strip
+u = "  a messy input string    \n" # The '\n' at the end represents a newline
+u.chomp
+u.chomp.strip
+u.capitalize  # Oops. Why?
+u = u.chomp.strip
 u.capitalize
 u.titlecase
 u.split       # This produces an Array, which we discuss below.
