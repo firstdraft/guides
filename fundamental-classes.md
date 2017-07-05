@@ -142,7 +142,7 @@ Finally, we have a very important class: `Array`. Most of what we do as web deve
 The first structure we're going to learn to help us manage lists is `Array`. Here's how they work:
 
 ```ruby
-a = [8, 3, 1, 19, 23]
+a = [8, 3, 1, 19, 23, 3]
 ```
 
  - The way we create `String`s by wrapping the string of characters in double-quotes, we create `Array`s by wrapping the list of elements in square brackets.
@@ -151,18 +151,27 @@ a = [8, 3, 1, 19, 23]
 Now that we've created our array, what can we do with it? Here are some handy methods to try:
 
 ```ruby
-a.count
+a.count        # Counts all elements in the list.
+a.count(3)     # Counts the occurrences of the argument.
+
 a.reverse
 a.sort
 a.sort.reverse
+
 a.shuffle
 a.sample
+
+a.min
+a.max
+a.sum
+
 a.first
 a.last
 a.second
 a[3]           # Accesses the 4th element! Surprising.
 a[0]           # Arrays start their numbering at 0.
 a[-1]          
+
 a.push(42)
 a.count
 a.last
