@@ -19,7 +19,8 @@ Try:
            #   just another letter in the method name
 7.days.ago
 rand(10)   # Produces a random integer between 0 and 9
-7.to_s     # Convert yourself to a string, probably for being added to other strings in advance of displaying
+7.to_s     # Convert yourself to a string; probably so
+           #   you can be added to other strings 
 ```
 
 Why wouldn't `"7".even?` work? Take a guess before you try it, and see if your guess matches up with what the error message says.
@@ -46,7 +47,8 @@ Ruby calls decimal numbers `Float`s. Try
 ```ruby
 10.0 / 3
 10 / 3.0
-rand       # Produces a random number between 0 and 1, useful for probability
+rand       # Produces a random number between 0
+           #   and 1; useful for probabilities
 ```
 I won't say too much more about `Float`s for now, since they are mostly the same as `Fixnum`s. Use them as needed, but I try to default to integers.
 
