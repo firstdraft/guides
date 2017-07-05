@@ -24,7 +24,7 @@ rand(10)   # Produces a random integer between 0 and 9
 
 Why wouldn't `"7".even?` work? Take a guess before you try it, and see if your guess matches up with what the error message says.
 
-There are also the usual calculator things; try each of the following:
+There are also the usual calculator-like things; try each of the following:
 
 ```ruby
 7 * 6
