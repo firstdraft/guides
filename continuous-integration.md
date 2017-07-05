@@ -56,10 +56,12 @@ Now that you've taken a snapshot of your work, it's saved for posterity and no m
 
 ![](/assets/ci-push-to-github.png)
 
-Then, "Open a pull request into master". **Pull Requests** have developed into the central atomic unit by which software development moves forward; we'll discuss how in future classes:
+Then, "Open a pull request into master":
 
 ![](/assets/ci-open-a-pr.png)
 
+**Pull Requests** have developed into the central atomic unit by which software development moves forward; we'll discuss many techniques for using them effectively to make your teams stronger in future classes. For now, click "Create pull request":
+
 ![](/assets/ci-create-pr.png)
 
-That's it, for now! Over time, we'll talk about how this workflow pays tremendous dividends if everyone on the team adheres to it. For now, just remember to create branches freely while experimenting with solving new problems, because it's very easy to jump between them in case you want to start over; and make lots of commits so that you never lose work.
+That's it, for now! Over time, we'll talk about how this workflow pays tremendous dividends if everyone on the team adheres to it. For now, just remember to **create branches freely while experimenting with solving new problems**, because it's very easy to jump between them in case you want to start over; and **make lots of commits so that you never lose work**.
