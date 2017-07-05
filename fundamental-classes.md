@@ -79,7 +79,7 @@ a.gsub("ll", "✌️")
 Some more realistic examples:
 
 ```ruby
-u = "  a messy input string    \n"
+u = "  a messy, input   string123!@$    \n"
                   # The \n at the end represents a newline
 
 u.chomp           # .chomp with no arguments will default to "\n"
@@ -88,13 +88,19 @@ u.strip           # .strip removes all leading and trailing whitespace
 
 u.gsub(/\s+/, "") # This is an advanced technique that removes all whitespace
 
+u.gsub(/[^a-z0-9\s]/i, "")
+                  # This is an advanced technique that removes
+                  #   everything except alphanumerics and whitespace
+
 u.capitalize      # Oops. Why?
 
-u = u.strip
+u = u.gsub(/[^a-z0-9\s]/i, "").strip
+                  # Let's save a sanitized version.
+
 u.capitalize
 u.titlecase
 u.split           # This produces an Array, which we discuss below.
-u.split.count
+u.split.count     # Arrays are lists, and can be counted.
 
 "lo".in?("hello")
 "".present?
