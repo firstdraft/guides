@@ -24,7 +24,7 @@ If we wanted to add users and the ability for users to bookmark movies that they
 
 Make the requisite changes and Publish again.
 
-## Photogram Database
+### Photogram Database
 
 Given an existing database and data, pretend you're the _application logic_ for a Twitter-like social network:
 
