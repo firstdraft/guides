@@ -92,7 +92,7 @@ See if you agree that these are the features of Very Best (phrased in a particul
  
 ### Photogram ERD
 
-Finally: Draw an ERD for [Photogram firstdraft Target](https://appdev-primer-photogram.herokuapp.com/users/sign_up). This is an ugly, but functionally identically, version of [the social network](http://photogram-final-target.herokuapp.com/) that we'll be ultimately building during this course. Try signing up and playing around with it a bit. Can you post photos? Can you like photos? Can the app show you which photos you've liked? Can you follow other users? **Can the application show you the photos that were posted by the people that you follow?**
+Finally: Draw an ERD for [Photogram firstdraft Target](https://appdev-primer-photogram.herokuapp.com/users/sign_up). This is an ugly, but functionally identical, version of [the social network](http://photogram-final-target.herokuapp.com/) that we'll be ultimately building during this course. Try signing up and playing around with it a bit. Can you post photos? Can you like photos? Can the app show you which photos you've liked? Can you follow other users? **Can the application show you the photos that were posted by the people that you follow?**
 
 The interface is horrible and clunky, but it technically does allow you to do all of those things, I think. A social network is just about the trickiest database design you're going to ever have (self-referential many-to-manies, oh  my!), but you've already [navigated it no sweat in the clipboard exercise](#photogram-database).
 
