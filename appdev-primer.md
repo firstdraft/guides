@@ -88,4 +88,4 @@ The interface is horrible and clunky, but it technically does allow you to do al
 
 Now we just have to draw the ERD of that same database. Give it a try in firstdraft. Think you got it? Click Publish and wait a few minutes and refresh. When "Launch" button appears, click it and play around with the prototype. If you missed something, edit the ERD and try again.
 
-The interface is horrible, but — you just built a social network! Not bad! Now we'll learn some front-end and you'll be able to improve the interface, and we'll learn some Ruby so you can build whatever functionality you can imagine. But you've already got a solid foundation.
+The interface is horrible, but — you just built a social network! Not bad! Now we'll learn some front-end and you'll be able to improve the interface, and we'll learn some Ruby so you can build whatever functionality you can imagine. But now you've already got a feel for designing the foundation of any application — **it's _data_ (or _domain_) model**.
