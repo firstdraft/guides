@@ -14,7 +14,7 @@
 
 Our first task:
  
-Let's draw an Entity Relationship Diagram (ERD) together for [IMDb First Draft Target](https://appdev-primer-imdb.herokuapp.com/).
+Let's draw an Entity Relationship Diagram (ERD) together for [IMDb firstdraft Target](https://appdev-primer-imdb.herokuapp.com/).
 
 ## Photogram Database
 
