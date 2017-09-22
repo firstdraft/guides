@@ -14,7 +14,7 @@
 
 #### Our first task:
  
-Let's draw an Entity Relationship Diagram (ERD) together for [IMDb firstdraft Target](https://appdev-primer-imdb.herokuapp.com/).
+Based on what we've learned about tables, one-to-many associations, and many-to-many associations, let's draw an Entity Relationship Diagram (ERD) together for IMDb. Our goal is to design a database that would support this application: [IMDb firstdraft Target](https://appdev-primer-imdb.herokuapp.com/).
 
 Try clicking Publish!
 
