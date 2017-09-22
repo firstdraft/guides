@@ -86,7 +86,9 @@ See if you agree that these are the features of Very Best (phrased in a particul
   
 #### Once you have a sense of it, your task:
  
-Design what you think the database would have to look like in order to support the app. Draw an ERD in firstdraft.
+ - Design what you think the database would have to look like in order to support the app.
+ - Draw an ERD in firstdraft.
+ - Click Publish and test out your prototype! Can you perform all of the user stories above? (Ignore the fact that it's ugly for now; can it capture/display the required information?)
  
 ### Photogram ERD
 
