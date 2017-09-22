@@ -12,9 +12,17 @@
  
 ### IMDb ERD
 
-Our first task:
+#### Our first task:
  
 Let's draw an Entity Relationship Diagram (ERD) together for [IMDb firstdraft Target](https://appdev-primer-imdb.herokuapp.com/).
+
+Try clicking Publish!
+
+#### Our second task:
+
+If we wanted to add users and the ability for users to bookmark movies that they intend to watch, how would it change our domain model?
+
+Make the requisite changes and Publish again.
 
 ## Photogram Database
 
