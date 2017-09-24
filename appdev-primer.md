@@ -69,7 +69,7 @@ See if you agree that these are the features of Very Best (phrased in a particul
 
 ##### On the Venues page
 
- - See a list of all venues that I've bookmarked
+ - See a list of all venues that I've bookmarked dishes at
  - Filter venues by neighborhood
  - Search venues by bookmarked dish
 
