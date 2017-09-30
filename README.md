@@ -11,6 +11,7 @@ A collection of guides and cheatsheets for Application Development.
   * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
 * [Continuous Integration](continuous-integration.md)
 * [Introduction to HTML](introduction-to-html.md)
+  * [Friendbook Exercise Guide](friendbook-exercise-guide.md)
   * [Design Readings and Resources](design-readings-and-resources.md)
 * [Command Line Basics](command-line-basics.md)
 * [The Rails Console](the-rails-console.md)
