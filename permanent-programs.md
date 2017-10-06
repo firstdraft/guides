@@ -26,9 +26,7 @@ You're ready to write your first permanent programs!
 
 ## Writing some source code
 
-Next, open the folder of code that you downloaded in Atom. In the drawer on the left, locate the file `app/controllers/programs_controller.rb`.
-
-In that file, you should see some code that looks like this at the top:
+In the file you opened, you should see some code that looks like this at the top:
 
 ```ruby
 class ProgramsController < ApplicationController
