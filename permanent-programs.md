@@ -139,6 +139,26 @@ Now you can embed them in your view template inside the special **embedded Ruby 
 </div>
 ```
 
+## Auto-indenting
+
+As you know, keeping your code nicely indented is very helpful for our sanity. In order to do it for Ruby, you need to enable some plugins that we've prepared.
+
+From the Cloud9 Menu, choose Preferences (or click the gear icon in the top right). Then select "Plugin Explorer" from the list on the left:
+
+![](/assets/ruby-intro-plugin-explorer.png)
+
+Click the gear next to "Locally installed Plugins" and select "Refresh List":
+
+![](/assets/ruby-intro-refresh-list.png)
+
+Finally, check `formathtmlerb` and `formatruby`:
+
+![](/assets/ruby-intro-formatters.png)
+
+You now have access to autoformatting for Ruby with <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>), the way we did for HTML. Phew!
+
+![](/assets/ruby-intro-apply-formatting.png)
+
 ## Next up
 
 Now that we know how to write permanent, multiline programs, there's one more thing we need to see before we can write some fun projects: [conditionals](conditionals.md).
