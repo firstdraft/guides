@@ -93,7 +93,7 @@ Basically, `&&` is stricter than `||`; both comparisons have to be true in order
 
 ## Challenge
 
-Can you write a program that randomly chooses between "rock", "paper", and "scissors", and displays it on the page on each refresh?
+Can you modify the program to randomly choose between "rock", "paper", and "scissors", and display it on the page on each refresh?
 
 After that, can you display whether the random choice would have won, lost, or tied against "rock"?
 
