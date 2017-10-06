@@ -29,4 +29,5 @@
 * [Authentication with Devise](authentication-and-authorization-with-devise.md)
 * [Using the Twitter gem](using-the-twitter-gem.md)
 * [Management Readings](management-readings.md)
+* [Setting up your programming tools](setting-up-your-programming-tools.md)
 
