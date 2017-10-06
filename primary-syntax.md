@@ -275,4 +275,4 @@ Now, we need to spend some time *expanding our vocabulary*. Let's start with [th
 
 [^2]: [MDN CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
-[^3]: [Complex Selectors](http://learn.shayhowe.com/advanced-html-css/complex-selectors/)
+[^3]: Read [Complex Selectors](http://learn.shayhowe.com/advanced-html-css/complex-selectors/) by Shay Howe, or play a game to learn: [CSS Diner](https://flukeout.github.io/)
