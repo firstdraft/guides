@@ -34,6 +34,8 @@ Next, let's try this:
 def first_program
   # Your code goes below.
   
+  @your_output = "Hi!"
+  
   if 1 < 2
     @your_output = "duh"
   end
