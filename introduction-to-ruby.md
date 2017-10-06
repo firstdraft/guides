@@ -20,7 +20,7 @@ Finally, you should end up here (by the way, it's a good idea to click each of t
 
 ![](/assets/ruby-intro-in-workspace.png)
 
-In the pane at the bottom (your Terminal), click the green circled + icon and select "New Terminal":
+In the pane at the bottom, click the green circled + icon and select "New Terminal":
 
 ![](/assets/ruby-intro-new-terminal.png)
   
