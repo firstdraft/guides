@@ -44,7 +44,7 @@ end
 
 For now, ignore most of it; we'll dig into what every character in there means, eventually. But right now, just change the string `"Replace this string with your output"` to any Ruby expression that you want.
 
-It could be math like `6 * 7` or any other Ruby expression that you just learned in the previous chapters, but to make it very clear that it's dynamic, try something random — `rand(100)` or `["heads", "tails"].sample` — and then refresh your app in Chrome. Refresh again a couple of times. You should see dynamic content!
+It could be math like `6 * 7` or any other Ruby expression that you just learned in the previous chapters, but to make it very clear that it's dynamic, try something random — `rand(100)` or `["heads", "tails"].sample` — and then refresh your app in the other Chrome tab. Refresh again a couple of times. You should see dynamic content!
 
 Voilà! You've just written your first dynamically generated webpage! In Chrome, View Source on the page and you'll see that it had no idea that you wrote the page using Ruby rather than typing it out by hand. It just drew the source code as usual. Congratulations!
 
