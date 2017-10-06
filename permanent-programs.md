@@ -4,9 +4,25 @@ Now that you're comfortable writing some Ruby, let's learn how to write some rea
 
 It's not very much fun typing commands over and over into `rails console`, only to have them forever lost if you close Terminal. So let's write them down permanently into a source code file, just like you did with your HTML.
 
-First, make sure that your server is running — press then "Run Project" button at the top of the window if you see it (it should say "Stop" if it's already running). Then navigate to your app in Chrome (the URL will be something like `https://ruby-intro-[YOUR CLOUD 9 USERNAME].c9users.io`.
+In the drawer on the left, locate the file `app/controllers/programs_controller.rb` and double-click it:
 
-You should see "Replace this string with your output" if all goes well.
+![](/assets/ruby-intro-active-file.png)
+
+Then, in the Menu, locate the `Run > Run With > Active file - rails server` and click it:
+
+![](/assets/ruby-intro-run-rails-server.png)
+
+If all goes well, you should see a new Terminal tab at the bottom. After a couple of seconds, you should be able to Open your running app:
+
+![](/assets/ruby-intro-server-running.png)
+
+![](/assets/ruby-intro-preview-1.png)
+
+Click "Open the App" and now you should see this:
+
+![](/assets/ruby-intro-replace-output.png)
+
+You're ready to write your first permanent programs!
 
 ## Writing some source code
 
