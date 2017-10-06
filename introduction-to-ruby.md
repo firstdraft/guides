@@ -1,14 +1,46 @@
-# Welcome
+# Introduction to Ruby
+
+## Getting Started
 
 This is a minimal introduction to the Ruby programming language, intended to get you far enough to begin using the Ruby on Rails web application framework.
 
-To get started, [create a workspace as usual](getting-started-with-cloud-9.md) for the [ruby_intro](https://github.com/appdevsummer17/ruby_intro) project — remember to click "Fork" first.
+To get started, clone a Cloud9 workspace called `raghubetina/ruby_intro`:
 
-After creating the workspace and running the `bin/setup` command, run the `rails console` command. That launches an app, [the Rails Console](the-rails-console.md), that is an interactive playground that will allow you to try out the Ruby language as you read about it below.
+![](/assets/ruby-intro-clone-workspace.png)
 
-## The shortcomings of HTML
+This might take a couple minutes:
 
-What is Ruby on Rails? To answer that, first consider what we can and can't do with plain old HTML:
+![](/assets/ruby-intro-creating-workspace.png)
+
+Be patient...:
+
+![](/assets/ruby-intro-still-creating.png)
+
+Finally, you should end up here (by the way, it's a good idea to click each of the glowing grey circles scattered around; they will teach you about Cloud9's features):
+
+![](/assets/ruby-intro-in-workspace.png)
+
+In the left sidebar, find the file `ruby_intro/app/controllers/programs_controller.rb` and double-click it so that it becomes the active file in the editor:
+
+![](/assets/ruby-intro-active-file.png)
+
+Next, in the menu bar, find Run > Run With > Active file - rails console and click it:
+
+![](/assets/ruby-intro-run-rails-console.png)
+ 
+If all goes well, in the pane at the bottom (the Terminal), you should see the message "Rails console started":
+
+![](/assets/ruby-intro-rails-console-started.png)
+
+That launches an app, [the Rails Console](the-rails-console.md), that is an interactive playground that will allow you to try out the Ruby language as you read about it below.
+
+As you read, try out each new Ruby concept at the prompt (`[1] pry(main)> `). Have fun!
+
+## What is Ruby?
+
+### The shortcomings of HTML
+
+What is Ruby? To answer that, first consider what we can and can't do with plain old HTML:
 
 We can:
 
@@ -30,7 +62,7 @@ This might be fine for some informational sites (like the location, hours, and m
 
 So, we need to learn a *general purpose language* in addition to HTML, so that we're not limited to just formatting static data. We want to save information on behalf of our users, tailor the experience for them based on who they are, and much more.
 
-## Ruby
+### Ruby
 
 There are many general purpose programming languages, but the one that we're going to learn is called Ruby. It can do all three of the above things, and much more.
 
@@ -38,7 +70,7 @@ Let's spend a few minutes just getting our hands dirty with Ruby before we descr
 
 Try out the commands below in your `rails console`. Type each one after the prompt that says `pry(main)>` and press <kbd>return</kbd> after each line, and you will see how Ruby interprets each expression on the next line after the `=>`.
 
-### Simple math
+#### Simple math
 
 ```ruby
 24 * 365
@@ -53,7 +85,7 @@ If everything went well, you should see something like this:
 
 Now try all the below:
 
-### Random numbers
+#### Random numbers
 
 ```ruby
 rand(6)
@@ -67,13 +99,13 @@ rand(6)
 
 Try it again if you have to until you get a different number 🎲🎲
 
-### Getting un-messed up
+#### Getting un-messed up
 
 This might be a good time to point out that if you make a mistake while entering an expression into `rails console` — let's say for example that you forgot a closing parenthesis — it's possible to get into a *weird state* where you press <kbd>return</kbd> and nothing happens. It's still waiting for that closing parenthesis, and then you start typing more commands, and it gets confused, and then you get confused.
 
 If something like this happens, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to break out of the weird state and reset back to a clean state. You can then use the up arrow to scroll back through your history and try to fix the malformed command.
 
-### Comparison statements
+#### Comparison statements
 
 (Only type the stuff before the `#`; the stuff after are known as *code comments*, and are just there as notes to ourselves. They have no effect on the program.)
 
@@ -87,7 +119,7 @@ If something like this happens, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to break out 
 1 != 2          # "1 is NOT equivalent to 2"
 ```
 
-### Strings
+#### Strings
 
 Unlike your phone's calculator app, Ruby can work with many more data types than just numbers. Most importantly, Ruby can work with text, which we wrap inside quotation marks and refer to as "strings" (of characters):
 
@@ -112,7 +144,7 @@ Anyway, let's do something more interesting with strings:
 "Hello".reverse
 ```
 
-### Variables
+#### Variables
 
 Remember, you can use your up and down arrows to scroll through your command history. That would have saved you from retyping `"Hello"` over and over.
 
@@ -157,7 +189,7 @@ c
 
 (Note that here we are using a single-equals sign, `=`, the **variable assignment operator**. Above, while doing comparisons, we used the *completely and totally different* double-equals sign, `==`, the **logical equivalence operator**. Mixing up these two operators is a very easy mistake to make, and even experienced devs make it all the time — watch out.)
 
-### Putting it together
+#### Putting it together
 
 Believe it or not, from these simple building blocks, we can build up much of what happens on the web today. For example, when Twitter tries to make sure that no one can sign up using the same username as [David Heinemeier Hansson](https://twitter.com/dhh), the creator of Ruby on Rails, even if they try to be sneaky and use mixed-case, they would do something like
 
@@ -170,7 +202,7 @@ user_input.downcase == existing_username
 
 Remember our Photogram Database exercise? Figuring out which photos were on a user's timeline — a seemingly complicated task — ended up being a long sequence of small and simple steps, like the ones above. Most applications are. It was tedious for us to do it by hand, though, so now we just need to learn enough Ruby vocabulary to teach the computer to do it for us. We'll spend the next several lessons learning just that.
 
-## Rails
+### Rails
 
 Before we dig in to Ruby, let's talk a little bit more about Ruby ***on Rails***.
 
