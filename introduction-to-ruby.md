@@ -4,7 +4,7 @@
 
 This is a minimal introduction to the Ruby programming language, intended to get you far enough to begin using the Ruby on Rails web application framework.
 
-To get started, clone a Cloud9 workspace called `raghubetina/ruby_intro`:
+To get started, clone a Cloud9 workspace called `raghubetina/ruby-intro`:
 
 ![](/assets/ruby-intro-clone-workspace.png)
 
@@ -20,21 +20,29 @@ Finally, you should end up here (by the way, it's a good idea to click each of t
 
 ![](/assets/ruby-intro-in-workspace.png)
 
-In the left sidebar, find the file `ruby_intro/app/controllers/programs_controller.rb` and double-click it so that it becomes the active file in the editor:
+In the pane at the bottom (your Terminal), click the green circled + icon and select "New Terminal":
 
-![](/assets/ruby-intro-active-file.png)
+![](/assets/ruby-intro-new-terminal.png)
+  
+At the prompt in the new tab that appears, type the following commands and then press <kbd>return</kbd>:
 
-Next, in the menu bar, find Run > Run With > Active file - rails console and click it:
+```
+cd ruby_intro
+```
 
-![](/assets/ruby-intro-run-rails-console.png)
- 
-If all goes well, in the pane at the bottom (the Terminal), you should see the message "Rails console started":
+And then,
 
-![](/assets/ruby-intro-rails-console-started.png)
+```
+rails console
+```
 
-That launches an app, [the Rails Console](the-rails-console.md), that is an interactive playground that will allow you to try out the Ruby language as you read about it below.
+You should end up at a prompt that says `[1] pry(main)> ` and looks something like this:
 
-As you read, try out each new Ruby concept at the prompt (`[1] pry(main)> `). Have fun!
+![](/assets/ruby-intro-launch-rails-console.png)
+
+You have launched an app called the Rails Console that is an interactive playground; it allows you to try out the Ruby language as you read about it below.
+
+As you read, try out each new Ruby concept at the prompt. Have fun!
 
 ## What is Ruby?
 
