@@ -4,33 +4,11 @@
 
 This is a minimal introduction to the Ruby programming language, intended to get you far enough to begin using the Ruby on Rails web application framework.
 
-To get started, clone a Cloud9 workspace called `raghubetina/ruby-intro`:
+To get started, visit [this page](https://github.com/firstdraft-projects/ruby_intro) and click the button in the top-right corner that says "Fork".
 
-![](/assets/ruby-intro-clone-workspace.png)
-
-This might take a couple minutes:
-
-![](/assets/ruby-intro-creating-workspace.png)
-
-Be patient...:
-
-![](/assets/ruby-intro-still-creating.png)
-
-Finally, you should end up here (by the way, it's a good idea to click each of the glowing grey circles scattered around; they will teach you about Cloud9's features):
-
-![](/assets/ruby-intro-in-workspace.png)
-
-In the pane at the bottom, click the green circled + icon and select "New Terminal":
-
-![](/assets/ruby-intro-new-terminal.png)
+Then, follow [this process to create a Cloud9 workspace](getting-started-with-cloud9.md).
   
-At the prompt in the new tab that appears, type the following commands and then press <kbd>return</kbd>:
-
-```
-cd ruby_intro
-```
-
-And then,
+At the prompt in the new tab that appears, type the following command and then press <kbd>return</kbd>:
 
 ```
 rails console
