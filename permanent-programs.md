@@ -4,11 +4,7 @@ Now that you're comfortable writing some Ruby, let's learn how to write some rea
 
 It's not very much fun typing commands over and over into `rails console`, only to have them forever lost if you close Terminal. So let's write them down permanently into a source code file, just like you did with your HTML.
 
-In the drawer on the left, locate the file `app/controllers/programs_controller.rb` and double-click it:
-
-![](/assets/ruby-intro-active-file.png)
-
-Also, ensure that your app is still running in a Chrome tab at `https://ide.c9.io/YOUR_USERNAME/ruby_intro` (or whatever you named your workspace) — click the "Run Project" button at the top of the IDE if not.
+First, ensure that your app is still running in a Chrome tab at `https://ide.c9.io/YOUR_USERNAME/ruby_intro` (or whatever you named your workspace) — click the "Run Project" button at the top of the IDE if not.
 
 ![](/assets/ruby-intro-replace-output.png)
 
@@ -16,7 +12,11 @@ You're ready to write your first permanent programs!
 
 ## Writing some source code
 
-In the file you opened, you should see some code that looks like this at the top:
+In the drawer on the left, locate the file `app/controllers/programs_controller.rb` and double-click it:
+
+![](/assets/ruby-intro-active-file.png)
+
+You should see some code that looks like this at the top:
 
 ```ruby
 class ProgramsController < ApplicationController
