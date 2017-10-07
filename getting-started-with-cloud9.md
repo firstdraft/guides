@@ -4,7 +4,7 @@
 
 You should contact me for an invitation to join Cloud 9 without requiring you to enter a credit card.
 
-After signing up, you need to connect your GitHub account to it.
+After signing up, you need to connect your GitHub account to it. Click the gear icon in the top-right corner and then select "Connected Services" from the left. Click on "Connect" next to GitHub and authorize Cloud9.
 
 ## Creating a workspace
 
