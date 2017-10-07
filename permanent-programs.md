@@ -8,17 +8,7 @@ In the drawer on the left, locate the file `app/controllers/programs_controller.
 
 ![](/assets/ruby-intro-active-file.png)
 
-Then, in the Menu, locate the `Run > Run With > Active file - rails server` and click it:
-
-![](/assets/ruby-intro-run-rails-server.png)
-
-If all goes well, you should see a new Terminal tab at the bottom. After a couple of seconds, you should be able to Open your running app:
-
-![](/assets/ruby-intro-server-running.png)
-
-![](/assets/ruby-intro-preview-1.png)
-
-Click "Open the App" and now you should see this:
+Also, ensure that your app is still running in a Chrome tab at `https://ide.c9.io/YOUR_USERNAME/ruby_intro` (or whatever you named your workspace) — click the "Run Project" button at the top of the IDE if not.
 
 ![](/assets/ruby-intro-replace-output.png)
 
