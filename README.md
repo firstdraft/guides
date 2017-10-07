@@ -9,7 +9,7 @@ A collection of guides and cheatsheets for Application Development.
   * [Planning Your Idea](planning-your-idea.md)
   * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
   * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
-* [Continuous Integration](continuous-integration.md)
+* [Getting Started with Cloud9](getting-started-with-cloud9.md)
 * [Introduction to HTML](introduction-to-html.md)
   * [Friendbook Exercise Guide](friendbook-exercise-guide.md)
   * [Design Readings and Resources](design-readings-and-resources.md)
