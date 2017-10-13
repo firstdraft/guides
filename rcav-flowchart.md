@@ -31,9 +31,9 @@ In order to support a URL in your app such as `https://rps-rcav-your-username.c9
     
     "Actions" are the actual logic that gets executed by Rails when a user visits an address (they're just Ruby methods).
     
-    The key `:controller` must go to the name of a Ruby class; in this case, we chose "game".
+    The key `:controller` must go to the name of a Ruby class; in this case, we chose `"game"`.
     
- 4. The key `:action` must go to the name of a Ruby method that we want Rails to execute when a user visits `/scissors`; in this case, we chose `user_plays_scissors`.
+ 4. The key `:action` must go to the name of a Ruby method that we want Rails to execute when a user visits `/scissors`; in this case, we chose `"user_plays_scissors"`.
   
  5. Rails finds a match for the controller name we specified in the `app/controllers` folder. Files that contain controllers must always end in `_controller.rb`, and begin with what we said in the route would be the name of the controller; in this case, `game_controller.rb`.
   
