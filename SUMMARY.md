@@ -24,6 +24,7 @@
 * [Rails New and other basics](rails-new-and-other-basics.md)
 * [RCAV Flowchart](rcav-flowchart.md)
 * [RPS RCAV Exercise Guide](rps-rcav-exercise-guide.md)
+* [Continuous Integration](continuous-integration.md)
 * [CRUD with Ruby](crud-with-ruby.md)
 * [Loading data from a CSV file into your database](loading-data-from-a-csv-file-into-your-database.md)
 * [starter\_generators](starter_generators.md)
