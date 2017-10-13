@@ -4,15 +4,15 @@
 
 ### Generate a brand new application
 
-`cd` to the folder where you want to store your new application. For me, this is `~/code`. Then,
+`cd` to the folder where you want to store your new application. For me, this is `cd ~/workspace`. Then,
 
 ```bash
-rails new my_app
+rails new my_fancy_app
 ```
 
-This creates a subfolder called `my_app` and puts all of the boilerplate for a Rails application inside.
+This creates a subfolder called `my_fancy_app` and puts all of the boilerplate for a Rails application inside.
 
-**For all subsequent commands, you must `cd` *in to* the application folder *first*.**
+**For all subsequent commands, you must `cd` *in to* the application folder *first*; e.g. `cd my_fancy_app` from `~/workspace`.**
 
 ### Or if you cloned an existing application
 
@@ -26,7 +26,15 @@ bundle install
 
 ## Start the web server
 
+On Cloud9,
+
 ```bash
+rails server -b $IP -p $PORT
+```
+
+or on your own computer
+
+```
 rails server
 ```
 
@@ -49,7 +57,7 @@ If you need to run other command line stuff, open up a new window or tab.
 ### If the server failed to start
 
  1. If you got a "address already in use" error, then you must have an old `rails server` running in another window or tab somewhere. Find it and Ctrl-C (or just close the tab).
- 2. If you have a syntax error in config/routes.rb, then the server will refuse to even start up. See if the error message complains about a line in that file.
+ 2. If you have a syntax error in `config/routes.rb`, then the server will refuse to even start up. See if the error message complains about a line in that file.
 
 ## Shut down the web server
 
@@ -75,7 +83,7 @@ will create the tables and columns.
 
 **If** I provided some starter dummy data for you, then
 
-    rails db:seed
+    rails dev:prime
     
 will quickly pre-populate the tables for you, so you don't have to spend an hour in `rails console` adding rows.
 
