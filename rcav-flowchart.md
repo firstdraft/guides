@@ -65,7 +65,7 @@ In order to support a URL in your app such as `https://rps-rcav-your-username.c9
   
  10. ... and the second part of the string specifies the name of a file, in this case `play_scissors.html.erb`.
  
- 11. The key `:locals` must go to _another_ `Hash` that has a key/value pair for each variable we want to send to the template for output.
+ 11. The key `:locals` must go to _another_ `Hash` that has a key/value pair for each variable we want to send to the template for output. In this case, I want to send two variables to the template: `computer_move` and `outcome`.
  
  12. We have to create a folder within `app/views` that matches the name that we specified in the `render()` statement.
  
