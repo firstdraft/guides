@@ -6,7 +6,7 @@ Our apps are nothing more than a collection of URLs that we decide to allow user
  - `mydomain.com/photos/193`
  - `mydomain.com/signin`
 
-So remember: everything always starts with a **route** between a *URL* we want to support and a *Ruby method* that will be responsible for generating a response to the user's browser.
+So remember: everything always starts with a **route** between an *address* we want users to be able to visit and a *Ruby method* that will be responsible for generating a response to the user's browser.
 
 In order to support a URL in your app such as `https://rps-rcav-your-username.c9users.io/scissors`, there are a lot of dots to connect!
 
@@ -33,20 +33,20 @@ In order to support a URL in your app such as `https://rps-rcav-your-username.c9
     
     The key `:controller` must go to the name of a Ruby class; in this case, we chose "game".
     
-  4. The key `:action` must go to the name of a Ruby method that we want Rails to execute when a user visits `/scissors`; in this case, we chose `user_plays_scissors`.
+ 4. The key `:action` must go to the name of a Ruby method that we want Rails to execute when a user visits `/scissors`; in this case, we chose `user_plays_scissors`.
   
-  5. Rails finds a match for the controller name we specified in the `app/controllers` folder. Files that contain controllers must always end in `_controller.rb`, and begin with what we said in the route would be the name of the controller; in this case, `game_controller.rb`.
+ 5. Rails finds a match for the controller name we specified in the `app/controllers` folder. Files that contain controllers must always end in `_controller.rb`, and begin with what we said in the route would be the name of the controller; in this case, `game_controller.rb`.
   
-  6. Rails finds the Ruby class in the file. The name of the class must be `CamelCased` and always end in `...Controller < ApplicationController`. In this case, `GameController < ApplicationController`.
+ 6. Rails finds the Ruby class in the file. The name of the class must be `CamelCased` and always end in `...Controller < ApplicationController`. In this case, `GameController < ApplicationController`.
   
-  7. Rails finds the method we specified as the action and executes it; in this case, we defined a method called `user_plays_scissors`.
+ 7. Rails finds the method we specified as the action and executes it; in this case, we defined a method called `user_plays_scissors`.
   
-  8. We can write as much or as little Ruby as necessary within the action to satisfy the request — reading from APIs, doing math, whatever.
+ 8. We can write as much or as little Ruby as necessary within the action to satisfy the request — reading from APIs, doing math, whatever.
   
-  9. Once we've computed the final values that should be displayed to the user, we tell Rails the name of an **HTML view template** to use to format the output. To do so, we use the `render()` method. The complete `render()` method looks like this:
+ 9. Once we've computed the final values that should be displayed to the user, we tell Rails the name of an **HTML view template** to use to format the output. To do so, we use the `render()` method. The complete `render()` method looks like this:
   
-  ```ruby
-  render(
+    ```ruby
+    render(
       {
         :template => "game_templates/play_scissors.html.erb",
         :locals => {
@@ -55,13 +55,13 @@ In order to support a URL in your app such as `https://rps-rcav-your-username.c9
         }
       }
     )
-  ```
+    ```
 
-  Here's what's going on:
+    Here's what's going on:
   
-  `render()` takes one argument, a `Hash`. The `Hash` has two keys: `:template` and `:locals`.
+    `render()` takes one argument, a `Hash`. The `Hash` has two keys: `:template` and `:locals`.
   
-  The key `:template` must go to a string specifying the location of an Embedded Ruby HTML template to use to format the output. The first part of the string specifies the name of a folder, in this case `game_templates`...
+    The key `:template` must go to a string specifying the location of an Embedded Ruby HTML template to use to format the output. The first part of the string specifies the name of a folder, in this case `game_templates`...
   
  10. ... and the second part of the string specifies the name of a file, in this case `play_scissors.html.erb`.
  
