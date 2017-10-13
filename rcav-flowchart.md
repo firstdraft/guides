@@ -79,5 +79,5 @@ Some things to keep in mind:
 
  - Capitalization (all file, folder, method, variable, and symbol names should be `snake_case`; only class names are `CamelCase`).
  - Spelling/pluralization (by convention, controller names are usually plural, but don't have to be).
- - Location (controller files must be in `app/controllers/`, view templates must be in `views/<referring_controller_name>/`
+ - Location (controller files must be in `app/controllers/` (be careful not to put the controller in `app/controllers/concerns`.
  - **READ THE ERROR MESSAGE!** It usually tells you exactly what is going wrong, and where. It will at least give you a strong hint.
