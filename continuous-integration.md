@@ -8,7 +8,7 @@ Open it in a new tab:
 
 ![](/assets/ci-load-in-new-tab.png)
 
-The very first time, you'll have to authorize firstdraft to manage your GitHub repositories (you may have to sign in to GitHub):
+The very first time, you'll have to authorize firstdraft to manage your GitHub repositories (you may have to sign in to GitHub). Don't forget to grant access to the organization that we just created (probably named `[YOUR USERNAME]-firstdraft-projects`).
 
 ![](/assets/ci-authorize-grades.png)
 
@@ -21,10 +21,6 @@ To get one, go to [CircleCI](https://circleci.com/) and sign up **with your GitH
 ![](/assets/ci-get-circle-token.png)
 
 ![](/assets/ci-paste-circle-token.png)
-
-You should finally end up at GitHub.com on your fork of the project:
-
-![](/assets/ci-forked-repo.png)
 
 Set up [a Cloud9 workspace as usual](getting-started-with-cloud-9.md) and Run Project:
 
