@@ -38,7 +38,7 @@ or on your own computer
 rails server
 ```
 
-(`rails s` is short for `rails server`, like `rails c` is short for `rails console`.)
+> `rails s` is short for `rails server`, like `rails c` is short for `rails console`.
 
 If the server started successfully, you should see output like the following. It may take a moment.
 
