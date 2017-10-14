@@ -65,7 +65,11 @@ In order to support a URL in your app such as `https://rps-rcav-your-username.c9
   
  10. ... and the second part of the string specifies the name of a file, in this case `play_scissors.html.erb`.
  
- 11. The key `:locals` must go to _another_ `Hash` that has a key/value pair for each variable we want to send to the template for output. In this case, I want to send two variables to the template: `computer_move` and `outcome`.
+ 11. The key `:locals` goes to _another_, nested, `Hash` that has a key/value pair for each variable we want to send to the template for output. In this case, I want to send two variables to the template: `computer_move` and `outcome`.
+ 
+     An alternate technique for sending variables to the template is to make them _instance variables_ rather than local variables by starting their names with an `@` when you create them. E.g. I could have defined `@comp_move = ["rock", "paper", "scissors"].sample` rather than `comp_move`, and then `@comp_move` would be available in the view template without having to use the `:locals` option in the `render()` method.
+     
+     There are pros and cons to each of these two approaches; use the one that makes the most sense to you.
  
  12. We have to create a folder within `app/views` that matches the name that we specified in the `render()` statement.
  
@@ -78,6 +82,6 @@ If you _didn't_ connect the dots correctly, you will usually see a very descript
 Some things to keep in mind:
 
  - Capitalization (all file, folder, method, variable, and symbol names should be `snake_case`; only class names are `CamelCase`).
- - Spelling/pluralization (by convention, controller names are usually plural, but don't have to be).
+ - Spelling/pluralization matters (by convention, controller names are usually plural, but don't have to be).
  - Location (controller files must be in `app/controllers/` (be careful not to put the controller in `app/controllers/concerns`.
  - **READ THE ERROR MESSAGE!** It usually tells you exactly what is going wrong, and where. It will at least give you a strong hint.
