@@ -59,18 +59,3 @@ There are other settings you can customize here too, if you like, but **always r
 Cloud 9 actually has a lot of cool features that we don't get when we work on our own computers like real-time collaboration, so you should explore! Have fun!
 
 ![](/assets/cloud_9_workflow.png)
-
-## Syncing your work with GitHub
-
-Open a new terminal tab and run these commands to make a commit:
-
-```bash
-git add -A
-git commit -m "Your message here"
-```
-
-And then push back to GitHub.com with:
-
-```
-git push
-```
