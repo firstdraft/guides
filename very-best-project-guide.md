@@ -22,26 +22,29 @@ All three of you should now be able to see the repositories under your list on C
 
 ## Clone this Trello board
 
-https://trello.com/b/Y16fbigH/appdev-pm-workflow-template
+https://trello.com/b/Y16fbigH/very-best-workflow-template
 
-## Do the tasks currently on Next Up
+## Add tasks to Discussion/Ideas
 
-To set up a modern deployment pipeline with Heroku.
-
-## Add additional tasks to Discussion/Ideas
-
-Click through the target and try to identify discrete tasks required to bring your app to parity with it.
+Click through the target and try to identify discrete tasks required to bring your app to parity with it; e.g., "Remove extraneous links from navbar".
 
 ## Populate Next Up
 
 Once you've agreed on and fleshed out the list of tasks, move them to Next Up and sequence them.
 
+## Read about a GitHub flow
+
+https://guides.github.com/introduction/flow/
+
 ## Get to work
 
-Each person should take a card from Next Up and "put their face on it".
+Each person should take a card from Next Up and "put their face on it". Create a branch from `/git` and start making commits.
+
 
 ## Push and Review
 
-When you're ready for feedback on your task, open a Pull Request and request review.
+When you're ready for feedback on your task, open a Pull Request from `/git` and request review.
 
 ## Merge
+
+https://guides.github.com/activities/hello-world/#merge
