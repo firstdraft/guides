@@ -31,6 +31,5 @@
 * [Authentication with Devise](authentication-and-authorization-with-devise.md)
 * [Using the Twitter gem](using-the-twitter-gem.md)
 * [Management Readings](management-readings.md)
-
-
+* [Very Best Project Guide](very-best-project-guide.md)
 
