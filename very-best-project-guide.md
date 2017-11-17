@@ -40,7 +40,6 @@ https://guides.github.com/introduction/flow/
 
 Each person should take a card from Next Up and "put their face on it". Create a branch from `/git` and start making commits.
 
-
 ## Push and Review
 
 When you're ready for feedback on your task, open a Pull Request from `/git` and request review.
