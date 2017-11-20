@@ -62,6 +62,10 @@ https://www.youtube.com/watch?v=PJjmw9TRB7s
 
 There are a few `rails grade:all` automated tests in this project, but they don't cover every single behavior that is in the target. It's up to you each to QA one another's work and make sure it's doing the right thing(s).
 
+It's very common as you QA a feature to realize some additional functionality that is required, beyond the work initially identified in the card. **Resist the temptation to expand the scope of this card.**
+
+Instead, make a _new_ card for the additional functionality, put it in Next Up, and **sequence it according to its priority versus the other pending tasks**. There may well be much more important tasks to do before fine-tuning this one.
+
 ## Merge
 
 Once everyone has signed off on the feature, 
