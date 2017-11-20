@@ -46,7 +46,7 @@ https://guides.github.com/introduction/flow/
 
 ## Get to work
 
-Each person should take a card from Next Up and "put their face on it" (i.e. add yourself to it as a Member). Create a branch from the `/git` page in your live app, and start making commits as you work on your assigned feature.
+Each person should take a card from Next Up and "put their face on it" (i.e. add yourself to it as a Member). From the `/git` page, create a branch off of the `master` branch, and start making commits as you work on your assigned feature. (It's a good idea to get in the habit of always Pulling the latest version of `master` down from GitHub before creating a new branch off of it.)
 
 ## Open a Pull Request
 
@@ -54,13 +54,15 @@ When you're ready for feedback on your task, open a Pull Request and add your te
 
 ## Back and forth
 
-Review each others code carefully and ask questions about it and/or suggest improvements. Watch this great talk about the importance of a strong Code Review culture:
+Review each others code carefully and ask questions about it and/or suggest improvements. You can leave line-by-line questions/comments in the "Files Changed" tab of the Pull Request.
+
+Watch this great talk about the importance of a strong Code Review culture:
 
 https://www.youtube.com/watch?v=PJjmw9TRB7s
 
-## Approve
+## Accept
 
-There are a few `rails grade:all` automated tests in this project, but they don't cover every single behavior that is in the target. It's up to you each to QA one another's work and make sure it's doing the right thing(s).
+There are a few `rails grade:all` automated tests in this project, but they don't cover every single behavior that is in the target. It's up to you each to QA one another's work and make sure it's doing the right thing(s), the way that a client or project manager should. Ultimately, when you're satisfied, you can approve (or "Accept") the feature.
 
 It's very common as you QA a feature to realize some additional functionality that is required, beyond the work initially identified in the card. **Resist the temptation to expand the scope of this card.**
 
@@ -68,6 +70,14 @@ Instead, make a _new_ card for the additional functionality, put it in Next Up, 
 
 ## Merge
 
-Once everyone has signed off on the feature, 
+Once everyone has signed off on the feature, merge your branch into `master`:
 
 https://guides.github.com/activities/hello-world/#merge
+
+If you've modified a line in a file that was _also_ modified by someone else in the meantime, then you might have to resolve the conflict. That might involve just discarding one version or the other, or it might involve writing some new code that intelligently combines both sets of changes. GitHub's interface should walk you through it.
+
+## Start on the next card
+
+Go back to the Next Up column and grab a card near the top and put your face on it.
+
+**Very important:** Whenever you start a new branch off of `master`, be sure to first Pull so that you have the latest starting point. Otherwise you'll have more Merge conflict headaches later.
