@@ -1,6 +1,6 @@
 # Very Best Project Guide
 
-Your primary objective is to start with this repository and make it match this target.
+Your primary objective is to start with [this repository](https://github.com/firstdraft-projects/very_best) and make it match [this target](http://very-best-demo-pr-3.herokuapp.com).
 
 Here are some things to do along the way that might be helpful:
 
