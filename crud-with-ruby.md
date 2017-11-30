@@ -32,7 +32,9 @@ Go open up the migration file in Atom and make sure it looks good. You have this
 
 If it looks good, use the
 
-    rake db:migrate
+```
+rails db:migrate
+```
 
 command to actually execute the code in the migration file and create your table. Now you are ready to start creating rows in the table.
 
@@ -57,11 +59,11 @@ command to actually execute the code in the migration file and create your table
 >       remove_column :instructors, :last_name
 >     end
 
-> Then execute the instructions with `rake db:migrate`.
+> Then execute the instructions with `rails db:migrate`.
 
 > If your database gets into a weird state (usually caused by deleting old migration files), your ultimate last resort is
 
->     rake db:drop
+>     rails db:drop
 
 > This will destroy your entire database and all the data within it. Then, you can re-run all your migrations from scratch after fixing them to be however you like.
 
