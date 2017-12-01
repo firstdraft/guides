@@ -113,7 +113,7 @@
      ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "users" does not exist
      ```
      
-     `PG::UndefinedTable`... the issue is that, just like when we clone a new codebase to our own machine, we have to `rails db:migrate` to create[^7] the database! Right now, on Heroku, none of our migrations have been run.
+     `PG::UndefinedTable`... 🤔 The issue is that, just like when we clone a new codebase to our own machine, we have to `rails db:migrate` to create[^7] the database! Right now, on Heroku, none of our migrations have been run.
      
      <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the Heroku server log and return to a Terminal prompt. To run commands on Heroku (rather than locally), we prefix them with `heroku run`:
      
@@ -121,24 +121,59 @@
      heroku run rails db:migrate
      ```
      
+     ![](/assets/heroku db migrate.png)
+     
      Now if you visit your URL again, you'll see your live app!
+     
+     ![](/assets/app deployed.png)
      
      (**Note**: When you try `heroku run rails db:migrate`, there are a couple of common issues at this point:
      
-      - If you see the error message "Directly inheriting from ActiveRecord::Migration is not supported. Please specify the Rails release the migration was written for":
+      - **If you see the error message "Directly inheriting from ActiveRecord::Migration is not supported. Please specify the Rails release the migration was written for":**
       
-          
+      Some of your migrations are using an old Rails 4 style. These all need to be updated. Basically, just go through each file in `db/migrate` and ensure that the first line has a `[5.0]` on the end, like this:
+      
+      ```ruby
+      class CreateVenues < ActiveRecord::Migration[5.0]
+      ```
+      
+      Then run these commands in sequence:
+      
+      ```
+      rails db:migrate
+      git add -A
+      git commit -m "Fix migrations"
+      git push production master
+      ```
+      
+      and, after it re-deploys the new codebase,
+      
+      ```
+      heroku run rails db:migrate
+      ```
     
-    
-     
-     
-     
-     
-     
-      - "Index name 'index_active_admin_comments_on_author_type_and_author_id' on table 'active_admin_comments' already exists": See this note[^9]
+      - **If you see the error message "Index name 'index_active_admin_comments_on_author_type_and_author_id' on table 'active_admin_comments' already exists":**
+      
+      Find the file in `db/migrate` that ends with `..._create_active_admin_comments.rb` and comment out lines 11-13:
+      
+      ![](/assets/activeadmin comments error.png)
 
-    
-    
+      Then run these commands in sequence:
+      
+      ```
+      rails db:migrate
+      git add -A
+      git commit -m "Fix ActiveAdmin indexes"
+      git push production master
+      ```
+      
+      and, after it re-deploys the new codebase,
+      
+      ```
+      heroku run rails db:migrate
+     ```
+
+ 1. Yay, our app is live on the internet! And not just a Cloud9 Preview.
 
 [^1]: Heroku gives us a very powerful open-source database called Postgres. By default, a brand new Rails application uses a lightweight database called SQLite since it is already installed on basically every device that exists. We have to ensure that we make our app compatible with Postgres. Fortunately, since ActiveRecord handles translating our Ruby into SQL for us anyway, this requires no change to our application code. We simply need to switch to a different adapter when Heroku starts up the `rails server` in production mode (as opposed to development mode, which is what we do on our own machine).
 
@@ -153,4 +188,3 @@
 [^6]: This idea of deploying an app via a simple `git push` was incredibly revolutionary. Heroku autodetects that it's a Rails codebase and does a _ton_ of work on our behalf to deploy it to an Amazon AWS server in production mode. Magical!
 
 [^7]: You might be wondering why the database doesn't go to Heroku and GitHub along with all of the other code when we `git push`. There are lots of reasons, but for one, it would be a terrible idea to be using the same database while we're messing around developing as the one that our actual users are storing their precious data on. Size and data security are other reasons.
-
