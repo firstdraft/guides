@@ -28,7 +28,7 @@
        end
        ```
        
-       and, in addition, add
+       and, in addition, add the line
        
        ```ruby
        gem "pg", :group => :production
