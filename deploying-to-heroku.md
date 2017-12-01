@@ -121,9 +121,21 @@
      heroku run rails db:migrate
      ```
      
-     Now if you 
+     Now if you visit your URL again, you'll see your live app!
      
-     **Note:** You might run into an error here[^8].
+     (**Note**: When you try `heroku run rails db:migrate`, there are a couple of common issues at this point:
+     
+      - If you see the error message "Directly inheriting from ActiveRecord::Migration is not supported. Please specify the Rails release the migration was written for":
+      
+          
+    
+    
+     
+     
+     
+     
+     
+      - "Index name 'index_active_admin_comments_on_author_type_and_author_id' on table 'active_admin_comments' already exists": See this note[^9]
 
     
     
@@ -142,4 +154,3 @@
 
 [^7]: You might be wondering why the database doesn't go to Heroku and GitHub along with all of the other code when we `git push`. There are lots of reasons, but for one, it would be a terrible idea to be using the same database while we're messing around developing as the one that our actual users are storing their precious data on. Size and data security are other reasons.
 
-[^8]: If you see an error message "Directly inheriting from ActiveRecord::Migration is not supported. Please specify the Rails release the migration was written for:", then some of your migrations are using an old Rails 4 style. These all need to be updated. Basically, just go through each file in `db/migrate` and ensure that the first line has a `[5.0]` on the end, like this: `class CreateVenues < ActiveRecord::Migration[5.0]`. Then run these commands in sequence: `rails db:migrate`, `git add -A`, `git commit -m "Fix migrations"`, and `git push production master` again.
