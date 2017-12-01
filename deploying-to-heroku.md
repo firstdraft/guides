@@ -180,7 +180,24 @@
      git push production master
      ```
      
-     It's amazing that it is that easy to deploy to an industrial grade production server nowadays. This ease of deployment also enables some very powerful modern workflows:
+     As you continue to build the application, you simply commit your changes as usual and `git push production master` whenever you are ready to deploy a new version.
+     
+     It's amazing that it is that easy to deploy to an industrial grade production server nowadays. This ease of deployment also enables some very powerful modern workflows. Let's see one of them:
+     
+ 1. Sometimes, you want to allow QA testers or product owners to exercise your new features before deploying them to your entire userbase. For this, it's very handy to have a _second_ real server running that you can push your experimental code to. We usually refer to this as a **"staging"** server.
+ 
+    It's going to be a _lot_ of work to get our second server set up. Ready?
+    
+    ```
+    heroku create your-app-name-staging --remote=staging
+    git push staging master
+    ```
+    
+    Done! You now have _two_ industrial grade servers running. But they don't each have to have the same version of the code at the same time.
+    
+    Usually, you will `git push staging` new commits first, and only once it has passed code review, QA, and been accepted by the Product Owner do you `git push production`.
+    
+    
      
 
 [^1]: Heroku gives us a very powerful open-source database called Postgres. By default, a brand new Rails application uses a lightweight database called SQLite since it is already installed on basically every device that exists. We have to ensure that we make our app compatible with Postgres. Fortunately, since ActiveRecord handles translating our Ruby into SQL for us anyway, this requires no change to our application code. We simply need to switch to a different adapter when Heroku starts up the `rails server` in production mode (as opposed to development mode, which is what we do on our own machine).
@@ -195,4 +212,4 @@
 
 [^6]: This idea of deploying an app via a simple `git push` was incredibly revolutionary. Heroku autodetects that it's a Rails codebase and does a _ton_ of work on our behalf to deploy it to an Amazon AWS server in production mode. Magical!
 
-[^7]: You might be wondering why the database doesn't go to Heroku and GitHub along with all of the other code when we `git push`. There are lots of reasons, but for one, it would be a terrible idea to be using the same database while we're messing around developing as the one that our actual users are storing their precious data on. Size and data security are other reasons.
+[^7]: You might be wondering why the database doesn't go to Heroku and GitHub along with all of the other code when we `git push`. There are lots of reasons, but for one, it would be a terrible idea to be using the same database while we're messing around developing as the one that our actual users are storing their precious data on. Other reasons include size and data security.
