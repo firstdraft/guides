@@ -178,7 +178,6 @@
      ```
      heroku create your-app-name-production --remote=production
      git push production master
-     heroku run rails db:migrate
      ```
      
      It's amazing that it is that easy to deploy to an industrial grade production server nowadays. This ease of deployment also enables some very powerful modern workflows:
