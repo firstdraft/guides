@@ -193,11 +193,13 @@
     git push staging master
     ```
     
-    Done! You now have _two_ industrial grade servers running. But they don't each have to have the same version of the code at the same time.
+    Done! You now have _two_ industrial grade servers running: one is live at `https://[YOUR APP NAME]-production.herokuapp.com`, and the other at `https://[YOUR APP NAME]-staging.herokuapp.com`. _But they don't each have to have the same version of the code at the same time._
     
-    Usually, you will `git push staging` new commits first, and only once it has passed code review, QA, and been accepted by the Product Owner do you `git push production`.
+    Usually, you will `git push` new commits to `staging master` first, and only once it has passed code review, QA, and been accepted by the Product Owner do you `git push production master`.
     
-    
+ 1. This is already a very powerful workflow, but we can now leverage our GitHub collaboration workflow to adopt an even better one:
+ 
+ 
      
 
 [^1]: Heroku gives us a very powerful open-source database called Postgres. By default, a brand new Rails application uses a lightweight database called SQLite since it is already installed on basically every device that exists. We have to ensure that we make our app compatible with Postgres. Fortunately, since ActiveRecord handles translating our Ruby into SQL for us anyway, this requires no change to our application code. We simply need to switch to a different adapter when Heroku starts up the `rails server` in production mode (as opposed to development mode, which is what we do on our own machine).
