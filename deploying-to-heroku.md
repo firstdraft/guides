@@ -197,11 +197,57 @@
     
     Usually, you will `git push` new commits to `staging master` first, and only once it has passed code review, QA, and been accepted by the Product Owner do you `git push production master`.
     
- 1. This is already a very powerful workflow, but we can now leverage our GitHub collaboration workflow to adopt an even better one:
+ 1. This `staging`/`master` workflow is already quite robust, but we can now leverage our GitHub collaboration workflow to adopt an even better one: Review Apps.
  
- 
-     
+   In your Heroku Dashboard, click on the button in the top-right corner and Create a New Pipeline:
+   
+   ![](/assets/new pipeline.png)
 
+   Choose a name for the pipeline (usually the same as before but without `-production` or `-staging`) and then locate our `origin` remote in the Connect to GitHub section. (Pay attention to the helper text regarding "Missing a GitHub organization?".)
+   
+   Then "Connect" and "Create Pipeline".
+   
+ 1. In the next screen, you'll be asked to add servers to each "phase" of development — staging and production. We didn't choose our app names before lightly — add each one of your apps to the phase that we intended it for:
+ 
+    ![](/assets/add_apps_to_phases.png)
+     
+ 1. Now for the good part: click on "Enable Review Apps...". Unless you've already got one, the first thing you'll likely see is a prompt to add a file called `app.json` to your repository:
+ 
+    ![](/assets/create app json.png)
+ 
+    Fortunately, Heroku will write the file and commit it to our repo for us. Usually I accept all the defaults, except that I add `bin/rails dev:prime` to the post-deploy section _if_ I have such a script in my app.
+    
+    And then commit the file to our repo:
+    
+    ![](/assets/commit app json.png)
+    
+    Finally, back on your development machine, don't forget to `git pull` to get the changes that Heroku made on our behalf:
+    
+    ![](/assets/pull app json.png)
+    
+ 1. Now, for the benefits: imagine that you are working with a team. You are assigned a task, and, as usual, you first create a branch and then start working away on it:
+ 
+    ![](/assets/new branch.png)
+    
+    ![](/assets/new commit.png)
+   
+    Also as usual, when you are ready for feedback, you Push to GitHub and open a Pull Request so that your team can discuss:
+     
+    ![](/assets/open a PR.png)
+    
+    But wait! There's something new...
+    
+    ![](/assets/requested_a_deployment.png)
+ 
+    In a moment, there will be a "View Deployment" link there that anyone can click on:
+    
+    ![](/assets/view deployment.png)
+    
+    What just happened? Once you've configured Review Apps, Heroku will spy on your GitHub repository. As soon as anyone opens a Pull Request, Heroku will **automatically spin up another server and deploy the experimental branch to it**.
+    
+    It then puts a handy link right there in the Pull Request conversation, so that teammates or product owners or QA can actually play around with the new features _without_ having to know how to clone and start up a Rails server, or waste the time doing so. This makes it dramatically easier to give good feedback during the review process — and it sidesteps the common issue of multiple developers jostling for the lone staging server. Awesome!
+ 
+ 
 [^1]: Heroku gives us a very powerful open-source database called Postgres. By default, a brand new Rails application uses a lightweight database called SQLite since it is already installed on basically every device that exists. We have to ensure that we make our app compatible with Postgres. Fortunately, since ActiveRecord handles translating our Ruby into SQL for us anyway, this requires no change to our application code. We simply need to switch to a different adapter when Heroku starts up the `rails server` in production mode (as opposed to development mode, which is what we do on our own machine).
 
 [^2]: Any gems that are listed within the `:production` group will only be used when the `rails server` is started up in production mode. Usually, we start our server in the default mode, which is `development`. If you really wanted to, you could also restrict other gems to the `:development` group if they aren't used while serving actual requests; for example, `starter_generators`. This will result in a (small) performance boost.
