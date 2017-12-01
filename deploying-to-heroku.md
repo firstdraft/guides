@@ -173,7 +173,16 @@
       heroku run rails db:migrate
      ```
 
- 1. Yay, our app is live on the internet! And not just a Cloud9 Preview.
+ 1. Yay, our app is live on the internet! And not just a Cloud9 Preview. Barring any issues, all we've done so far is:
+ 
+     ```
+     heroku create your-app-name-production --remote=production
+     git push production master
+     heroku run rails db:migrate
+     ```
+     
+     It's amazing that it is that easy to deploy to an industrial grade production server nowadays. This ease of deployment also enables some very powerful modern workflows:
+     
 
 [^1]: Heroku gives us a very powerful open-source database called Postgres. By default, a brand new Rails application uses a lightweight database called SQLite since it is already installed on basically every device that exists. We have to ensure that we make our app compatible with Postgres. Fortunately, since ActiveRecord handles translating our Ruby into SQL for us anyway, this requires no change to our application code. We simply need to switch to a different adapter when Heroku starts up the `rails server` in production mode (as opposed to development mode, which is what we do on our own machine).
 
