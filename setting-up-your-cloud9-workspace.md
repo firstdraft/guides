@@ -66,7 +66,7 @@ Then, click on "Connected Services" in the left sidebar, and then click "Connect
 
 ![](/assets/cloud9-connected-services.png)
 
-It will send you to GitHub.com to give your permission to Cloud9 to access things. **Be sure to click "Grant" next to the name of the organization that you created in an earlier step:**
+It will send you to GitHub.com to give your permission to Cloud9 to access things. **Be sure to click "Grant" next to the name of the organization that you created [in an earlier step](#create-github-organization):**
 
 ![](/assets/cloud9-github-oauth-1.png)
 
