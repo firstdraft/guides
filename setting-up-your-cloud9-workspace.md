@@ -114,6 +114,18 @@ Choose any name for the workspace; most students choose `[YOUR USERNAME]-workspa
 
 ![](/assets/cloud9-name-workspace.png)
 
+Then click "Create workspace". The next step could take a while (several minutes); give it some time:
 
+![](/assets/cloud9-cloning-workspace.png)
 
+> If you get a message that it failed and to contact support, [go back to this page](https://c9.io/raghubetina/appdev_workspace) and try cloning again. (If it still gets stuck after 3 attempts, send an email to the support address given and cc me on it.)
 
+Ultimately, you'll end up in your Integrated Development Environment (IDE):
+
+![](/assets/cloud9-workspace-up.png)
+
+You'll be spending a lot of time in your IDE in the coming weeks. As you work, click on the little grey circles to learn tips about how to use Cloud9 more effectively:
+
+![](/assets/cloud9-tips.png)
+
+Happy coding!
