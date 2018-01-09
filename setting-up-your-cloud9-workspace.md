@@ -110,7 +110,7 @@ We've set up a computer for you to do your work on that has the latest versions 
 
 ![](/assets/cloud9-clone-workspace.png)
 
-Choose any name for the workspace; most students choose something like `rails-workspace`. In this example screenshot, I chose `demolearner1-workspace`:
+Choose any name for the workspace; most students choose `appdev-workspace`. In this example screenshot, I chose `demolearner1-workspace`:
 
 ![](/assets/cloud9-name-workspace.png)
 
