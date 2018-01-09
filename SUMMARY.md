@@ -32,6 +32,5 @@
 * [Management Readings](management-readings.md)
 * [Very Best Project Guide](very-best-project-guide.md)
 * [Deploying to Heroku](deploying-to-heroku.md)
-
-
+* [Setting up your Cloud9 workspace](setting-up-your-cloud9-workspace.md)
 
