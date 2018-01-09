@@ -2,7 +2,7 @@
 
 ## Join GitHub
 
-If you haven't already, sign up for a free GitHub account:
+If you haven't already, [sign up for a free GitHub account](https://github.com/join):
 
 ![](/assets/join-github.png)
 
