@@ -6,7 +6,6 @@
   * [Planning Your Idea](planning-your-idea.md)
   * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
   * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
-* [Getting Started with Cloud9](getting-started-with-cloud9.md)
 * [Introduction to HTML](introduction-to-html.md)
   * [Friendbook Exercise Guide](friendbook-exercise-guide.md)
   * [Design Readings and Resources](design-readings-and-resources.md)
@@ -33,4 +32,6 @@
 * [Management Readings](management-readings.md)
 * [Very Best Project Guide](very-best-project-guide.md)
 * [Deploying to Heroku](deploying-to-heroku.md)
+
+
 
