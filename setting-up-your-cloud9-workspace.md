@@ -26,17 +26,47 @@ You can "Skip" or "Finish" the rest of the screens:
 
 ![](/assets/finish-org.png)
 
-## Accept Cloud9 invitation
+## Join Cloud9
 
 I have emailed everyone invitations to join the firstdraft team on Cloud9, which is the online tool we'll be using to write and run all of our code. In your inbox, you should see something like this:
 
-![](/assets/cloud9-invite.png)
+![](/assets/cloud9-invite.png)![](/assets/cloud9-username.png)
 
 If you don't have an invitation, let me know.
 
 Click on the link in the email and you should arrive at a welcome page. Click "Create new account":
 
 ![](/assets/cloud9-welcome.png)
+
+Answer the next few questions:
+
+![](/assets/cloud9-name.png)
+
+![](/assets/cloud9-username.png)
+
+![](/assets/cloud9-student.png)
+
+![](/assets/cloud-captcha.png)
+
+And you should arrive at a screen with a "Join Team" button. Click it:
+
+![](/assets/cloud9-join-team.png)
+
+You should wind up at your Cloud9 Dashboard. You now have everything you need to develop applications!
+
+### Connect your GitHub account to Cloud9
+
+
+Let's connect your Cloud9 account to your GitHub account to make it easy to download projects.
+
+Click on the gear icon in the top-right:
+
+![](/assets/cloud9-settings.png)
+
+Then, click on "Connected Services" in the left sidebar, and then click "Connect" next to "GitHub":
+
+![](/assets/cloud9-connected-services.png)
+
 
 
 
