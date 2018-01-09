@@ -26,5 +26,17 @@ You can "Skip" or "Finish" the rest of the screens:
 
 ![](/assets/finish-org.png)
 
+## Accept Cloud9 invitation
+
+I have emailed everyone invitations to join the firstdraft team on Cloud9, which is the online tool we'll be using to write and run all of our code. In your inbox, you should see something like this:
+
+![](/assets/cloud9-invite.png)
+
+If you don't have an invitation, let me know.
+
+Click on the link in the email and you should arrive at a welcome page. Click "Create new account":
+
+![](/assets/cloud9-welcome.png)
+
 
 
