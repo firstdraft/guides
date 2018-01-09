@@ -6,7 +6,7 @@ If you haven't already, sign up for a free GitHub account:
 
 ![](/assets/join-github.png)
 
-and verify your email address.
+In this example screenshot, I chose a username of `demolearner1` — remember yours. Also, don't forget to check your email and verify the address you entered.
 
 For now, think of GitHub like Dropbox-for-programmers; it's where we're going to store all of our code.
 
@@ -18,7 +18,7 @@ Click the `+` on the right side of the navbar and select "New organization":
 
 ![](/assets/new-organization.png)
 
-Choose any name for the organization; most students choose `[YOUR USERNAME]-appdev`:
+Choose any name for the organization; most students choose `[YOUR USERNAME]-appdev`. In this example screenshot, I chose `demolearner1-appdev`:
 
 ![](/assets/org-name.png)
 
@@ -56,7 +56,6 @@ You should wind up at your Cloud9 Dashboard. You now have everything you need to
 
 ### Connect your GitHub account to Cloud9
 
-
 Let's connect your Cloud9 account to your GitHub account to make it easy to download projects.
 
 Click on the gear icon in the top-right:
@@ -66,6 +65,54 @@ Click on the gear icon in the top-right:
 Then, click on "Connected Services" in the left sidebar, and then click "Connect" next to "GitHub":
 
 ![](/assets/cloud9-connected-services.png)
+
+It will send you to GitHub.com to give your permission to Cloud9 to access things. **Be sure to click "Grant" next to the name of the organization that you created in an earlier step:**
+
+![](/assets/cloud9-github-oauth-1.png)
+
+_Then_ click "Authorize C9":
+
+![](/assets/cloud9-github-oauth-2.png)
+
+Your Cloud9 and GitHub accounts are now linked, and you'll end up back at Cloud9.
+
+### Add your Cloud9 SSH key to GitHub
+
+Finally, we're going to add an "SSH key" from Cloud9 to your GitHub account. This will save you from having to type your GitHub password over and over whenever you want to sync your code.
+
+In Cloud9's Settings, click SSH Keys. Then highlight and copy the entire sequence of characters on the bottom:
+
+![](/assets/cloud9-ssh-key.png)
+
+Back in GitHub, click your icon in the top-right and then select Settings:
+
+![](/assets/cloud9-github-settings.png)
+
+Then click "SSH and GPG keys" in the left sidebar, and then click "New SSH key":
+
+![](/assets/cloud9-github-new-ssh-key.png)
+
+Paste in the key that you copied from your Cloud9 settings and click "Add SSH key":
+
+![](/assets/cloud9-add-ssh-key.png)
+
+You should end up at a screen like this:
+
+![](/assets/cloud9-github-key-added.png)
+
+Your Cloud9 and GitHub accounts are now fully connected!
+
+## Clone template workspace
+
+We've set up a computer for you to do your work on that is pre-configured with handy shortcuts and other things. Let's get you a copy of it.
+
+[Visit this URL](https://c9.io/raghubetina/appdev_workspace) and then click the "Clone" button in the top-right:
+
+![](/assets/cloud9-clone-workspace.png)
+
+Choose any name for the workspace; most students choose `[YOUR USERNAME]-workspace`. In this example screenshot, I chose `demolearner1-workspace`:
+
+![](/assets/cloud9-name-workspace.png)
 
 
 
