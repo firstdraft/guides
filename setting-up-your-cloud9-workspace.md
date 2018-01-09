@@ -104,7 +104,7 @@ Your Cloud9 and GitHub accounts are now fully connected!
 
 ## Clone template workspace
 
-We've set up a computer for you to do your work on that is pre-configured with handy shortcuts and other things. Let's get you a copy of it.
+We've set up a computer for you to do your work on that has the latest versions of Ruby and Rails installed on it, and is pre-configured with handy shortcuts and other things. Let's get you a copy of it.
 
 [Visit this URL](https://c9.io/raghubetina/appdev_workspace) and then click the "Clone" button in the top-right:
 
