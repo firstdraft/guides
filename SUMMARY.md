@@ -7,6 +7,7 @@
   * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
   * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
 * [Setting up your Cloud9 workspace](setting-up-your-cloud9-workspace.md)
+* [Getting automated feedback](getting-automated-feedback.md)
 * [Introduction to HTML](introduction-to-html.md)
   * [Friendbook Exercise Guide](friendbook-exercise-guide.md)
   * [Design Readings and Resources](design-readings-and-resources.md)
@@ -32,5 +33,5 @@
 * [Using the Twitter gem](using-the-twitter-gem.md)
 * [Management Readings](management-readings.md)
 * [Very Best Project Guide](very-best-project-guide.md)
-* [Deploying to Heroku](deploying-to-heroku.md)
+* Getting automated feedback
 
