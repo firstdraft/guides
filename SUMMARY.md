@@ -33,5 +33,5 @@
 * [Using the Twitter gem](using-the-twitter-gem.md)
 * [Management Readings](management-readings.md)
 * [Very Best Project Guide](very-best-project-guide.md)
-* Getting automated feedback
+* [Deploying to Heroku](deploying-to-heroku.md)
 
