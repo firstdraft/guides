@@ -4,11 +4,9 @@
 
 This is a minimal introduction to the Ruby programming language, intended to get you far enough to begin using the Ruby on Rails web application framework.
 
-To get started, visit [this page](https://github.com/firstdraft-projects/ruby_intro) and click the button in the top-right corner that says "Fork".
-
-Then, follow [this process to create a Cloud9 workspace](getting-started-with-cloud9.md).
+To get started, visit [this page](https://github.com/appdev-projects/ruby-intro) and follow the instructions to download the code to your Cloud9 workspace.
   
-At the prompt in the new tab that appears, type the following command and then press <kbd>return</kbd>:
+Once you've downloaded the starter code and are at a Terminal prompt within the project folder, type the following command and then press <kbd>return</kbd>:
 
 ```
 rails console
