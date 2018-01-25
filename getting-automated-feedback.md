@@ -7,7 +7,7 @@ If you haven't created a Github account already, follow the steps in the [Settin
 ## Login to Canvas
 
 Open up the Assignments tab and make sure they're sorted by type. 
-![](/assets/Screen_Shot_2018-01-25_at_1_11_56_PM.png)
+![](/assets/login-canvas.png)
 
 Scroll down to the assignment you want to start and click the link that says 'Load [your assignment name] in a new window'. 
 ![](/assets/Screen_Shot_2018-01-25_at_1_13_11_PM.png)
@@ -44,7 +44,7 @@ Ok, now we can get the project loaded up in Cloud9 and try out the feedback feat
 
 ![](/assets/Screen Shot 2018-01-25 at 2.06.02 PM.png)
 
-Then clone the assignment into Cloud9 using a command similar to `https://github.com/appdev-projects/project-repo-name` but make sure to replace `project-repo-name` with your specific project's repo name. You can find your repo name from the original instructions that popped up when you added the assignment from Canvas, or by going to https://github.com/appdev-projects/ and looking for the repo that matches your assignment name. 
+Then clone the assignment into Cloud9 using a command similar to `https://github.com/appdev-projects/project-repo-name` but make sure to replace `project-repo-name` with your specific project's repo name. You can find your repo name from the original instructions that popped up when you added the assignment from Canvas, or by going to https://github.com/appdev-projects/ and looking for the repo that matches your assignme![](/assets/Screen Shot 2018-01-25 at 1.13.11 PM.png)nt name. 
 ![](/assets/git-clone.png)
 
 Then `cd` into your newly cloned project repo with something like `cd project-repo-name`, but again make sure to replace `project-repo-name` with your specific project repo's name.
