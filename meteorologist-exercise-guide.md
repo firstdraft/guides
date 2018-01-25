@@ -276,7 +276,7 @@ They released an iOS app, Dark Sky, to demonstrate the power of their API, and i
 
 Step 1 when working with any API is research. What is the URL of the page that has the data we want, preferably in JSON format?
 
-Let's head over to [Forecast's API documentation][2]. First, we must register as developers:
+Let's head over to [Forecast's API documentation][2]. First, click "Try for Free" to register as a dev:
 
 ![](/assets/dark-sky-landing.jpg)
 
