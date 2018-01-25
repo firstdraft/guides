@@ -22,6 +22,7 @@
   * [Ruby Hashes](ruby-hashes.md)
   * [More on Ruby Classes](more-on-ruby-classes.md)
   * [Glossary of Terms](glossary-of-terms.md)
+* [Meteorologist Exercise Guide](meteorologist-exercise-guide.md)  
 * [Rails New and other basics](rails-new-and-other-basics.md)
 * [RCAV Flowchart](rcav-flowchart.md)
 * [RPS RCAV Exercise Guide](rps-rcav-exercise-guide.md)
@@ -34,5 +35,4 @@
 * [Management Readings](management-readings.md)
 * [Very Best Project Guide](very-best-project-guide.md)
 * [Deploying to Heroku](deploying-to-heroku.md)
-* [Meteorologist Exercise Guide](meteorologist-exercise-guide.md)
 
