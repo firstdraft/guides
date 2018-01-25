@@ -1,4 +1,4 @@
-# Getting automated feedback
+![](/assets/Screen_Shot_2018-01-25_at_2_15_16_PM.png)# Getting automated feedback
 
 ## Set up a Github account
 
@@ -45,7 +45,7 @@ Ok, now we can get the project loaded up in Cloud9 and try out the feedback feat
 ![](/assets/Screen Shot 2018-01-25 at 2.06.02 PM.png)
 
 Then clone the assignment into Cloud9 using a command similar to `https://github.com/appdev-projects/project-repo-name` but make sure to replace `project-repo-name` with your specific project's repo name. You can find your repo name from the original instructions that popped up when you added the assignment from Canvas, or by going to https://github.com/appdev-projects/ and looking for the repo that matches your assignment name. 
-![](/assets/Screen_Shot_2018-01-25_at_2_15_16_PM.png)
+![](/assets/git-clone.png)
 
 Then `cd` into your newly cloned project repo with something like `cd project-repo-name`, but again make sure to replace `project-repo-name` with your specific project repo's name.
 
