@@ -47,8 +47,7 @@ Ok, now we can get the project loaded up in Cloud9 and try out the feedback feat
 
 ![](/assets/cd-workspace.png)
 
-Then clone the assignment into Cloud9 using a command similar to `https://github.com/appdev-projects/project-repo-name` but make sure to replace `project-repo-name` with your specific project's repo name. You can find your repo name from the original instructions that popped up when you added the assignment from Canvas, or by going to https://github.com/appdev-projects/ and looking for the repo that matches your assignment 
-![](/assets/git-clone.png)
+Then clone the assignment into Cloud9 using a command similar to `https://github.com/appdev-projects/project-repo-name` but make sure to replace `project-repo-name` with your specific project's repo name. You can find your repo name from the original instructions that popped up when you added the assignment from Canvas. If you lost the tab, you can always go back to the assignment in Canvas, reload it and find your token again. 
 
 Then `cd` into your newly cloned project repo with something like `cd project-repo-name`, but again make sure to replace `project-repo-name` with your specific project repo's name.
 
@@ -57,7 +56,7 @@ Then `cd` into your newly cloned project repo with something like `cd project-re
 Run `bin setup` to get your project setup. 
 ![](/assets/bin-setup.png)
 
-Run `rails grade:all`. You'll get asked for your access token, so just enter in the token you were given when you first loaded the Canvas assignment. If you lost the tab, you can always go back to the assignment in Canvas, reload it and find your token again. 
+Run `rails grade:all`. You'll get asked for your access token, so just enter in the token you were given when you first loaded the Canvas assignment. 
 
 ![](/assets/rails-grade.png)
 
