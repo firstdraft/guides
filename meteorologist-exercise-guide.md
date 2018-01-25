@@ -75,7 +75,7 @@ Great! Now we know the exact data we want is available through the API. Now, how
 Let's use Ruby's `open()` method to read Google's page. The `open()` method takes one `String` argument, which should contain the URL of the page you want to open. I'm going to copy-paste the URL into `"  "` and store it in a variable `url` to make it easier to work with:
 
 ```ruby
-pry(main)> url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave"
+url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave"
 ```
 
 Now let's `open` that URL and `read` the body of it:
@@ -229,7 +229,7 @@ longitude = parsed_data.dig("results", 0, "geometry", "location", "lng")
 
 And now I can do whatever interesting things with `latitude` and `longitude` that I need.
 
-Now that we've explored in the console, it's time to take these three lines (or something like them, anyway) and write some permanent programs...
+Now that we've explored in the console, it's time to take these four lines (or something similar to them, anyway) and write some permanent programs...
 
 ## Part 1: Street &rarr; Coords
 
