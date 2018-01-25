@@ -233,7 +233,7 @@ Now that we've explored in the console, it's time to take these four lines (or s
 
 ## Part 1: Street &rarr; Coords
 
-Now that we've seen how to retrieve information from a URL using Ruby, let's plug it in to a real application.
+Now that we've seen how to retrieve information from a URL using Ruby, let's plug it in to a real application. If you haven't already, launch your Rails app with `bin/server` and navigate to the homepage in a Chrome tab.
 
 I have started you off with three forms:
 
