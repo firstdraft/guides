@@ -237,9 +237,9 @@ Now that we've seen how to retrieve information from a URL using Ruby, let's plu
 
 I have started you off with three forms:
 
- - [Street &rarr; Coords](http://localhost:3000/street_to_coords/new)
- - [Coords &rarr; Weather](http://localhost:3000/coords_to_weather/new)
- - [Street &rarr; Weather](http://localhost:3000/street_to_weather/new)
+ - Street &rarr; Coords
+ - Coords &rarr; Weather
+ - Street &rarr; Weather
 
 And three actions which process these form inputs and render results:
 
@@ -278,17 +278,23 @@ Step 1 when working with any API is research. What is the URL of the page that h
 
 Let's head over to [Forecast's API documentation][2]. First, we must register as developers:
 
-<img src='http://ask.initialversion.com/uploads/default/80/ae376d887782c8bb.png' width="690" height="412">
+![](/assets/dark-sky-landing.jpg)
 
-You need not provide a real email address, if you don't want to. Once you register, you will be given an example link with your own personal API key inserted in a variable path segment:
+![](/assets/dark-sky-register.png)
 
-<img src='http://ask.initialversion.com/uploads/default/81/80aa59c81d8cc53d.png' width="690" height="412">
+![](/assets/dark-sky-confirmation.png)
+
+![](/assets/dark-sky-login.png)
+
+Once you've registered, verified your email, and signed in, you will be given a sample API call with your own personal API key inserted in it:
+
+![](/assets/dark-sky-dashboard.png)
 
 #### Find an example
 
 Click the example link and check out the data they provide. Scroll up and down and get a feel for it:
 
-<img src='http://ask.initialversion.com/uploads/default/82/6a23cb4cd7f20112.png' width="690" height="412">
+![](/assets/dark-sky-sample.png)
 
 It's pretty amazingly detailed data; it tells us current conditions, along with minute-by-minute conditions for the next hour, hour-by-hour conditions for the next day or so, etc.
 
@@ -323,7 +329,7 @@ If I type in `41.78` and `-87.59` at the [Coords &rarr; Weather form](http://loc
 </dl>
 </blockquote>
 
-**Note: Forecast does not have data for every lat/lng combination; some geographies will return `nil`s.** If you run into issues, you can try Ruby 2.3's handy new `Hash#dig` method:
+**Note:** Forecast does not have data for every lat/lng combination; some geographies will return `nil`s. If you run into issues, using `dig` might be helpful, since it doesn't throw an error if a key is missing along the way:
 
 ```ruby
 parsed_results.dig("minutely", "summary")
@@ -332,10 +338,8 @@ parsed_results.dig("minutely", "summary")
 rather than
 
 ```ruby
-parsed_results["minutely"]["summary"]
+parsed_results.fetch("minutely").fetch("summary")
 ```
-
-The latter, if `parsed_results["minutely"]` is `nil`, will throw an error complaining that you can't do `nil["summary"]`. The former will handle the issue more gracefully. [Read more in this StackOverflow thread.](https://stackoverflow.com/questions/34346653/how-do-i-use-arraydig-and-hashdig-introduced-in-ruby-2-3)
 
 ## Part 3: Address to Weather
 
@@ -364,11 +368,7 @@ Finally, pull it all together in `app/controllers/meteorologist_controller.rb`. 
 
 ## Submission
 
-Remember to make lots of commits as you work. Use the [Continuous Integration](https://guides.firstdraft.com/continuous-integration.html) workflow as usual to open a Pull Request to submit your work.
-
- **And ask lots of questions!** Really. Ask early and often.
-
-Good luck!
+Run `rails grade:all` when you're ready for feedback and your score. You can run it as many times as you want.
 
 ## Optional Extra Exercises, for fun
 
