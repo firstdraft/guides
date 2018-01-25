@@ -34,4 +34,5 @@
 * [Management Readings](management-readings.md)
 * [Very Best Project Guide](very-best-project-guide.md)
 * [Deploying to Heroku](deploying-to-heroku.md)
+* [Meteorologist Exercise Guide](meteorologist-exercise-guide.md)
 
