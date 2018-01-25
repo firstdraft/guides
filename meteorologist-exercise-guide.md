@@ -159,14 +159,7 @@ parsed_data.fetch("results").class
 
 Let's go one level deeper by getting the first element and seeing what _it_ is:
 
-
-
-
-
-
-
-
-
+> **Note:** As you explore, don't forget that you can use your UP ARROW to scroll through your command line history. You don't always have to re-type the same thing over and over!
 
 ```ruby
 f = parsed_data.fetch("results").at(0)
@@ -175,7 +168,7 @@ f.class
 ```
 
 Another hash — let's see what keys it has:
-
+asd
 ```ruby
 f.keys
 => ["address_components", "formatted_address", "geometry", "place_id", "types"]
@@ -198,20 +191,42 @@ f.fetch("geometry")
 Closer!
 
 ```ruby
+f.fetch("geometry").fetch("location")
+=> {"lat"=>41.7891369, "lng"=>-87.5954551}
+```
 
+Almost there!
+
+```ruby
+f.fetch("geometry").fetch("location").fetch("lat")
+=> 41.7891369
+f.fetch("geometry").fetch("location").fetch("lng")
+=> -87.5954551
 ```
 
 Woo! We made it all the way down to what we want. Phew! Now, I did it in a bunch of tiny steps, which might have made it seem complicated, but we could also have just done it in one step:
 
-<img src='http://ask.initialversion.com/uploads/default/79/bded96200cc14aa2.png' width="690" height="152">
+```ruby
+parsed_data.fetch("results").at(0).fetch("geometry").fetch("location").fetch("lng")
+=> -87.5954551
+```
 
-I prefer working in small steps and peeling one layer off at a time while I am exploring. But, the entire program boils down to just three lines!
+I prefer working in small steps and peeling one layer off at a time while I am exploring. But, once I know what I need, there's also a method called `dig` that can help us drill down into nested Hash/Array structures like this a bit more concisely:
+
+```ruby
+parsed_data.dig("results", 0, "geometry", "location", "lng")
+=> -87.5954551
+```
+
+So, the entire program boils down to just three lines!
 
 ```ruby
 parsed_data = JSON.parse(open(url).read)
-latitude = parsed_data["results"][0]["geometry"]["location"]["lat"]
-longitude = parsed_data["results"][0]["geometry"]["location"]["lng"]
+latitude = parsed_data.dig("results", 0, "geometry", "location", "lat")
+longitude = parsed_data.dig("results", 0, "geometry", "location", "lng")
 ```
+
+And now I can do whatever interesting things with `latitude` and `longitude` that I need.
 
 Now that we've explored in the console, it's time to take these three lines (or something like them, anyway) and write some permanent programs...
 
