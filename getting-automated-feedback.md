@@ -12,10 +12,10 @@ Open up the Assignments tab and make sure they're sorted by type.
 Scroll down to the assignment you want to start and click the link that says 'Load [your assignment name] in a new window'. 
 ![](/assets/load-assignment.png)
 
-Authorize the FirstDraft Grades application to access your account. 
+Authorize the FirstDraft Grades application to access your account. If you haven't already granted access, make sure to click the 'Grant' button. 
 ![](/assets/authorize-first-draft.png)
 
-Add your Github **organization name** and submit the form. 
+Add your GitHub **organization name** and submit the form. 
 ![](/assets/add-github-org-name.png)
 
 You should see something like the following page.
@@ -28,14 +28,14 @@ Open up your email account and look for for an email inviting you to the `appdev
 Click the blue Join button to join the organization. 
 ![](/assets/email-join-org.png)
 
-Then click the green Join button once you're redirected to Github.
+Then click the green Join button once you're redirected to GitHub.
 ![](/assets/github-join-org.png)
 
 You should see feedback that you're now a member of appdev-projects. 
 
 ![](/assets/github-joined-org-feedback.png)
 
-You might see an email notification that you've been added to an appdev-projects team with the same name as your Github account. This makes it easy for us to separate your class projects from your personal projects. You don't need to take any action on this email, it's just a notification. 
+You might see an email notification that you've been added to an appdev-projects team with the same name as your GitHub account. This makes it easy for us to separate your class projects from your personal projects. You don't need to take any action on this email, it's just a notification. 
 
 [](/assets/github-team-added-notification.png) 
 
@@ -70,6 +70,7 @@ You can just click the Results URL to open up your feedback in a new tab.
 
 You can click on one of the tests to get more feedback on what might have gone wrong. 
 ![](/assets/rails-grade-results-details.png)
+
 In this case, the test expected to find an element with a class of `word_count` that contains the number 10, but instead it only found the content "Replace this string with your answer". 
 
 Whenever you've made changes, you can run `rails grade:all` in your Cloud9 terminal and you should see updated feedback. 
