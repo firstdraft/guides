@@ -1,4 +1,4 @@
-![](/assets/Screen_Shot_2018-01-25_at_2_15_16_PM.png)# Getting automated feedback
+![](/assets/Screen_Shot_2018-01-25_at_1_13_11_PM.png)![](/assets/Screen_Shot_2018-01-25_at_2_15_16_PM.png)# Getting automated feedback
 
 ## Set up a Github account
 
@@ -10,7 +10,7 @@ Open up the Assignments tab and make sure they're sorted by type.
 ![](/assets/login-canvas.png)
 
 Scroll down to the assignment you want to start and click the link that says 'Load [your assignment name] in a new window'. 
-![](/assets/Screen_Shot_2018-01-25_at_1_13_11_PM.png)
+![](/assets/load-assignment.png)
 
 Authorize the FirstDraft Grades application to access your account. 
 ![](/assets/Screen_Shot_2018-01-25_at_1_15_14_PM.png)
