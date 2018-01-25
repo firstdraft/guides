@@ -1,4 +1,4 @@
-![](/assets/Screen_Shot_2018-01-25_at_1_15_14_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_11_56_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_13_11_PM.png)![](/assets/Screen_Shot_2018-01-25_at_2_15_16_PM.png)# Getting automated feedback
+![](/assets/Screen_Shot_2018-01-25_at_1_18_31_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_15_14_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_11_56_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_13_11_PM.png)![](/assets/Screen_Shot_2018-01-25_at_2_15_16_PM.png)# Getting automated feedback
 
 ## Set up a Github account
 
@@ -16,14 +16,14 @@ Authorize the FirstDraft Grades application to access your account.
 ![](/assets/authorize-first-draft.png)
 
 Add your Github **organization name** and submit the form. 
-![](/assets/Screen_Shot_2018-01-25_at_1_18_31_PM.png)
+![](/assets/add-github-org-name.png)
 
 You should see something like the following page.
-![](/assets/Screen Shot 2018-01-25 at 1.20.31 PM.png)
+![](/assets/Screen_Shot_2018-01-25_at_1_22_47_PM.png)![](/assets/grade-setup-instructions.png)
 
 Open up your email account and look for for an email inviting you to the `appdev-projects` organization.
 
-![](/assets/Screen_Shot_2018-01-25_at_1_22_47_PM.png)
+![](/assets/email-org-invite.png)
 
 Click the blue Join button to join the organization. 
 ![](/assets/Screen_Shot_2018-01-25_at_1_25_19_PM.png)
