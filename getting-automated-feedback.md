@@ -1,4 +1,4 @@
-![](/assets/Screen_Shot_2018-01-25_at_1_18_31_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_15_14_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_11_56_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_13_11_PM.png)![](/assets/Screen_Shot_2018-01-25_at_2_15_16_PM.png)# Getting automated feedback
+![](/assets/Screen_Shot_2018-01-25_at_1_25_19_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_18_31_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_15_14_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_11_56_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_13_11_PM.png)![](/assets/Screen_Shot_2018-01-25_at_2_15_16_PM.png)# Getting automated feedback
 
 ## Set up a Github account
 
@@ -26,14 +26,14 @@ Open up your email account and look for for an email inviting you to the `appdev
 ![](/assets/email-org-invite.png)
 
 Click the blue Join button to join the organization. 
-![](/assets/Screen_Shot_2018-01-25_at_1_25_19_PM.png)
+![](/assets/email-join-org.png)
 
 Then click the green Join button once you're redirected to Github.
-![](/assets/Screen_Shot_2018-01-25_at_1_29_37_PM.png)
+![](/assets/github-join-org.png)
 
 You should see feedback that you're now a member of appdev-projects. 
 
-![](/assets/Screen Shot 2018-01-25 at 1.33.06 PM.png)
+![](/assets/github-joined-org-feedback.png)
 
 Now, you need to go back to your email account. You should see a new email that's inviting you to an appdev-projects team with the same name as your Github account. This makes it easy for us to separate your class projects from your personal projects. You don't need to take any action on this email, it's just a notification.  
 
