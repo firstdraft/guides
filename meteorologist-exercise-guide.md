@@ -90,7 +90,6 @@ You should see something like this:
 
 > **Note:** To scroll through long output in `rails console`, you can use <kbd>return</kbd> to scroll one line at a time, <kbd>Space</kbd> to scroll one page at a time, or <kbd>Q</kbd> to just get back to the prompt to enter a new Ruby expression.
 
-> **Note:** Don't forget to use your UP ARROW to scroll through your command line history. You don't have to re-type the same thing over and over!
 
 What just happened? We `open`ed the page at the location in `url`, and the return value was the HTTP response. The HTTP response is actually a complicated object, with headers and status codes and other things we haven't talked about yet.
 
@@ -159,6 +158,15 @@ parsed_data.fetch("results").class
 ```
 
 Let's go one level deeper by getting the first element and seeing what _it_ is:
+
+
+
+
+
+
+
+
+
 
 ```ruby
 f = parsed_data.fetch("results").at(0)
