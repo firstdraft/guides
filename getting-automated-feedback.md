@@ -1,4 +1,4 @@
-![](/assets/Screen_Shot_2018-01-25_at_1_11_56_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_13_11_PM.png)![](/assets/Screen_Shot_2018-01-25_at_2_15_16_PM.png)# Getting automated feedback
+![](/assets/Screen_Shot_2018-01-25_at_1_15_14_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_11_56_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_13_11_PM.png)![](/assets/Screen_Shot_2018-01-25_at_2_15_16_PM.png)# Getting automated feedback
 
 ## Set up a Github account
 
@@ -13,7 +13,7 @@ Scroll down to the assignment you want to start and click the link that says 'Lo
 ![](/assets/load-assignment.png)
 
 Authorize the FirstDraft Grades application to access your account. 
-![](/assets/Screen_Shot_2018-01-25_at_1_15_14_PM.png)
+![](/assets/authorize-first-draft.png)
 
 Add your Github **organization name** and submit the form. 
 ![](/assets/Screen_Shot_2018-01-25_at_1_18_31_PM.png)
