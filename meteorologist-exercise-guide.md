@@ -169,7 +169,7 @@ f.class
 
 Another hash — let's see what keys it has:
 
-```
+```ruby
 f.keys
 => ["address_components", "formatted_address", "geometry", "place_id", "types"]
 ```
@@ -218,9 +218,10 @@ parsed_data.dig("results", 0, "geometry", "location", "lng")
 => -87.5954551
 ```
 
-So, the entire program boils down to just three lines!
+So, the entire program to geocode boils down to just four lines!
 
 ```ruby
+url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave"
 parsed_data = JSON.parse(open(url).read)
 latitude = parsed_data.dig("results", 0, "geometry", "location", "lat")
 longitude = parsed_data.dig("results", 0, "geometry", "location", "lng")
