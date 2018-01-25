@@ -169,7 +169,7 @@ f.class
 
 Another hash — let's see what keys it has:
 
-```ruby
+```
 f.keys
 => ["address_components", "formatted_address", "geometry", "place_id", "types"]
 ```
