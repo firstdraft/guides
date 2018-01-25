@@ -241,7 +241,7 @@ I have started you off with three forms:
  - Coords &rarr; Weather
  - Street &rarr; Weather
 
-And three actions which process these form inputs and render results:
+And three files which process these form inputs and render results:
 
  - `app/controllers/geocoding_controller.rb`
  - `app/controllers/forecast_controller.rb`
