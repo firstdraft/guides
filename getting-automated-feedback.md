@@ -35,7 +35,9 @@ You should see feedback that you're now a member of appdev-projects.
 
 ![](/assets/github-joined-org-feedback.png)
 
-Now, you need to go back to your email account. You should see a new email that's inviting you to an appdev-projects team with the same name as your Github account. This makes it easy for us to separate your class projects from your personal projects. You don't need to take any action on this email, it's just a notification.  
+Now, you need to go back to your email account. You should see a new email letting you know you've been added! to an appdev-projects team with the same name as your Github account. This makes it easy for us to separate your class projects from your personal projects. You don't need to take any action on this email, it's just a notification. 
+
+[](/assets/github-team-added-notification.png) 
 
 Note: this is a different email than the one inviting you to the appdev-projects organization.
 ![](/assets/Screen_Shot_2018-01-25_at_1_36_57_PM.png)
