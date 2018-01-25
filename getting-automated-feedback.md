@@ -19,7 +19,7 @@ Add your Github **organization name** and submit the form.
 ![](/assets/add-github-org-name.png)
 
 You should see something like the following page.
-![](/assets/Screen_Shot_2018-01-25_at_1_22_47_PM.png)![](/assets/grade-setup-instructions.png)
+![](/assets/grade-setup-instructions.png)
 
 Open up your email account and look for for an email inviting you to the `appdev-projects` organization.
 
