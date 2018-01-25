@@ -32,7 +32,7 @@ Once you have completed the above for all three addresses,
 
  1. On each page, add links to get to the other two pages (so that our users don't have to keep typing into the address bar).
 
- 1. Use [BootstrapCDN](https://www.bootstrapcdn.com/) to connect Bootstrap and Font Awesome.
+ 1. Use [BootstrapCDN](https://www.bootstrapcdn.com/) to connect Bootstrap or a Bootswatch.
 
     You will find the `<head>` of _all_ of our view templates in the file `app/views/layouts/application.html.erb`, which is a wrapper or "layout" that surrounds every view template that we send to our users.
 
@@ -42,7 +42,7 @@ Once you have completed the above for all three addresses,
 
     This is a great way to DRY (Don't Repeat Yourself) up repetitive markup like navbars, footers, links to stylesheets, etc. It's one of _many_ advantages to using a dynamic framework like Rails over writing static HTML.
 
- 1. Use some [Bootstrap classes and components](https://getbootstrap.com/docs/3.3/components/#btn-groups) in your view templates.
+ 1. Use some [Bootstrap classes and components](http://getbootstrap.com/) in your view templates.
 
  1. You can also add any images that you like to the `public/` folder, and use them as the `src` for `<img>`s.
 
@@ -54,7 +54,7 @@ Once you have completed the above for all three addresses,
 
     Notice that the file just get served directly from the root of the domain if you place it directly in the `public/` folder. You can also create subfolders to keep things organized, if you like.
 
- 1. That said, [Font Awesome](http://fontawesome.io/icons/) has icons for rock, paper, and scissors. Find them and use them.
+ 1. That said, [Font Awesome](https://fontawesome.com/icons/) has icons for rock, paper, and scissors. Find them and use them.
 
  1. If you want to, you can also create another stylesheet for additional styles in the `public/` folder and `<link>` to that.
 
