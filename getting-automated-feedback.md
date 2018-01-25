@@ -1,6 +1,6 @@
 # Getting automated feedback
 
-## Set up a Github account
+## Set up a GitHub account
 
 If you haven't created a Github account already, follow the steps in the [Setting up your Cloud9 workspace](setting-up-your-cloud9-workspace.md) guide to join Github and create a Github organization.
 
