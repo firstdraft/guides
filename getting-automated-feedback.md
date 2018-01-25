@@ -40,13 +40,14 @@ Now, you need to go back to your email account. You should see a new email letti
 [](/assets/github-team-added-notification.png) 
 
 Note: this is a different email than the one inviting you to the appdev-projects organization.
-![](/assets/Screen_Shot_2018-01-25_at_1_36_57_PM.png)
+
+![](/assets/github-team-added-notification.png)
 
 Ok, now we can get the project loaded up in Cloud9 and try out the feedback feature. Load up your Cloud9 workspace. Run `cd ~/workspace` just in case you're not already in the base workspace folder. 
 
-![](/assets/Screen Shot 2018-01-25 at 2.06.02 PM.png)
+![](/assets/cd-workspace.png)
 
-Then clone the assignment into Cloud9 using a command similar to `https://github.com/appdev-projects/project-repo-name` but make sure to replace `project-repo-name` with your specific project's repo name. You can find your repo name from the original instructions that popped up when you added the assignment from Canvas, or by going to https://github.com/appdev-projects/ and looking for the repo that matches your assignme![](/assets/Screen Shot 2018-01-25 at 1.13.11 PM.png)nt name. 
+Then clone the assignment into Cloud9 using a command similar to `https://github.com/appdev-projects/project-repo-name` but make sure to replace `project-repo-name` with your specific project's repo name. You can find your repo name from the original instructions that popped up when you added the assignment from Canvas, or by going to https://github.com/appdev-projects/ and looking for the repo that matches your assignment 
 ![](/assets/git-clone.png)
 
 Then `cd` into your newly cloned project repo with something like `cd project-repo-name`, but again make sure to replace `project-repo-name` with your specific project repo's name.
