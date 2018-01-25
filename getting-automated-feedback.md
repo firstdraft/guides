@@ -1,8 +1,8 @@
 # Getting automated feedback
 
-## Set up a Github account
+## Set up a GitHub account
 
-If you haven't created a Github account already, follow the steps in the [Setting up your Cloud9 workspace](setting-up-your-cloud9-workspace.md) guide to join Github and create a Github organization.
+If you haven't created a GitHub account already, follow the steps in the [Setting up your Cloud9 workspace](setting-up-your-cloud9-workspace.md) guide to join Github and create a GitHub organization.
 
 ## Login to Canvas
 
@@ -35,7 +35,7 @@ You should see feedback that you're now a member of appdev-projects.
 
 ![](/assets/github-joined-org-feedback.png)
 
-Now, you need to go back to your email account. You should see a new email letting you know you've been added! to an appdev-projects team with the same name as your Github account. This makes it easy for us to separate your class projects from your personal projects. You don't need to take any action on this email, it's just a notification. 
+You might see an email notification that you've been added to an appdev-projects team with the same name as your Github account. This makes it easy for us to separate your class projects from your personal projects. You don't need to take any action on this email, it's just a notification. 
 
 [](/assets/github-team-added-notification.png) 
 
