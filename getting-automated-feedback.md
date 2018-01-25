@@ -1,4 +1,4 @@
-![](/assets/Screen_Shot_2018-01-25_at_1_25_19_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_18_31_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_15_14_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_11_56_PM.png)![](/assets/Screen_Shot_2018-01-25_at_1_13_11_PM.png)![](/assets/Screen_Shot_2018-01-25_at_2_15_16_PM.png)# Getting automated feedback
+# Getting automated feedback
 
 ## Set up a Github account
 
