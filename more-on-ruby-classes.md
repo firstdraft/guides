@@ -20,13 +20,13 @@ And we can model a person even better with a `Hash`:
 
 ```ruby
 h = Hash.new # This is the longhand for h = {}
-h[:first_name] = "Raghu"
-h[:last_name] = "Betina"
-h[:role] = "Instructor"
+h.store(:first_name, "Raghu")
+h.store(:last_name, "Betina")
+h.store(:role, "Instructor")
 
 h # => { :first_name => "Raghu", :last_name => "Betina", :role => "Instructor" }
 
-h[:last_name] # => "Betina"
+h.fetch(:last_name) # => "Betina"
 h.class # => Hash
 ```
 
@@ -227,7 +227,7 @@ Rather than
 ```ruby
 h = { :first_name => "Homer", :last_name => "Simpson" }
 
-"Hello, #{h[:first_name]} #{h[:last_name]}!" # => "Hello, Homer Simpson!"
+"Hello, #{h.fetch(first_name)} #{h.fetch(:last_name)}!" # => "Hello, Homer Simpson!"
 ```
 
 even though the two are functionally equivalent, and the second _could_ be considered more concise (in terms of number of lines of code).
