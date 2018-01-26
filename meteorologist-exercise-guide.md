@@ -247,12 +247,12 @@ And three files which process these form inputs and render results:
  - `app/controllers/forecast_controller.rb`
  - `app/controllers/meteorologist_controller.rb`
 
-We'll be working on [Street &rarr; Coords](http://localhost:3000/street_to_coords/new) first.
+We'll be working on Street &rarr; Coords first.
 
 
 Open the file `app/controllers/geocoding_controller.rb`. Your job is to write some code in the `street_to_coords` method, where indicated, and put the correct value in the `@latitude` and `@longitude` variables.
 
-If I type in `5807 S Woodlawn Ave` at the [Street &rarr; Coords form](http://localhost:3000/street_to_coords/new), I should see something like
+If I type in `5807 S Woodlawn Ave` at the Street &rarr; Coords form, I should see something like
 
 <blockquote>
 <dl>
@@ -302,7 +302,7 @@ But first, can we customize the example to get data relevant to us? Plug in some
 
 Your job is to write some code in the `coords_to_weather` method, where indicated, and put the correct value in the instance variables at the end.
 
-If I type in `41.78` and `-87.59` at the [Coords &rarr; Weather form](http://localhost:3000/coords_to_weather/new) , I should see something like
+If I type in `41.78` and `-87.59` at the Coords &rarr; Weather form, I should see something like
 
 <blockquote>
 <dl>
@@ -343,7 +343,7 @@ parsed_results.fetch("minutely").fetch("summary")
 
 ## Part 3: Address to Weather
 
-Finally, pull it all together in `app/controllers/meteorologist_controller.rb`. Use both the Google Geocoding API and the Forecast API so that if I type in `5807 S Woodlawn Ave` at the [Street &rarr; Weather form](http://localhost:3000/street_to_weather/new), I should see something like
+Finally, pull it all together in `app/controllers/meteorologist_controller.rb`. Use both the Google Geocoding API and the Forecast API so that if I type in `5807 S Woodlawn Ave` at the Street &rarr; Weather form, I should see something like
 
 <blockquote>
 <p>Here's the outlook for 5807 S Woodlawn Ave:</p>
@@ -372,9 +372,17 @@ Run `rails grade:all` when you're ready for feedback and your score. You can run
 
 ## Optional Extra Exercises, for fun
 
-### Programmable Web (Easier)
+### Explore APIs (Easier)
 
-Browse [Programmable Web's API Directory](http://www.programmableweb.com/category/all/apis?order=field_popularity) and get inspired!
+Browse
+
+ - [Mashape](https://market.mashape.com/explore)
+ - [Algorithmia](https://algorithmia.com/algorithms)
+ - [Google Machine Learning](https://cloud.google.com/products/machine-learning/)
+ - [Amazon Machine Learning](https://aws.amazon.com/machine-learning/)
+ - [Programmable Web's API Directory](http://www.programmableweb.com/category/all/apis?order=field_popularity)
+ 
+and get inspired!
 
 ### Bootstrap (Easier)
 
