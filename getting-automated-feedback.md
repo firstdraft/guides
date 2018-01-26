@@ -56,9 +56,11 @@ git clone ...
 
 (If you lost the `grades.firstdraft.com` tab with project instructions, you can always go back to the assignment in Canvas, refresh it if necessary, and click on the link again.)
 
+`cd` as usual.
+
 ![](/assets/cd-into-project-folder.png)
 
-Run `bin/setup` as usual.
+`bin/setup` as usual.
 
 ![](/assets/bin-setup.png)
 
