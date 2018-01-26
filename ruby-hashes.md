@@ -72,20 +72,31 @@ person1.fetch(:last_name) # => "Betina"
 > ```ruby
 > person1[:last_name] # => "Betina"
 > ```
+>
 > Note that even though we use curly braces to create hashes, this shortcut syntax uses square brackets to access them. I prefer `.fetch()`, however.)
 
 No more having to remember which position number maps to which attribute!
 
 The keys can be any class -- String, Fixnum, whatever -- but we almost always use Symbols as keys to our Hashes. (I like using symbols as the keys simply because syntax highlighting makes them stand out from the values.)
 
-Adding a new key/value pair to a Hash is similar to assigning a value to a variable:
+You can adding a new key/value pair to an existing Hash with `.store()`:
 
 ```ruby
-person1.fetch(:office_hours) = "Wednesday 9:00am - 2:00pm"
-person2.fetch(:attendance) = 0.95
+person1.store(:office_hours, "Wednesday 9:00am - 2:00pm")
+person2.store(:attendance, 0.95)
 ```
 
+The first argument to `.store()` is the key you want to store the data under, and the second argument is the data itself. If the key already exists, its value will be replaced.
+
 Note, these hashes now have different keys!
+
+> Another shortcut syntax for storing elements in a Hash that you will commonly see is
+>
+> ```ruby
+> person2[:attendance] = 0.95
+> ```
+>
+> Note that even though we use curly braces to create hashes, this shortcut syntax uses square brackets to access them. I prefer `.fetch()`, however.)
 
 ## The Bottomline
 
