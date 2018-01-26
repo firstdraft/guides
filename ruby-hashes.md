@@ -96,7 +96,7 @@ Note, these hashes now have different keys!
 > person2[:attendance] = 0.95
 > ```
 >
-> Note that even though we use curly braces to create hashes, this shortcut syntax uses square brackets to access them. I prefer `.fetch()`, however.)
+> Note that even though we use curly braces to create hashes, this shortcut syntax uses square brackets to access them. I prefer `.store()`, however.)
 
 ## The Bottomline
 
