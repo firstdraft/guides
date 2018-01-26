@@ -12,7 +12,7 @@ a.push("Instructor")
 
 a # => ["Raghu", "Betina", "Instructor"]
 
-a[1] # => "Betina"
+a.at(1) # => "Betina"
 a.class # => Array
 ```
 
