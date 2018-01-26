@@ -368,7 +368,7 @@ Finally, pull it all together in `app/controllers/meteorologist_controller.rb`. 
 
 ## Submission
 
-Run `rails grade:all` when you're ready for feedback and your score. You can run it as many times as you want.
+Run `rails grade:all` at a Terminal prompt when you're ready for feedback and your score. You can run it as many times as you want.
 
 ## Optional Extra Exercises, for fun
 
