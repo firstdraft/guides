@@ -77,7 +77,7 @@ person1.fetch(:last_name) # => "Betina"
 
 No more having to remember which position number maps to which attribute!
 
-The keys can be any class -- String, Fixnum, whatever -- but we almost always use Symbols as keys to our Hashes. (I like using symbols as the keys simply because syntax highlighting makes them stand out from the values.)
+The keys can be any class — String, Fixnum, whatever — but we almost always use Symbols as keys to our Hashes. (I like using symbols as the keys simply because syntax highlighting makes them stand out from the values.)
 
 You can adding a new key/value pair to an existing Hash with `.store()`:
 
