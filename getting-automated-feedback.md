@@ -64,7 +64,9 @@ git clone ...
 
 ![](/assets/bin-setup.png)
 
-Now try a new command:
+You could `bin/server` and Preview the live application as usual, at this point. Start working on the project to do whatever the instructions tell you.
+
+**When you're ready for feedback**, try a new command at a new Terminal prompt:
 
 ```
 rails grade:all
@@ -90,4 +92,4 @@ You can click on one of the tests to get more feedback on what might have gone w
 
 In this case, the test expected to find an element with a class of `word_count` that contains the number 10, but instead it only found the content "Replace this string with your answer". 
 
-Whenever you've made changes, you can run `rails grade:all` in your Cloud9 terminal and you should see updated feedback. 
+Whenever you've made changes, you can run `rails grade:all` in your Cloud9 terminal and you should see updated feedback.  You can run `rails grade:all` as many times as you like.
