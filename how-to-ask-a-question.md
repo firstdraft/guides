@@ -8,3 +8,16 @@ Whether you're asking your classmates for help with your homework or requesting 
 
 ... _help_ us help _you_.
 
+ 1. What action are you taking? e.g. 
+ 1. What behavior are you expecting?
+ 1. What behavior is happening instead?
+    - a screenshot is worth a thousand words
+    - an animated gif is worth a thousand screenshots
+    - a detailed error message is worth a thousand gifs
+        - Exception
+        - Filename
+        - Line number
+        - Snippet of relevant code
+        - Copy-paste the error message rather than screenshot it so that we can Google it easily
+        - If you are Googling error messages yourself, try to cut out parts of it that might be unique to your project (e.g. the folder name). Keep it as short as possible while keeping it relevant for Google.
+    - the server log for the request
