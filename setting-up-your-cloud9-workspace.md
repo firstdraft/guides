@@ -2,17 +2,17 @@
 
 ## Join GitHub
 
-If you haven't already, [sign up for a free GitHub account](https://github.com/join) (or sign in to yours if you already have one):
+If you haven't already, [sign up for a free GitHub account](https://github.com/join) \(or sign in to yours if you already have one\):
 
 ![](/assets/join-github.png)
 
-In this example screenshot, I chose a username of `demolearner1` — remember yours. Also, don't forget to check your email and verify the address you entered.
+In this example screenshot, I chose a username of `demolearner1` — remember yours. Also, don't forget to check your email and verify the address you entered.
 
 For now, think of GitHub like Dropbox-for-programmers; it's where we're going to store all of our code.
 
 ## Create GitHub organization
 
-To keep things organized, we're going to create a separate GitHub organization account for you to store your AppDev projects under (to keep them separate from the personal projects that you'll hopefully be building soon!).
+To keep things organized, we're going to create a separate GitHub organization account for you to store your AppDev projects under \(to keep them separate from the personal projects that you'll hopefully be building soon!\).
 
 Click the `+` on the right side of the navbar and select "New organization":
 
@@ -66,7 +66,7 @@ Then, click on "Connected Services" in the left sidebar, and then click "Connect
 
 ![](/assets/cloud9-connected-services.png)
 
-It will send you to GitHub.com to give your permission to Cloud9 to access things. **Be sure to click "Grant" next to the name of the organization that you created [in an earlier step](#create-github-organization):**
+It will send you to GitHub.com to give your permission to Cloud9 to access things. **Be sure to click "Grant" next to the name of the organization that you created **[**in an earlier step**](#create-github-organization)**:**
 
 ![](/assets/cloud9-github-oauth-1.png)
 
@@ -114,13 +114,13 @@ Choose any name for the workspace; most students choose `appdev-workspace`. In t
 
 ![](/assets/cloud9-name-workspace.png)
 
-Then click "Create workspace". The next step could take a while (several minutes); give it some time:
+Then click "Create workspace". The next step could take a while \(several minutes\); give it some time:
 
 ![](/assets/cloud9-cloning-workspace.png)
 
-> If you get a message that it failed and to contact support, [go back to this page](https://c9.io/raghubetina/appdev_workspace) and try cloning again. (If it still gets stuck after 3 attempts, send an email to the support address given and cc me on it.)
+> If you get a message that it failed and to contact support, [go back to this page](https://c9.io/raghubetina/appdev_workspace) and try cloning again. \(If it still gets stuck after 3 attempts, send an email to the support address given and cc me on it.\)
 
-Ultimately, you'll end up in your Integrated Development Environment (IDE):
+Ultimately, you'll end up in your Integrated Development Environment \(IDE\):
 
 ![](/assets/cloud9-workspace-up.png)
 
@@ -128,4 +128,24 @@ You'll be spending a lot of time in your IDE in the coming weeks. As you work, c
 
 ![](/assets/cloud9-tips.png)
 
-Happy coding!
+## Set your workspace to be Private
+
+Some of the projects you'll be working on, such as the midterm, need to be hidden from other students. Cloud9 gives all users a free private workspace, so we can use this feature to wall off our projects from the public.
+
+First go to your Cloud9 dashboard, which should look something like https://c9.io/[YOUR USERNAME] 
+
+Then click on the name of the workspace you just cloned from the last part of this guide. This should take you to an overview page of your workspace.  
+
+![](/assets/cloud9-workspace-settings.png)
+
+Then, click on the gear icon to access your workspace settings. 
+
+![](/assets/cloud9-workspace-settings-gear.png)
+
+Finally, make sure both Workspace Visibility and Team Cloning are set to Private. Click the green save button to save your changes. 
+
+![](/assets/cloud9-set-private-workspace.png)
+
+
+That's it! Happy coding!
+
