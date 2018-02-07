@@ -145,5 +145,5 @@ Finally, make sure both Workspace Visibility and Team Cloning are set to Private
 ![](/assets/cloud9-set-private-workspace.png)
 
 
-That's it! Happy coding!
+That's it! Happy coding! 
 
