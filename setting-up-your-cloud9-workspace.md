@@ -128,23 +128,4 @@ You'll be spending a lot of time in your IDE in the coming weeks. As you work, c
 
 ![](/assets/cloud9-tips.png)
 
-## Set your workspace to be Private
-
-Some of the projects you'll be working on, such as the midterm, need to be hidden from other students. Cloud9 gives all users a free private workspace, so we can use this feature to wall off our projects from the public.
-
-First go to your Cloud9 dashboard, which should look something like https://c9.io/[YOUR USERNAME]
-
-Then click on the name of the workspace you just cloned from the last part of this guide. This should take you to an overview page of your workspace.  
-
-![](/assets/cloud9-workspace-settings.png)
-
-Then, click on the gear icon to access your workspace settings. 
-
-![](/assets/cloud9-workspace-settings-gear.png)
-
-Finally, make sure both Workspace Visibility and Team Cloning are set to Private. Click the green save button to save your changes. 
-
-![](/assets/cloud9-set-private-workspace.png)
-
-
-That's it! Happy coding!
+Happy coding!
