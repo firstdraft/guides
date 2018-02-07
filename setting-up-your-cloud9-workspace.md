@@ -130,15 +130,13 @@ You'll be spending a lot of time in your IDE in the coming weeks. As you work, c
 
 ## Set your workspace to be Private
 
-Some of the projects you'll be working on, such as the midterm, need to be hidden from other students. Cloud9 gives all users a free private workspace, so we can use this feature to wall off our projects from the public.
+We're going to have some sensitive information, such as email passwords and API credentials, in our code. In order to protect them, we need to switch our workspaces to be Private. Fortunately Cloud9 gives all users one private workspace for free.
 
-First go to your Cloud9 dashboard, which should look something like https://c9.io/[YOUR USERNAME] 
-
-Then click on the name of the workspace you just cloned from the last part of this guide. This should take you to an overview page of your workspace.  
+First go to your [Cloud9 dashboard](https://c9.io). Then click on **the name** of the workspace you just cloned from the last part of this guide (_not_ the open button):
 
 ![](/assets/cloud9-workspace-settings.png)
 
-Then, click on the gear icon to access your workspace settings. 
+This should take you to an overview of your workspace. Then, click on the gear icon to access your workspace settings:
 
 ![](/assets/cloud9-workspace-settings-gear.png)
 
