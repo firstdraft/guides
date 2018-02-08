@@ -24,8 +24,8 @@ In the left sidebar, find "Third-party access":
 
 ![](/assets/third-party-access.jpg)
 
- - If it says that you approved both, then you are good to go and you can stop reading.
- - If neither Cloud9 nor Grades appears in this list, click the "Remove restrictions" button instead and you can stop reading.
+ - If it says that you approved both, then you are good to go and you can go to the next section.
+ - If neither Cloud9 nor Grades appears in this list, click the "Remove restrictions" button instead and you can go to the next section.
  - If it says that access is Denied next to Cloud9 or Grades, then proceed.
 
 ![](/assets/access-denied.jpg)
