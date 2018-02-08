@@ -12,7 +12,7 @@ Next, click on "Organizations" in the left sidebar:
 
 ![](/assets/github-orgs.jpg)
 
-Find the organization that **_you_** created. You likely picked a name like `[YOUR USERNAME]-appdev`:
+Find the organization that **_you_ created**. You likely picked a name like `[YOUR USERNAME]-appdev`:
 
 ![](/assets/org-list.jpg)
 
@@ -39,3 +39,21 @@ You should see a message confirming that access has been granted:
 ![](/assets/access-granted-flash.jpg)
 
 Repeat for the other third-party app if necessary and then **go back to Canvas and click on whichever assignment you want to work on again** (do not just refresh it if you already had it up).
+
+## Resetting OAuth permissions to square one
+
+If for some reason you need to make a single-sign-on provider (like GitHub, Twitter, or Facebook) "forget" that you ever authorized a third-party app, you need to delete or revoke the "access token" that you gave it.
+
+In the case of GitHub, go to your personal settings:
+
+![](/assets/github-personal-settings.jpg)
+
+Find "Applications" in the left sidebar:
+
+![](/assets/github-applications.jpg)
+
+Click the "Authorized OAuth Apps" tab and then click "Revoke" next to whichever one you want to "forget":
+
+![](/assets/github-revoke-oauth.jpg)
+
+Then, return to the third-party app and "Sign in with..." again to start over from scratch. In our case, click on an assignment from within Canvas again to re-start the authorization process — and this time don't forget to grant access to the organization that **_you_ created**.
