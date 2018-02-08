@@ -42,7 +42,7 @@ Repeat for the other third-party app if necessary and then **go back to Canvas a
 
 ## Resetting OAuth permissions to square one
 
-If for some reason you need to make a single-sign-on provider (like GitHub, Twitter, or Facebook) "forget" that you ever authorized a third-party app, you need to delete or revoke the "access token" that you gave it.
+If for some reason you need to make a single-sign-on provider (like GitHub, Twitter, or Facebook) "forget" that you ever authorized a third-party app, maybe because you don't use it anymore or maybe because you want to change the permissions that you gave it, you need to delete or revoke the "access token" that you previously issued to it.
 
 In the case of GitHub, go to your personal settings:
 
