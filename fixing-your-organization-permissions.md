@@ -38,7 +38,15 @@ You should see a message confirming that access has been granted:
 
 ![](/assets/access-granted-flash.jpg)
 
-Repeat for the other third-party app if necessary and then **go back to Canvas and click on whichever assignment you want to work on again** (do not just refresh it if you already had it up).
+Repeat for the other third-party app if necessary.
+
+## Make sure that you've accepted your team invitation
+
+Visit [this page](https://github.com/appdev-projects) and make sure that you _don't_ have a banner across the top asking you to accept our team invitation. (This invitation was sent a while ago via email; if you've already accepted it, the banner won't appear.)
+
+## Launch an assignment from within Canvas
+
+Head back to Canvas and click on whichever assignment you want to work on again **(don't just refresh it if you already had it up)**. You might be asked to enter your organization name — be sure to enter _your_ organization name, the one you created; not `appdev-projects`.
 
 ## Resetting OAuth permissions to square one
 
