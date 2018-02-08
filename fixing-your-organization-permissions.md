@@ -38,4 +38,4 @@ You should see a message confirming that access has been granted:
 
 ![](/assets/access-granted-flash.jpg)
 
-Repeat for the other third-party app if necessary and then you're set!
+Repeat for the other third-party app if necessary and then **go back to Canvas and click on whichever assignment you want to work on again** (do not just refresh it if you already had it up).
