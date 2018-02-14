@@ -37,4 +37,5 @@
 * [Deploying to Heroku](deploying-to-heroku.md)
 * [How to ask a question](how-to-ask-a-question.md)
 * [Fixing your organization permissions](fixing-your-organization-permissions.md)
+* [draft\_generators](draftgenerators.md)
 
