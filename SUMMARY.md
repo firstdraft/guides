@@ -33,6 +33,7 @@
 * [Using the Twitter gem](using-the-twitter-gem.md)
 * [Management Readings](management-readings.md)
 * [Very Best Project Guide](very-best-project-guide.md)
+  * [Creating a Cloud9 Workspace for Very Best](getting-started-with-cloud9.md)
 * [Deploying to Heroku](deploying-to-heroku.md)
 * [How to ask a question](how-to-ask-a-question.md)
 * [Fixing your organization permissions](fixing-your-organization-permissions.md)
