@@ -26,7 +26,6 @@
 
 ![](/assets/Screen Shot 2018-02-27 at 1.45.33 PM.png)
 
-![](/assets/Screen Shot 2018-02-27 at 1.46.01 PM.png)
 ![](/assets/Screen Shot 2018-02-27 at 1.54.12 PM.png)
 
 ![](/assets/Screen Shot 2018-02-27 at 1.46.01 PM.png)
