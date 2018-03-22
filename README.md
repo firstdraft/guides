@@ -9,6 +9,9 @@ A collection of guides and cheatsheets for Application Development.
   * [Planning Your Idea](planning-your-idea.md)
   * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
   * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
+* [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
+* [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
+* [Installing Atom](installing-atom.md)
 * [Setting up your Cloud9 workspace](setting-up-your-cloud9-workspace.md)
 * [Getting automated feedback](getting-automated-feedback.md)
 * [Introduction to HTML](introduction-to-html.md)
@@ -36,13 +39,10 @@ A collection of guides and cheatsheets for Application Development.
 * [Using the Twitter gem](using-the-twitter-gem.md)
 * [Management Readings](management-readings.md)
 * [Very Best Project Guide](very-best-project-guide.md)
+  * [Creating a Cloud9 Workspace for Very Best](getting-started-with-cloud9.md)
 * [Deploying to Heroku](deploying-to-heroku.md)
 * [How to ask a question](how-to-ask-a-question.md)
 * [Fixing your organization permissions](fixing-your-organization-permissions.md)
 * [draft\_generators](draftgenerators.md)
-
-
-
-
-
+* [Sending Email with Mailgun](sending-email-with-mailgun.md)
 
