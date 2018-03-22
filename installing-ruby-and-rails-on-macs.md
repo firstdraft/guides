@@ -92,6 +92,6 @@ Type
 rails -v
 ```
 
-and hit <kbd>return</kbd>. You should see something like `Rails 5.x.x`.
+and hit <kbd>return</kbd>. You should see something like `Rails 5.1.x`.
 
 Congratulations, you're now ready to build industrial-grade applications! Have fun!
