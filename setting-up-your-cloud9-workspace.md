@@ -185,19 +185,6 @@ You should see a file open up in the editor:
 
 You can edit this file to include our plugins in your workspace. Copy the following code into the bottom of the `init.js` file: 
 
-```
-services.pluginManager.loadPackage([
-  "~/.c9/plugins/rubysnippets/package.json",
-  "~/.c9/plugins/rubysnippets/package.json",
-   "~/.c9/plugins/formatruby/package.json",
-]);
-```
 
-dd
-
-### Formatruby
-
-The [formatruby](https://github.com/firstdraft/formatruby) plugin adds better Ruby formatting to Cloud9. 
-
-First, install the 
+dddd
 
