@@ -51,4 +51,7 @@ Open up your email and click on the verification link:
 ![](/assets/join-aws-educate-6.png)
 
 Scroll through the Terms and Conditions, click "I Agree" then click "Next":
-![](/assets/join-aws-educate-7.png)![](/assets/join-aws-educate-7.png)
+![](/assets/join-aws-educate-7.png)
+
+You should see a feedback screen letting you know that your application is under review:
+![](/assets/join-aws-educate-8.png)
