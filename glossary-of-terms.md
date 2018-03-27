@@ -3,8 +3,8 @@
 ## Contents
 
  - [Argument](#argument)
- - [Array](#array)
- - [Block](#block)
+ - [Array](#array) `["rock", "paper", "scissors"]`
+ - [Block](#block) `do ... end`
  - [Box](#box)
  - [Chain](#chain)
  - [Class](#class)
@@ -17,8 +17,8 @@
  - [Fixnum](#fixnum)
  - [Float](#float)
  - [Gem](#gem)
- - [Hash](#hash)
- - [Instance Variable](#instance-variable)
+ - [Hash](#hash) `{ :fruit => "banana", :sport => "hockey" }`
+ - [Instance Variable](#instance-variable) `@outcome`
  - [Key](#key)
  - [Label](#Label)
  - [Loop](#loop)
@@ -28,8 +28,8 @@
  - [Render](#render)
  - [Scrape](#scrape)
  - [Source](#source)
- - [String](#string)
- - [Symbol](#symbol)
+ - [String](#string) `"fruit"`
+ - [Symbol](#symbol) `:fruit`
  - [Table](#table)
  - [Value](#value)
  - [Variable](#variable)

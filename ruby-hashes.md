@@ -21,7 +21,7 @@ people_in_class = [
   ["Lindsey", "Kallo", "Student"]
 ]
 
-"The last name of the 3rd person is #{people_in_class[2][1]}"
+"The last name of the 3rd person is #{people_in_class.at(2).at(1)}"
 ```
 
 This may suffice if the list of attributes is small, but as we add others, "Last Access to Github", "Attendance Record", "Class Participation", ... we have to remember which index holds which attribute --- our code will be hard to read, hard to maintain, and prone to errors.
@@ -64,23 +64,39 @@ person2 = { :first_name => "Arthur", :last_name => "Benson", :role => "Student" 
 To access a piece of data, we use the name (we call these "keys") of the cell rather than the position:
 
 ```ruby
-person1[:last_name] # => "Betina"
+person1.fetch(:last_name) # => "Betina"
 ```
 
-(Note that even though we use curly braces to create hashes, we still use square brackets to access elements in them.)
+> Another shortcut syntax for accessing elements in a Hash that you will commonly see is
+>
+> ```ruby
+> person1[:last_name] # => "Betina"
+> ```
+>
+> Note that even though we use curly braces to create hashes, this shortcut syntax uses square brackets to access them. I prefer `.fetch()`, however.)
 
 No more having to remember which position number maps to which attribute!
 
-The keys can be any class -- String, Fixnum, whatever -- but we almost always use Symbols as keys to our Hashes. (I like using symbols as the keys simply because syntax highlighting makes them stand out from the values.)
+The keys can be any class — String, Fixnum, whatever — but we almost always use Symbols as keys to our Hashes. (I like using symbols as the keys simply because since values are usually strings, syntax highlighting makes keys stand out from values.)
 
-Adding a new key/value pair to a Hash is similar to assigning a value to a variable:
+You can adding a new key/value pair to an existing Hash with `.store()`:
 
 ```ruby
-person1[:office_hours] = "Wednesday 9:00am - 2:00pm"
-person2[:attendance] = 0.95
+person1.store(:office_hours, "Wednesday 9:00am - 2:00pm")
+person2.store(:attendance, 0.95)
 ```
 
+The first argument to `.store()` is the key you want to store the data under, and the second argument is the data itself. If the key already exists, its value will be replaced.
+
 Note, these hashes now have different keys!
+
+> Another shortcut syntax for storing elements in a Hash that you will commonly see is
+>
+> ```ruby
+> person2[:attendance] = 0.95
+> ```
+>
+> Note that even though we use curly braces to create hashes, this shortcut syntax uses square brackets to access them. I prefer `.store()`, however.)
 
 ## The Bottomline
 

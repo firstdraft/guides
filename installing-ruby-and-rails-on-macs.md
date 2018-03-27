@@ -55,13 +55,13 @@ Once it is done and returns you to the blinking cursor, Quit Terminal and then r
 We're going to install a slightly older Ruby as well. This may seem weird but it is so that we're all (Mac, Windows, and Linux users) on the same page. Copy and paste
 
 ```bash
-rvm install 2.3.3
+rvm install 2.4.3
 ```
 
 into Terminal and hit <kbd>return</kbd>. Then, copy and paste
 
 ```bash
-rvm use 2.3.3 --default
+rvm use 2.4.3 --default
 ```
 
 into Terminal and hit <kbd>return</kbd>.
@@ -84,7 +84,7 @@ You should be all set now; to confirm, type
 ruby -v
 ```
 
-in Terminal and hit <kbd>return</kbd>. You should see something like `ruby 2.3.3pXX`.
+in Terminal and hit <kbd>return</kbd>. You should see something like `ruby 2.4.3pXX`.
 
 Type
 
@@ -92,6 +92,6 @@ Type
 rails -v
 ```
 
-and hit <kbd>return</kbd>. You should see something like `Rails 5.x.x`.
+and hit <kbd>return</kbd>. You should see something like `Rails 5.1.x`.
 
 Congratulations, you're now ready to build industrial-grade applications! Have fun!

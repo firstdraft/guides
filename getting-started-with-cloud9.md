@@ -1,18 +1,22 @@
 # Getting Started with Cloud 9
 
-## Signing up
+## Make sure you've connected your GitHub account to Cloud9
 
-You should contact me for an invitation to join Cloud 9 without requiring you to enter a credit card.
-
-After signing up, you need to connect your GitHub account to it. Click the gear icon in the top-right corner and then select "Connected Services" from the left. Click on "Connect" next to GitHub and authorize Cloud9.
+Click the gear icon in the top-right corner of your Cloud9 dashboard and then select "Connected Services" from the left. Click on "Connect" next to GitHub and authorize Cloud9. **Make sure that you Grant Access to _your_ organization** before clicking "Authorize".
 
 ## Creating a workspace
 
-Then, to start on a project,
+Then, to start on Very Best, unlike the usual workflow, click on the "Repositories" link in the left sidebar:
 
 ![](/assets/click_repositories.png)
 
+All three team members will have copies of the repository; you should pick one for all three of you to work on. The "owner" should add the others to it as collaborators.
+
+Then, for all three team members, the repository should appear on this list. Make sure that you are all working on the same one, even though you might have your own showing up there too.
+
 ![](/assets/search_and_clone.png)
+
+Click "Clone to edit" and then enter any name for the workspace. Select Public, and **select "Ruby"**. Then click "Create workspace".
 
 ![](/assets/configure_workspace.png)
 
@@ -26,9 +30,7 @@ Then, run the command `bin/setup` in the Terminal at the bottom of the window to
 
 ## Starting the server
 
-On Cloud9, you can't just run `rails server`, so don't try.
-
-The full command you need to start the server is
+On Cloud9, the full command you need to start the server is
 
 ```
 rails server -b $IP -p $PORT

@@ -168,9 +168,11 @@ a.sum
 a.first
 a.last
 a.second
-a[3]           # Accesses the 4th element! Surprising.
-a[0]           # Arrays start their numbering at 0.
-a[-1]          
+a.at(3)           # Accesses the 4th element! Surprising.
+a.at(0)           # Arrays start their numbering at 0.
+a.at(-1)
+a[3]              # This is a shorthand syntax for .at(3).
+                  #   I prefer a.at() but a[] is more common.
 
 a.push(42)
 a.count
