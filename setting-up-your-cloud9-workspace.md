@@ -197,4 +197,4 @@ services.pluginManager.loadPackage([
 Then press `cmd + s` (or `ctrl + s` on Windows) to save the file. You'll be prompted to reload the page, which you can do by just refreshing your browser: 
 ![](/assets/cloud9-plugins-11.png)
 
-That's it! You should be good to go. 
+**That's it! You're Cloud9 environment is now setup. You should be good to go. **
