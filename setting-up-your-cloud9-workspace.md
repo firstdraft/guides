@@ -185,6 +185,16 @@ You should see a file open up in the editor:
 
 You can edit this file to include our plugins in your workspace. Copy the following code into the bottom of the `init.js` file: 
 
+```
+services.pluginManager.loadPackage([
+"~/.c9/plugins/rubysnippets/package.json",
+"~/.c9/plugins/rubysnippets/package.json",
+"~/.c9/plugins/formatruby/package.json",
+]);
+```
+![](/assets/cloud9-plugins-10.png)
 
-dddd
+Then press `cmd + s` (or `ctrl + s` on Windows) to save the file. You'll be prompted to reload the page, which you can do by just refreshing your browser: 
+![](/assets/cloud9-plugins-11.png)
 
+That's it! You should be good to go. 
