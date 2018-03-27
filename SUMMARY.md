@@ -42,5 +42,4 @@
 * [Fixing your organization permissions](fixing-your-organization-permissions.md)
 * [draft\_generators](draftgenerators.md)
 * [Sending Email with Mailgun](sending-email-with-mailgun.md)
-* [Setting up your AWS Cloud9 workspace](setting-up-your-aws-cloud-9-workspace.md)
 
