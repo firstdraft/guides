@@ -186,9 +186,9 @@ You should see a file open up in the editor:
 You can edit this file to include our plugins in your workspace. Copy the following code into the bottom of the `init.js` file: 
 
 ```
-services.pluginManager.loadPackage([
+![services.pluginManager.loadPackage([
 "~/.c9/plugins/rubysnippets/package.json",
-"~/.c9/plugins/rubysnippets/package.json",
+"~/.c9/plugins/formathtmlerb/package.json",
 "~/.c9/plugins/formatruby/package.json",
 ]);
 ```
