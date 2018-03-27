@@ -133,6 +133,14 @@ Ultimately, you'll end up in your Integrated Development Environment \(IDE\). Th
 You'll be spending a lot of time in your IDE in the coming weeks. As you work, click on the little grey circles to learn tips about how to use Cloud9 more effectively:
 ![](/assets/cloud9-tips.png)
 
+## Add Autosave
+
+From the top menu bar, click on `Cloud9 > Preferences`: 
+![](/assets/cloud9-plugins-12.pn](/assets/cloud9-autosave.png)
+
+Then click on the "EXPERIMENTAL" menu option in the editor and make sure the "Auto-Save Files" dropdown is set to "After Delay":
+![](/assets/cloud9-autosave-2.png)
+
 ## Add formatting plugins
 
 I've developed a set of plugins for the class that will make your programming experience much smoother than Cloud9's default setup. The steps below will show you how to install each plugin into your workspace. 
