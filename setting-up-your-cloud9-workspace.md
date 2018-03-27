@@ -102,48 +102,33 @@ You should end up at a screen like this:
 
 Your Cloud9 and GitHub accounts are now fully connected!
 
-## Clone template workspace
+## Create a new workspace
 
-We've set up a computer for you to do your work on that has the latest versions of Ruby and Rails installed on it, and is pre-configured with handy shortcuts and other things. Let's get you a copy of it.
+Before you can do any work in Cloud9, you need to set up a new workspace. From your [Cloud9 settings page](https://c9.io/account/settings), click the "+" link at the top right of the page. 
 
-[Visit this URL](https://c9.io/raghubetina/appdev_workspace) and then click the "Clone" button in the top-right:
+![](/assets/cloud9-new-workspace.png)
 
-![](/assets/cloud9-clone-workspace.png)
 
-Choose any name for the workspace; most students choose `appdev-workspace`. In this example screenshot, I chose `demolearner1-workspace`:
+Choose any name for the workspace; most students choose `appdev-workspace`. Your team name should reflect the current quarter in which you're taking this class. 
 
-![](/assets/cloud9-name-workspace.png)
+![](/assets/cloud9-new-workspace-2.png)
+
+We're going to have some sensitive information, such as email passwords and API credentials, in our code. In order to protect them, we need to switch our workspaces to be Private. Fortunately Cloud9 gives all users one private workspace for free.
+
+**Important: Make sure to check the "Private" option to keep your workspace private and the "Ruby" option to set up the workspace for Rails **
+
+![](/assets/cloud9-new-workspace-3.png)
+
 
 Then click "Create workspace". The next step could take a while \(several minutes\); give it some time:
 
 ![](/assets/cloud9-cloning-workspace.png)
 
-> If you get a message that it failed and to contact support, [go back to this page](https://c9.io/raghubetina/appdev_workspace) and try cloning again. \(If it still gets stuck after 3 attempts, send an email to the support address given and cc me on it.\)
+> If you get a message that it failed and to contact support, [Cloud9 settings page](https://c9.io/account/settings) and try creating a new workspace again. \(If it still gets stuck after 3 attempts, send an email to the support address given and cc me on it.\)
 
 Ultimately, you'll end up in your Integrated Development Environment \(IDE\):
 
-![](/assets/cloud9-workspace-up.png)
+![](/assets/cloud-9-workspace-up.png)
 
 You'll be spending a lot of time in your IDE in the coming weeks. As you work, click on the little grey circles to learn tips about how to use Cloud9 more effectively:
-
 ![](/assets/cloud9-tips.png)
-
-## Set your workspace to be Private
-
-We're going to have some sensitive information, such as email passwords and API credentials, in our code. In order to protect them, we need to switch our workspaces to be Private. Fortunately Cloud9 gives all users one private workspace for free.
-
-First go to your [Cloud9 dashboard](https://c9.io). Then click on **the name** of the workspace you just cloned from the last part of this guide (_not_ the open button):
-
-![](/assets/cloud9-workspace-settings.png)
-
-This should take you to an overview of your workspace. Then, click on the gear icon to access your workspace settings:
-
-![](/assets/cloud9-workspace-settings-gear.png)
-
-Finally, make sure both Workspace Visibility and Team Cloning are set to Private. Click the green save button to save your changes. 
-
-![](/assets/cloud9-set-private-workspace.png)
-
-
-That's it! Happy coding! 
-
