@@ -1,4 +1,8 @@
 # AppDev Primer
+
+## You Can Do It
+
+ - [Solving the cube](http://lghttp.60951.nexcesscdn.net/80487FB/Downloads/resources/downloads/Rubiks_3x3_Solution_Guide.pdf)
  
 ## firstdraft Ideas
 
