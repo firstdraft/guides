@@ -78,4 +78,4 @@ _Then_ click "Authorize C9":
 
 Your Cloud9 and GitHub accounts are now linked, and you'll end up back at Cloud9.
 
-That's it for the initial setup of your Cloud9 account! Next, you should get started on a project.
+That's it for the initial setup of your Cloud9 account! Next, you should [get started on a project](getting-started-with-cloud9.md).
