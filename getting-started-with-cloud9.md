@@ -80,27 +80,6 @@ Then click on the "EXPERIMENTAL" menu option in the editor and make sure the "Au
 
 ![](/assets/cloud9-autosave-2.png)
 
-## Turn on Ruby on Rails goodies
-
-I've developed a setup script for your Cloud9 workspace that will make your programming experience much smoother than Cloud9's default setup.
-
-First, download the script from our repository by copying and pasting the following command into terminal, then hitting enter:
-
-```
-curl --remote-name https://raw.githubusercontent.com/firstdraft/cloud9-setup/master/goodies
-```
-![](/assets/cloud9-setup-script.png)
-
-This command downloads a setup script called `goodies` into your workspace. You should see it in the file explorer to the left.
-
-Next, run the `goodies` script by copying and pasting the following command into terminal, then hitting enter:
-
-```
-sh goodies 2>&1 | tee ~/workspace/cloud9-setup.log
-```
-
-![](/assets/cloud9-setup-script-2.png)
-
 ## Edit your initialization script
 
 Even though you've just installed some custom plugins into your workspace, you still need to make sure they get loaded every time you open up Cloud9.
