@@ -44,6 +44,8 @@ Answer the next few questions:
 
 ![](/assets/cloud9-username.png)
 
+When it asks you to tell them about yourself, say that you are a student and that you'll be using Cloud9 for coursework:
+
 ![](/assets/cloud9-student.png)
 
 ![](/assets/cloud-captcha.png)
