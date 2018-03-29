@@ -1,4 +1,8 @@
 # AppDev Primer
+
+## You Can Do It
+
+ - [Solving the cube](http://lghttp.60951.nexcesscdn.net/80487FB/Downloads/resources/downloads/Rubiks_3x3_Solution_Guide.pdf)
  
 ## firstdraft Ideas
 
@@ -88,7 +92,9 @@ See if you agree that these are the features of Very Best (phrased in a particul
  
  - Design what you think the database would have to look like in order to support the app.
  - Draw an ERD in firstdraft.
- - Click Publish and test out your prototype! Can you perform all of the user stories above? (Ignore the fact that it's ugly for now; can it capture/display the required information?)
+ - Click Publish and test out your prototype! You'll have to wait around 5 minutes and then **refresh the page**; a "Launch" link will appear when it's ready.
+ 
+    Can you perform all of the user stories above? It's not going to look the same as the target yet, but can you capture the required information?
  
 ### Photogram ERD
 
