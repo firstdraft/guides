@@ -140,48 +140,30 @@ From the top menu bar, click on `Cloud9 > Preferences`:
 Then click on the "EXPERIMENTAL" menu option in the editor and make sure the "Auto-Save Files" dropdown is set to "After Delay":
 ![](/assets/cloud9-autosave-2.png)
 
-## Add formatting plugins
+## Run our setup script
 
-I've developed a set of plugins for the class that will make your programming experience much smoother than Cloud9's default setup. The steps below will show you how to install each plugin into your workspace. 
+I've developed a setup script for your Cloud9 workspace that will make your programming experience much smoother than Cloud9's default setup. 
 
-First, type the command `gem install rufo` into your terminal at the bottom of the screen and press enter. Don't worry about fully understanding this command yet, we'll talk about what this means during our course. 
+First, download the script from our repository by copying and pasting the following command into terminal, then hitting enter:
 
-![](/assets/cloud9-plugins.png)
+```
+curl --remote-name https://raw.githubusercontent.com/firstdraft/cloud9-setup/master/goodies
+```
+![](/assets/cloud9-setup-script.png)
 
-You should see some feedback that `rufo` was successfully installed:
-![](/assets/cloud9-plugins-2.png)
+This command downloads a setup script called `goodies` into your workspace. You should see it in the file explorer to the left. 
 
+Next, run the `goodies` script by copying and pasting the following command into terminal, then hitting enter: 
 
-### Install gems
+```
+sh goodies 2>&1 | tee ~/workspace/cloud9-setup.log
+```
 
-Install another gem called `htmlbeautifier`. Type the command `gem install htmlbeautifier` into the next line of terminal and press enter. You'll see some feedback that `htmlbeautifier` was successfully installed.
+![](/assets/cloud9-setup-script-2.png)
 
-![](/assets/cloud9-plugins-3.png)
+## Edit your initialization script
 
-Create a folder to store the plugins. Type the command `mkdir ~/.c9/plugins` into terminal and hit enter. This command will create a directory called `plugins` that's nested inside a directory called `.c9`. 
-
-> Note: You won't see any feedback during this step.
-
-![](/assets/cloud9-plugins-4.png)
-
-### Clone plugins
-
-Clone the plugins from our Github repositories into your Cloud9 workspace. Type the following commands into terminal, one line at a time and hit enter. You should see feedback after each command. 
-
-First, type in: 
-`git clone https://github.com/firstdraft/rubysnippets.git ~/.c9/plugins/rubysnippets`
-![](/assets/cloud9-plugins-5.png)
-
-Then, type in: 
-`git clone https://github.com/firstdraft/formathtmlerb.git ~/.c9/plugins/formathtmlerb`
-![](/assets/cloud9-plugins-6.png)
-
-And finally, type in: 
-`git clone https://github.com/firstdraft/formatruby.git ~/.c9/plugins/formatruby`
-
-![](/assets/cloud9-plugins-7.png)
-
-### Edit your initialization script
+Even though you've just installed some custom plugins into your workspace, you still need to make sure they get loaded every time you open up Cloud9.
 
 From the top menu bar, click `Cloud9 > Open Your Init Script`. 
 
@@ -193,11 +175,12 @@ You should see a file open up in the editor:
 You can edit this file to include our plugins in your workspace. Copy the following code into the bottom of the `init.js` file: 
 
 ```
-![services.pluginManager.loadPackage([
-"~/.c9/plugins/rubysnippets/package.json",
-"~/.c9/plugins/formathtmlerb/package.json",
-"~/.c9/plugins/formatruby/package.json",
+services.pluginManager.loadPackage([
+  "~/.c9/plugins/rubysnippets/package.json",
+  "~/.c9/plugins/formathtmlerb/package.json",
+  "~/.c9/plugins/formatruby/package.json",
 ]);
+services.settings.set("project/ace/@tabSize", 2);
 ```
 ![](/assets/cloud9-plugins-10.png)
 
