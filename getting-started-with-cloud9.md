@@ -36,7 +36,7 @@ To get the individual project's dependencies set up, find the Terminal at the bo
 bin/setup
 ```
 
-and press <kbd>return</kbd> to get the project ready to go. **This will take a couple of minutes.** It's installing a bunch of powerful, industrial-grade software, all for free!
+and press <kbd>return</kbd> to get the project ready to go. **This will take a few minutes.** It's installing a bunch of powerful, industrial-grade software, all for free!
 
 ## Starting the server
 
@@ -46,11 +46,11 @@ Once `bin/setup` completes and you are returned to a blinking cursor at the `$` 
 rails server -b $IP -p $PORT
 ```
 
-However, that's annoying to type, so Cloud9 provides us with the green "Run Project" button near the top-right of the window.
+However, that's annoying to type, so Cloud9 provides us with the green "Run Project" button near the top-right of the window instead:
 
-Click it and you'll have a live application running on the internet. You'll see the URL of your application in the server log in a new Terminal tab at the bottom, and you can open it up in a new Chrome tab (your app might look different, depending on which project you're working on):
+![](/assets/cloud9-run-project.png)
 
-![](/assets/rails_server.gif)
+If you click it, a new Terminal tab will pop up, and once the server launches it will give you a URL of the live application. Sweet!
 
 ## Editing code
 
@@ -62,14 +62,6 @@ Change some code, save, and refresh your app:
 
 Yay! We're programming!
 
-Cloud 9 actually has a lot of cool features that we don't get when we work on our own computers like real-time collaboration, so you should explore:
-
-![](/assets/cloud_9_workflow.png)
-
-There are little glowing bubbles all around that you should click on for tips and dismiss them once and for all:
-
-![](/assets/cloud9-tips.png)
-
 ## DON'T FORGET to turn on Autosave
 
 From the top menu bar, click on `Cloud9 > Preferences`:
@@ -80,7 +72,7 @@ Then click on the "EXPERIMENTAL" menu option in the editor and make sure the "Au
 
 ![](/assets/cloud9-autosave-2.png)
 
-## Edit your initialization script
+## Enable Rails Goodies
 
 Even though you've just installed some custom plugins into your workspace, you still need to make sure they get loaded every time you open up Cloud9.
 
@@ -109,4 +101,12 @@ Then press `cmd + s` (or `ctrl + s` on Windows) to save the file. You'll be prom
 
 ![](/assets/cloud9-plugins-11.png)
 
-**That's it! Your Cloud9 environment is now setup. You should be good to go. **
+## Explore
+
+Cloud 9 actually has a lot of cool features that we don't get when we work on our own computers like real-time collaboration, so you should explore:
+
+![](/assets/cloud_9_workflow.png)
+
+There are little glowing bubbles all around that you should click on for tips and dismiss them once and for all:
+
+![](/assets/cloud9-tips.png)
