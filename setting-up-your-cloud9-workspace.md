@@ -28,7 +28,7 @@ You can "Skip" or "Finish" the rest of the screens:
 
 ## Join Cloud9
 
-I have emailed everyone invitations to join the firstdraft team on Cloud9, which is the online tool we'll be using to write and run all of our code. In your inbox, you should see something like this:
+I have emailed everyone invitations to join our team on Cloud9, which is the online tool we'll be using to write and run all of our code. In your inbox, you should see something like this:
 
 ![](/assets/cloud9-invite.png)
 
