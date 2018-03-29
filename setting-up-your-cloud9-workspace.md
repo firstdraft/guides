@@ -119,7 +119,6 @@ We're going to have some sensitive information, such as email passwords and API 
 
 ![](/assets/cloud9-new-workspace-3.png)
 
-
 Then click "Create workspace". The next step could take a while \(several minutes\); give it some time:
 
 ![](/assets/cloud9-cloning-workspace.png)
@@ -128,10 +127,10 @@ Then click "Create workspace". The next step could take a while \(several minute
 
 Ultimately, you'll end up in your Integrated Development Environment \(IDE\). There are three main parts to this environment: a file explorer on the left, an editor that takes up most of the visual space on the top right and a gray-blue terminal at the bottom right:
 
-![](/assets/cloud-9-workspace-up.png)
+![](/assets/cloud9-workspace-up.png)
 
-You'll be spending a lot of time in your IDE in the coming weeks. As you work, click on the little grey circles to learn tips about how to use Cloud9 more effectively:
-![](/assets/cloud9-tips.png)
+
+You'll be spending a lot of time in your IDE in the coming weeks. As you work, click on the little grey circles to learn tips about how to use Cloud9 more effectively.
 
 ## Add Autosave
 
