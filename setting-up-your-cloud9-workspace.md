@@ -78,32 +78,6 @@ _Then_ click "Authorize C9":
 
 Your Cloud9 and GitHub accounts are now linked, and you'll end up back at Cloud9.
 
-### Add your Cloud9 SSH key to GitHub
-
-Finally, we're going to add an "SSH key" from Cloud9 to your GitHub account. This will save you from having to type your GitHub password over and over whenever you want to sync your code.
-
-In Cloud9's Settings, click SSH Keys. Then highlight and copy the entire sequence of characters on the bottom:
-
-![](/assets/cloud9-ssh-key.png)
-
-Back in GitHub, click your icon in the top-right and then select Settings:
-
-![](/assets/cloud9-github-settings.png)
-
-Then click "SSH and GPG keys" in the left sidebar, and then click "New SSH key":
-
-![](/assets/cloud9-github-new-ssh-key.png)
-
-Type "Cloud9" as _Title_ and then paste in the text that you copied from your Cloud9 settings as _Key_ and click "Add SSH key":
-
-![](/assets/cloud9-add-ssh-key.png)
-
-You should end up at a screen like this:
-
-![](/assets/cloud9-github-key-added.png)
-
-Your Cloud9 and GitHub accounts are now fully connected!
-
 ## Create a new workspace
 
 Before you can do any work in Cloud9, you need to set up a new workspace. From your [Cloud9 settings page](https://c9.io/account/settings), click the "+" link at the top right of the page. 
