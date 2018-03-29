@@ -94,7 +94,7 @@ Then click "SSH and GPG keys" in the left sidebar, and then click "New SSH key":
 
 ![](/assets/cloud9-github-new-ssh-key.png)
 
-Paste in the key that you copied from your Cloud9 settings and click "Add SSH key":
+Type "Cloud9" as _Title_ and then paste in the key that you copied from your Cloud9 settings and click "Add SSH key":
 
 ![](/assets/cloud9-add-ssh-key.png)
 
