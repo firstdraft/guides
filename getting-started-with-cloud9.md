@@ -1,8 +1,10 @@
-# Getting Started with Cloud 9
+# Starting on a project in Cloud9
 
 ## Make sure you've connected your GitHub account to Cloud9
 
-Click the gear icon in the top-right corner of your Cloud9 dashboard and then select "Connected Services" from the left. Click on "Connect" next to GitHub and authorize Cloud9. **Make sure that you Grant Access to _your_ organization** before clicking "Authorize".
+Click the gear icon in the top-right corner of your Cloud9 dashboard and then select "Connected Services" in the left sidebar.
+
+If it's not already connected, go check out [this section of the Cloud9 setup guide](setting-up-your-cloud9-workspace.md#connect-your-github-account-to-cloud9).
 
 ## Creating a workspace
 
@@ -61,3 +63,60 @@ There are other settings you can customize here too, if you like, but **always r
 Cloud 9 actually has a lot of cool features that we don't get when we work on our own computers like real-time collaboration, so you should explore! Have fun!
 
 ![](/assets/cloud_9_workflow.png)
+
+## Add Autosave
+
+From the top menu bar, click on `Cloud9 > Preferences`:
+![](/assets/cloud9-plugins-12.pn](/assets/cloud9-autosave.png)
+
+Then click on the "EXPERIMENTAL" menu option in the editor and make sure the "Auto-Save Files" dropdown is set to "After Delay":
+![](/assets/cloud9-autosave-2.png)
+
+## Run a setup script
+
+I've developed a setup script for your Cloud9 workspace that will make your programming experience much smoother than Cloud9's default setup.
+
+First, download the script from our repository by copying and pasting the following command into terminal, then hitting enter:
+
+```
+curl --remote-name https://raw.githubusercontent.com/firstdraft/cloud9-setup/master/goodies
+```
+![](/assets/cloud9-setup-script.png)
+
+This command downloads a setup script called `goodies` into your workspace. You should see it in the file explorer to the left.
+
+Next, run the `goodies` script by copying and pasting the following command into terminal, then hitting enter:
+
+```
+sh goodies 2>&1 | tee ~/workspace/cloud9-setup.log
+```
+
+![](/assets/cloud9-setup-script-2.png)
+
+## Edit your initialization script
+
+Even though you've just installed some custom plugins into your workspace, you still need to make sure they get loaded every time you open up Cloud9.
+
+From the top menu bar, click `Cloud9 > Open Your Init Script`.
+
+![](/assets/cloud9-plugins-8.png)
+
+You should see a file open up in the editor:
+![](/assets/cloud9-plugins-9.png)
+
+You can edit this file to include our plugins in your workspace. Copy the following code into the bottom of the `init.js` file:
+
+```
+services.pluginManager.loadPackage([
+"~/.c9/plugins/rubysnippets/package.json",
+"~/.c9/plugins/formathtmlerb/package.json",
+"~/.c9/plugins/formatruby/package.json",
+]);
+services.settings.set("project/ace/@tabSize", 2);
+```
+![](/assets/cloud9-plugins-10.png)
+
+Then press `cmd + s` (or `ctrl + s` on Windows) to save the file. You'll be prompted to reload the page, which you can do by just refreshing your browser: 
+![](/assets/cloud9-plugins-11.png)
+
+**That's it! Your Cloud9 environment is now setup. You should be good to go. **
