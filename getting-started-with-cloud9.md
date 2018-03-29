@@ -1,24 +1,26 @@
 # Starting on a project in Cloud9
 
-## Make sure you've connected your GitHub account to Cloud9
+## Ensure your GitHub account is connected to Cloud9
 
 Click the gear icon in the top-right corner of your Cloud9 dashboard and then select "Connected Services" in the left sidebar.
 
-If it's not already connected, go check out [this section of the Cloud9 setup guide](setting-up-your-cloud9-workspace.md#connect-your-github-account-to-cloud9).
+If GitHub is not already connected, go check out [this section of the Cloud9 setup guide](setting-up-your-cloud9-workspace.md#connect-your-github-account-to-cloud9).
 
 ## Creating a workspace
 
-Then, to start on Very Best, unlike the usual workflow, click on the "Repositories" link in the left sidebar:
+Then, to start on a project, click on the "Repositories" link in the left sidebar:
 
 ![](/assets/click_repositories.png)
 
-All three team members will have copies of the repository; you should pick one for all three of you to work on. The "owner" should add the others to it as collaborators.
+You will see a list of all of your GitHub repositories. If you don't see the project listed there, go click on the assignment in Canvas again; that ought to "fork" ("make a copy", in GitHub lingo) it to your own organization. Then refresh the list in Cloud9.
 
-Then, for all three team members, the repository should appear on this list. Make sure that you are all working on the same one, even though you might have your own showing up there too.
+You could also navigate to any project directly on GitHub, e.g. [appdev-project/rps-html](https://github.com/appdev-projects/rps-html) and click the "Fork" button in the top-right corner; then choose whether you want to copy it to your personal account or organization.
 
 ![](/assets/search_and_clone.png)
 
-Click "Clone to edit" and then enter any name for the workspace. Select Public, and **select "Ruby"**. Then click "Create workspace".
+Click "Clone to edit" and then enter any name for the workspace. In the example below I named the workspace `ruby_intro`, but you might name it `rps-html` or whatever makes sense for the project you are working on.
+
+Select **Public**, and select **Ruby** (very important). Then click "Create workspace".
 
 ![](/assets/configure_workspace.png)
 
@@ -26,13 +28,13 @@ Click "Clone to edit" and then enter any name for the workspace. Select Public, 
 
 ## Setting up the project
 
-You'll end up in your IDE (integrated development environment), which is like having a text editor and a command line interface to a computer with Ruby and Rails pre-installed all within a single Chrome tab.
+You'll end up in your IDE (integrated development environment), which is like having a text editor and a command line interface to a computer with Ruby and Rails all within a single Chrome tab.
 
-Then, run the command `bin/setup` in the Terminal at the bottom of the window to get the project ready to go.
+Then, run the command `bin/setup` in the Terminal at the bottom of the window to get the project ready to go. **This will take a couple of minutes.** It's installing a bunch of powerful, industrial-grade software, all for free!
 
 ## Starting the server
 
-On Cloud9, the full command you need to start the server is
+On Cloud9, the full command you need to start your web app server is
 
 ```
 rails server -b $IP -p $PORT
@@ -40,7 +42,7 @@ rails server -b $IP -p $PORT
 
 However, that's annoying to type, so Cloud9 provides us with the green "Run Project" button near the top-right of the window.
 
-Click it and you'll have a live application running on the internet. You'll see the URL of your application in the server log in a new Terminal tab at the bottom, and you can open it up in a new Chrome tab:
+Click it and you'll have a live application running on the internet. You'll see the URL of your application in the server log in a new Terminal tab at the bottom, and you can open it up in a new Chrome tab (your app might look different, depending on which project you're working on):
 
 ![](/assets/rails_server.gif)
 
@@ -52,17 +54,15 @@ Change some code, save, and refresh your app:
 
 ![](/assets/other_urls.gif)
 
-One last step: turn on Autosave.
+Yay! We're programming!
 
-![](/assets/autosave.png)
-
-Then refresh your browser to apply the change.
-
-There are other settings you can customize here too, if you like, but **always remember to turn on autosave for every project**.
-
-Cloud 9 actually has a lot of cool features that we don't get when we work on our own computers like real-time collaboration, so you should explore! Have fun!
+Cloud 9 actually has a lot of cool features that we don't get when we work on our own computers like real-time collaboration, so you should explore:
 
 ![](/assets/cloud_9_workflow.png)
+
+There are little glowing bubbles all around that you should click on for tips and dismiss them once and for all:
+
+![](/assets/cloud9-tips.png)
 
 ## Add Autosave
 
