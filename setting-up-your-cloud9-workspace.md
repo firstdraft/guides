@@ -1,4 +1,4 @@
-# Setting up your Cloud9 workspace
+# Setting up your Cloud9 account
 
 ## Join GitHub
 
