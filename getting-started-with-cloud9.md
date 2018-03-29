@@ -30,11 +30,17 @@ Select **Public**, and select **Ruby** (very important). Then click "Create work
 
 You'll end up in your IDE (integrated development environment), which is like having a text editor and a command line interface to a computer with Ruby and Rails all within a single Chrome tab.
 
-Then, run the command `bin/setup` in the Terminal at the bottom of the window to get the project ready to go. **This will take a couple of minutes.** It's installing a bunch of powerful, industrial-grade software, all for free!
+To get the individual project's dependencies set up, find the Terminal at the bottom. At a `$` prompt (click the green + for a new tab if you need to), type
+
+```bash
+bin/setup
+```
+
+and press <kbd>return</kbd> to get the project ready to go. **This will take a couple of minutes.** It's installing a bunch of powerful, industrial-grade software, all for free!
 
 ## Starting the server
 
-On Cloud9, the full command you need to start your web app server is
+Once `bin/setup` completes and you are returned to a blinking cursor at the `$` prompt, the full command you would need to type to start your web app server is
 
 ```
 rails server -b $IP -p $PORT
@@ -64,15 +70,17 @@ There are little glowing bubbles all around that you should click on for tips an
 
 ![](/assets/cloud9-tips.png)
 
-## Add Autosave
+## DON'T FORGET to turn on Autosave
 
 From the top menu bar, click on `Cloud9 > Preferences`:
+
 ![](/assets/cloud9-plugins-12.pn](/assets/cloud9-autosave.png)
 
 Then click on the "EXPERIMENTAL" menu option in the editor and make sure the "Auto-Save Files" dropdown is set to "After Delay":
+
 ![](/assets/cloud9-autosave-2.png)
 
-## Run a setup script
+## Turn on Ruby on Rails goodies
 
 I've developed a setup script for your Cloud9 workspace that will make your programming experience much smoother than Cloud9's default setup.
 
@@ -102,6 +110,7 @@ From the top menu bar, click `Cloud9 > Open Your Init Script`.
 ![](/assets/cloud9-plugins-8.png)
 
 You should see a file open up in the editor:
+
 ![](/assets/cloud9-plugins-9.png)
 
 You can edit this file to include our plugins in your workspace. Copy the following code into the bottom of the `init.js` file:
@@ -114,9 +123,11 @@ services.pluginManager.loadPackage([
 ]);
 services.settings.set("project/ace/@tabSize", 2);
 ```
+
 ![](/assets/cloud9-plugins-10.png)
 
 Then press `cmd + s` (or `ctrl + s` on Windows) to save the file. You'll be prompted to reload the page, which you can do by just refreshing your browser: 
+
 ![](/assets/cloud9-plugins-11.png)
 
 **That's it! Your Cloud9 environment is now setup. You should be good to go. **

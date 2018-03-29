@@ -5,7 +5,7 @@
   * [AppDev Primer](appdev-primer.md)
   * [Planning Your Idea](planning-your-idea.md)
   * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
-* [Setting up your Cloud9 workspace](setting-up-your-cloud9-workspace.md)
+* [Setting up your Cloud9 account](setting-up-your-cloud9-workspace.md)
 * [Starting on a project in Cloud9](getting-started-with-cloud9.md)
 * [Getting automated feedback](getting-automated-feedback.md)
 * [Introduction to HTML](introduction-to-html.md)
