@@ -140,7 +140,7 @@ From the top menu bar, click on `Cloud9 > Preferences`:
 Then click on the "EXPERIMENTAL" menu option in the editor and make sure the "Auto-Save Files" dropdown is set to "After Delay":
 ![](/assets/cloud9-autosave-2.png)
 
-## Run our setup script
+## Run a setup script
 
 I've developed a setup script for your Cloud9 workspace that will make your programming experience much smoother than Cloud9's default setup. 
 
