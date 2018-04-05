@@ -1,8 +1,8 @@
 # AppDev Primer
 
-## You Can Do It
+## Warm-Up
 
- - [Solving the cube](http://lghttp.60951.nexcesscdn.net/80487FB/Downloads/resources/downloads/Rubiks_3x3_Solution_Guide.pdf)
+ - [Solving the cube](https://www.youcandothecube.com/solve-it/3-x-3-solution)
  
 ## firstdraft Ideas
 
