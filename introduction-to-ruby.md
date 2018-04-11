@@ -4,7 +4,7 @@
 
 This is a minimal introduction to the Ruby programming language, intended to get you far enough to begin using the Ruby on Rails web application framework.
 
-To get started, visit [this repository](https://github.com/appdev-projects/ruby-intro) and set up a [Cloud9 workspace as usual](https://guides.firstdraft.com/getting-started-with-cloud9.html).
+To get started, visit [this repository](https://github.com/appdev-projects/ruby-intro), fork it, and set up a [Cloud9 workspace as usual](https://guides.firstdraft.com/getting-started-with-cloud9.html).
   
 Once `bin/setup` is complete, at a new Terminal prompt `$`, type:
 
