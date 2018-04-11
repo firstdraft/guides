@@ -1,6 +1,6 @@
-# Permanent Programs
+# A Sneak Peek: Permanent Programs
 
-Now that you're comfortable writing some Ruby, let's learn how to write some real programs!
+Now that you've gotten your feet wet writing some Ruby expressions in the `rails console`, let's get a sneak peek at how this is going to let us build dynamic web apps!
 
 It's not very much fun typing commands over and over into `rails console`, only to have them forever lost if you close Terminal. So let's write them down permanently into a source code file, just like you did with your HTML.
 
@@ -131,4 +131,6 @@ Now you can embed them in your view template inside the special **embedded Ruby 
 
 ## Next up
 
-Now that we know how to write permanent, multiline programs, there's one more thing we need to see before we can write some fun projects: [conditionals](conditionals.md).
+We're going to spend a _lot_ more time learning how all of this is wired together in the coming weeks, but I just wanted to give you a taste.
+
+Now, let's spend some time getting more practice with one of the most important concepts in computing, and one that will let us get to some fun projects: [conditionals](conditionals.md).
