@@ -4,21 +4,27 @@
 
 This is a minimal introduction to the Ruby programming language, intended to get you far enough to begin using the Ruby on Rails web application framework.
 
-To get started, visit [this page](https://github.com/appdev-projects/ruby-intro) and follow the instructions to download the code to your Cloud9 workspace.
+To get started, visit [this repository](https://github.com/appdev-projects/ruby-intro) and set up a [Cloud9 workspace as usual](https://guides.firstdraft.com/getting-started-with-cloud9.html).
   
-Once you've downloaded the starter code and are at a Terminal prompt within the project folder, type the following command and then press <kbd>return</kbd>:
+Once `bin/setup` is complete, at a new Terminal prompt `$`, type:
 
 ```
 rails console
 ```
 
-You should end up at a prompt that says `[1] pry(main)> ` and looks something like this:
+and press <kbd>return</kbd>. You should end up at a prompt that says `[1] pry(main)> ` and looks something like this:
+
+(You may not have to `cd` into the folder; ignore that part.)
 
 ![](/assets/ruby-intro-launch-rails-console.png)
 
-You have launched an app called the Rails Console that is an interactive playground; it allows you to try out the Ruby language as you read about it below.
+You have launched an app called the Rails Console that is an interactive playground; it allows you to try out the Ruby language as you read about it below. 
 
-As you read, try out each new Ruby concept at the prompt. Have fun!
+You're now ready to start reading the introduction below. As you read, try out each new Ruby concept at the prompt.
+
+If you make a typo and the console gets into a weird state or infinite loop, you can always close the terminal tab and open a fresh one by clicking the green circled + icon and `rails console` again.
+
+Have fun!
 
 ## What is Ruby?
 
