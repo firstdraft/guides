@@ -234,6 +234,8 @@ even though the two are functionally equivalent, and the second _could_ be consi
 
 By encapsulating the logic of how to compute `full_name` in the class definition, I make it much easier to re-use elsewhere and share.
 
+---
+
 ## Where have we seen this before?
 
 It might now make a bit more sense what we were doing when we created our controllers while learning RCAV:
