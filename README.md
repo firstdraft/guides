@@ -1,4 +1,4 @@
-![](/assets/join-aws-educate-1.png)# Application Development Guides
+# Application Development Guides
 
 A collection of guides and cheatsheets for Application Development.
 
