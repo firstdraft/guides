@@ -46,30 +46,16 @@ In order to support a URL in your app such as `https://rps-rcav-your-username.c9
  9. Once we've computed the final values that should be displayed to the user, we tell Rails the name of an **HTML view template** to use to format the output. To do so, we use the `render()` method. The complete `render()` method looks like this:
   
     ```ruby
-    render(
-      {
-        :template => "game_templates/play_scissors.html.erb",
-        :locals => {
-          :computer_move => comp_move,
-          :outcome => result
-        }
-      }
-    )
+    render("game_templates/play_scissors.html.erb")
     ```
 
     Here's what's going on:
   
-    `render()` takes one argument, a `Hash`. The `Hash` has two keys: `:template` and `:locals`.
-  
-    The key `:template` must go to a string specifying the location of an Embedded Ruby HTML template to use to format the output. The first part of the string specifies the name of a folder, in this case `game_templates`...
+    `render()` takes one argument, a `String`. The string specifies the location of an Embedded Ruby HTML template to use to format the output. The first part of the string specifies the name of a folder, in this case `game_templates`...
   
  10. ... and the second part of the string specifies the name of a file, in this case `play_scissors.html.erb`.
  
- 11. The key `:locals` goes to _another_, nested, `Hash` that has a key/value pair for each variable we want to send to the template for output. In this case, I want to send two variables to the template: `computer_move` and `outcome`.
- 
-     An alternate technique for sending variables to the template is to make them _instance variables_ rather than local variables by starting their names with an `@` when you create them. E.g. I could have defined `@comp_move = ["rock", "paper", "scissors"].sample` rather than `comp_move`, and then `@comp_move` would be available in the view template without having to use the `:locals` option in the `render()` method.
-     
-     There are pros and cons to each of these two approaches; use the one that makes the most sense to you.
+ 11. To allow variables to last long enough for the template to use them, we make them  _instance variables_ rather than local variables by starting their names with an `@` when you create them. E.g. I define `@comp_move = ["rock", "paper", "scissors"].sample` rather than `comp_move`, and then `@comp_move` is available in the view template (rather than dying when we reach the `end` of the method, like a local variable would).
  
  12. We have to create a folder within `app/views` that matches the name that we specified in the `render()` statement.
  
