@@ -76,7 +76,13 @@ Let's use Ruby's `open()` method to read Google's page. The `open()` method take
 url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave"
 ```
 
-Now let's `open` that URL and `read` the body of it:
+First, we need to supercharge the built in `open()` method with the ability to read internet URLs in addition to local files by doing:
+
+```ruby
+require "open-uri"
+```
+
+Then, let's `open` that URL and `read` the body of it:
 
 ```ruby
 open(url).read
