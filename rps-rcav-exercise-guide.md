@@ -12,13 +12,13 @@ And we will tell them whether they won or lost.
 
 ## Setup
 
-We will, for once, _not_ be doing the usual Cloud9 setup process, which is to create a workspace based on a repository that you've forked. Instead, just click the "Create a new workspace" button and choose "Ruby" as the base. This will create a blank, brand new Rails application from scratch, and you'll see exactly how the whole process works from A to Z.
+Set up the RPS RCAV project as usual. Click "Run Project" once you've done so and navigate to the live app and you'll see the usual "Welcome Aboard" page. 
 
-Click "Run Project" once you've done so and navigate to the live app and you'll see the "Welcome Aboard" page (it might be slightly different than the usual one, in case Cloud9 is using an older version of Rails by default). It's as easy as that to create a functioning new base Rails app! Now let's start customizing it to do what we want.
+**This is currently a brand new Rails app.** I've done nothing at all to it — this is how Rails apps come out-of-the-box when you run the `rails new my_fancy_app` command at a Terminal prompt (you can try it now if you want, but it will create a whole subfolder with an entire app inside).
 
 ## Route → Controller → Action → View
 
-This is currently a brand new Rails app, with absolutely no routes, controllers, etc.
+Since this is currently a brand new Rails app, it has absolutely no routes, controllers, etc.
 
 Add support for each of the three addresses, `/rock`, `/paper`, and `/scissors`, one at a time. For each one,
 
