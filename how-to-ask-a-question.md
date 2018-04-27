@@ -21,3 +21,5 @@ Whether you're asking your classmates for help with your homework or requesting 
         - Copy-paste the error message rather than screenshot it so that we can Google it easily
         - If you are Googling error messages yourself, try to cut out parts of it that might be unique to your project (e.g. the folder name). Keep it as short as possible while keeping it relevant for Google.
     - the server log for the request: what URL were you trying to access, which controller action processed it, what were the `params`?
+1. d
+
