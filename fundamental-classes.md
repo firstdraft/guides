@@ -64,6 +64,8 @@ a + b        # You can add strings
 a + " " + b
 a * 3        # Yup.
 3 * a        # Nope.
+3 * a.to_i   # You can convert a string to an integer.
+3 * a.to_f   # You can convert a string to a decimal ("float").
 a.upcase
 a.downcase
 a.swapcase
