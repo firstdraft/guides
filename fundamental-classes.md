@@ -64,8 +64,6 @@ a + b        # You can add strings
 a + " " + b
 a * 3        # Yup.
 3 * a        # Nope.
-3 * a.to_i   # You can convert a string to an integer.
-3 * a.to_f   # You can convert a string to a decimal ("float").
 a.upcase
 a.downcase
 a.swapcase
@@ -78,7 +76,33 @@ a.gsub("ll", "✌️")
              #   Experiment with other strings and arguments.
 ```
 
-Some more realistic examples:
+Sometimes you have a string that contains a number, usually input from a user, and want to do math on it:
+
+```ruby
+i = "10"
+i / 3
+```
+
+You can use `.to_i` to convert the string to an integer, or `.to_f` to convert it to a decimal (a "float"):
+
+```ruby
+i = "7"
+i.to_i / 3
+i.to_f / 3
+```
+
+What would you expect Ruby to do with the following expressions? Return a value? Throw an error?
+
+```ruby
+"7 apples".to_f
+"apples".to_f
+```
+
+Give them a try!
+
+---
+
+Here are some other, more realistic examples:
 
 ```ruby
 u = "  a messy, input   string123!@$    \n"
