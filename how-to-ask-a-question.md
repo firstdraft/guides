@@ -1,5 +1,4 @@
-#
-How to ask a question
+# How to ask a question
 
 One of the most important takeaways from this course is how to frame your requests to reduce back-and-forth with developers. In other words: how to ask useful questions.
 
