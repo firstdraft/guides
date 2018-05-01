@@ -80,7 +80,7 @@ Sometimes you have a string that contains a number, usually input from a user, a
 
 ```ruby
 i = "10"
-i / 3
+i / 3      # Uh oh.
 ```
 
 You can use `.to_i` to convert the string to an integer, or `.to_f` to convert it to a decimal (a "float"):
