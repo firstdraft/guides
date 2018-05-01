@@ -11,8 +11,10 @@ Whether you're asking your classmates for help with your homework or requesting 
 Please try to include as much of the following information as possible when asking a question. This checklist serves two purposes:
 
 1. It helps you think through the problem thoroughly, which often is enough to figure it out on your own. Almost all programming bugs are a mismatch between what you _think_ you're asking the computer do and what you're _actually_ asking the computer to do. 
-2. It gives us (or a team member) enough data upfront to make an educated guess about the problem and avoids a potentially time-consuming back-and-forth to gather all the relevant info.
+1. It gives us (or a team member) enough data upfront to make an educated guess about the problem and avoids a potentially time-consuming back-and-forth to gather all the relevant info.
+
 ## The Question Checklist
+
 
 1. What action are you taking? e.g. "visiting /photos/4"
 1. What behavior are you expecting?
