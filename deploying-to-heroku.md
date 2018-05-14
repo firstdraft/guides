@@ -31,7 +31,7 @@
        and, in addition, add the line
        
        ```ruby
-       gem "pg", :group => :production
+       gem "pg", "~> 0.18", :group => :production
        ```
        
        or
