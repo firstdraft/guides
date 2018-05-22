@@ -24,7 +24,7 @@ Next, we need to secure one of our models with Devise. If you already have a mod
 Use the following command to generate a User model with Devise built-in. Replace the column names with ones that are relevant to your application. 
 
 ```bash
-rails g devise user username:string avatar_url:string
+rails g draft:devise user username:string avatar_url:string
 ```
 
 `rake db:migrate` and restart your server.
@@ -40,7 +40,7 @@ If you already have rows in the users table and don't want to drop your database
 
     Then,
 
-        rails g devise user
+        rails g draft:devise user
 
  - Finally, go into the migration file called "add_devise_to_users" and comment out the line that adds an email column.
 
