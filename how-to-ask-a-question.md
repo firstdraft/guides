@@ -16,6 +16,7 @@ Please try to include as much of the following information as possible when aski
 ## The Question Checklist
 
 
+1. What project are you working on?
 1. What action are you taking? e.g. "visiting /photos/4"
 1. What behavior are you expecting?
 1. What behavior is happening instead?
