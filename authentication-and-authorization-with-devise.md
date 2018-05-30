@@ -46,7 +46,7 @@ If you already have rows in the users table and don't want to drop your database
 
     and
 
-        rake db:migrate
+        rails db:migrate
 
     and restart your server.
 
