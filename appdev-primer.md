@@ -22,9 +22,9 @@ A useful notation for database designs is [Entity Relation Diagrams](https://www
     Or you can sign up for your own new account (it doesn't need to be a real email address).
  - It's aim is simple; it allows you to keep track of which restaurant in the city serves your favorite version of a particular dish. Your reigning champ for deep dish pizza, for example, could be Pequod's; but you're always on the lookout for a better one.
  - If you had to design 2D tables to store all of the information required by Very Best, what would they look like?
- - What are the primary _entities_ in the app? These are good candidates for tables.
+ - What are the primary _entities_, or nouns, in the app? These are good candidates for tables.
  - What are the relationships between the entities?
-    - For each one-to-many, which one gets the primary key?
+    - For each one-to-many, which side gets the primary key?
     - For each many-to-many, what's a good name for the join model?
  - Try sketching an ERD.
  - On paper with permanent marker, create the tables and columns that you planned out.
@@ -48,9 +48,9 @@ A useful notation for database designs is [Entity Relation Diagrams](https://www
     Or you can sign up for your own new account (it doesn't need to be a real email address).
  - This is a simple clone of Twitter, but with photos. It's a public social network where anyone can follow anyone (and they don't have to follow you back).
  - If you had to design 2D tables to store all of the information required by Photogram, what would they look like? (Assume, for now, that image uploads are just another column type, like caption is text.)
- - What are the primary _entities_ in the app? These are good candidates for tables.
+ - What are the primary _entities_, or nouns, the app? These are good candidates for tables.
  - What are the relationships between the entities?
-    - For each one-to-many, which one gets the primary key?
+    - For each one-to-many, which side gets the primary key? Note that you can't have two columns with the same name in the same table (but it's okay to have two columns with the same column name as long as they are in different tables).
     - For each many-to-many, what's a good name for the join model?
  - Try sketching an ERD.
  - On paper with permanent marker, create the tables and columns that you planned out.
