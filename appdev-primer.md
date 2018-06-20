@@ -107,46 +107,15 @@ Try creating an ERD of Very Best in firstdraft Ideas. If you click Publish in th
  
 #### As a user, I should be able to...
 
-##### On the Dishes page
-
- - See the bucket list of dishes
- - See which venue I have bookmarked for each dish, or choose one if I haven't
- - Filter dishes by cuisine
- - Search dishes by name
- - Click a link to add a venue if it doesn't already exist
-
-##### On the Dish Details page
-
- - Bookmark a new venue for that dish
- - See the venues I've bookmarked for that dish in the past
-
-##### On the new venue page
-
- - Add a new venue
-   - Name
-   - Address
-   - Neighborhood (optional)
-
-##### On the Venues page
-
- - See a list of all venues that I've bookmarked dishes at
- - Filter venues by neighborhood
- - Search venues by bookmarked dish
-
-##### On the Venue Details page
-
- - See which dishes I've bookmarked at a venue
- - Add a new bookmarked dish to the venue
- - See what others have bookmarked at the venue.
+ - See the bucket list of dishes.
+ - See which venue I have bookmarked for each dish, or choose one if I haven't.
+ - Add a new venue.
+ - See what other people have bookmarked at a particular venue.
  
-Can you perform all of the user stories above? **Your prototype is not going to look the same as the target yet**, but can you capture the required information?
+Can you perform all of the user stories above? **Your prototype is not going to _look_ the same as the target yet**, but can you capture the required information?
  
 ### Photogram ERD
 
 Finally: Draw an ERD for Photogram. If you Publish it, you should have an ugly, but functionally identical, version of [the social network](http://photogram-final-target.herokuapp.com/) that we'll be ultimately building during this course. Try signing up and playing around with it a bit. Can you post photos? Can you like photos? Can the app show you which photos you've liked? Can you follow other users? **Can the application show you the photos that were posted by the people that you follow?**
 
-The interface is horrible and clunky, but it technically does allow you to do all of those things, I think. A social network is just about the trickiest database design you're going to ever have (self-referential many-to-manies, oh  my!), but you've already [navigated it no sweat in the clipboard exercise](#photogram-database).
-
-Now we just have to draw the ERD of that same database. Give it a try in firstdraft. Think you got it? Click Publish and wait a few minutes and refresh. When "Launch" button appears, click it and play around with the prototype. If you missed something, edit the ERD and try again.
-
-The interface is horrible, but — you just built a social network! Not bad! Now we'll learn some front-end and you'll be able to improve the interface, and we'll learn some Ruby so you can build whatever functionality you can imagine. But now you've already got a feel for designing the foundation of any application — **it's _data_ (or _domain_) model**.
+The interface is horrible, but — you just built a social network! Not bad! That's pretty much the trickiest database design you'll ever have to deal with. Now we'll learn some front-end and you'll be able to improve the interface, and we'll learn some Ruby so you can build whatever functionality you can imagine. But now you've already got a feel for designing the foundation of any application — **it's _data_ (or _domain_) model**.
