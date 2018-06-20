@@ -28,7 +28,7 @@ A useful notation for database designs is [Entity Relation Diagrams](https://www
     - For each many-to-many, what's a good name for the join model?
  - Try sketching an ERD.
  - On paper with permanent marker, create the tables and columns that you planned out.
- - On paper with pencil, CRUD the data to support the following actions:
+ - Then set aside the permanent marker and, with pencil, CRUD the data to support the following actions:
     - An admin adds "Pot Pie", "Gnocchi", and "Chana Masala" to the list of dishes.
     - A user signs up with username "alice" and email "alice@example.com".
     - A user signs up with username "bob" and email "bob@example.com".
@@ -54,7 +54,7 @@ A useful notation for database designs is [Entity Relation Diagrams](https://www
     - For each many-to-many, what's a good name for the join model?
  - Try sketching an ERD.
  - On paper with permanent marker, create the tables and columns that you planned out.
- - On paper with pencil, CRUD the data to support the following actions:
+ - Then set aside the permanent marker and, with pencil, CRUD the data to support the following actions:
     - A user signs up with username "alice" and email "alice@example.com".
     - A user signs up with username "bob" and email "bob@example.com".
     - A user signs up with username "carol" and email "carol@example.com".
