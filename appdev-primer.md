@@ -103,7 +103,7 @@ Try creating an ERD of Very Best in firstdraft Ideas. If you click Publish in th
 
 #### As an admin, I should be able to...
 
- - Add dishes from the admin dashboard located at `/admin`.
+ - Add dishes from the admin dashboard located at `/admin` (you can sign in to the admin dashboard initially with username `admin@example.com` and password `password`).
  
 #### As a user, I should be able to...
 
