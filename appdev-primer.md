@@ -1,8 +1,4 @@
 # AppDev Primer
-
-## Warm-Up
-
- - [Solving the cube](https://www.youcandothecube.com/solve-it/3-x-3-solution)
  
 ## firstdraft Ideas
 
