@@ -5,12 +5,13 @@
  - Check out the [real IMDb](https://www.imdb.com/chart/top).
  - Click around [Must See Movies](https://msm-associations-target.herokuapp.com/), a version of IMDb that we'll build during this course.
  - If you had to design 2D tables to store all of the information required by Must See Movies, what would they look like?
- - On paper with permanent marker, take a stab at drawing the tables and columns that you might need.
+ - On paper with permanent marker, take a stab at drawing the tables and columns that you might need. I use one sheet of paper per table.
  - Then set aside the permanent marker and, with pencil, CRUD the data to support the following actions:
   - Add some directors.
   - Add some movies — does each movie know who directed it? Is there a way to get from a movie to its director's bio?
   - Add some actors.
   - Record the cast for a movie.
+ - If your initial design didn't quite support all of the above, try adding some columns or maybe even new tables with permanent marker.
  - If we wanted to add the ability for users to sign up and bookmark movies that they intend to watch, like a to-do list of movies to see, how would you change your database structure?
  
 ## Entity Relationship Diagrams
