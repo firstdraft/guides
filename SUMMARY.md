@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
+* [AppDev Primer](appdev-primer.md)
 * [Building Your Own App](building-your-own-app.md)
-  * [AppDev Primer](appdev-primer.md)
   * [Planning Your Idea](planning-your-idea.md)
   * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
 * [Setting up your Cloud9 account](setting-up-your-cloud9-workspace.md)
