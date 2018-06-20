@@ -50,7 +50,7 @@ A useful notation for database designs is [Entity Relation Diagrams](https://www
  - If you had to design 2D tables to store all of the information required by Photogram, what would they look like? (Assume, for now, that image uploads are just another column type, like caption is text.)
  - What are the primary _entities_, or nouns, the app? These are good candidates for tables.
  - What are the relationships between the entities?
-    - For each one-to-many, which side gets the primary key? Note that you can't have two columns with the same name in the same table (but it's okay to have two columns with the same column name as long as they are in different tables).
+    - For each one-to-many, which side gets the primary key? Note that you can't have two columns with the same name in the same table (but it's okay to have two columns with the same name as long as they are in different tables).
     - For each many-to-many, what's a good name for the join model?
  - Try sketching an ERD.
  - On paper with permanent marker, create the tables and columns that you planned out.
