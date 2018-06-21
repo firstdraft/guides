@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [AppDev Primer](appdev-primer.md)
+* [firstdraft Ideas](firstdraft-ideas.md)
 * [Building Your Own App](building-your-own-app.md)
   * [Planning Your Idea](planning-your-idea.md)
   * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
@@ -39,6 +40,5 @@
 * [Fixing your organization permissions](fixing-your-organization-permissions.md)
 * [draft\_generators](draftgenerators.md)
 * [Sending Email with Mailgun](sending-email-with-mailgun.md)
-* [Image Uploads](image-uploads.md)
 * [firstdraft Ideas](firstdraft-ideas.md)
 
