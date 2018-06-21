@@ -40,4 +40,5 @@
 * [draft\_generators](draftgenerators.md)
 * [Sending Email with Mailgun](sending-email-with-mailgun.md)
 * [Image Uploads](image-uploads.md)
+* [firstdraft Ideas](firstdraft-ideas.md)
 
