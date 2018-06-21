@@ -4,15 +4,15 @@ A collection of guides and cheatsheets for Application Development.
 
 **Please note:** This collection is a work in progress. Some guides are incomplete; and they are not meant to be read in sequence, one after the other, unless they directly link to one another.
 
+# Summary
+
+* [AppDev Primer](appdev-primer.md)
+* [firstdraft Ideas](firstdraft-ideas.md)
 * [Building Your Own App](building-your-own-app.md)
-  * [AppDev Primer](appdev-primer.md)
   * [Planning Your Idea](planning-your-idea.md)
   * [Creating a First Draft Idea](creating-a-first-draft-idea.md)
-  * [Updating a First Draft Idea](updating-a-first-draft-idea.md)
-* [Installing Ruby and Rails on Macs](installing-ruby-and-rails-on-macs.md)
-* [Installing Ruby and Rails on Windows](installing-ruby-and-rails-on-windows.md)
-* [Installing Atom](installing-atom.md)
-* [Setting up your Cloud9 workspace](setting-up-your-cloud9-workspace.md)
+* [Setting up your Cloud9 account](setting-up-your-cloud9-workspace.md)
+* [Starting on a project in Cloud9](getting-started-with-cloud9.md)
 * [Getting automated feedback](getting-automated-feedback.md)
 * [Introduction to HTML](introduction-to-html.md)
   * [Friendbook Exercise Guide](friendbook-exercise-guide.md)
