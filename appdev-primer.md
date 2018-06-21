@@ -14,10 +14,6 @@
  - If your initial design didn't quite support all of the above, try adding some columns or maybe even new tables with permanent marker.
  - If we wanted to add the ability for users to sign up and bookmark movies that they intend to watch, like a to-do list of movies to see, how would you change your database structure?
  
-## Entity Relationship Diagrams
-
-A useful notation for database designs is [Entity Relation Diagrams](https://www.lucidchart.com/pages/er-diagrams). Let's try sketching out the data model for Must See Movies in an ERD.
- 
 ## Very Best
 
  - Click around [Very Best](https://very-best-demo-pr-3.herokuapp.com/), another app we'll build during this course. You can sign in with any of the following (all of their passwords are `password`):
@@ -33,7 +29,6 @@ A useful notation for database designs is [Entity Relation Diagrams](https://www
  - What are the relationships between the entities?
     - For each one-to-many, which side gets the primary key?
     - For each many-to-many, what's a good name for the join model?
- - Try sketching an ERD.
  - On paper with permanent marker, create the tables and columns that you planned out.
  - Then set aside the permanent marker and, with pencil, CRUD the data to support the following actions:
     - An admin adds "Pot Pie", "Gnocchi", and "Chana Masala" to the list of dishes.
@@ -59,7 +54,6 @@ A useful notation for database designs is [Entity Relation Diagrams](https://www
  - What are the relationships between the entities?
     - For each one-to-many, which side gets the primary key? Note that you can't have two columns with the same name in the same table (but it's okay to have two columns with the same name as long as they are in different tables).
     - For each many-to-many, what's a good name for the join model?
- - Try sketching an ERD.
  - On paper with permanent marker, create the tables and columns that you planned out.
  - Then set aside the permanent marker and, with pencil, CRUD the data to support the following actions:
     - A user signs up with username "alice" and email "alice@example.com".
@@ -87,6 +81,10 @@ Given an existing database and data, pretend you're the _application logic_ for 
 Since you're pretending to be the _application logic_ layer, try answering these questions: [Photogram Database Exercise](https://docs.google.com/spreadsheets/d/104IDD206ubqloGZbjtSUAYwfOsFpiC6bQ3C11Re57M4/edit#gid=0).
 
 As you're answering them, think about: what's your process? If you had to explain the process for answering each question [to a five year old](https://vimeo.com/27060669) such that they could take over in the future, how would you do it?
+
+## Entity Relationship Diagrams
+
+A useful notation for database designs is [Entity Relation Diagrams](https://www.lucidchart.com/pages/er-diagrams). Let's try sketching out the database designs we came up with above.
 
 ## firstdraft Ideas
 
