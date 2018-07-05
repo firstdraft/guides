@@ -34,8 +34,7 @@ Now head back to the assignment in Canvas and click "Load assignment in a new ta
 
 ![](/assets/grade-setup-instructions.png)
 
-Ok, now we can get the project loaded up in Cloud9 and try out the feedback feature. [Create a Cloud9 workspace as usual]((getting-started-with-cloud9.md)
-). Note that the repo was automatically forked for you; you don't need to fork manually anymore.
+Ok, now we can get the project loaded up in Cloud9 and try out the feedback feature. [Create a Cloud9 workspace as usual](getting-started-with-cloud9.md). Note that the repo was automatically forked for you; you don't need to fork manually anymore.
 
 `bin/setup` as usual.
 
