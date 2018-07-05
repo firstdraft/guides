@@ -68,21 +68,19 @@ It turns out we need to replace the part of the URL after the `?address=` with t
 
 Great! Now we know the exact data we want is available through the API. Now, how do we get it into our application? Fortunately, Ruby comes with some powerful built-in functionality that will help us with this. First, we need Ruby to read the URL that has the JSON we want, just like Chrome did. Chrome has an address bar we can paste the URL in to; how can we tell Ruby to go open a page on the Internet?
 
-> If you haven't already, clone the project, `cd` into it, `bin/setup`, and then fire up a `rails console` session.
+If you haven't already,
 
-Let's use Ruby's `open()` method to read Google's page. The `open()` method takes one `String` argument, which should contain the URL of the page you want to open. I'm going to copy-paste the URL into `"  "` and store it in a variable `url` to make it easier to work with:
+ - create a workspace,
+ - `bin/setup`,
+ - and then in a Terminal tab, enter the command `rails console`. This launches an [interactive Ruby sandbox](the-rails-console.md) for us to experiment in.
+
+In the Rails Console, let's use Ruby's `open()` method to read Google's page. The `open()` method takes one `String` argument, which should contain the URL of the page you want to open. I'm going to copy-paste the URL within `"  "` and store it in a variable `url` to make it easier to work with:
 
 ```ruby
 url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave"
 ```
 
-First, we need to supercharge the built in `open()` method with the ability to read internet URLs in addition to local files by doing:
-
-```ruby
-require "open-uri"
-```
-
-Then, let's `open` that URL and `read` the body of it:
+Then, let's `open` that URL and `read` the body of the page:
 
 ```ruby
 open(url).read
@@ -93,7 +91,6 @@ You should see something like this:
 ![](/assets/open-url-read.jpg)
 
 > **Note:** To scroll through long output in `rails console`, you can use <kbd>return</kbd> to scroll one line at a time, <kbd>Space</kbd> to scroll one page at a time, or <kbd>Q</kbd> to just get back to the prompt to enter a new Ruby expression.
-
 
 What just happened? We `open`ed the page at the location in `url`, and the return value was the HTTP response. The HTTP response is actually a complicated object, with headers and status codes and other things we haven't talked about yet.
 
