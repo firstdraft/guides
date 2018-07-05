@@ -62,11 +62,13 @@ You can just click the Results URL to open up your feedback in a new tab.
 
 ![](/assets/rails-grade-results.png)
 
-You can click on one of the tests to get more feedback on what might have gone wrong.
+You can click on one of the tests to get more feedback on what might have gone wrong:
 
 ![](/assets/rails-grade-results-details.png)
 
 In this case, the test expected to find an element with a class of `word_count` that contains the number 10, but instead it only found the content "Replace this string with your answer". 
+
+You can click the "Examine Test" button to read the actual Ruby of the automated test; it's surprisingly readable, even for non-technical clients (by design). You can see specifically what flow is being tested and what inputs are being used and what the expected output is, and try to reproduce the issue in your own app manually using the same inputs.
 
 Whenever you've made changes, you can run `rails grade` in your Cloud9 terminal and you should see updated feedback.  You can run `rails grade` as many times as you like.
 
