@@ -70,6 +70,6 @@ In this case, the test expected to find an element with a class of `word_count` 
 
 You can click the "Examine Test" button to read the actual Ruby of the automated test; it's surprisingly readable. Ruby's testing libraries use method names that are supposed to make tests readable even for non-technical managers and clients. You can see specifically what flow is being tested and what inputs are being used and what the expected output is, and try to reproduce the issue in your own app manually using the same inputs.
 
-Whenever you've made changes, you can run `rails grade` in your Cloud9 terminal and you should see updated feedback.  You can run `rails grade` as many times as you like.
+You can run `rails grade` in your Cloud9 terminal as many times as you want, and you will get a new updated build report each time. It will only report your highest score back to Canvas, but be sure to make git commits often from `/git` so that you can experiment freely on new tasks without worry about breaking existing functionality.
 
 ### Remember that your first job is always to make your app work like the target. You should not rely exclusively on the automated tests; click through the target and your own app manually and get them to match behaviors first.
