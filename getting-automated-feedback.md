@@ -20,37 +20,22 @@ Authorize the firstdraft Grades application to access your account. **Make sure 
 
 ![](/assets/authorize-first-draft.png)
 
-Add the name of your GitHub **organization** (not your username) and submit the form.
+Select the name of your GitHub **organization** and submit the form.
 
 ![](/assets/add-github-org-name.png)
 
-Open up your email account and look for for an email inviting you to the `appdev-projects` organization:
+The next screen will ask you to accept an invitation to a GitHub team. You can click the link on that screen to accept, or you'll have an invitation in your email inbox as well.
 
-![](/assets/email-org-invite.png)
-
-Click the blue "Join" button to join the organization:
-
-![](/assets/email-join-org.png)
-
-Then click the green Join button once you're redirected to GitHub:
-
-![](/assets/github-join-org.png)
-
-You should see feedback that you're now a member of appdev-projects:
+Once you've joined, you should see feedback that you're now a member of appdev-projects:
 
 ![](/assets/github-joined-org-feedback.png)
-
-You might see an email notification that you've been added to an appdev-projects team with the same name as your GitHub account. This whole process makes it easy for us to separate your class projects from your personal projects. You don't need to take any action on this second email; it's just a notification. 
-
-![](/assets/github-team-added-notification.png)
 
 Now head back to the assignment in Canvas and click "Load assignment in a new tab" again. You should see something like the following:
 
 ![](/assets/grade-setup-instructions.png)
 
-
 Ok, now we can get the project loaded up in Cloud9 and try out the feedback feature. [Create a Cloud9 workspace as usual]((getting-started-with-cloud9.md)
-).
+). Note that the repo was automatically forked for you; you don't need to fork manually anymore.
 
 `bin/setup` as usual.
 
