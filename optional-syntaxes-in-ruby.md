@@ -185,6 +185,8 @@ Now that we've fully unwound the optional syntaxes, it's easier to see that:
     
     Ruby can't make sense of `:uniqueness => :scope => :year`, and can't tell which things are in the inner hash vs. the outer hash.
 
+So: don't fret when you see seemingly unfamiliar syntax like `scope: :year` — it's nothing new, it's just a different style. You've got the tools you need to understand any Ruby you encounter.
+
 ## Single line blocks
 
 Often, we only have one line of code within our `do`/`end` blocks:
