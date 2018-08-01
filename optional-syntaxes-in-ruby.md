@@ -1,12 +1,12 @@
 # Optional Syntaxes in Ruby
 
-Ruby, unlike many other languages, often supports multiple syntaxes to achieve the same thing. This is both good and bad. It's good because it lets us choose a style that we are most comfortable with, but it's bad because we need to learn to at least recognize multiple styles so that we can read other people's code.
+Ruby, unlike many other languages, often supports multiple different syntax styles to achieve the same thing. This is both good and bad. It's good because it lets us choose a style that we are most comfortable with, but it's bad because we need to learn to at least recognize all of the styles so that we can read other people's code.
 
-Here are a few optional syntaxes to become familiar with:
+Here are a few optional syntax styles to become familiar with:
 
-## Parentheses around arguments
+## No parentheses around arguments
 
-When we call a method that has arguments, we put the arguments in parentheses (`()`) immediately next to the method name (with no space between the method name and the opening parenthesis):
+When we call a method that has arguments, we put the arguments within parentheses (`()`) immediately next to the method name (with no space between the method name and the opening parenthesis):
 
 ```ruby
 "hello".gsub("l", "z")
@@ -22,12 +22,12 @@ Ruby will allow you to, optionally, drop the parentheses around arguments:
 # => "hezzo"
 ```
 
-**Don't mix these two by putting a space before parentheses!**
+It's important to remember **not to mix these two by putting a space before parentheses!**
 
 ```ruby
-# Don't do this
+# If you're going to use parens, don't also have a space
 
-"hello".gsub ("l", "z")
+"hello".gsub ("l", "z") # bad
 ```
 
 I like to include the parentheses around arguments because it makes it clear what's what, _especially_ when you are chaining multiple methods together. The only time that I drop the parentheses is if I am `puts`ing or `ap`ing:
@@ -35,11 +35,11 @@ I like to include the parentheses around arguments because it makes it clear wha
 ```ruby
 # Rather than
 
-ap("Hi there")
+puts("Hi there")
 
 # I will usually do this instead:
 
-ap "Hi there"
+puts "Hi there"
 ```
 
 ## Curly brackets around hash arguments
