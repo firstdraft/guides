@@ -148,7 +148,7 @@ First of all, they have dropped the parentheses around the arguments to the `val
 
 ```ruby
 class Holiday < ApplicationRecord
-  validates(:name, uniqueness: { scope: :year, message: "should happen once per year" })
+  validates(:name, uniqueness: { scope: :year, message: "should happen once per year" }, presence: true)
 end
 ```
 
@@ -156,17 +156,17 @@ Next: whenever you see a colon at the end of a token, you know it's the new Hash
 
 ```ruby
 class Holiday < ApplicationRecord
-  validates(:name, :uniqueness => { :scope => :year, :message => "should happen once per year" })
+  validates(:name, :uniqueness => { :scope => :year, :message => "should happen once per year" }, :presence => true)
 end
 ```
 
-Notice that I didn't (and can't) move the colon in `:name` — it's already at the front, and this Symbol is not being used as the key in a Hash. It is simply the first argument to the `validates` method. Similarly, the  Symbol`:year` is the _value_ associated to the key `:scope`, so we leave it alone.
+Notice that I didn't (and can't) move the colon in `:name` — it's already at the beginning, and this Symbol is not being used as the key in a Hash. It is simply the first argument to the `validates` method. Similarly, the  Symbol`:year` is the _value_ associated to the key `:scope`, so we leave it alone.
 
-Next: the second and last argument to the `validates()` method is a Hash, so the Rails Guides dropped the curly brackets around it. We can put them back:
+Next: the second and last argument to the `validates()` method is a Hash with two keys (`:uniqueness` and `:presence`), so the Rails Guides dropped the curly brackets around it. We can put them back:
 
 ```ruby
 class Holiday < ApplicationRecord
-  validates(:name, { :uniqueness => { :scope => :year, :message => "should happen once per year" } })
+  validates(:name, { :uniqueness => { :scope => :year, :message => "should happen once per year" }, :presence => true })
 end
 ```
 
@@ -179,11 +179,11 @@ Now that we've fully unwound the optional syntaxes, it's easier to see that:
  
     ```ruby
     class Holiday < ApplicationRecord
-      validates(:name, { :uniqueness => :scope => :year, :message => "should happen once per year" })
+      validates(:name, { :uniqueness => :scope => :year, :message => "should happen once per year", :presence => true })
     end
     ```
     
-    Ruby can't make sense of `:uniqueness => :scope => :year`.
+    Ruby can't make sense of `:uniqueness => :scope => :year`, and can't tell which things are in the inner hash vs. the outer hash.
 
 ## Single line blocks
 
