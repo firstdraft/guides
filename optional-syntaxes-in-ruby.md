@@ -192,15 +192,34 @@ So: don't fret when you see seemingly unfamiliar syntax like `scope: :year` — 
 Often, we only have one line of code within our `do`/`end` blocks:
 
 ```ruby
-5.times do
-  ap "hi!"
+numbers = [8, 3, 1, 4, 3, 9]
+
+numbers.select do |num|
+  num > 3
 end
+
+# => [8, 4, 9]
 ```
 
 In this case, you can use a shorthand:
 
 ```ruby
-5.times { ap "hi!" }
+numbers = [8, 3, 1, 4, 3, 9]
+
+numbers.select { |num| num > 3 }
+
+# => [8, 4, 9]
 ```
 
-This gets confusing, because now we're overloading the curly brackets (`{}`) for more than one purpose: Hash literals _and_ blocks. However, it's a very common style so you should get used to figuring out which one it is from the context. If the curly brackets are next to a method and there are no key/value pairs, then it's a block, not a Hash. 
+This can get confusing, because now we're overloading the curly brackets (`{}`) for more than one purpose: Hash literals _and_ blocks. However, it's a very common style so you should get used to figuring out which one it is from the context. If the curly brackets are next to a method and there are no key/value pairs, then it's a block, not a Hash. 
+
+This style is most often used when chaining more methods:
+
+```ruby
+numbers = [8, 3, 1, 4, 3, 9]
+
+numbers.select { |num| num > 3 }.sort
+
+# => [4, 8, 9]
+```
+
