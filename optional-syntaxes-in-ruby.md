@@ -90,7 +90,7 @@ We can also (as of Ruby version 1.9) write the same thing as:
 { fruit: "banana", sport: "hockey" }
 ```
 
-In other words, if the key in a key-value pair in a hash is a `Symbol`, you can move the colon (`:`) from the front of the symbol to the back of the symbol, and get rid of the hash rocket (`=>`).
+In other words, if the key in a key-value pair in a hash is a `Symbol`, you can move the colon (`:`) from the front of the symbol to the back of the symbol, and get rid of the hash rocket (`=>`). This is known as the "new hash syntax" (even though Ruby 1.9 is pretty old now).
 
 Consider the following Hash:
 
