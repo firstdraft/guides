@@ -138,7 +138,7 @@ Most importantly, the Rails team has adopted the above optional syntaxes as thei
 
 ```ruby
 class Holiday < ApplicationRecord
-  validates :name, uniqueness: { scope: :year, message: "should happen once per year" }
+  validates :name, uniqueness: { scope: :year, message: "should happen once per year" }, presence: true
 end
 ```
 
