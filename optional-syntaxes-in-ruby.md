@@ -98,13 +98,13 @@ Consider the following Hash:
 { "color" => "pink", "dessert" => "cookies" }
 ```
 
-Can we do the same trick and write this as
+Can we do the same trick and write this as:
 
 ```ruby
 { "color": "pink", "dessert": "cookies" }
 ```
 
-No! This optional hash shortcut syntax is **only useable when the keys are symbols** — not strings or anything else.
+No! This new hash syntax is **only useable when the keys are symbols** — not strings or anything else.
 
 ## Putting it all together
 
