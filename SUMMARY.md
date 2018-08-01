@@ -22,6 +22,7 @@
   * [Loops in Ruby](loops-in-ruby.md)
   * [Ruby Hashes](ruby-hashes.md)
   * [More on Ruby Classes](more-on-ruby-classes.md)
+  * [Optional Syntaxes in Ruby](optional-syntaxes-in-ruby.md)
   * [Glossary of Terms](glossary-of-terms.md)
 * [Meteorologist Exercise Guide](meteorologist-exercise-guide.md)
 * [Rails New and other basics](rails-new-and-other-basics.md)
