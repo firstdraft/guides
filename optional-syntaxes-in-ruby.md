@@ -50,7 +50,7 @@ Consider a hypothetical method that accepts a Hash as its last argument:
 some_method("first_argument", 2, { :this => "argument", :is => "a Hash" })
 ```
 
-How many arguments does the above method have? You might be tempted to say four if you count the commas, but really it's three: a string is first, an integer is second, and the entire hash (`{ :this => "argument", :is => "a Hash" }`) is the _third_ and final argument.
+How many arguments does the above method have? You might be tempted to say four or even six if you just count, but really it's three: a string is first, an integer is second, and the entire hash (`{ :this => "argument", :is => "a Hash" }`) is the _third_ and final argument.
 
 In the case that a Hash literal is being used as the last argument to a method, you can optionally drop the curly brackets around it:
 
