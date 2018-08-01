@@ -170,6 +170,23 @@ class Holiday < ApplicationRecord
 end
 ```
 
+We might also take advantage of whitespace to indent more helpfully:
+
+```ruby
+class Holiday < ApplicationRecord
+  validates(
+    :name,
+    {
+      :uniqueness => {
+        :scope => :year,
+        :message => "should happen once per year"
+      },
+      :presence => true
+    }
+  )
+end
+```
+
 Now that we've fully unwound the optional syntaxes, it's easier to see that:
 
  - The `validates()` method is taking two arguments; the first is a Symbol and the second is a Hash.
