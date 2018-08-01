@@ -84,7 +84,7 @@ Consider a `Hash`:
 { :fruit => "banana", :sport => "hockey" }
 ```
 
-Ruby lets us (as of Ruby version 1.9) write the same thing as:
+We can also (as of Ruby version 1.9) write the same thing as:
 
 ```ruby
 { fruit: "banana", sport: "hockey" }
