@@ -64,15 +64,17 @@ Now it _really_ looks like the method is taking four arguments, but it's not; Ru
 
 ```ruby
 my_hash = { :fruit => "banana", :sport => "hockey" }
+
+# Creating a Hash and storing it in a variable
 ```
 
 is **not** the same as this:
 
 ```ruby
 my_hash = :fruit => "banana", :sport => "hockey"
-```
 
-The latter is nonsensical as far as Ruby is concerned.
+# Nonsensical, as far as Ruby is concerned.
+```
 
 ## New Hash Syntax
 
