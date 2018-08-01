@@ -134,7 +134,7 @@ get "/photos", controller: "photos", action: "index"
 
 Much more concise! Again, I personally prioritize readability far above brevity, so I like making things explicit rather than concise. However, when you are reading Ruby code out in the wild (on Stack Overflow or GitHub), you will most often encounter code using all of these shortcuts, so you have to know how to read it.
 
-Most importantly, the Rails team has adopted the above optional syntaxes as their default, so when you're reading the Rails Guides, you will often see things like this:
+Most importantly, the Rails team has adopted the above optional syntaxes as their default, so when you're reading the [Rails Guides](https://guides.rubyonrails.org/active_record_validations.html#uniqueness), you will often see things like this:
 
 ```ruby
 class Holiday < ApplicationRecord
@@ -152,7 +152,7 @@ class Holiday < ApplicationRecord
 end
 ```
 
-Next: whenever you see a colon at the end of a token, you know it's the new Hash syntax. So we can unwind it by moving the colons to the front and putting back the Hash rockets:
+Next: whenever you see a colon at the end of a token, you know it's the new Hash syntax. So we can unwind it by moving the colons to the beginning and putting back the Hash rockets:
 
 ```ruby
 class Holiday < ApplicationRecord
