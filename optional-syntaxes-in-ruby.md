@@ -58,7 +58,7 @@ In the case that a Hash literal is being used as the last argument to a method, 
 some_method("first_argument", 2, :this => "argument", :is => "a Hash")
 ```
 
-Now it _really_ looks like the method is taking four arguments, but it's not; Ruby can figure out from the hash rockets that the final two things are really just one Hash.
+Now it _really_ looks like the method is taking more than three arguments, but it's not; Ruby can figure out from the hash rockets that the stuff at the end is really just one Hash.
 
 **Note that you can _only_ drop the curly brackets around a Hash in this one, very specific case** — if the Hash is the _last_ argument to a method. So this:
 
