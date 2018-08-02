@@ -218,7 +218,18 @@ end
 # => [8, 4, 9]
 ```
 
-In this case, you can use a shorthand:
+If you wanted to, you could fit it all on one line:
+
+```ruby
+numbers = [8, 3, 1, 4, 3, 9]
+
+numbers.select do |num| num > 3 end
+
+# => [8, 4, 9]
+```
+
+You can also replace the `do` with an opening curly bracket (`{`) and the `end` with a closing curly bracket (`}`):
+
 
 ```ruby
 numbers = [8, 3, 1, 4, 3, 9]
