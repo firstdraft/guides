@@ -1,6 +1,6 @@
 # Very Best Project Guide
 
-Your primary objective is to start with [this repository](https://github.com/firstdraft-projects/very_best) and make it match [this target](http://very-best-demo-pr-3.herokuapp.com).
+Your primary objective is to start with a half-completed codebase and make it match [this target](http://very-best-demo-pr-3.herokuapp.com). Note: your job is not to make the tests pass; your job is to match the target. Do not ask about test failure messages until you manually test the functionality in your browser and it is working.
 
 Here are some things to do along the way that might be helpful:
 
