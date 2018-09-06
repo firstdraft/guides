@@ -42,4 +42,5 @@
 * [draft\_generators](draftgenerators.md)
 * [Sending Email with Mailgun](sending-email-with-mailgun.md)
 * [Image Uploads](image-uploads.md)
+* [Storing credentials securely](storing-credentials-securely.md)
 
