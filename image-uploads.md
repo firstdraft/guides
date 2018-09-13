@@ -14,6 +14,12 @@ gem "cloudinary"
 
 and then `bundle install`.
 
+In the file `config/environment.rb`, add this line to the end:
+
+```ruby
+require "carrierwave/orm/activerecord"
+```
+
 ## Getting started with Carrierwave
 
 ### Add a column to store the file's URL
