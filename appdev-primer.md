@@ -82,7 +82,7 @@ A useful notation for database designs is [Entity Relation Diagrams](https://www
 
 ## firstdraft Ideas
 
- - [Sign up for a free GitHub account](https://github.com/)
+ - [Sign up for a free GitHub account](https://education.github.com/pack)
  
  - [Sign up for a free Heroku account](https://signup.heroku.com/) (if it asks for your preferred programming language, say Ruby)
  
