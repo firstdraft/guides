@@ -38,7 +38,7 @@ After you commit, you will no longer have any pending changes:
 
 If you edit your code again, then you can make further commits.
 
-## For now, that's all you need to worry about. Just make lots of commits as you work.
+**For now, that's all you need to worry about: just make lots of commits as you work.**
 
 The best time to commit is after you just got something to work, before you start on your next experiment.
 
