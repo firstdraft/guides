@@ -40,4 +40,10 @@ If you edit your code again, then you can make further commits.
 
 The best time to commit is after you just got something to work, before you start on your next experiment.
 
+## Jumping back in time
+
 In the History dialog at the bottom, you can see a list of all of the commits you've made. If you want to jump back in time to one of them, copy the 6 letter code in front of it into the field above and then pick a name for a new version. It will snap all of the files in the project back to that point in time, and you can now make further commits along a new path — while still retaining all of your old commits on the old path.
+
+![](/assets/git-jump-back.png)
+
+You can easily jump to any commit from any branch at any time — so feel free to experiment! Make a commit to save your current work, then jump back to a previous commit to try a different approach.
