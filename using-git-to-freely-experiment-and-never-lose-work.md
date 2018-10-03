@@ -26,7 +26,7 @@ A Git commit is a snapshot of _all_ of the folders and files in your project _at
 
 Each branch ("version") is a series of commits ("snapshots").
 
-The most important thing for you to remember is simple: **commit early and commit often**. As long as you are taking snapshots of your work at various points, it will always be easy to get back to a previous version in case you want to start over and explore a different approach.
+The most important thing for you to remember is simple: **commit early and commit often**. As long as you are taking snapshots of your work at various points, it will always be easy to get back to a previous state in case you want to start over and explore a different approach.
 
 To commit, enter a title for the snapshot (required), and, optionally, a longer description:
 
