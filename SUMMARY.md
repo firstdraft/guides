@@ -43,5 +43,5 @@
 * [Sending Email with Mailgun](sending-email-with-mailgun.md)
 * [Image Uploads](image-uploads.md)
 * [Storing credentials securely](storing-credentials-securely.md)
-* [Git and grit](git-and-grit.md)
+* [Using Git to freely experiment and never lose work](using-git-to-freely-experiment-and-never-lose-work.md)
 
