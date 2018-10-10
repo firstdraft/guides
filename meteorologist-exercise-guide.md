@@ -34,9 +34,9 @@ https://developers.google.com/maps/documentation/geocoding/start#geocoding-reque
 
 The first example they give is
 
-[https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA](https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA)
+[https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY"](https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY")
 
-(I have removed the part about the API key from the end of the URL; we don't need one, for now.) Paste that URL into a Chrome tab; you should see something like this:
+(I have removed the part about the API key from the end of the URL. You can find it on the Canvas assignment page.) Replace `YOUR_API_KEY` with the one provided to you. Paste that URL into a Chrome tab; you should see something like this:
 
 ![](/assets/mapsjson.png)
 
