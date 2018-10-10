@@ -77,7 +77,7 @@ If you haven't already,
 In the Rails Console, let's use Ruby's `open()` method to read Google's page. The `open()` method takes one `String` argument, which should contain the URL of the page you want to open. I'm going to copy-paste the URL within `"  "` and store it in a variable `url` to make it easier to work with:
 
 ```ruby
-url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave"
+url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave&key=YOUR_API_KEY"
 ```
 
 Then, let's `open` that URL and `read` the body of the page:
