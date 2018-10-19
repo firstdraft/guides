@@ -222,7 +222,7 @@ parsed_data.dig("results", 0, "geometry", "location", "lng")
 So, the entire program to geocode boils down to just four lines!
 
 ```ruby
-url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave"
+url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave&key=YOUR_API_KEY"
 parsed_data = JSON.parse(open(url).read)
 latitude = parsed_data.dig("results", 0, "geometry", "location", "lat")
 longitude = parsed_data.dig("results", 0, "geometry", "location", "lng")
