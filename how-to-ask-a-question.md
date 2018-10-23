@@ -15,7 +15,6 @@ Please try to include as much of the following information as possible when aski
 
 ## The Question Checklist
 
-
 1. What project are you working on?
 1. What action are you taking? e.g. "visiting /photos/4"
 1. What behavior are you expecting?
@@ -30,4 +29,6 @@ Please try to include as much of the following information as possible when aski
      - Copy-paste the error message rather than screenshot it so that we can Google it easily
      - If you are Googling error messages yourself, try to cut out parts of it that might be unique to your project (e.g. the folder name). Keep it as short as possible while keeping it relevant for Google.
    - the server log for the request: what URL were you trying to access, which controller action processed it, what were the `params`?
+ 1. Make the subject line of the question descriptive, not just the name of the project, so that other students who are browsing can easily identify it.
+
 
