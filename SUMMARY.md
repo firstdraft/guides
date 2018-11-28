@@ -44,4 +44,5 @@
 * [Image Uploads](image-uploads.md)
 * [Storing credentials securely](storing-credentials-securely.md)
 * [Using Git to freely experiment and never lose work](using-git-to-freely-experiment-and-never-lose-work.md)
+* [TeacherPlan Domain Modeling Exercise](teacherplan-domain-modeling-exercise.md)
 
