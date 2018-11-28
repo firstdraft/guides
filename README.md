@@ -4,8 +4,6 @@ A collection of guides and cheatsheets for Application Development.
 
 **Please note:** This collection is a work in progress. Some guides are incomplete; and they are not meant to be read in sequence, one after the other, unless they directly link to one another.
 
-# Summary
-
 * [AppDev Primer](appdev-primer.md)
 * [firstdraft Ideas](firstdraft-ideas.md)
 * [Building Your Own App](building-your-own-app.md)
@@ -48,3 +46,7 @@ A collection of guides and cheatsheets for Application Development.
 * [Sending Email with Mailgun](sending-email-with-mailgun.md)
 * [Image Uploads](image-uploads.md)
 * [Storing credentials securely](storing-credentials-securely.md)
+* [Using Git to freely experiment and never lose work](using-git-to-freely-experiment-and-never-lose-work.md)
+* [TeacherPlan Domain Modeling Exercise](teacherplan-domain-modeling-exercise.md)
+
+
