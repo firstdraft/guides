@@ -42,7 +42,7 @@ Run the command `rails db:migrate` to execute the instructions that the generato
 
 > - **If you already `rails db:migrate`d, then first**
 
-> rails db:rollback
+> `rails db:rollback`
 > to undo just the most recent migration. If you didn't `rails db:migrate` after you generated the resource, then no need to do this step.
 
 > - **Next**,
