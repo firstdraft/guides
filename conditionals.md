@@ -99,4 +99,4 @@ After that, can you display whether the random choice would have won, lost, or t
 
 ## Next Up
 
-As you might be starting to notice, computers just do very simple things, but they do them really fast. And one of the most useful things to do have computers do quickly for us is process big lists of things. For that, we need to learn about [Loops in Ruby](loops-in-ruby.md).
+As you might be starting to notice, computers just do very simple things, but they do them really fast. And one of the most useful things to have computers do quickly for us is process big lists of things. For that, we need to learn about [Loops in Ruby](loops-in-ruby.md).

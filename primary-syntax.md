@@ -87,7 +87,7 @@ Arbitrary text content.
  - elements can be nested within other elements
  - opening tags can contain attributes, which are separated from their values by a `=` and the values are wrapped in `""`
 
-That's it! There are maybe even less syntax rules than the calculator language, so it didn't take us long to grasp the essence of it.
+That's it! There are maybe even fewer syntax rules than the calculator language, so it didn't take us long to grasp the essence of it.
 
 There are, however, more available instructions than in the calculator language (although surprisingly few[^1]). So we will have to still spend some time *expanding our vocabulary* before we master all of HTML.
 
@@ -150,7 +150,7 @@ What if we try asking the number `9` to downcase itself? Try it right now in `ra
 9.downcase
 ```
 
-Aha! `NoMethodError: undefined method 'downcase' for 9:Fixnum`. It looks scary, but one of your main objectives during this course is to **not panic** when you see an error message. Slow down, read it carefully, and see if you can make any sense of it at all. Over time, you will find that they are very helpful — and you will miss them when something is going wrong *silenty*.
+Aha! `NoMethodError: undefined method 'downcase' for 9:Fixnum`. It looks scary, but one of your main objectives during this course is to **not panic** when you see an error message. Slow down, read it carefully, and see if you can make any sense of it at all. Over time, you will find that they are very helpful — and you will miss them when something is going wrong *silently*.
 
 In this case, it is saying: "Hey, dummy — you can't downcase 9, which is a number." Fair enough. (`Fixnum` means "integer", as opposed to `Float` which means "decimal number". Almost all programming languages use two distinct data types for those two things.)
 
