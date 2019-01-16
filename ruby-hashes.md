@@ -79,7 +79,7 @@ No more having to remember which position number maps to which attribute!
 
 The keys can be any class — String, Fixnum, whatever — but we almost always use Symbols as keys to our Hashes. (I like using symbols as the keys simply because since values are usually strings, syntax highlighting makes keys stand out from values.)
 
-You can adding a new key/value pair to an existing Hash with `.store()`:
+You can add a new key/value pair to an existing Hash with `.store()`:
 
 ```ruby
 person1.store(:office_hours, "Wednesday 9:00am - 2:00pm")
