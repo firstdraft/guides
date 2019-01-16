@@ -18,7 +18,7 @@ and press <kbd>return</kbd>. You should end up at a prompt that says `[1] pry(ma
 
 ![](/assets/ruby-intro-launch-rails-console.png)
 
-You have launched an app called the Rails Console that is an interactive playground; it allows you to try out the Ruby language as you read about it below. 
+You have launched an app called [the Rails Console](the-rails-console.md) that is an interactive playground; it allows you to try out the Ruby language as you read about it below. 
 
 You're now ready to start reading the introduction below. As you read, try out each new Ruby concept at the prompt.
 

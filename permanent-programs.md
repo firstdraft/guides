@@ -4,7 +4,7 @@ Now that you've gotten your feet wet writing some Ruby expressions in the `rails
 
 It's not very much fun typing commands over and over into `rails console`, only to have them forever lost if you close Terminal. So let's write them down permanently into a source code file, just like you did with your HTML.
 
-First, ensure that your app is still running in a Chrome tab at `https://ide.c9.io/YOUR_USERNAME/ruby_intro` (or whatever you named your workspace) — click the "Run Project" button at the top of the IDE if not.
+First, ensure that your app is still running in a Chrome tab at `https://ide.c9.io/YOUR_USERNAME/ruby-intro` (or whatever you named your workspace) — click the "Run Project" button at the top of the IDE if not.
 
 ![](/assets/ruby-intro-replace-output.png)
 
