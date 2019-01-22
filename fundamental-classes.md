@@ -161,6 +161,16 @@ Basically, inside the string, you place `#{}` where you eventually want your val
 
 If you find interpolation confusing, feel free to just use concatenation.
 
+## Date
+
+Dates are very tricky to work with, especially when you take timezones into account, but Ruby makes it as easy as possible. Try the following:
+
+```
+t = Date.today
+t.wday
+t.friday?
+```
+
 ## Arrays
 
 Finally, we have a very important class: `Array`. Most of what we do as web developers is manage *lists of things*. Lists of photos, likes, followers, reviews, listings, messages, whatever.
