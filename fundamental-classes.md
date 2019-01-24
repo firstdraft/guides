@@ -45,6 +45,9 @@ If you want the decimal version, then at least one of the two operands needs to 
 Ruby calls decimal numbers `Float`s. Try
 
 ```ruby
+n = 3.141592
+n.round(2)
+
 10.0 / 3
 10 / 3.0
 rand       # Produces a random number between 0
