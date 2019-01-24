@@ -50,8 +50,8 @@ n.round(2)
 
 10.0 / 3
 10 / 3.0
-rand       # Produces a random number between 0
-           #   and 1; useful for probabilities
+rand       # rand without any arguments produces a random
+           #   number between 0 and 1; useful for probabilities
 ```
 
 I won't say too much more about `Float`s for now, since they are mostly the same as `Fixnum`s. Use them as needed, but I try to default to integers.
