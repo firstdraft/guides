@@ -22,6 +22,47 @@ https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgol
 
 This will indent the JSON nicely and allow you to fold and unfold nested elements.
 
+### API Setup
+
+We will provide you with an API key Google Maps. You'll be able to find it by visiting the assignment page for Omnicalc-Acions on Canvas. You'll need this key to complete the homework exercises below.
+
+We'll also need to make sure your API key stays hidden, in case your project ever gets pushed to GitHub or another public repository. Unsavory types like to scrape GitHub for sensitive information like API keys and run up huge bills for compromised users.
+
+We can do this fairly easily in your workspace:
+
+> If you realize you've made an error on any of the following steps, just type in `cd ~/workspace` and hit enter. That should get you back to the starting point.
+
+1. Type in `cd ~` and hit enter. This command should take you to the home folder of your workspace.
+1. Type in `touch .bash_profile` and hit enter. This command creates a hidden file called `.bash_profile` in your home folder.
+1. Type in `ls -a` and hit enter. You'll see a list of all the files in your current directory, including hidden files (the ones whose names start with a `.`).
+1. Mouse over the filename `.bash_profile` and click it. The file should open up in your editor.
+1. Paste in the following code into the file but make sure to use the Google API key on the right side of the `=` sign
+
+    ```bash
+    export GOOGLE_MAPS_KEY="replace_me_with_your_key"
+    ```
+
+    Note: don't put spaces around the `=`.
+
+1. Back in Terminal, type in `cd ~/workspace` to go back to your main folder, or just close that tab.
+
+    > If you ever need to reopen your bash profile, type `cd ~`, hit enter, then type `ls -a`, hit enter and click on the file to open it.
+
+1. If you have a Rails server running, stop it and re-start it.
+1. The values that we `export` in the `.bash_profile` file become key-value pairs in a special Hash that we can access anywhere in our Rails environment called `ENV`. For example, to access this sensitive info, **in a NEW Terminal tab** (it won't work in old tabs) we can open a `rails console` and type in:
+
+    ```ruby
+    ENV.fetch("GOOGLE_MAPS_KEY")
+    ```
+
+    and we should see output of
+
+    ```ruby
+    => "replace_me_with_your_key"
+    ```
+
+You can use this pattern throughout your Rails app to store and use sensitive info but prevent it from showing on GitHub when you push your code up, or from unauthorized visitors being able to see it in your public Cloud9 workspaces.
+
 ### Find an example
 
 Now, we have to research the API and find the correct URL to paste into our address bar to get back the JSON that we want. Usually, we have to start at the API Documentation. For the Geocoding API, the full docs are here:
@@ -77,7 +118,8 @@ If you haven't already,
 In the Rails Console, let's use Ruby's `open()` method to read Google's page. The `open()` method takes one `String` argument, which should contain the URL of the page you want to open. I'm going to copy-paste the URL within `"  "` and store it in a variable `url` to make it easier to work with:
 
 ```ruby
-url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave&key=YOUR_API_KEY"
+url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave&key="
+  + ENV.fecth("GOOGLE_MAPS_KEY")
 ```
 
 Then, let's `open` that URL and `read` the body of the page:
@@ -222,7 +264,8 @@ parsed_data.dig("results", 0, "geometry", "location", "lng")
 So, the entire program to geocode boils down to just four lines!
 
 ```ruby
-url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave&key=YOUR_API_KEY"
+url = "https://maps.googleapis.com/maps/api/geocode/json?address=5807+S+Woodlawn+Ave&key="
+  + ENV.fecth("GOOGLE_MAPS_KEY")
 parsed_data = JSON.parse(open(url).read)
 latitude = parsed_data.dig("results", 0, "geometry", "location", "lat")
 longitude = parsed_data.dig("results", 0, "geometry", "location", "lng")
@@ -382,7 +425,7 @@ Browse
  - [Google Machine Learning](https://cloud.google.com/products/machine-learning/)
  - [Amazon Machine Learning](https://aws.amazon.com/machine-learning/)
  - [Programmable Web's API Directory](http://www.programmableweb.com/category/all/apis?order=field_popularity)
- 
+
 and get inspired!
 
 ### Bootstrap (Easier)
