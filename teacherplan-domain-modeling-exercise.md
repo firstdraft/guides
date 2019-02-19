@@ -2,7 +2,7 @@
 
 Imagine that a principal of a high school has approached you with a problem. She has a system to help the teachers at her school devise improvement plans for themselves, but it struggling to keep track of all of the paperwork involved with it. She wants to hire you to build an app tp help.
 
-We want to make it easy for teachers and coaches to draft, discuss, revise, and approve improvement plans. See [this document](https://docs.google.com/document/d/1CVDEl5MJpaSIMH6ReWQq5AUft4RDE_CfHOASCDNWw8A/edit?usp=sharing) for real sample data.
+We want to make it easy for teachers and coaches to draft, discuss, revise, and approve improvement plans. See [this document](https://docs.google.com/document/d/1CVDEl5MJpaSIMH6ReWQq5AUft4RDE_CfHOASCDNWw8A/edit?usp=sharing) for real sample data. Currently, documents like this are being filled out and various versions of it are being emailed back and forth between multiple parties, and things are unsurprisingly slipping between the cracks.
 
 Our goal is to come up with a domain model to capture this data, and support the following:
 
