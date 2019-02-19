@@ -13,7 +13,7 @@ We want to make it easy for teachers and coaches to draft, discuss, revise, and 
     - implementation specifics
     - measures of success
 
-    All of these except target date should just be free-form text fields.
+    **All of these except target date should just be free-form text fields**, like in the linked sample Google Doc above.
  - Any user can coach any other user. A user becomes a coach if they are invited to be one (by email address) by the owner of the Improvement Plan.
  - A user can have their own Improvement Plans, Improvement Plans they are coaching on, both, or neither. There should be a dashboard where the user can see all of the Improvement Plans they are connected to.
  - Owners and coaches for an Improvement Plan should be able to add comments on the Improvement Plan itself, and Goals within it.
