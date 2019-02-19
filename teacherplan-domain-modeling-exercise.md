@@ -15,7 +15,7 @@ We want to make it easy for teachers and coaches to draft, discuss, revise, and 
 
     All of these except target date should just be free-form text fields.
  - Any user can coach any other user. A user becomes a coach if they are invited to be one (by email address) by the owner of the Improvement Plan.
- - A user can have their own Improvement Plans, Improvement Plans they are coaching on, both, or neither. There should be a way for a user to see all of the Improvement Plans they are connected to.
+ - A user can have their own Improvement Plans, Improvement Plans they are coaching on, both, or neither. There should be a dashboard where the user can see all of the Improvement Plans they are connected to.
  - Owners and coaches for an Improvement Plan should be able to add comments on the Improvement Plan itself, and Goals within it.
  - Improvement Plans have five statuses:
     - Not yet submitted
