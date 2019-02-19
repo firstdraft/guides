@@ -6,7 +6,7 @@ Examine [this document](https://docs.google.com/document/d/1CVDEl5MJpaSIMH6ReWQq
 
 After a teacher drafts an Improvement Plan, it has to be approved by a coach (which can be the principal or another teacher at the school). This usually involves some back and forth, where the coach asks the teacher to add or modify some SMART Goals or Action Steps.
 
-Currently, documents like the one above are being filled out and various versions of it are being emailed back and forth between multiple parties, and things are unsurprisingly slipping between the cracks; and deadlines are being missed.
+Currently, documents like the one above are being filled out and various versions of it are being emailed back and forth between multiple parties, things are unsurprisingly slipping between the cracks, and due dates are being missed.
 
 We want to make it easy for teachers and coaches to draft, discuss, revise, and approve Improvement Plans. Our goal is to come up with a domain model to capture the data in the linked doc, and support the following:
 
