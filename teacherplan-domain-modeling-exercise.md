@@ -1,6 +1,10 @@
 # TeacherPlan Domain Modeling Exercise
 
+Imagine that a principal of a high school has approached you with a problem. She has a system to help the teachers at her school devise improvement plans for themselves, but it struggling to keep track of all of the paperwork involved with it. She wants to hire you to build an app tp help.
+
 We want to make it easy for teachers and coaches to draft, discuss, revise, and approve improvement plans. See [this document](https://docs.google.com/document/d/1CVDEl5MJpaSIMH6ReWQq5AUft4RDE_CfHOASCDNWw8A/edit?usp=sharing) for real sample data.
+
+Our goal is to come up with a domain model to capture this data, and support the following:
 
  - A user can create an Improvement Plan.
  - Improvement Plans have one or more Goals.
@@ -24,4 +28,4 @@ We want to make it easy for teachers and coaches to draft, discuss, revise, and 
     - Active
     - Complete
 
-Try to come up with a domain model!
+Try to come up with a domain model! You can sketch it out on paper, or diagram it in [ideas.firstdraft.com](https://ideas.firstdraft.com/).
