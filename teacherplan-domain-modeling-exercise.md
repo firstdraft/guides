@@ -28,4 +28,6 @@ Our goal is to come up with a domain model to capture this data, and support the
     - Active
     - Complete
 
-Try to come up with a domain model! You can sketch it out on paper, or diagram it in [ideas.firstdraft.com](https://ideas.firstdraft.com/).
+Try to come up with a domain model! Ask us any clarifying questions you have about the features of the app.
+
+You can sketch your Entity Relationship Diagram (ERD) out on paper, or diagram it in [ideas.firstdraft.com](https://ideas.firstdraft.com/).
