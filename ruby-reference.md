@@ -102,6 +102,10 @@
 
 ### Date.today (class method)
 
+Try `Date.new`[^1].
+
+[^1]: Why -4712? [Answer.](https://stackoverflow.com/questions/32683846/why-does-ruby-standard-library-date-module-start-at-4712-year)
+
 ### wday
 
 ### friday?
