@@ -46,4 +46,5 @@
 * [Using Git to freely experiment and never lose work](using-git-to-freely-experiment-and-never-lose-work.md)
 * [TeacherPlan Domain Modeling Exercise](teacherplan-domain-modeling-exercise.md)
 * [HTML Reference](html-reference.md)
+* [Ruby Reference](ruby-reference.md)
 
