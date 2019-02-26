@@ -47,4 +47,5 @@
 * [TeacherPlan Domain Modeling Exercise](teacherplan-domain-modeling-exercise.md)
 * [HTML Reference](html-reference.md)
 * [Ruby Reference](ruby-reference.md)
+* [Rails Reference](rails-reference.md)
 
