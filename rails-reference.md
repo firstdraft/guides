@@ -1,5 +1,29 @@
 # Rails Reference
 
+# routes
+
+get
+post
+
+# controller
+
+render
+redirect_to
+before_action
+
+# view
+
+render
+
+# model
+
+count
+all
+new
+save
+where
+destroy
+
 belongs_to
 
 has_many
@@ -14,3 +38,5 @@ validates
  
  
 current_user
+
+callbacks
