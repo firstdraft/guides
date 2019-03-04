@@ -4,6 +4,7 @@
 
 get
 post
+root
 
 # controller
 
@@ -14,6 +15,7 @@ before_action
 # view
 
 render
+notice
 
 # model
 
@@ -36,7 +38,17 @@ validates
  uniqueness
  numericality
  
- 
-current_user
+
 
 callbacks
+
+# devise
+
+current_user
+
+authenticate_user!
+
+new_user_registration_path
+new_user_session_path
+edit_user_registration_path
+destroy_user_session_path
