@@ -11,6 +11,8 @@ root
 render
 redirect_to
 before_action
+cookies
+session
 
 # view
 
