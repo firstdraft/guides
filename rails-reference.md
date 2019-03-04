@@ -10,6 +10,7 @@ root
 
 render
 redirect_to
+params
 before_action
 cookies
 session
