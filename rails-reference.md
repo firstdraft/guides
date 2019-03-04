@@ -19,6 +19,7 @@ session
 
 render
 notice
+alert
 
 # model
 
