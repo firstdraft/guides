@@ -21,6 +21,7 @@ Imagine we've been hired to build an app for a youth poetry slam festival. Over 
 #### Before the performances
 
  - A staff member has the team captains draw from a hat and assigns a **draw order** to each team — A, B, C, or D.
+ - A staff member records which poets will be performing from each school in this bout (a school might have different poets performing in different bouts).
  
 #### Structure of the bout
 
