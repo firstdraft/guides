@@ -18,7 +18,20 @@ Imagine we've been hired to build an app for a youth poetry slam festival. Over 
 
 ### Day of the bout
 
+#### Before the performances
+
  - A staff member has the team captains draw from a hat and assigns a **draw order** to each team — A, B, C, or D.
+ 
+#### Structure of the bout
+
+ - There are five **rounds** of poems in each bout:
+ - The first four rounds are **solo** rounds. Each team sends up one poet to perform alone.
+    - The order of performances is determined by the draw order of the teams; the first round is ABCD, second round is BCDA, CDAB, DABC.
+ - The final round is the **group piece** round. Each team sends up 4 poets to perform together.
+    - The order of performances is determined by the outcome of the first four rounds — the lowest scoring team goes first, the highest scoring team goes last.
+
+#### Scoring
+
  - Each poem is scored by five judges.
     - Judges will assign a numerical score between 0.0 and 10.0.
     - The lowest and highest scores will be dropped, and the other three scores will be summed to find the total score for the poem.
@@ -33,11 +46,6 @@ Imagine we've been hired to build an app for a youth poetry slam festival. Over 
         - Using a prop: `-0.5`
         - Profanity: `-0.5`
         - Plagiarism: `-30.0` (final scores can never go under `0.0`, however).
- - There are five **rounds** of poems in each bout:
-    - The first four rounds are **solo** rounds. Each team sends up one poet to perform alone.
-        - The order of performances is determined by the draw order of the teams; the first round is ABCD, second round is BCDA, CDAB, DABC.
-    - The final round is the **group piece** round. Each team sends up 4 poets to perform together.
-        - The order of performances is determined by the outcome of the first four rounds — the lowest scoring team goes first, the highest scoring team goes last.
  - Ultimately, each team's final score from each of the five rounds is added up to get the team's overall score.
  - The team's **bout rank** is determined by their overall score; if two teams have the same overall score, then they get the same bout rank (and the next team has a bout rank that is two greater than theirs). Example:
     - Team A: overall score `135.2`, bout rank `1`
