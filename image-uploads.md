@@ -32,7 +32,7 @@ If not, you have to add it. For example, here we add a column called "avatar" to
 
 ```bash
 rails generate migration add_avatar_to_users avatar:string
-rake db:migrate
+rails db:migrate
 ```
 
 In your case, it may be song, transcript, image, etc.
@@ -85,10 +85,10 @@ We also need to change the `<form>` tag itself to allow files to be uploaded by 
 In your create/update actions, assign the new file upload just like any other form parameter:
 
 ```ruby
-@user.avatar = params[:avatar]
+@user.avatar = params.fetch(:avatar)
 ```
 
-> If you are customizing a Devise form, you'll have to instead [allow this additional parameter through security](https://gist.github.com/rbetina/9ef4a9ffa4604df74bb5#step-three-allow-additional-parameters-through-security).
+> If you are customizing a Devise form, you'll have to instead [allow this additional parameter through security](authentication-and-authorization-with-devise.md#step-three-allow-additional-parameters-through-security).
 
 That should be it!
 
@@ -104,26 +104,32 @@ For example, we could now do
 
 ## Adding Cloudinary for storage
 
-CarrierWave works fine locally at this point, but it's going to break if you try to host your project live on Heroku. That's because Heroku won't let you permanently write to the public folder of a live application. You'll need to find a hosting service, like Amazon AWS to host any uploaded files. Fortunately, Cloudinary makes it easy to host uploaded images and they have a generous free tier. 
+CarrierWave works fine locally at this point, but it's going to break if you try to host your project live on Heroku. That's because Heroku won't let you permanently write to the public folder of a live application. You'll need to find a hosting service, like Amazon AWS to host any uploaded files. Fortunately, Cloudinary makes it easy to host uploaded images and they have a generous free tier.
 
 
 ### Update your ImageUploader
 
 To integrate Cloudinary, first adjust your ImageUploader file so it looks like:
 
-```ruby 
+```ruby
 class ImageUploader < CarrierWave::Uploader::Base
   include Cloudinary::CarrierWave
 end
 ```
 
+Most importantly, make sure you remove the line that says:
+
+```
+  storage :file
+```
+
 ### Retrieve Cloudinary API info
 
-Next, you'll need to sign up for an account and get your API info. You can find your cloud name, by going to Settings and clicking the Account tab. You can find your API key and secret by going to Settings and clicking the Security tab. 
+Next, you'll need to sign up for an account and get your API info. You can find your cloud name, by going to Settings and clicking the Account tab. You can find your API key and secret by going to Settings and clicking the Security tab.
 
 ### Add Cloudinary API info in an `.env` file
 
-For security, it's best to store your keys in environment variables. If you're using `dotenv`, you can create a file called `.env` in the root folder of your app. Then add the following content to the `.env` file, replacing your information as needed:
+For security, it's best to store your keys in environment variables. Read more on the how and why this is important in the guide on [storing your credientials sercurely](storing-credentials-securely.md). In short, if you're using `dotenv`, you can create a file called `.env` in the root folder of your app. Then add the following content to the `.env` file, replacing your information as needed:
 
 ```
 CLOUDINARY_CLOUD_NAME="replace me with your cloud name"
@@ -131,13 +137,13 @@ CLOUDINARY_API_KEY="replace me with your api key"
 CLOUDINARY_API_SECRET="replace me with your api secret"
 ```
 
-After pushing to Heroku, you'll need to manually add these environment variables in the Settings tab of your application. 
+After pushing to Heroku, you'll need to manually add these environment variables in the Settings tab of your application.
 
 ### Store Cloudinairy API info in an intializer
 
 Finally, create an initializer file called `cloudinary.rb` in `config/initializers` and add the following content:
 
-```ruby 
+```ruby
 Cloudinary.config do |config|
   config.cloud_name = ENV["CLOUDINARY_CLOUD_NAME"]
   config.api_key = ENV["CLOUDINARY_API_KEY"]
