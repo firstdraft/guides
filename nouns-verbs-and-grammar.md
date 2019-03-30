@@ -82,7 +82,7 @@ Here, you try it in the interactive Ruby sandbox[^replit] below:
 
 <iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/3043043/c68c4738e364e9b4dbb0b7cf4c224003"></iframe>
 
-If all went well, you should have seen `=> "HELLO WORLD!"` Yay[^tradition]! What just happened?
+If all went well, you should have seen `=> "HELLO WORLD!"` in the black box to the bottom left. Yay[^tradition]! What just happened?
 
 [^tradition]: It is [a time-honored tradition](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program){:target="_blank"} that the very first thing a programmer does in a new language is print out "Hello, World!" Congratulations — you're now one of us 🙌🏾
 
@@ -96,15 +96,17 @@ In this case, we asked `"hello world!"`, which is a string (Ruby's name for a pi
 
 Different **classes** can perform different **methods**. Try the following:
 
-```ruby
-7.swapcase
-```
-
 <iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/3043048/e3a0f724d73a975907c6441b855876aa"></iframe>
 
 ### Read The Error Message
 
-Aha! If you were typing out every expression and running it, then you should have run into your very first error message! 🎉
+Aha! If you were typing out every expression and running it, then
+
+```ruby
+7.swapcase
+```
+
+should have produced your very first error message! 🎉
 
 (If you weren't typing out every expression, then you're doing this wrong. If you're just reading, you won't be successful at learning programming; you have to _do_ in order to build up some muscle memory. It's all about practice.)
 
@@ -118,7 +120,7 @@ undefined method `swapcase' for 7:Integer
 
 might mean?
 
-In this case, it is saying: "Hey, friend — there's no method called 'swapcase' for 7, which is an integer. Sorry." Fair enough.
+In this case, it is saying: "Hey, friend — there's no method called 'swapcase' for 7, which is an integer. Sorry." Fair enough, that makes sense.
 
 The bottomline is: at all times as you are writing Ruby, you should be thinking: **What class of object do I have to work with?** **What methods am I allowed to call on this kind of object?** Then, the syntax itself is simple — `my_object.cool_method`.
 
@@ -157,7 +159,7 @@ So, for example, whether you have spaces between arguments doesn't matter; these
 
 (The most common style is to have one space after each comma.)
 
-However, one situation in which whitespace does matter is: **do not put a space between a method and the parentheses that surround its arguments**.
+However, one situation in which whitespace _does_ matter is: **do not put a space between a method and the parentheses that surround its arguments**.
 
 It's a very easy mistake to make, so I just wanted to warn you early so you can develop good muscle memory:
 
@@ -165,6 +167,8 @@ It's a very easy mistake to make, so I just wanted to warn you early so you can 
 "Hello".gsub("l", "z") # good
 "Hello".gsub ("l", "z") # bad!
 ```
+
+Try the bad version in your sandbox and see what the error message looks like.
 
 ## An aside: Code comments
 
@@ -214,16 +218,18 @@ Most programs are just a long succession of statements where we do some work wit
 
 When you are choosing your variable names, there are some rules:
 
-- Variable names can only contain **lowercase** letters, numbers, and underscores — they can't contain spaces.
+- Variable names can only contain **lowercase** letters (`a-z`), numbers (`0-9`), and underscores (`_`) — they can't contain spaces.
 - Variable names cannot _begin_ with a number.
-- Rubyists strive to choose **descriptive** variable names, no matter how long they are, so that it's obvious to teammates what the contents are (supposed to be) at a glance. _Please_ avoid naming your variables `x`, `y`, and `z`. Use underscores to separate words in multi-word variable names.
+- Rubyists strive to choose **descriptive** variable names, no matter how long they are, so that it's obvious to teammates what the contents are (supposed to be) at a glance.
+
+    _Please_ avoid naming your variables `x`, `y`, and `z`. Use underscores to separate words in multi-word variable names.
 
 ## Conclusion
 
 That's it for the fundamental grammar of Ruby!
 
-```
-storage_box = object.method(argument1, argument2, ...)
+```ruby
+storage_box = object.method(argument1, argument2)
 ```
 
 Now we need to spend some time expanding our vocabulary — what are the most commonly used data types in Ruby, and what methods do they have? That's coming up next.
