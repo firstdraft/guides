@@ -6,7 +6,7 @@ Programming is the art of getting a computer to do useful things with informatio
 
 If you think about it that way, then you already know how to program this computer:
 
-![](/assets/calculator.jpeg)
+![](/assets/youalreadyknow.png)
 
 In the case of a calculator, the "information" is numbers and the "useful things" are adding, subtracting, multiplying, etc. Like any computer (or person), we get the calculator to do useful work by writing instructions that it can understand.
 
