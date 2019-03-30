@@ -104,7 +104,7 @@ Different **classes** can perform different **methods**. Try the following:
 
 Aha! If you were typing out every expression and running it, then you should have run into your very first error message! 🎉
 
-(If you weren't typing out every expression, then you're doing this all wrong. If you're just reading, you won't be successful at learning programming; you have to _do_ in order to build up some muscle memory. It's all about practice.)
+(If you weren't typing out every expression, then you're doing this wrong. If you're just reading, you won't be successful at learning programming; you have to _do_ in order to build up some muscle memory. It's all about practice.)
 
 Error messages can look scary, but one of **the most important skills you have to develop** when learning to program is to **not panic** when you see them. Slow down, read it carefully, and see if you can make any sense of it at all. Over time, you will find that they are _very_ helpful — and you will miss them when something is going wrong *silently*.
 
@@ -119,7 +119,7 @@ might mean?
 
 In this case, it is saying: "Hey, friend — there's no method called 'swapcase' for 7, which is an integer. Sorry." Fair enough.
 
-The bottomline is: at all times as you are writing Ruby, you should be thinking: **What class of object do I have to work with?** **What methods am I allowed to call on this kind of object?** Then, the syntax itself is simple — `object.method`!
+The bottomline is: at all times as you are writing Ruby, you should be thinking: **What class of object do I have to work with?** **What methods am I allowed to call on this kind of object?** Then, the syntax itself is simple — `my_object.cool_method`!
 
 ## Arguments
 
@@ -143,9 +143,9 @@ In reality, `gsub` is more often used to do things like removing illegal charact
 
 (`""` is an empty string, so all `+`s get replaced with nothing.)
 
-### One of the only places that whitespace matters
+### One of the only times when whitespace matters
 
-Ruby is, generally, very permissive about whitespace; unlike some other languages (e.g. Python) where indentation can change the entire meaning of the program.
+Unlike some other languages (e.g. Python) where indentation and spacing can change the entire meaning of the program, Ruby is, generally, very permissive about how you use whitespace. You can _usually_ use spacing according to your own taste, and Ruby will be able to make sense of your code.
 
 So, for example, whether you have spaces between arguments doesn't matter; these two are equivalent:
 
@@ -156,7 +156,7 @@ So, for example, whether you have spaces between arguments doesn't matter; these
 
 (The most common style is to have one space after each comma.)
 
-However, one situation that whitespace does matter is: **do not put a space between a method and the parentheses that surround its arguments**.
+However, one situation in which whitespace does matter is: **do not put a space between a method and the parentheses that surround its arguments**.
 
 It's a very easy mistake to make, so I just wanted to warn you early so you can develop good muscle memory:
 
@@ -165,90 +165,58 @@ It's a very easy mistake to make, so I just wanted to warn you early so you can 
 "Hello".gsub ("l", "z") # bad!
 ```
 
-## Code comments
+## An aside: Code comments
 
 A question for the ages: what do you call this symbol: `#`? The number sign? The pound sign? The hashtag? The waffle?
 
-For the purposes of this text, I'm going to refer to it as an [octothorpe](https://en.wiktionary.org/wiki/octothorpe){:target="_blank"}.
+In this text, I'm going to refer to it as an [octothorpe](https://en.wiktionary.org/wiki/octothorpe){:target="_blank"}.
 
-The octothorpe is used quite a bit in Ruby. You can see one important way in the code block above, where I said `# bad!` after some offending code. That is known as a "code comment". The Ruby interpreter, when it sees the `#`, will ignore it and everything that comes after it; allowing us to leave notes to ourselves and to each other. Use comments liberally.
+The octothorpe is used quite a bit in Ruby. You can see one important way in the example above, where I said `# bad!` after some offending code. That is known as a "code comment". The Ruby interpreter, when it sees the `#`, will ignore it and everything that comes after it; allowing us to leave notes to ourselves and to each other. **Use comments liberally.**
 
 Another nice trick is: when experimenting with some code and it's not working, just comment it out and try a different approach on the next line. That way you can keep the old code around for reference without having to delete it, but it won't break the program.
 
 ## Variables are boxes
 
-Now that you've seen arguments, you know the full **primary syntax** of Ruby. No kidding: crafting expressions with `object.method(argument1, argument2, ...)` is the *vast* majority of what we'll be doing. That's it.
+Now that you've seen arguments, you know the full **primary syntax** of Ruby. No kidding: crafting expressions with `object.method(arguments)` is the *vast* majority of what we'll be doing. That's it.
 
-However, so far we haven't been doing much with the **return value** of each expression. We've just been reading it, and then dropping it on the ground. Programs get interesting only when we start to take the return value of one expression and feed it into the next method. That's how we craft novel, useful applications from the basic building blocks of Ruby.
+However, so far we haven't been doing much with the **return value** of each expression. We've just been reading it off the screen, and then dropping it on the ground.
 
-So: let's start to save our return values instead of dropping them on the ground. We do this using **variables**. Try the following:
+Programs get interesting only when we start to take the return value of one expression and feed it into the _next_ method. That's how we craft novel, useful applications from the basic building blocks of Ruby.
+
+So: let's start to store our return values for future reference, instead of dropping them on the ground. We do this using **variables**, or as I like to think of them, _boxes_. Let's get our feet wet:
 
 <iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/3044609/57a19463be616e484b188e67bb75a7d0"></iframe>
 
-So, in addition to `object.method`, **the syntax you need to know like the back of your hand is**
+### Variable syntax
+
+You may have noticed that the variable assignment syntax is a departure from the primary syntax of `object.method`. But we do it all day long, so we need to know it just as well:
 
 ```ruby
-storage_box = the_final_value.resulting_from_this(expression).will_be_stored
-# This code won't actually work
+storage_box_1 = "starting data".first_method
+storage_box_2 = storage_box_1.second_method.maybe_even("another method")
+# etc
 ```
 
-*First*, the expression on the right will be evaluated until there are no instructions left and there's just a piece of data remaining.
+*First*, the expression on the right side of the assignment operator will be evaluated until there are no methods left and there's just a piece of data remaining.
 
-*Then*, the value will be placed in a variable called `storage_box`, which will be created if it doesn't exist, or will have its value replaced if it does.
+*Then*, that value will be placed in the variable named on the left side of the assignment operator, which will be created if it doesn't exist, or will have its value replaced if it does exist.
 
-Most programs are just a long succession of statements where we do some work with `object.method` and store the result in some variable, then we do some more work on that variable and store the result in yet another variable, and a hundred steps later we've produced our final result and we display that to our user:
+Most programs are just a long succession of statements where we do some work with `object.method` and store the result in some variable, then we do some more work on that variable and store the result in yet another variable, and a hundred steps later we've produced our final result and we display that to our user.
 
-```ruby
-user_input = "D+h+H"
-input_without_pluses = user_input.gsub("+", "")
-downcased_input = input_without_pluses.downcase
-"dhh" == downcased_input
-# if true, choose another username!
-```
+### Variable naming rules
 
 When you are choosing your variable names, there are some rules:
 
-- names can only contain **lowercase** letters, numbers, and underscores
-- names cannot begin with a number
-
-Rubyists strive to choose descriptive variable names, no matter how long they are, so that the code reads almost like English — avoid naming your variables `x`, `y`, and `z`. Use underscores to separate words in multiple word variable names.
+- Variable names can only contain **lowercase** letters, numbers, and underscores — they can't contain spaces.
+- Variable names cannot _begin_ with a number.
+- Rubyists strive to choose **descriptive** variable names, no matter how long they are, so that the code reads almost like English. **Avoid naming your variables `x`, `y`, and `z`**. Use underscores to separate words in multiple word variable names.
 
 ## Conclusion
 
-That's it for the primary syntax of Ruby!
+That's it for the fundamental grammar of Ruby!
 
 ```
 storage_box = object.method(argument1, argument2, ...)
 ```
 
-Now, we need to spend some time *expanding our vocabulary*. Let's start with [the most fundamental built-in classes that Ruby gives us](fundamental-classes.md).
-
-## Variables
-
-Now that you've seen arguments, you know the full **primary syntax** of Ruby. No kidding: `object.method(argument1, argument2, ...)` is the *vast* majority of what we'll be writing. That's it.
-
-"But wait!," you say, "what about when I do math like `7 * 6`? That is clearly not `object.method`." A very good question. Try this instead: `7.*(6)` What?!
-
-Why does this work? `*` is the name of a method on the `Fixnum` class, which takes an argument of another `Fixnum`, and returns the product of the two. 😳💥😲
-
-When [Yukihiro Matsumoto](https://twitter.com/yukihiro_matz) designed the Ruby language, his goal was "developer happiness" (which was radical at that time, 1993, when most languages were geared for computer efficiency).
-
-He knew that if he made developers type `7.*(6)` every time they wanted to multiply two numbers, they would not be happy campers. So he included a few bits of "syntactic sugar", or shortcuts, that boil down to `object.method` under the hood, but allow us to retain our sanity while typing. Phew.
-
-One last thing: you can **chain** methods, like so:
-
-```ruby
-"D+h+H".gsub("+", "").downcase
-```
-
-Ruby evaluates the expression from left to right, replacing each `object.method` expression with the `object` that it returns and then evaluating the next `object.method`.
-
-So you have to be careful and make sure that the `object` that the first `object.method` returns matches up with the second `method.` **What class of object do I have?** **What methods can I call on this kind of object?**
-
-
-
-[^1]: [MDN HTML element reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
-
-[^2]: [MDN CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-
-[^3]: Read about [Complex Selectors](http://learn.shayhowe.com/advanced-html-css/complex-selectors/), or play a game to learn them: [CSS Diner](https://flukeout.github.io/)
+Now we need to spend some time expanding our vocabulary — what are the most commonly used data types in Ruby, and what methods do they have? That's coming up next.
