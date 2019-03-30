@@ -73,6 +73,8 @@ So, in terms of **data** and **methods**, Ruby comes with a powerful set out-of-
 
 Here, you[^tradition] try it in this interactive Ruby sandbox:
 
+<iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/3043043/c68c4738e364e9b4dbb0b7cf4c224003"></iframe>
+
 [^tradition]: It is a long and time-honored tradition that the very first thing a programmer does in a new language is print out "Hello world!" Congratulations — you're now one of us 🙌🏾
 
 On the left side of the dot we have our noun, or, formally, an **object**. On the right side of the dot we have our verb, or, formally, a **method**.
