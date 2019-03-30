@@ -192,7 +192,7 @@ Now that you've seen arguments, you know the full **primary syntax** of Ruby. No
 
 However, so far we haven't been doing much with the **return value** of each expression. We've just been reading it off the screen, and then dropping it on the ground.
 
-Programs get interesting only when we start to take the return value of one expression and feed it into the _next_ method. That's how we craft novel, useful applications from the basic building blocks of Ruby.
+Programs get interesting only when we start to take the return value of one expression and feed it into the _next_ method. That's how we craft our own novel, useful applications from the basic building blocks of Ruby.
 
 So: let's start to store our return values for future reference, instead of dropping them on the ground. We do this using **variables**, or as I like to think of them, _boxes_. Let's get our feet wet:
 
@@ -232,4 +232,6 @@ That's it for the fundamental grammar of Ruby!
 storage_box = object.method(argument1, argument2)
 ```
 
-Now we need to spend some time expanding our vocabulary — what are the most commonly used data types in Ruby, and what methods do they have? That's coming up next.
+It's not _that_ much worse than the calculator language, is it? Of course, there's a bit more syntax (like how to define our own nouns and verbs) that we need to learn, but for the most part, `object.method` is the bulk of what we do.
+
+Now we need to spend some time expanding our _vocabulary_ — what are the most commonly used data types in Ruby, and what are some of their methods? That's coming up next.
