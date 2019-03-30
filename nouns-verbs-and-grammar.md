@@ -62,7 +62,7 @@ Each kind, or **class**, of data has its own set of **methods** that it can perf
 
 Ruby is known as a "batteries included" language because it comes with _so many_ methods out-of-the-box, saving the programmer the trouble of having to re-invent the wheel.
 
-Finally, *we can even make up our own nouns and verbs* and add them to the language. For example, we can create a data type `Venue`, teach it how to calculate the average rating from its reviewers, add that method to its instruction set, and then use it whenever we want.
+Finally, *we can even make up our own nouns and verbs* and add them to the language. For example, we can create a data type `Venue`, give it a method that calculates the average rating from its reviews, and then use it whenever we want.
 
 One of the best things about Ruby is its wonderful **open-source** community: programmers very often share these new classes that they write with one another, making the language ever easier to use and ever more powerful!
 
@@ -218,7 +218,7 @@ Most programs are just a long succession of statements where we do some work wit
 
 When you are choosing your variable names, there are some rules:
 
-- Variable names can only contain **lowercase** letters (`a-z`), numbers (`0-9`), and underscores (`_`) — they can't contain spaces.
+- Variable names can only contain **lowercase** letters (`a..z`), numbers (`0..9`), and underscores (`_`) — they can't contain spaces.
 - Variable names cannot _begin_ with a number.
 - Rubyists strive to choose **descriptive** variable names, no matter how long they are, so that it's obvious to teammates what the contents are (supposed to be) at a glance.
 
