@@ -30,15 +30,15 @@ A basic calculator's entire vocabulary consists of the following:
 
 And there are only a few syntax rules:
 
-- **Primary syntax**: two numbers separated by operator followed by <kbd>=</kbd>
-- numbers can contain a single decimal point
-- numbers can be modified by the plus/minus sign
-- numbers can be modified by the percentage sign
-- can press <kbd>AC</kbd> to reset
+- **Primary syntax**: A number, then an operator, then a number, then the <kbd>=</kbd>.
+- Numbers can contain a single decimal point.
+- Numbers can be modified by the plus/minus sign.
+- Numbers can be modified by the percentage sign.
+- Can press <kbd>AC</kbd> to reset.
 
 It's a very small language, but it demonstrates the same parts as any other programming language: **data**, **methods**, and **syntax**.
 
-Got it? Good, because that's basically all that there is to any other programming language, too! It's just that its vocabulary will be bigger, and it will have a few more grammar rules.
+Got it? Good, because that's basically all that there is to any other programming language, too! It's just that its vocabulary will be bigger, and it will have a more grammar rules.
 
 ## Ruby's vocabulary
 
@@ -46,29 +46,29 @@ Let's get started learning your second programming language — Ruby! As we now 
 
 First of all, Ruby can work with many more kinds of data than just numbers. That's what makes it much more powerful than the calculator language. Ruby has:
 
-- numbers
-- text
-- dates
-- times
-- true/false
-- lists containing multiple pieces of data
-- a lot more
+- Numbers
+- Text
+- Dates
+- Times
+- True/false
+- Lists containing multiple pieces of data
+- A lot more
 
 Each kind, or **class**, of data has its own set of **methods** that it can perform. For example:
 
-- numbers can do the usual computations
-- two dates can tell you how far apart they are from one another
-- lists can tell how you long they are, or sort themselves
+- Numbers can do the usual things — add, subtract, multiply, etc.
+- Two dates can tell you how far apart they are from one another.
+- Lists can tell how you long they are, or sort themselves.
 
 Ruby is known as a "batteries included" language because it comes with _so many_ methods out-of-the-box, saving the programmer the trouble of having to re-invent the wheel.
 
 Finally, *we can even make up our own nouns and verbs* and add them to the language. For example, we can create a data type `Venue`, teach it how to calculate the average rating from its reviewers, add that method to its instruction set, and then use it whenever we want.
 
-One of the best things about Ruby is its wonderful **open-source** community: programmers very often share these new classes that they write with one another, making the language ever easier to use and more powerful!
+One of the best things about Ruby is its wonderful **open-source** community: programmers very often share these new classes that they write with one another, making the language ever easier to use and ever more powerful!
 
 ## Ruby's primary syntax
 
-So, in terms of **data** and **methods**, Ruby comes with a powerful set out-of-the-box *and* is infinitely extensible! That's good news. Here's even more good news: to access all of this power, the **primary syntax** is straightforward. It looks like this: `some_object.some_method`
+So, in terms of **data** and **methods**, Ruby comes with a powerful set out-of-the-box *and* is always getting better! That's good news. Here's even more good news: to access all of this power, the **primary syntax** is straightforward. It looks like this: `some_object.some_method`
 
 Here's a real example:
 
@@ -78,17 +78,17 @@ Here's a real example:
 
 Here, you try it in the interactive Ruby sandbox[^replit] below:
 
-[^replit]: The interactive Ruby playgrounds that are embedded in these readings are hosted on a service called repl.it. If you see a page asking you to sign up or sign in, then click the <i class="fab fa-github fa-fw"></i> icon to sign in using your GitHub account. After signing in for the first time, you might have to refresh this page in your browser to get it to load.
+[^replit]: The interactive Ruby playgrounds that are embedded in these readings are hosted on a service called repl.it. If you see a message below asking you to sign up or sign in, then click the <i class="fab fa-github fa-fw"></i> icon to sign in using your GitHub account. After signing in for the first time, you might have to refresh this page to get the sandbox to load.
 
 <iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/3043043/c68c4738e364e9b4dbb0b7cf4c224003"></iframe>
 
-Yay[^tradition]! What just happened?
+If all went well, you should have seen `=> "HELLO WORLD!"` Yay[^tradition]! What just happened?
 
 [^tradition]: It is [a time-honored tradition](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program){:target="_blank"} that the very first thing a programmer does in a new language is print out "Hello, World!" Congratulations — you're now one of us 🙌🏾
 
 The primary way to write an expression in Ruby is: `object.method`. We ask the _thing_, or noun, on the left side of the dot to perform the _action_, or the verb, on the right side of the dot. The computer then evaluates that expression and returns a new piece of data in its place (just like with the calculator).
 
-In this case, we asked `"hello world!"`, which is a `String` (Ruby's name for a piece of text[^string_name]), to `upcase` itself, which it (very) happily does, and we're left with `"HELLO WORLD!"` at the end of the day.
+In this case, we asked `"hello world!"`, which is a string (Ruby's name for a piece of text[^string_name]), to `upcase` itself, which it (very) happily does, and we're left with `"HELLO WORLD!"` at the end of the day.
 
 [^string_name]: The name "string" is used in pretty much every programming language for the datatype that holds a piece of text, and refers to a string of _characters_; a holdover from back when we used to have to worry about memory and had a separate datatype for an individual character. Now we usually don't have to think about individual characters anymore, but the name "string" stuck with us.
 
@@ -102,24 +102,25 @@ Different **classes** can perform different **methods**. Try the following:
 
 <iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/3043048/e3a0f724d73a975907c6441b855876aa"></iframe>
 
+### Read The Error Message
+
 Aha! If you were typing out every expression and running it, then you should have run into your very first error message! 🎉
 
 (If you weren't typing out every expression, then you're doing this wrong. If you're just reading, you won't be successful at learning programming; you have to _do_ in order to build up some muscle memory. It's all about practice.)
 
-Error messages can look scary, but one of **the most important skills you have to develop** when learning to program is to **not panic** when you see them. Slow down, read it carefully, and see if you can make any sense of it at all. Over time, you will find that they are _very_ helpful — and you will miss them when something is going wrong *silently*.
+Error messages can look scary, but one of **the most important skills you have to develop** when learning to program is to **not panic** when you see them. Slow down, **read the error message**, and see if you can make any sense of it at all. Over time, you will find that they are _very_ helpful — and you will miss them when something is going wrong *silently*.
 
 So, what do you think
 
 ```bash
 undefined method `swapcase' for 7:Integer
-(repl):1:in `<main>'
 ```
 
 might mean?
 
 In this case, it is saying: "Hey, friend — there's no method called 'swapcase' for 7, which is an integer. Sorry." Fair enough.
 
-The bottomline is: at all times as you are writing Ruby, you should be thinking: **What class of object do I have to work with?** **What methods am I allowed to call on this kind of object?** Then, the syntax itself is simple — `my_object.cool_method`!
+The bottomline is: at all times as you are writing Ruby, you should be thinking: **What class of object do I have to work with?** **What methods am I allowed to call on this kind of object?** Then, the syntax itself is simple — `my_object.cool_method`.
 
 ## Arguments
 
@@ -167,7 +168,13 @@ It's a very easy mistake to make, so I just wanted to warn you early so you can 
 
 ## An aside: Code comments
 
-A question for the ages: what do you call this symbol: `#`? The number sign? The pound sign? The hashtag? The waffle?
+A debate that will rage forever: what do you call this symbol?
+
+```
+#
+```
+
+Is it a number sign? Is it a pound sign? Is it a hashtag? Is it a waffle?
 
 In this text, I'm going to refer to it as an [octothorpe](https://en.wiktionary.org/wiki/octothorpe){:target="_blank"}.
 
@@ -209,7 +216,7 @@ When you are choosing your variable names, there are some rules:
 
 - Variable names can only contain **lowercase** letters, numbers, and underscores — they can't contain spaces.
 - Variable names cannot _begin_ with a number.
-- Rubyists strive to choose **descriptive** variable names, no matter how long they are, so that the code reads almost like English. **Avoid naming your variables `x`, `y`, and `z`**. Use underscores to separate words in multiple word variable names.
+- Rubyists strive to choose **descriptive** variable names, no matter how long they are, so that it's obvious to teammates what the contents are (supposed to be) at a glance. _Please_ avoid naming your variables `x`, `y`, and `z`. Use underscores to separate words in multi-word variable names.
 
 ## Conclusion
 
