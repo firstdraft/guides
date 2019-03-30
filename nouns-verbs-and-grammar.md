@@ -159,16 +159,16 @@ So, for example, whether you have spaces between arguments doesn't matter; these
 
 (The most common style is to have one space after each comma.)
 
-However, one situation in which whitespace _does_ matter is: **do not put a space between a method and the parentheses that surround its arguments**.
-
-It's a very easy mistake to make, so I just wanted to warn you early so you can develop good muscle memory:
+However, one situation in which whitespace _does_ matter has to do with the _parentheses_ around arguments:
 
 ```ruby
 "Hello".gsub("l", "z") # good
 "Hello".gsub ("l", "z") # bad!
 ```
 
-Try the bad version in your sandbox and see what the error message looks like.
+Can you spot the difference? **Don't put a space between the method and the opening parenthesis.**
+
+It's a very easy mistake to make, so I just wanted to warn you early so you can develop good muscle memory. Try the bad version in your sandbox and see what the error message looks like.
 
 ## An aside: Code comments
 
