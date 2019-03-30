@@ -57,14 +57,14 @@ First of all, Ruby can work with many more kinds of data than just numbers. That
 Each kind, or **class**, of data has its own set of **methods** that it can perform. For example:
 
 - numbers can do the usual computations
-- two times can tell you how far apart they are from one another
+- two dates can tell you how far apart they are from one another
 - lists can tell how you long they are, or sort themselves
 
 Ruby is known as a "batteries included" language because it comes with _so many_ methods out-of-the-box, saving the programmer the trouble of having to re-invent the wheel.
 
-Finally, *we can even make up our own nouns and verbs* and add them to the language. For example, we can create a data type `Venue`, teach it how to calculate the average rating of its reviews, and add that method to its instruction set.
+Finally, *we can even make up our own nouns and verbs* and add them to the language. For example, we can create a data type `Venue`, teach it how to calculate the average rating from its reviewers, add that method to its instruction set, and then use it whenever we want.
 
-One of the best things about Ruby is its wonderful **open-source** community: programmers very often share these new classes that they write with one another, making the language ever more powerful and easier to use!
+One of the best things about Ruby is its wonderful **open-source** community: programmers very often share these new classes that they write with one another, making the language ever easier to use and more powerful!
 
 ## Ruby's primary syntax
 
@@ -110,7 +110,7 @@ Error messages can look scary, but one of **the most important skills you have t
 
 So, what do you think
 
-```
+```bash
 undefined method `swapcase' for 7:Integer
 (repl):1:in `<main>'
 ```
