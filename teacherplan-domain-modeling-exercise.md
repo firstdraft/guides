@@ -18,14 +18,15 @@ We want to make it easy for teachers and coaches to draft, discuss, revise, and 
     - An Action Step has
         - a description
         - a target date
-        - a people who take the lead on them (this can be anyone, not necessarily a user)
+        - people who take the lead on it (this can be anyone, not necessarily one of our users)
         - resources needed
         - implementation specifics
         - measures of success
-
+ - A user can invite one or more other users to be coaches on their own Improvement Plans.
+ 
     **All of these attributes of an Action Step, except target date, should just be free-form text fields**, like in the linked sample Google Doc above.
- - Any user can coach any other user. A user becomes a coach if they are invited to be one (by email address) by the owner of the Improvement Plan.
- - There should be a page where the user can see all of the Improvement Plans they are connected to; since a user can have their own Improvement Plans, Improvement Plans they are coaching on, both, or neither.
+ - Any one of our users can coach any other user. A user becomes a coach if they are invited to be one (by email address) by the owner of the Improvement Plan.
+ - There should be a page where a user can see all of the Improvement Plans they are connected to; since a user can have their own Improvement Plans, Improvement Plans they are coaching on, both, or neither.
  - Owners and coaches for an Improvement Plan should be able to add comments on the Improvement Plan itself, and Goals within it.
  - Improvement Plans have five statuses:
     - Not yet submitted
@@ -34,6 +35,24 @@ We want to make it easy for teachers and coaches to draft, discuss, revise, and 
     - Active
     - Complete
 
-Try to come up with a domain model! Ask us any clarifying questions you have about the features of the app.
+Try to come up with a domain model! Ask us any clarifying questions you have about the features of the app — you will invariably come up with some questions the moment you start trying to design your tables.
 
-You can sketch your Entity Relationship Diagram (ERD) out on paper, or diagram it in [ideas.firstdraft.com](https://ideas.firstdraft.com/).
+I recommend starting by drawing out your tables fully, like the printed out databases from last week for Must See Movies and Photogram, and trying to enter in some rows to make all information has a place to live.
+
+Then, you can transfer your database design to the more compact Entity Relationship Diagram (ERD); either on paper, or diagram it in [ideas.firstdraft.com](https://ideas.firstdraft.com/).
+
+## My proof-of-concept workflow
+
+My usual flow for spiking on a proof-of-concept is:
+
+ - Identify the pain point.
+ - Sketch out some super low-fidelity screens in the application — what will a user see when they first sign in? Where can they navigate from there? "Crawl" the app to identify the most important screens.
+ - See what _information_ and _actions_ are present on the screens. These map to Create, Read, Update, and/or Delete, somehow (or calculations on data that we've already got).
+ - Write down a list of the most important user _capabilities_ — I like to hew roughly to the [User Story](https://www.romanpichler.com/blog/10-tips-writing-good-user-stories/) format, for simplicity and standardization:
+
+    "As a [role], I want to be able to [capability]," (and, optionally), "so that [benefit]."
+ 
+     I've already sort of written these down above.
+ - Get my hands on some real data that's being used to do these jobs already; usually, somehow, somewhere, they are already happening, perhaps inefficiently.
+ - Finally, with user stories and real data in hand, try to design my database tables; either drawing them out fully (with columns and rows), or skipping directly to the ERD format, or jumping back and forth.
+ - With a complete ERD — i.e. all tables and columns, including foreign key — in hand, I'm great shape to start writing code.
