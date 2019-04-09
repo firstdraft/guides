@@ -1,5 +1,14 @@
 ### ideas.firstdraft.com
 
+## Get an account
+
+ - Sign up for a free [GitHub](https://github.com) account. If you're a student, you can sign up for the [Education Pack](https://education.github.com/pack) for various discounted services, although you won't need any for this course.
+ - [Sign up for a free Heroku account](https://signup.heroku.com/) (if it asks for your preferred programming language, say Ruby)
+ - Don't forget to verify your email address for both.
+ - Use those two accounts to sign up at [https://ideas.firstdraft.com/](https://ideas.firstdraft.com/)
+
+## Adding tables
+
  - Click on the green plus icon at the homepage to create a new Idea.
  - Give it a name (required) and tagline (optional).
  - To add a table, drag the “New Table” button and drop it somewhere on the canvas.
