@@ -10,10 +10,11 @@ Currently, documents like the one above are being filled out and various version
 
 We want to make it easy for teachers and coaches to draft, discuss, revise, and approve Improvement Plans. Our goal is to come up with a domain model to capture the data in the linked doc, and support the following:
 
+ - A user signs up (first name, last name, school email address).
  - A user can create an Improvement Plan.
     - An Improvement Plans has a description.
  - A user can add one or more Goals to an Improvement Plan.
-    - A Goals has a description. 
+    - A Goal has a description. 
  - A user can add one or more Action Steps to a Goal.
     - An Action Step has
         - a description
@@ -22,10 +23,10 @@ We want to make it easy for teachers and coaches to draft, discuss, revise, and 
         - resources needed
         - implementation specifics
         - measures of success
- - A user can invite one or more other users to be coaches on their own Improvement Plans.
  
     **All of these attributes of an Action Step, except target date, should just be free-form text fields**, like in the linked sample Google Doc above.
- - Any one of our users can coach any other user. A user becomes a coach if they are invited to be one (by email address) by the owner of the Improvement Plan.
+ - A user can invite one or more other users to act as coaches for their Improvement Plans (invitations are sent via email).
+ - Any one of our users can coach any other user, as long as they've been invited.
  - There should be a page where a user can see all of the Improvement Plans they are connected to; since a user can have their own Improvement Plans, Improvement Plans they are coaching on, both, or neither.
  - Owners and coaches for an Improvement Plan should be able to add comments on the Improvement Plan itself, and Goals within it.
  - Improvement Plans have five statuses:
