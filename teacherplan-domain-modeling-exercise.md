@@ -38,14 +38,14 @@ We want to make it easy for teachers and coaches to draft, discuss, revise, and 
     
     As the owner of an Improvement Plan, I want to update its status from:
     
-        - `Not yet submitted` to `Waiting for approval`
-        - `Changes requested` to `Waiting for approval`
+      - `Not yet submitted` to `Waiting for approval`
+      - `Changes requested` to `Waiting for approval`
     
     As a coach for an Improvement Plan, I want to update its status from:
     
-        - `Waiting for approval` to `Changes requested`
-        - `Waiting for approval` to `Active`
-        - `Active` to `Complete`
+      - `Waiting for approval` to `Changes requested`
+      - `Waiting for approval` to `Active`
+      - `Active` to `Complete`
         
     As the owner and as a coach, I want to receive an email when the status of an Improvement Plan changes.
 
