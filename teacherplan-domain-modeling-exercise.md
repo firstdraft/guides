@@ -10,12 +10,12 @@ Currently, documents like the one above are being filled out and various version
 
 We want to make it easy for teachers and coaches to draft, discuss, revise, and approve Improvement Plans. Our goal is to come up with a domain model to capture the data in the linked doc, and support the following:
 
- - A user signs up (first name, last name, school email address).
- - A user can create an Improvement Plan.
+ - As a teacher, I want to sign up (first name, last name, school email address).
+ - As a teacher, I want to create an Improvement Plan.
     - An Improvement Plans has a description.
- - A user can add one or more Goals to an Improvement Plan.
+ - As a teacher, I want to add one or more Goals to my Improvement Plan.
     - A Goal has a description. 
- - A user can add one or more Action Steps to a Goal.
+ - As a teacher, I want to add one or more Action Steps to my Goal.
     - An Action Step has
         - a description
         - a target date
@@ -25,7 +25,7 @@ We want to make it easy for teachers and coaches to draft, discuss, revise, and 
         - measures of success
  
     **All of these attributes of an Action Step, except target date, should just be free-form text fields**, like in the linked sample Google Doc above.
- - A user can invite one or more other users to act as coaches for their Improvement Plans (invitations are sent via email).
+ - A teacher can invite one or more other users to act as coaches for their Improvement Plans (invitations are sent via email).
  - Any one of our users can coach any other user, as long as they've been invited.
  - There should be a page where a user can see all of the Improvement Plans they are connected to; since a user can have their own Improvement Plans, Improvement Plans they are coaching on, both, or neither.
  - Owners and coaches for an Improvement Plan should be able to add comments on the Improvement Plan itself, and Goals within it.
@@ -51,7 +51,7 @@ My usual flow for spiking on a proof-of-concept is:
  - See what _information_ and _actions_ are present on the screens. These map to Create, Read, Update, and/or Delete, somehow (or calculations on data that we've already got).
  - Write down a list of the most important user _capabilities_ — I like to hew roughly to the [User Story](https://www.romanpichler.com/blog/10-tips-writing-good-user-stories/) format, for simplicity and standardization:
 
-    "As a [role], I want to be able to [capability]," (and, optionally), "so that [benefit]."
+    "As a [role], I want to [capability]," (and, optionally), "so that [benefit]."
  
      I've already sort of written these down above.
  - Get my hands on some real data that's being used to do these jobs already; usually, somehow, somewhere, they are already happening, perhaps inefficiently.
