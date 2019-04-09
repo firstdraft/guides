@@ -1,4 +1,4 @@
-### ideas.firstdraft.com
+firstdraft Ideas is a tool that we've built to help us all collaborate on our domain models using a standard notation. It will even help us to eventually write our code, if we invest the time in planning out each and every table and column that we need to keep track of the information our app requires.
 
 ## Get an account
 
