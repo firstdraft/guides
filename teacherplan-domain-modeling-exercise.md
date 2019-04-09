@@ -1,6 +1,6 @@
 # TeacherPlan Domain Modeling Exercise
 
-Imagine that a principal of a high school has approached you with a problem. She has a system to help the teachers at her school devise improvement plans for themselves, but it struggling to keep track of all of the paperwork involved with it. She wants to hire you to build an app to help.
+Imagine that a principal of a high school has approached you with a problem. She has a system to help the teachers at her school devise improvement plans for themselves, but they are struggling to keep track of all of the paperwork involved. She wants to hire you to build an app to help.
 
 Examine [this document](https://docs.google.com/document/d/1CVDEl5MJpaSIMH6ReWQq5AUft4RDE_CfHOASCDNWw8A/edit?usp=sharing) to see what a real Improvement Plan looks like. This doc represents one Improvement Plan, for a teacher named Smith. The plan has three SMART Goals; each SMART Goal has 4-5 Action Steps.
 
