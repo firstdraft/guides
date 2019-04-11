@@ -28,7 +28,7 @@ We want to make it easy for teachers and coaches to draft, discuss, revise, and 
  - As a teacher, I want to invite one or more other teachers to act as coaches for my Improvement Plans (invitations are sent via email).
     - Any one of our users can coach any other user, as long as they've been invited.
  - As a teacher, I want to see all of the Improvement Plans that I am connected to; since I can have my own Improvement Plans, Improvement Plans I am coaching on, both, or neither.
- - As a both an owners and a coach for an Improvement Plan, I want to comment on an Improvement Plan itself, and on Goals within it.
+ - As both an owner and a coach for an Improvement Plan, I want to comment on an Improvement Plan itself, and on Goals within it.
  - Improvement Plans have five statuses:
     - `Not yet submitted`
     - `Waiting for approval`
