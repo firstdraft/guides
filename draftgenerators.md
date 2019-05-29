@@ -5,7 +5,7 @@ Include this line in your `Gemfile`, which you'll find in the root folder of you
 ```ruby
 # Gemfile
 
-gem "draft_generators", :git => "https://github.com/firstdraft/draft_generators"
+gem "draft_generators", :git => "https://github.com/firstdraft/draft_generators", :branch => "spring-2019"
 ```
 
 Then,
