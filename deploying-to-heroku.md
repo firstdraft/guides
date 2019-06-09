@@ -225,7 +225,7 @@
     
     ![](/assets/commit app json.png)
     
-    Finally, back on your development machine, don't forget to `git pull` to get the changes that Heroku made on our behalf:
+    Finally, back on your development machine, run the command `git pull origin master` (or click the button at `/git`) to get the changes that Heroku made to our GitHub repo on our behalf:
     
     ![](/assets/pull app json.png)
     
