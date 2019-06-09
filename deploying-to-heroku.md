@@ -1,12 +1,14 @@
 # Deploying to Heroku
 
+## Deploy to your first production server
+
  1. Sign up for a [Heroku account](https://www.heroku.com/) if you haven't already.
  
  1. At a Terminal prompt, run the command `heroku login`:
  
     ![](/assets/heroku login.png)
     
- 1. To get the app ready to deploy to Heroku, ensure the following:
+ 1. To get the app ready to deploy to Heroku, ensure the following is true (this should already be done if you started with our base application):
  
     - In your `Gemfile`, look for a line that says:
     
@@ -89,7 +91,7 @@
      
      ![](/assets/deployed.png)
 
- 1. If you visit the URL that Heroku gave you, you will likely see an error:
+ 1. If you visit the URL that Heroku gave you, you might see an error, due to migrations pending:
 
      ![](/assets/migrations pending.png)
    
@@ -180,10 +182,12 @@
      git push production master
      ```
      
-     As you continue to build the application, you simply commit your changes as usual and `git push production master` whenever you are ready to deploy a new version.
+     As you continue to build the application, you simply commit your changes as usual at `/git`, but then from the Terminal `git push production master` whenever you are ready to deploy a new version.
      
      It's amazing that it is that easy to deploy to an industrial grade production server nowadays. This ease of deployment also enables some very powerful modern workflows. Let's see one of them:
-     
+
+## (Optional) Going further for a cutting edge workflow
+
  1. Sometimes, you want to allow QA testers or product owners to exercise your new features before deploying them to your entire userbase. For this, it's very handy to have a _second_ real server running that you can push your experimental code to. We usually refer to this as a **"staging"** server.
  
     It's going to be a _lot_ of work to get our second server set up. Ready?
