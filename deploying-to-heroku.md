@@ -219,7 +219,7 @@
  
     ![](/assets/create app json.png)
  
-    Fortunately, Heroku will write the file and commit it to our repo for us. Usually I accept all the defaults, except that I add `bin/rails dev:prime` to the post-deploy section _if_ I have such a script in my app.
+    Fortunately, Heroku will write the file and commit it to our repo for us. Usually I accept all the defaults, except that I add `bin/rails dummy:reset` to the post-deploy section _if_ I have such a script in my app.
     
     And then commit the file to our repo:
     
