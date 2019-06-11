@@ -12,15 +12,13 @@ All it takes to deploy to industrial-grade infrastructure is, from a Terminal pr
    heroku login
    ```
 
- 1. Create your Heroku deployment target:
+ 1. Create your Heroku deployment target (replacing `your-app-name` with a name of your choice):
 
    ```bash
    heroku create your-app-name-production --remote=production
    ```
 
-   (replacing `your-app-name` with a name of your choice)
-
- 1. Git commit your latest changes (if you haven't already):
+ 1. Git commit your latest changes (if you haven't already done so):
 
    ```bash
    git add -A
