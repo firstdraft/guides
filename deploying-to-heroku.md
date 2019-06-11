@@ -2,6 +2,39 @@
 
 ## Deploy to your first production server
 
+### The short version
+
+All it takes to deploy to industrial-grade infrastructure is, from a Terminal prompt, do the following:
+
+ 1. Sign into Heroku (only need to do once per workspace):
+ 
+   ```bash
+   heroku login
+   ```
+
+ 1. Create your Heroku deployment target:
+
+   ```bash
+   heroku create your-app-name-production --remote=production
+   ```
+
+   (replacing `your-app-name` with a name of your choice)
+
+ 1. Git commit your latest changes (if you haven't already):
+
+   ```bash
+   git add -A
+   git commit -m "Write a commit message here"
+   ```
+
+ 1. Deploy!
+
+   ```bash
+   git push production HEAD:master -f
+   ```
+
+### The longer version
+
  1. Sign up for a [Heroku account](https://www.heroku.com/) if you haven't already.
  
  1. At a Terminal prompt, run the command `heroku login`:
@@ -79,6 +112,14 @@
      
      ![](/assets/git push production master.png)
 
+     1. If you happen to be on a branch locally that is _not_ `master` (perhaps because you were experimenting, or working on a feature branch), then you need to instead merge your changes into `master` or, more simply,
+
+        ```
+        git push production HEAD:master -f
+        ```
+
+        This command will overwrite the `master` branch on production with your current branch (whatever it is called). Be careful!
+
  1. What just happened? First, we set up another remote location _besides GitHub_ that we can `git push` our code to, and named it `production`. That second remote location is on one of Heroku's servers[^5], rather than one of GitHub's[^4].
  
      GitHub's purpose in life is to safely store your Git repositories, and also give you a bunch of tools to discuss and collaborate on it. It's sort of like a super-powered Dropbox-for-code.
@@ -91,11 +132,27 @@
      
      ![](/assets/deployed.png)
 
- 1. If you visit the URL that Heroku gave you, you might see an error, due to migrations pending:
+ 1. Yay, our app is live on the internet! And not just a Cloud9 Preview. Barring any issues, all we've done so far is:
+ 
+     ```
+     heroku login
+     heroku create your-app-name-production --remote=production
+     git push production master
+     ```
+     
+ 1. As you continue to build the application, you simply commit your changes as usual at `/git`; when you are ready to deploy your changes, from the Terminal,
+ 
+    ```
+    git push production HEAD:master -f
+    ```
+
+ 1. Some issues that you might run into:
+
+    1. You will inevitably have errors occur on your production server, but the error messages there will not be as helpful as the ones we see on our development servers:
 
      ![](/assets/migrations pending.png)
    
-     The first thing to notice is that error messages look different in production mode. They don't give you the gory details of what went wrong, which makes sense because our users shouldn't see all that.
+     They don't give you the gory details of what went wrong, which makes sense because our users shouldn't see all that.
      
      So then how do we know what went wrong so that we can fix it? We'll see some more advanced tools later, but your first and foremost debugging tool is always **the server log**. In order to see the log of what's happening on our Heroku server, run the command:
      
@@ -109,7 +166,7 @@
      
      You'll notice that the production server log is not as helpful as the development log! What I do is clear the Terminal with <kbd>Cmd</kbd>+<kbd>K</kbd>, and then refresh the request that was causing the error. I then scroll to the top of the mess, and start to look through carefully for the error message.
      
-     You will eventually see something like this:
+     You will eventually see your error message in there if you dig through carefully, maybe something like this:
      
      ```
      ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "users" does not exist
@@ -129,64 +186,30 @@
      
      ![](/assets/app deployed.png)
      
-     (**Note**: When you try `heroku run rails db:migrate`, there are a couple of common issues at this point:
-     
-      - **If you see the error message "Directly inheriting from ActiveRecord::Migration is not supported. Please specify the Rails release the migration was written for":**
-      
-      Some of your migrations are using an old Rails 4 style. These all need to be updated. Basically, just go through each file in `db/migrate` and ensure that the first line has a `[5.0]` on the end, like this:
-      
-      ```ruby
-      class CreateVenues < ActiveRecord::Migration[5.0]
-      ```
-      
-      Then run these commands in sequence:
-      
-      ```
-      rails db:migrate
-      git add -A
-      git commit -m "Fix migrations"
-      git push production master
-      ```
-      
-      and, after it re-deploys the new codebase,
-      
-      ```
-      heroku run rails db:migrate
-      ```
-    
-      - **If you see the error message "Index name 'index_active_admin_comments_on_author_type_and_author_id' on table 'active_admin_comments' already exists":**
-      
-      Find the file in `db/migrate` that ends with `..._create_active_admin_comments.rb` and comment out lines 11-13:
-      
-      ![](/assets/activeadmin comments error.png)
-
-      Then run these commands in sequence:
-      
-      ```
-      rails db:migrate
-      git add -A
-      git commit -m "Fix ActiveAdmin indexes"
-      git push production master
-      ```
-      
-      and, after it re-deploys the new codebase,
-      
-      ```
-      heroku run rails db:migrate
-     ```
-
- 1. Yay, our app is live on the internet! And not just a Cloud9 Preview. Barring any issues, all we've done so far is:
- 
-     ```
-     heroku create your-app-name-production --remote=production
-     git push production master
-     ```
-     
-     As you continue to build the application, you simply commit your changes as usual at `/git`, but then from the Terminal `git push production master` whenever you are ready to deploy a new version.
-     
-     It's amazing that it is that easy to deploy to an industrial grade production server nowadays. This ease of deployment also enables some very powerful modern workflows. Let's see one of them:
+     > **Note**: When you try `heroku run rails db:migrate`, if you see the error message "Index name 'index_active_admin_comments_on_author_type_and_author_id' on table 'active_admin_comments' already exists":**
+     > 
+     > Find the file in `db/migrate` that ends with    `..._create_active_admin_comments.rb` and comment out lines 11-13:
+     > 
+     > ![](/assets/activeadmin comments error.png)
+     >
+     > Then run these commands in sequence:
+     > 
+     > ```
+     > rails db:migrate
+     > git add -A
+     > git commit -m "Fix ActiveAdmin indexes"
+     > git push production master
+     > ```
+     > 
+     > and, after it re-deploys the new codebase,
+     > 
+     > ```
+     > heroku run rails db:migrate
+     > ```
 
 ## (Optional) Going further for a cutting edge workflow
+
+It's amazing that it is that easy to deploy to an industrial grade production server nowadays. This ease of deployment also enables some very powerful modern workflows. Let's see one of them:
 
  1. Sometimes, you want to allow QA testers or product owners to exercise your new features before deploying them to your entire userbase. For this, it's very handy to have a _second_ real server running that you can push your experimental code to. We usually refer to this as a **"staging"** server.
  
@@ -194,7 +217,7 @@
     
     ```
     heroku create your-app-name-staging --remote=staging
-    git push staging master
+    git push HEAD:staging master -f
     ```
     
     Done! You now have _two_ industrial grade servers running: one is live at `https://[YOUR APP NAME]-production.herokuapp.com`, and the other at `https://[YOUR APP NAME]-staging.herokuapp.com`. _But they don't each have to have the same version of the code at the same time._
