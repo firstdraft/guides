@@ -93,7 +93,6 @@ All it takes to deploy to industrial-grade infrastructure is, from a Terminal pr
        ```
        
     - If you made any changes to your `Gemfile`, then `bundle install` commit the changes to `master`.
-
            
     This step was likely already done for you, depending on which project you're working on.  
 
