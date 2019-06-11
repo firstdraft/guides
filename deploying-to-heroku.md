@@ -41,7 +41,7 @@ All it takes to deploy to industrial-grade infrastructure is, from a Terminal pr
  
     ![](/assets/heroku login.png)
     
- 1. To get the app ready to deploy to Heroku, ensure the following is true (this should already be done if you started with our base application):
+ 1. To get the app ready to deploy to Heroku, ensure the following is true (this step should already be done if you started with our base application):
  
     - In your `Gemfile`, look for a line that says:
     
@@ -49,13 +49,13 @@ All it takes to deploy to industrial-grade infrastructure is, from a Terminal pr
        gem "sqlite3"
        ```
         
-       If you have it, it should be modified to:
+       If you have it, it should either have `:group => :development` after it:
         
        ```ruby
        gem "sqlite3", :group => :development
        ```
        
-       or
+       or it should be within the `:development` group:
        
        ``` ruby
        group :development do
@@ -63,29 +63,27 @@ All it takes to deploy to industrial-grade infrastructure is, from a Terminal pr
        end
        ```
        
-       and, in addition, add the line
+       In addition, make sure you have the line:
        
        ```ruby
-       gem "pg", "~> 0.18", :group => :production
+       gem "pg", :group => :production
        ```
        
-       or
+       or it could be within the `:production` group, like this:
        
        ```ruby       
        group :production do
-         gem "pg", "~> 0.18"
+         gem "pg"
        end
        ```
-       
-       This step may already be done for you, depending on which project you're working on. We're now ready to use the powerful database that Heroku provides[^1].
 
-    - In your `Gemfile`, look for a line that says:
+    - In your `Gemfile`, make sure the `rails_12factor` gem is included in the production group:
     
        ```ruby
        gem "rails_12factor", :group => :production
        ```
 
-       If you don't have it, add it. Alternatively, you could have something like this[^2]:
+       or this:
        
        ```ruby
        group :production do
@@ -94,9 +92,12 @@ All it takes to deploy to industrial-grade infrastructure is, from a Terminal pr
        end
        ```
        
-    - If you made any changes to your `Gemfile`, then `bundle install` commit the changes to `master`.              
+    - If you made any changes to your `Gemfile`, then `bundle install` commit the changes to `master`.
 
- 1. Run the command:
+           
+   This step was likely already done for you, depending on which project you're working on.  
+
+ 1. To create our deployment target on Heroku, run the command:
  
      ```
      heroku create your-app-name-production --remote=production
@@ -104,7 +105,7 @@ All it takes to deploy to industrial-grade infrastructure is, from a Terminal pr
      
      replacing `your-app-name` with a name of your choice[^3].
      
- 1. Run the command:
+ 1. To deploy, run the command:
  
      ```
      git push production master
@@ -150,62 +151,68 @@ All it takes to deploy to industrial-grade infrastructure is, from a Terminal pr
 
     1. You will inevitably have errors occur on your production server, but the error messages there will not be as helpful as the ones we see on our development servers:
 
-     ![](/assets/migrations pending.png)
+    ![](/assets/migrations pending.png)
    
-     They don't give you the gory details of what went wrong, which makes sense because our users shouldn't see all that.
+    They don't give you the gory details of what went wrong, which makes sense because our users shouldn't see all that.
      
-     So then how do we know what went wrong so that we can fix it? We'll see some more advanced tools later, but your first and foremost debugging tool is always **the server log**. In order to see the log of what's happening on our Heroku server, run the command:
+    So then how do we know what went wrong so that we can fix it? We'll see some more advanced tools later, but your first and foremost debugging tool is always **the server log**. In order to see the log of what's happening on our Heroku server, run the command:
      
-     ```
-     heroku logs --tail
-     ```
-     
-     This command will show us what's going over there in California:
-     
-     ![](/assets/heroku log.png)
-     
-     You'll notice that the production server log is not as helpful as the development log! What I do is clear the Terminal with <kbd>Cmd</kbd>+<kbd>K</kbd>, and then refresh the request that was causing the error. I then scroll to the top of the mess, and start to look through carefully for the error message.
-     
-     You will eventually see your error message in there if you dig through carefully, maybe something like this:
-     
-     ```
-     ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "users" does not exist
-     ```
-     
-     `PG::UndefinedTable`... 🤔 The issue is that, just like when we clone a new codebase to our own machine, we have to `rails db:migrate` to create[^7] the database! Right now, on Heroku, none of our migrations have been run.
-     
-     <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the Heroku server log and return to a Terminal prompt. To run commands on Heroku (rather than locally), we prefix them with `heroku run`:
-     
-     ```
-     heroku run rails db:migrate
-     ```
-     
-     ![](/assets/heroku db migrate.png)
-     
-     Now if you visit your URL again, you'll see your live app!
-     
-     ![](/assets/app deployed.png)
-     
-     > **Note**: When you try `heroku run rails db:migrate`, if you see the error message "Index name 'index_active_admin_comments_on_author_type_and_author_id' on table 'active_admin_comments' already exists":**
-     > 
-     > Find the file in `db/migrate` that ends with    `..._create_active_admin_comments.rb` and comment out lines 11-13:
-     > 
-     > ![](/assets/activeadmin comments error.png)
-     >
-     > Then run these commands in sequence:
-     > 
-     > ```
-     > rails db:migrate
-     > git add -A
-     > git commit -m "Fix ActiveAdmin indexes"
-     > git push production master
-     > ```
-     > 
-     > and, after it re-deploys the new codebase,
-     > 
-     > ```
-     > heroku run rails db:migrate
-     > ```
+   ```
+   heroku logs --tail
+   ```
+
+   This command will show us what's going over there in California:
+
+   ![](/assets/heroku log.png)
+
+   You'll notice that the production server log is not as helpful as the development log! What I do is clear the Terminal with <kbd>Cmd</kbd>+<kbd>K</kbd>, and then refresh the request that was causing the error. I then scroll to the top of the mess, and start to look through carefully for the error message.
+
+   You will eventually see your error message in there if you dig through carefully, maybe something like this:
+
+   ```
+   ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "users" does not exist
+   ```
+
+   `PG::UndefinedTable`... 🤔 The issue is that, just like when we clone a new codebase to our own machine, we have to `rails db:migrate` to create[^7] the database! Right now, on Heroku, none of our migrations have been run.
+
+   <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the Heroku server log and return to a Terminal prompt. To run commands on Heroku (rather than locally), we prefix them with `heroku run`:
+
+   ```
+   heroku run rails db:migrate
+   ```
+
+   ![](/assets/heroku db migrate.png)
+
+   Now if you visit your URL again, you'll see your live app!
+
+   ![](/assets/app deployed.png)
+
+   > **Note**: When you try `heroku run rails db:migrate`, if you see the error message "Index name 'index_active_admin_comments_on_author_type_and_author_id' on table 'active_admin_comments' already exists":**
+   > 
+   > Find the file in `db/migrate` that ends with    `..._create_active_admin_comments.rb` and comment out lines 11-13:
+   > 
+   > ![](/assets/activeadmin comments error.png)
+   >
+   > Then run these commands in sequence:
+   > 
+   > ```
+   > rails db:migrate
+   > git add -A
+   > git commit -m "Fix ActiveAdmin indexes"
+   > git push production master
+   > ```
+   > 
+   > and, after it re-deploys the new codebase,
+   > 
+   > ```
+   > heroku run rails db:migrate
+   > ```
+
+   1. If you want to enter your `rails console` on your server in California, you can do so with:
+
+      ```
+      heroku run rails console
+      ```
 
 ## (Optional) Going further for a cutting edge workflow
 
