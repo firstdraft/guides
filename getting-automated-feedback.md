@@ -1,10 +1,30 @@
 # Getting automated feedback
 
-## Set up a GitHub account
+## Join GitHub
 
-If you haven't created a GitHub account already, follow the steps in the [Setting up your Cloud9 workspace](setting-up-your-cloud9-workspace.md) guide to join Github and create a GitHub organization.
+If you haven't already, [sign up for a free GitHub account](https://github.com/join) \(or sign in to yours if you already have one\):
 
-**Remember the name of the organization you created** — you'll need it soon.
+![](/assets/join-github.png)
+
+In this example screenshot, I chose a username of `demolearner1` — remember yours. Also, don't forget to check your email and verify the address you entered.
+
+For now, think of GitHub like Dropbox-for-programmers; it's where we're going to store all of our code.
+
+## Create GitHub organization
+
+To keep things organized, we're going to create a separate GitHub organization account for you to store your AppDev projects under \(to keep them separate from the personal projects that you'll hopefully be building soon!\).
+
+Click the `+` on the right side of the navbar and select "New organization":
+
+![](/assets/new-organization.png)
+
+Choose any name for the organization; most students choose `[YOUR USERNAME]-appdev`. In this example screenshot, I chose `demolearner1-appdev`:
+
+![](/assets/org-name.png)
+
+You can "Skip" or "Finish" the rest of the screens:
+
+![](/assets/finish-org.png)
 
 ## Login to Canvas
 
@@ -34,15 +54,11 @@ Now head back to the assignment in Canvas and click "Load assignment in a new ta
 
 ![](/assets/grade-setup-instructions.png)
 
-Ok, now we can get the project loaded up in Cloud9 and try out the feedback feature. [Create a Cloud9 workspace as usual](getting-started-with-cloud9.md). Note that the repo was automatically forked for you; you don't need to fork manually anymore.
-
-`bin/setup` as usual.
+Ok, now we can get the project loaded up and try out the feedback feature. `bin/setup` as usual, if you haven't already:
 
 ![](/assets/bin-setup.png)
 
-Run Project and Preview the live application as usual, at this point. Start working on the project to do whatever the instructions tell you.
-
-**When you're ready for feedback**, try a new command at a new Terminal prompt:
+Start working on the project to do whatever the instructions tell you. **When you're ready for feedback**, try a new command at a new Terminal prompt:
 
 ```
 rails grade
@@ -52,11 +68,11 @@ You'll be asked for your access token; **copy-paste it carefully from the grades
 
 ![](/assets/rails-grade.png)
 
-You should see feedback that looks like:
+You should see output that looks like:
 
 ![](/assets/rails-grade-feedback.png)
 
-You can just click the Results URL to open up your feedback in a new tab. 
+Copy-paste the Results URL into a new tab, or click on it (but make sure it isn't truncated).
 
 ![](/assets/rails-grade-click-url.png)
 
@@ -70,6 +86,6 @@ In this case, the test expected to find an element with a class of `word_count` 
 
 You can click the "Examine Test" button to read the actual Ruby of the automated test; it's surprisingly readable. Ruby's testing libraries use method names that are supposed to make tests readable even for non-technical managers and clients. You can see specifically what flow is being tested and what inputs are being used and what the expected output is, and try to reproduce the issue in your own app manually using the same inputs.
 
-You can run `rails grade` in your Cloud9 terminal as many times as you want, and you will get a new updated build report each time. It will only report your highest score back to Canvas, but be sure to make git commits often from `/git` so that you can experiment freely on new tasks without worry about breaking existing functionality.
+You can run `rails grade` in your Terminal as many times as you want, and you will get a new updated build report each time. It will only report your highest score back to Canvas, but be sure to make git commits often from `/git` so that you can experiment freely on new tasks without worry about breaking existing functionality.
 
-### Remember that your first job is always to make your app work like the target. You should not rely exclusively on the automated tests; click through the target and your own app manually and get them to match behaviors first.
+### Remember that your first job is always to make your app work as described and test it manually yourself. You should not rely exclusively on the automated tests; they are a terrible way to debug.
